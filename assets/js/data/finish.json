@@ -1,0 +1,428 @@
+[
+{
+"id":"acrylic",
+
+"name":"Acrylic Finish",
+
+"subtitle":"Premium Glossy Surface For Modern Luxury Kitchens",
+
+"description":"Acrylic finish gives your modular kitchen a premium high-gloss appearance with a smooth reflective surface. It creates a luxurious look with easy maintenance and long-lasting beauty.",
+
+
+"overview":"Acrylic finish is designed for premium modular kitchens where luxury appearance and modern styling are important. The smooth glossy surface enhances the complete kitchen experience.",
+
+
+"overviewImage":
+"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+
+
+
+"images":[
+
+"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+
+"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+
+"https://images.unsplash.com/photo-1556912173-3bb406ef7e77",
+
+"https://images.unsplash.com/photo-1558997519-83ea9252edf8"
+
+],
+
+
+
+
+"features":[
+
+
+{
+"icon":"fa-solid fa-gem",
+"title":"Premium Look",
+"text":"Luxury Gloss Finish"
+},
+
+
+{
+"icon":"fa-solid fa-spray-can-sparkles",
+"title":"Easy Cleaning",
+"text":"Smooth Surface"
+},
+
+
+{
+"icon":"fa-solid fa-shield-halved",
+"title":"Durable",
+"text":"Long Lasting"
+},
+
+
+{
+"icon":"fa-solid fa-palette",
+"title":"Multiple Colours",
+"text":"Custom Options"
+}
+
+],
+
+
+
+
+
+"colors":[
+
+
+{
+"name":"White",
+"code":"#f5f3ed",
+"image":"https://images.unsplash.com/photo-1600607688969-a5bfcd646154"
+},
+
+
+{
+"name":"Beige",
+"code":"#d8c4a8",
+"image":"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
+},
+
+
+{
+"name":"Grey",
+"code":"#777777",
+"image":"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
+},
+
+
+{
+"name":"Black",
+"code":"#111111",
+"image":"https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+}
+
+],
+
+
+
+
+
+"specifications":[
+
+
+{
+"name":"Finish Type",
+"value":"High Gloss Acrylic"
+},
+
+
+{
+"name":"Surface",
+"value":"Smooth Reflective"
+},
+
+
+{
+"name":"Maintenance",
+"value":"Easy Cleaning"
+},
+
+
+{
+"name":"Application",
+"value":"Kitchen Shutters & Panels"
+}
+
+
+],
+
+
+
+
+
+
+"applications":[
+
+
+{
+"name":"Kitchen Shutters",
+"image":"https://images.unsplash.com/photo-1556911220-e15b29be8c8f"
+},
+
+
+{
+"name":"Wall Units",
+"image":"https://images.unsplash.com/photo-1600607688969-a5bfcd646154"
+},
+
+
+{
+"name":"Tall Cabinets",
+"image":"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
+},
+
+
+{
+"name":"Island Kitchen",
+"image":"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+}
+
+
+],
+
+
+
+
+
+
+"benefits":[
+
+
+{
+"icon":"fa-solid fa-star",
+"title":"Luxury Appearance",
+"text":"Premium modern kitchen look."
+},
+
+
+{
+"icon":"fa-solid fa-droplet",
+"title":"Easy Maintenance",
+"text":"Simple cleaning process."
+},
+
+
+{
+"icon":"fa-solid fa-layer-group",
+"title":"Premium Finish",
+"text":"Elegant surface quality."
+},
+
+
+{
+"icon":"fa-solid fa-clock",
+"title":"Long Life",
+"text":"Designed for daily use."
+}
+
+
+],
+
+
+
+
+
+"faq":[
+
+
+{
+"question":"Is acrylic finish suitable for modular kitchens?",
+
+"answer":"Yes, acrylic finish is widely used in premium modular kitchens because of its glossy appearance and durability."
+},
+
+
+{
+"question":"How can acrylic finish be cleaned?",
+
+"answer":"A soft microfiber cloth with mild cleaner is recommended."
+},
+
+
+{
+"question":"Are multiple colours available?",
+
+"answer":"Yes, acrylic finishes are available in multiple colours and designs."
+}
+
+]
+
+},
+
+
+
+
+
+
+{
+"id":"laminate",
+
+"name":"Laminate Finish",
+
+"subtitle":"Durable And Versatile Kitchen Surface",
+
+"description":"Laminate finish provides excellent durability with multiple colours, textures and patterns suitable for modern modular kitchens.",
+
+
+"overview":"Laminate is one of the most popular kitchen finishes because it provides style, durability and easy maintenance.",
+
+
+"overviewImage":
+"https://images.unsplash.com/photo-1556912173-3bb406ef7e77",
+
+
+
+"images":[
+
+"https://images.unsplash.com/photo-1556912173-3bb406ef7e77",
+
+"https://images.unsplash.com/photo-1558997519-83ea9252edf8",
+
+"https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+
+],
+
+
+
+
+
+"features":[
+
+
+{
+"icon":"fa-solid fa-palette",
+"title":"Multiple Designs",
+"text":"Many texture options"
+},
+
+
+{
+"icon":"fa-solid fa-shield",
+"title":"Strong Surface",
+"text":"Daily usage ready"
+},
+
+
+{
+"icon":"fa-solid fa-broom",
+"title":"Easy Care",
+"text":"Low maintenance"
+},
+
+
+{
+"icon":"fa-solid fa-wallet",
+"title":"Value Choice",
+"text":"Cost effective"
+}
+
+],
+
+
+
+
+
+"colors":[
+
+
+{
+"name":"Walnut",
+"code":"#795548",
+"image":"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
+},
+
+
+{
+"name":"Oak",
+"code":"#c49a6c",
+"image":"https://images.unsplash.com/photo-1556911220-e15b29be8c8f"
+},
+
+
+{
+"name":"Grey",
+"code":"#777777",
+"image":"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
+}
+
+
+],
+
+
+
+
+
+"specifications":[
+
+{
+"name":"Finish Type",
+"value":"Decorative Laminate"
+},
+
+{
+"name":"Texture",
+"value":"Multiple Patterns"
+},
+
+{
+"name":"Durability",
+"value":"High"
+},
+
+{
+"name":"Maintenance",
+"value":"Easy"
+}
+
+],
+
+
+
+
+"applications":[
+
+
+{
+"name":"Base Cabinets",
+"image":"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+},
+
+
+{
+"name":"Kitchen Panels",
+"image":"https://images.unsplash.com/photo-1558997519-83ea9252edf8"
+}
+
+
+],
+
+
+
+
+
+
+"benefits":[
+
+
+{
+"icon":"fa-solid fa-layer-group",
+"title":"Multiple Styles",
+"text":"Different design choices."
+},
+
+
+{
+"icon":"fa-solid fa-shield",
+"title":"Durable",
+"text":"Long lasting surface."
+}
+
+
+],
+
+
+
+
+
+"faq":[
+
+
+{
+"question":"Why choose laminate finish?",
+
+"answer":"Laminate offers durability, design variety and easy maintenance."
+}
+
+
+]
+
+}
+
+]

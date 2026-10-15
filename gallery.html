@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Gallery | ECON Kitchen</title>
+
+    <meta name="description"
+          content="Explore ECON Kitchen's premium modular kitchen, wardrobe and interior design projects.">
+
+    <meta name="theme-color"
+          content="#201c19">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- EXISTING WEBSITE CSS -->
+
+    <link rel="stylesheet"
+          href="/assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="/assets/css/header.css">
+
+    <link rel="stylesheet"
+          href="/assets/css/page.css">
+
+    <link rel="stylesheet"
+          href="/assets/css/home.css">
+
+
+    <!-- GALLERY CSS -->
+
+    <link rel="stylesheet"
+          href="/assets/css/gallery.css">
+
+    <link rel="stylesheet" href="/assets/css/readability.css">
+    <link rel="stylesheet" href="/assets/css/translator.css">
+    <link rel="stylesheet" href="assets/css/responsive-master.css">
+ 
+
+
+<body class="gallery-page">
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <div id="header-slot"></div>
+
+
+    <main> 
+
+
+        <!-- =========================================
+             GALLERY
+        ========================================== -->
+
+        <section class="gallery-collection"
+                 id="galleryCollection">
+
+            <div class="gallery-container">
+
+
+                <!-- SECTION HEADER -->
+
+                <div class="gallery-section-head">
+
+                    <div>
+
+                        <span class="gallery-eyebrow">
+                            PROJECT SHOWCASE
+                        </span>
+
+                        <h2>
+                            Explore Our
+                            <span>Gallery.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Discover ideas for kitchens, wardrobes and
+                        complete interior spaces.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     DYNAMIC FILTERS
+                ====================================== -->
+
+                <div class="gallery-filter-wrap"
+                     id="galleryFilters">
+
+                    <!-- JS will create filters -->
+
+                </div>
+
+
+
+                <!-- =====================================
+                     DYNAMIC GRID
+                ====================================== -->
+
+                <div class="gallery-grid"
+                     id="galleryGrid">
+
+                    <!-- JS will create gallery cards -->
+
+                </div>
+
+
+
+                <!-- EMPTY STATE -->
+
+                <div class="gallery-empty"
+                     id="galleryEmpty"
+                     hidden>
+
+                    <div class="gallery-empty-icon">
+
+                        <i class="fa-regular fa-images"></i>
+
+                    </div>
+
+                    <h3>
+                        No projects found
+                    </h3>
+
+                    <p>
+                        There are currently no projects available
+                        in this category.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="gallery-cta-section">
+
+            <div class="gallery-container">
+
+                <div class="gallery-cta">
+
+                    <div>
+
+                        <span class="gallery-eyebrow">
+                            HAVE A SPACE IN MIND?
+                        </span>
+
+                        <h2>
+                            Let's design something
+                            <span>beautiful together.</span>
+                        </h2>
+
+                        <p>
+                            Book a free consultation with our design team
+                            and start planning your dream space.
+                        </p>
+
+                    </div>
+
+
+                    <a href="/contact.html"
+                       class="gallery-cta-btn">
+
+                        BOOK FREE CONSULTATION
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         LIGHTBOX
+    ========================================== -->
+
+    <div class="gallery-lightbox"
+         id="galleryLightbox"
+         aria-hidden="true">
+
+
+        <div class="gallery-lightbox-backdrop"
+             data-lightbox-close></div>
+
+
+        <button type="button"
+                class="gallery-lightbox-close"
+                id="lightboxClose"
+                aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <button type="button"
+                class="gallery-lightbox-arrow gallery-lightbox-prev"
+                id="lightboxPrev"
+                aria-label="Previous image">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <div class="gallery-lightbox-dialog">
+
+
+            <div class="gallery-lightbox-image">
+
+                <img id="lightboxImage"
+                     src=""
+                     alt="">
+
+            </div>
+
+
+        <div class="gallery-lightbox-info">
+
+    <div class="gallery-lightbox-project">
+
+        <span id="lightboxCategory">
+            MODULAR KITCHEN
+        </span>
+
+        <h3 id="lightboxTitle">
+            Project title
+        </h3>
+
+    </div>
+
+
+    <div class="gallery-lightbox-actions">
+
+        <a href="#"
+           id="lightboxWhatsapp"
+           class="gallery-whatsapp-btn"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Enquire on WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <span>Enquire on WhatsApp</span>
+
+        </a>
+
+
+        <span class="gallery-lightbox-counter"
+              id="lightboxCounter">
+            1 / 1
+        </span>
+
+    </div>
+
+</div>
+
+
+        </div>
+
+
+        <button type="button"
+                class="gallery-lightbox-arrow gallery-lightbox-next"
+                id="lightboxNext"
+                aria-label="Next image">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <div id="footer-slot"></div>
+
+
+
+    <!-- EXISTING COMPONENTS -->
+
+    <script type="module"
+            src="/assets/js/components.js"></script>
+
+
+    <!-- GALLERY -->
+
+    <script type="module"
+            src="/assets/js/gallery.js"></script>
+
+
+    <script src="/assets/js/translator.js"></script>
+</body>
+
+</html>
