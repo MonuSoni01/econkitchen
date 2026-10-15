@@ -1,0 +1,71 @@
+.pagehero {
+    padding: 100px 0 70px;
+    background: var(--dark);
+    color: #fff
+}
+
+.pagehero h1 {
+    color: #fff;
+    font-size: clamp(48px, 7vw, 82px);
+    max-width: 900px
+}
+
+.pagehero p {
+    max-width: 680px;
+    font-size: 18px
+}
+
+.content-card {
+    padding: 34px
+}
+
+.service-gallery img {
+    height: 330px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px
+}
+
+.contactwrap {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 30px
+}
+
+.formcard {
+    padding: 32px
+}
+
+.formcard form {
+    display: grid;
+    gap: 13px
+}
+
+.formcard input,
+.formcard select,
+.formcard textarea {
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff
+}
+
+.blog-card {
+    overflow: hidden
+}
+
+.blog-card img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover
+}
+
+.blog-card div {
+    padding: 24px
+}
+
+@media(max-width:800px) {
+    .contactwrap {
+        grid-template-columns: 1fr
+    }
+}

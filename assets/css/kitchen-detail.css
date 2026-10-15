@@ -1,0 +1,3209 @@
+/* =========================================================
+   ECON KITCHEN — KITCHEN DETAIL PAGE
+   COMPLETE FINAL CSS
+========================================================= */
+
+:root {
+    --kd-black: #171717;
+    --kd-dark: #222222;
+    --kd-text: #555555;
+    --kd-muted: #8d8d8d;
+
+    --kd-gold: #dfb936;
+    --kd-gold-dark: #b8890b;
+    --kd-gold-soft: #fbf1cc;
+
+    --kd-white: #ffffff;
+    --kd-cream: #f8f6f1;
+    --kd-soft: #f5f4f1;
+
+    --kd-border: #e5e1d9;
+
+    --kd-font: "Poppins", sans-serif;
+
+    --kd-header-offset: 82px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.kd-page {
+    margin: 0;
+    padding-bottom: 92px;
+
+    overflow-x: hidden;
+
+    background: var(--kd-cream);
+    color: var(--kd-black);
+
+    font-family: var(--font-body);
+}
+
+.kd-page button,
+.kd-page input,
+.kd-page textarea,
+.kd-page select {
+    font-family: var(--font-body);
+}
+
+.kd-page a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.kd-main {
+    position: relative;
+
+    width: 100%; 
+
+    background: var(--kd-cream);
+}
+
+.kd-detail-shell {
+    width: min(1440px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(430px, .88fr);
+
+    align-items: stretch;
+
+    background: #fff;
+
+    border: 1px solid var(--kd-border);
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   LEFT GALLERY
+========================================================= */
+
+.kd-gallery {
+    position: relative;
+
+    min-width: 0;
+
+    background: #efede8;
+
+    border-right: 1px solid var(--kd-border);
+}
+
+.kd-gallery-sticky {
+    position: sticky;
+
+    top: var(--kd-header-offset);
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.kd-main-image-wrap {
+    position: relative;
+
+    width: 100%;
+
+    height: clamp(560px, 73vh, 760px);
+
+    overflow: hidden;
+
+    background: #ebe9e4;
+}
+
+.kd-main-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    cursor: zoom-in;
+
+    transition:
+        transform .6s ease,
+        opacity .3s ease;
+}
+
+.kd-main-image-wrap:hover .kd-main-image {
+    transform: scale(1.01);
+}
+
+
+/* =========================================================
+   IMAGE LOADER
+========================================================= */
+
+.kd-image-loader {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 20;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(248, 246, 241, .78);
+
+    color: var(--kd-gold-dark);
+
+    font-size: 28px;
+}
+
+.kd-image-loader.active {
+    display: flex;
+}
+
+
+/* =========================================================
+   IMAGE ARROWS
+========================================================= */
+
+.kd-gallery-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    width: 48px;
+    height: 48px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(0, 0, 0, .07);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .96);
+
+    color: var(--kd-black);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.kd-gallery-arrow:hover {
+    background: var(--kd-gold);
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+}
+
+.kd-gallery-prev {
+    left: 20px;
+}
+
+.kd-gallery-next {
+    right: 20px;
+}
+
+
+/* =========================================================
+   IMAGE COUNT
+========================================================= */
+
+.kd-image-count {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 10;
+
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(23, 23, 23, .80);
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   EXPAND BUTTON
+========================================================= */
+
+.kd-expand {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 10;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: var(--kd-black);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.kd-expand:hover {
+    background: var(--kd-gold);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RIGHT DETAILS
+========================================================= */
+
+.kd-info {
+    min-width: 0;
+
+    padding: 28px 34px 42px;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.kd-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 18px;
+
+    color: #777;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.kd-breadcrumb a {
+    color: var(--kd-gold-dark);
+}
+
+.kd-breadcrumb i {
+    color: #bbb;
+
+    font-size: 14px;
+}
+
+.kd-breadcrumb span {
+    min-width: 0;
+    max-width: 300px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.kd-title-row {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 18px;
+}
+
+.kd-title-content {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.kd-category {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--kd-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.kd-title-row h1 {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    letter-spacing: -.5px;
+}
+
+
+/* =========================================================
+   SHARE / FAVOURITE
+========================================================= */
+
+.kd-top-actions {
+    flex: 0 0 auto;
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.kd-top-actions button {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.kd-top-actions button:hover {
+    border-color: var(--kd-gold);
+
+    background: var(--kd-gold-soft);
+}
+
+.kd-top-actions button.active {
+    background: var(--kd-gold);
+
+    border-color: var(--kd-gold);
+}
+
+
+/* =========================================================
+   TRUST CARDS
+========================================================= */
+
+.kd-trust-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 8px;
+
+    margin: 27px 0 34px;
+}
+
+.kd-trust-card {
+    min-width: 0;
+
+    min-height: 108px;
+
+    padding: 12px 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #e3e3e3;
+
+    border-radius: 7px;
+
+    background: #fff;
+}
+
+.kd-trust-icon {
+    width: 37px;
+    height: 37px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--kd-gold-soft);
+
+    color: var(--kd-gold-dark);
+
+    font-size: 14px;
+}
+
+.kd-trust-card strong {
+    color: #171717;
+
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.kd-trust-card small {
+    margin-top: 2px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.kd-product-details > h2 {
+    margin: 0 0 21px;
+
+    color: #171717;
+
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SPECIFICATIONS
+========================================================= */
+
+.kd-spec-table {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.kd-spec-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 5px;
+}
+
+.kd-spec-label {
+    flex: 0 0 auto;
+
+    color: #171717;
+
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.kd-spec-label::after {
+    content: ":";
+}
+
+.kd-spec-value {
+    color: #333;
+
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.kd-read-more-content {
+    max-height: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        max-height .55s ease,
+        opacity .3s ease,
+        margin .35s ease;
+}
+
+.kd-read-more-content.active {
+    max-height: 1100px;
+
+    margin-top: 24px;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.kd-about-inner,
+.kd-feature-inner {
+    padding-top: 19px;
+
+    border-top: 1px solid var(--kd-border);
+}
+
+.kd-feature-inner {
+    margin-top: 23px;
+}
+
+.kd-small-heading {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--kd-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+}
+
+.kd-description {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.kd-read-more {
+    margin-top: 17px;
+
+    padding: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--kd-gold-dark);
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kd-read-more i {
+    font-size: 14px;
+
+    transition: transform .3s ease;
+}
+
+.kd-read-more.active i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.kd-features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-top: 14px;
+}
+
+.kd-feature {
+    min-height: 55px;
+
+    padding: 11px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid var(--kd-border);
+
+    border-radius: 8px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.kd-feature i {
+    width: 27px;
+    height: 27px;
+
+    flex: 0 0 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--kd-gold-soft);
+
+    color: var(--kd-gold-dark);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   COST CARD
+========================================================= */
+
+.kd-cost-card {
+    min-height: 82px;
+
+    margin-top: 29px;
+
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    border: 1px solid var(--kd-gold);
+
+    border-radius: 12px;
+
+    background: #fafafa;
+
+    color: #171717;
+
+    transition: .25s ease;
+}
+
+.kd-cost-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .06);
+}
+
+.kd-cost-icon {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--kd-gold-soft);
+
+    color: var(--kd-gold-dark);
+}
+
+.kd-cost-card strong {
+    flex: 1;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FIXED BOTTOM NAVIGATION
+========================================================= */
+
+.kd-sticky-zone {
+    width: 100%;
+    height: 92px;
+}
+
+.kd-sticky-bar {
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    z-index: 9990;
+
+    width: min(1440px, calc(100% - 48px));
+    height: 92px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.12fr .88fr;
+
+    background: rgba(255, 255, 255, .98);
+
+    border: 1px solid var(--kd-border);
+
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, .08);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT
+========================================================= */
+
+.kd-design-navigation {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    border-right: 1px solid var(--kd-border);
+}
+
+.kd-nav-design {
+    min-width: 0;
+
+    padding: 14px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    color: #171717;
+
+    transition: background .25s ease;
+}
+
+.kd-nav-design:hover {
+    background: #faf9f6;
+}
+
+.kd-nav-prev {
+    border-right: 1px solid var(--kd-border);
+}
+
+.kd-nav-next {
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+.kd-nav-copy {
+    min-width: 0;
+}
+
+.kd-nav-copy small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #929292;
+
+    font-size: 14px;
+}
+
+.kd-nav-copy strong {
+    display: block;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #171717;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.kd-nav-arrow {
+    width: 39px;
+    height: 39px;
+
+    flex: 0 0 39px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--kd-border);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    font-size: 14px;
+
+    transition: .25s ease;
+}
+
+.kd-nav-design:hover .kd-nav-arrow {
+    border-color: var(--kd-gold);
+
+    background: var(--kd-gold-soft);
+}
+
+
+/* =========================================================
+   GET FREE QUOTE
+========================================================= */
+
+.kd-sticky-quote-wrap {
+    min-width: 0;
+
+    padding: 17px 24px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.kd-sticky-quote {
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 0 20px;
+
+    border-radius: 999px;
+
+    background: var(--kd-gold);
+
+    color: #171717;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: .25s ease;
+}
+
+.kd-sticky-quote:hover {
+    background: #171717;
+
+    color: #fff;
+}
+
+.kd-sticky-quote i {
+    font-size: 15px;
+
+    transition: transform .25s ease;
+}
+
+.kd-sticky-quote:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SECTION CONTAINER
+========================================================= */
+
+.kd-section-container {
+    width: min(1320px, calc(100% - 60px));
+
+    margin: 0 auto;
+}
+
+.kd-section-header {
+    margin-bottom: 29px;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.kd-section-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--kd-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.6px;
+}
+
+.kd-section-header h2,
+.kd-testimonial-heading h2,
+.kd-faq-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SIMILAR DESIGNS
+========================================================= */
+
+.kd-similar-section {
+    padding: 78px 0;
+
+    background: #fff;
+}
+
+.kd-slider-controls {
+    display: flex;
+
+    gap: 8px;
+}
+
+.kd-slider-controls button {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--kd-border);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.kd-slider-controls button:hover {
+    border-color: var(--kd-gold);
+
+    background: var(--kd-gold);
+}
+
+.kd-similar-slider {
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    padding-bottom: 8px;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+.kd-similar-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.kd-similar-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border: 1px solid var(--kd-border);
+
+    border-radius: 13px;
+
+    background: #fff;
+
+    color: #171717;
+
+    scroll-snap-align: start;
+
+    transition: .3s ease;
+}
+
+.kd-similar-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, .07);
+}
+
+.kd-similar-image {
+    height: 255px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+.kd-similar-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.kd-similar-card:hover img {
+    transform: scale(1.04);
+}
+
+.kd-similar-content {
+    padding: 18px;
+}
+
+.kd-similar-content small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--kd-gold-dark);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.kd-similar-content h3 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 21px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.kd-similar-size {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.kd-testimonial-section {
+    padding: 78px 0;
+
+    background: var(--kd-cream);
+}
+
+.kd-testimonial-heading {
+    max-width: 680px;
+
+    margin-bottom: 30px;
+}
+
+.kd-testimonial-heading p {
+    margin: 12px 0 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.kd-testimonial-track {
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+.kd-testimonial-track::-webkit-scrollbar {
+    display: none;
+}
+
+.kd-testimonial-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    padding: 27px;
+
+    border: 1px solid var(--kd-border);
+
+    border-radius: 13px;
+
+    background: #fff;
+
+    scroll-snap-align: start;
+}
+
+.kd-stars {
+    margin-bottom: 16px;
+
+    color: var(--kd-gold-dark);
+
+    letter-spacing: 3px;
+}
+
+.kd-testimonial-card > p {
+    min-height: 110px;
+
+    margin: 0 0 23px;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.kd-customer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.kd-customer-avatar {
+    width: 43px;
+    height: 43px;
+
+    flex: 0 0 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--kd-gold-soft);
+
+    color: var(--kd-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.kd-customer strong {
+    display: block;
+
+    color: #171717;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kd-customer small {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.kd-faq-section {
+    padding: 78px 0 90px;
+
+    background: #fff;
+}
+
+.kd-faq-container {
+    width: min(1050px, calc(100% - 60px));
+
+    margin: 0 auto;
+}
+
+.kd-faq-heading {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.kd-faq-heading p {
+    margin: 12px auto 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.kd-faq-list {
+    border-top: 1px solid var(--kd-border);
+}
+
+.kd-faq-item {
+    border-bottom: 1px solid var(--kd-border);
+}
+
+.kd-faq-question {
+    width: 100%;
+
+    padding: 21px 4px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #171717;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.kd-faq-question i {
+    font-size: 14px;
+
+    transition: transform .3s ease;
+}
+
+.kd-faq-item.active .kd-faq-question i {
+    transform: rotate(180deg);
+}
+
+.kd-faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height .4s ease,
+        opacity .3s ease;
+}
+
+.kd-faq-item.active .kd-faq-answer {
+    max-height: 400px;
+
+    opacity: 1;
+}
+
+.kd-faq-answer p {
+    margin: 0;
+
+    padding: 0 40px 21px 4px;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.kd-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    padding: 50px 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(10, 10, 10, .96);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: .3s ease;
+}
+
+.kd-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+.kd-lightbox-image-wrap {
+    position: relative;
+
+    max-width: 1200px;
+    max-height: 88vh;
+}
+
+.kd-lightbox-image-wrap img {
+    max-width: 100%;
+    max-height: 88vh;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.kd-lightbox-close {
+    position: absolute;
+
+    top: 24px;
+    right: 28px;
+
+    z-index: 5;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .08);
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.kd-lightbox-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 5;
+
+    width: 50px;
+    height: 50px;
+
+    transform: translateY(-50%);
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .09);
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.kd-lightbox-prev {
+    left: 25px;
+}
+
+.kd-lightbox-next {
+    right: 25px;
+}
+
+.kd-lightbox-count {
+    position: absolute;
+
+    left: 50%;
+    bottom: 14px;
+
+    transform: translateX(-50%);
+
+    padding: 7px 13px;
+
+    border-radius: 50px;
+
+    background: rgba(0, 0, 0, .65);
+
+    color: #fff;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    body.kd-page {
+        padding-bottom: 92px;
+    }
+
+    .kd-main {
+        padding-top: 0;
+    }
+
+    .kd-detail-shell {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .kd-gallery {
+        border-right: 0;
+    }
+
+    .kd-gallery-sticky {
+        position: relative;
+
+        top: auto;
+    }
+
+    .kd-main-image-wrap {
+        height: min(68vh, 650px);
+    }
+
+    .kd-info {
+        padding: 35px 6vw 44px;
+    }
+
+    .kd-sticky-bar {
+        width: 100%;
+
+        grid-template-columns:
+            1fr .7fr;
+    }
+
+    .kd-similar-card,
+    .kd-testimonial-card {
+        flex-basis:
+            calc((100% - 20px) / 2);
+    }
+}
+
+
+/* =========================================================
+   MOBILE — FINAL
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       PAGE
+    ===================================================== */
+
+    body.kd-page {
+        padding-bottom:
+            calc(76px + env(safe-area-inset-bottom));
+
+        overflow-x: hidden;
+    }
+
+    .kd-main {
+        padding-top: 0;
+    }
+
+    .kd-detail-shell {
+        width: 100%;
+
+        display: block;
+
+        margin: 0;
+
+        border: 0;
+    }
+
+
+    /* =====================================================
+       MOBILE GALLERY
+    ===================================================== */
+
+    .kd-gallery {
+        width: 100%;
+
+        border: 0;
+    }
+
+    .kd-gallery-sticky {
+        position: relative;
+
+        top: auto;
+
+        width: 100%;
+    }
+
+    /*
+       IMPORTANT:
+       Responsive according to viewport HEIGHT.
+       This prevents the image from pushing the title
+       completely below the first mobile screen.
+    */
+
+    .kd-main-image-wrap {
+        width: 100%;
+
+        height: clamp(280px, 47vh, 420px);
+
+        min-height: 280px;
+        max-height: 420px;
+
+        overflow: hidden;
+
+        background: #ebe9e4;
+    }
+
+    .kd-main-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center;
+
+        transform: none !important;
+    }
+
+    .kd-main-image-wrap:hover .kd-main-image {
+        transform: none;
+    }
+
+
+    /* Gallery Arrows */
+
+    .kd-gallery-arrow {
+        top: 50%;
+
+        width: 42px;
+        height: 42px;
+
+        transform: translateY(-50%);
+
+        box-shadow:
+            0 5px 18px rgba(0, 0, 0, .12);
+    }
+
+    .kd-gallery-arrow:hover {
+        transform: translateY(-50%);
+    }
+
+    .kd-gallery-prev {
+        left: 14px;
+    }
+
+    .kd-gallery-next {
+        right: 14px;
+    }
+
+
+    /* Image Counter */
+
+    .kd-image-count {
+        left: 14px;
+        bottom: 14px;
+
+        padding: 7px 11px;
+
+        font-size: 14px;
+    }
+
+
+    /* Expand */
+
+    .kd-expand {
+        right: 14px;
+        bottom: 14px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* =====================================================
+       INFO
+    ===================================================== */
+
+    .kd-info {
+        width: 100%;
+
+        padding:
+            18px 18px
+            38px;
+
+        background: #fff;
+    }
+
+
+    /* =====================================================
+       BREADCRUMB
+    ===================================================== */
+
+    .kd-breadcrumb {
+        margin: 0 0 12px;
+
+        gap: 5px;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .kd-breadcrumb span {
+        max-width: 160px;
+    }
+
+
+    /* =====================================================
+       TITLE
+    ===================================================== */
+
+    .kd-title-row {
+        position: relative;
+
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .kd-title-content {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+    .kd-category {
+        margin-bottom: 5px;
+
+        font-size: 14px;
+        line-height: 1.4;
+
+        letter-spacing: 1.2px;
+    }
+
+    .kd-title-row h1 {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        color: #171717;
+
+        font-size: 23px;
+        line-height: 1.25;
+        font-weight: 600;
+
+        letter-spacing: -.3px;
+
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+
+    /* =====================================================
+       TOP ACTIONS
+    ===================================================== */
+
+    .kd-top-actions {
+        flex: 0 0 auto;
+
+        display: flex;
+
+        gap: 5px;
+    }
+
+    .kd-top-actions button {
+        width: 38px;
+        height: 38px;
+
+        flex: 0 0 38px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TRUST CARDS
+    ===================================================== */
+
+    .kd-trust-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+        margin: 23px 0 29px;
+    }
+
+    .kd-trust-card {
+        min-height: 96px;
+
+        padding: 10px 6px;
+    }
+
+    .kd-trust-icon {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 6px;
+    }
+
+    .kd-trust-card strong {
+        font-size: 15px;
+    }
+
+    .kd-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       PRODUCT DETAILS
+    ===================================================== */
+
+    .kd-product-details > h2 {
+        margin-bottom: 18px;
+
+        font-size: 21px;
+    }
+
+    .kd-spec-table {
+        gap: 5px;
+    }
+
+    .kd-spec-label,
+    .kd-spec-value {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       READ MORE
+    ===================================================== */
+
+    .kd-read-more {
+        margin-top: 15px;
+
+        font-size: 14px;
+    }
+
+    .kd-read-more-content.active {
+        margin-top: 20px;
+    }
+
+    .kd-description {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       FEATURES
+    ===================================================== */
+
+    .kd-features {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .kd-feature {
+        min-height: 52px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       COST CARD
+    ===================================================== */
+
+    .kd-cost-card {
+        min-height: 74px;
+
+        margin-top: 25px;
+
+        padding: 13px 15px;
+
+        border-radius: 11px;
+    }
+
+    .kd-cost-icon {
+        width: 44px;
+        height: 44px;
+
+        flex: 0 0 44px;
+    }
+
+    .kd-cost-card strong {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       MOBILE FIXED BOTTOM BAR
+       PREV | GET FREE QUOTE | NEXT
+    ===================================================== */
+
+    .kd-sticky-zone {
+        width: 100%;
+        height: 0;
+    }
+
+    .kd-sticky-bar {
+        position: fixed !important;
+
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+
+        transform: none !important;
+
+        z-index: 9990;
+
+        width: 100vw !important;
+        max-width: 100vw !important;
+
+        height:
+            calc(70px + env(safe-area-inset-bottom));
+
+        margin: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            48px
+            minmax(0, 1fr)
+            48px !important;
+
+        grid-template-rows: 1fr;
+
+        align-items: center;
+
+        column-gap: 8px;
+
+        padding:
+            8px 12px
+            calc(8px + env(safe-area-inset-bottom));
+
+        background: rgba(255, 255, 255, .98);
+
+        border: 0;
+
+        border-top: 1px solid var(--kd-border);
+
+        box-shadow:
+            0 -7px 25px rgba(0, 0, 0, .10);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+    }
+
+    .kd-sticky-bar * {
+        box-sizing: border-box;
+    }
+
+
+    /* Navigation container */
+
+    .kd-design-navigation {
+        display: contents !important;
+    }
+
+
+    /* Previous / Next */
+
+    .kd-nav-design {
+        width: 46px !important;
+        height: 46px !important;
+
+        min-width: 0;
+
+        align-self: center;
+
+        padding: 0 !important;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 0 !important;
+
+        border-radius: 50%;
+
+        background: #f7f5f0;
+
+        overflow: hidden;
+    }
+
+    .kd-nav-prev {
+        grid-column: 1;
+        grid-row: 1;
+
+        justify-self: center;
+    }
+
+    .kd-nav-next {
+        grid-column: 3;
+        grid-row: 1;
+
+        justify-self: center;
+    }
+
+    .kd-nav-copy {
+        display: none !important;
+    }
+
+    .kd-nav-arrow {
+        width: 46px;
+        height: 46px;
+
+        flex: 0 0 46px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        border: 0;
+
+        border-radius: 50%;
+
+        background: transparent;
+
+        color: #171717;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       CENTER QUOTE
+    ===================================================== */
+
+    .kd-sticky-quote-wrap {
+        grid-column: 2;
+        grid-row: 1;
+
+        min-width: 0;
+        max-width: 100%;
+
+        width: 100%;
+
+        padding: 0 !important;
+
+        display: block;
+    }
+
+    .kd-sticky-quote {
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        height: 50px;
+
+        margin: 0;
+
+        padding: 0 14px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 9px;
+
+        overflow: hidden;
+
+        border-radius: 999px;
+
+        background: var(--kd-gold);
+
+        color: #171717;
+
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 600;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       SECTION CONTAINER
+    ===================================================== */
+
+    .kd-section-container,
+    .kd-faq-container {
+        width: calc(100% - 40px);
+    }
+
+    .kd-section-header {
+        margin-bottom: 23px;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .kd-section-header h2,
+    .kd-testimonial-heading h2,
+    .kd-faq-heading h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+
+    /* =====================================================
+       SIMILAR DESIGNS
+    ===================================================== */
+
+    .kd-similar-section {
+        padding: 58px 0;
+
+        overflow: hidden;
+    }
+
+    .kd-slider-controls {
+        display: none;
+    }
+
+    .kd-similar-slider {
+        margin-right: -20px;
+
+        padding-right: 20px;
+        padding-bottom: 5px;
+
+        gap: 14px;
+    }
+
+    .kd-similar-card {
+        flex: 0 0 86%;
+
+        border-radius: 11px;
+    }
+
+    .kd-similar-image {
+        height: 225px;
+    }
+
+    .kd-similar-content {
+        padding: 16px;
+    }
+
+    .kd-similar-content h3 {
+        font-size: 19px;
+        line-height: 1.35;
+    }
+
+    .kd-similar-size {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    .kd-testimonial-section {
+        padding: 58px 0;
+
+        overflow: hidden;
+    }
+
+    .kd-testimonial-heading {
+        margin-bottom: 25px;
+    }
+
+    .kd-testimonial-heading p {
+        font-size: 14px;
+    }
+
+    .kd-testimonial-track {
+        margin-right: -20px;
+
+        padding-right: 20px;
+
+        gap: 14px;
+    }
+
+    .kd-testimonial-card {
+        flex: 0 0 88%;
+
+        padding: 23px;
+    }
+
+    .kd-testimonial-card > p {
+        min-height: auto;
+
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    .kd-faq-section {
+        padding: 58px 0 75px;
+    }
+
+    .kd-faq-heading {
+        margin-bottom: 28px;
+    }
+
+    .kd-faq-heading p {
+        font-size: 14px;
+    }
+
+    .kd-faq-question {
+        padding: 19px 2px;
+
+        font-size: 14px;
+    }
+
+    .kd-faq-answer p {
+        padding: 0 20px 20px 2px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       WHATSAPP
+       Keep ABOVE fixed bottom bar
+    ===================================================== */
+
+    .whatsapp-float,
+    .whatsapp-btn,
+    .floating-whatsapp {
+        bottom:
+            calc(88px + env(safe-area-inset-bottom)) !important;
+    }
+
+
+    /* =====================================================
+       LIGHTBOX
+    ===================================================== */
+
+    .kd-lightbox {
+        padding: 70px 15px;
+    }
+
+    .kd-lightbox-close {
+        top: 17px;
+        right: 17px;
+    }
+
+    .kd-lightbox-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .kd-lightbox-prev {
+        left: 9px;
+    }
+
+    .kd-lightbox-next {
+        right: 9px;
+    }
+}
+
+
+/* =========================================================
+   SHORT HEIGHT MOBILE
+   Heading stays visible sooner
+========================================================= */
+
+@media (max-width: 700px) and (max-height: 760px) {
+
+    .kd-main-image-wrap {
+        height: 42vh;
+
+        min-height: 250px;
+        max-height: 330px;
+    }
+
+    .kd-info {
+        padding-top: 15px;
+    }
+
+    .kd-breadcrumb {
+        margin-bottom: 9px;
+    }
+
+    .kd-title-row h1 {
+        font-size: 21px;
+        line-height: 1.22;
+    }
+}
+
+
+/* =========================================================
+   VERY SHORT MOBILE
+========================================================= */
+
+@media (max-width: 700px) and (max-height: 650px) {
+
+    .kd-main-image-wrap {
+        height: 38vh;
+
+        min-height: 220px;
+        max-height: 280px;
+    }
+
+    .kd-info {
+        padding-top: 13px;
+    }
+
+    .kd-title-row h1 {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .kd-info {
+        padding:
+            17px 16px
+            34px;
+    }
+
+    .kd-title-row {
+        gap: 8px;
+    }
+
+    .kd-title-row h1 {
+        font-size: 22px;
+    }
+
+    .kd-top-actions {
+        gap: 4px;
+    }
+
+    .kd-top-actions button {
+        width: 36px;
+        height: 36px;
+
+        flex-basis: 36px;
+    }
+
+    .kd-section-container,
+    .kd-faq-container {
+        width: calc(100% - 32px);
+    }
+
+    .kd-similar-slider,
+    .kd-testimonial-track {
+        margin-right: -16px;
+
+        padding-right: 16px;
+    }
+
+    .kd-similar-card {
+        flex-basis: 88%;
+    }
+
+    .kd-similar-image {
+        height: 215px;
+    }
+
+    .kd-testimonial-card {
+        flex-basis: 90%;
+    }
+
+    .kd-sticky-bar {
+        grid-template-columns:
+            44px
+            minmax(0, 1fr)
+            44px !important;
+
+        column-gap: 6px;
+
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .kd-nav-design,
+    .kd-nav-arrow {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .kd-nav-arrow {
+        flex-basis: 42px;
+    }
+
+    .kd-sticky-quote {
+        height: 48px;
+
+        padding: 0 10px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .kd-title-row h1 {
+        font-size: 20px;
+    }
+
+    .kd-sticky-bar {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            40px !important;
+
+        column-gap: 5px;
+
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .kd-nav-design,
+    .kd-nav-arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .kd-nav-arrow {
+        flex-basis: 40px;
+    }
+
+    .kd-sticky-quote {
+        height: 46px;
+
+        padding: 0 8px;
+
+        gap: 6px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.kd-page button:focus-visible,
+.kd-page a:focus-visible {
+    outline: 3px solid rgba(223, 185, 54, .38);
+
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   RIGHT-COLUMN CONTENT LAYOUT — FINAL MERGED OVERRIDES
+   Explore More + Happy Homes live inside .kd-info.
+========================================================= */
+
+.kd-gallery {
+    align-self: stretch;
+}
+
+.kd-gallery-sticky {
+    z-index: 2;
+}
+
+.kd-info {
+    padding-bottom: 48px;
+}
+
+.kd-info .kd-cost-card {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.kd-info .kd-inside-info {
+    width: 100%;
+    margin: 48px 0 0;
+    padding: 42px 0 0;
+    background: transparent;
+    border-top: 1px solid var(--kd-border);
+    overflow: hidden;
+}
+
+.kd-info .kd-similar-section,
+.kd-info .kd-testimonial-section {
+    width: 100%;
+    padding-bottom: 0;
+    background: transparent;
+}
+
+.kd-info .kd-section-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.kd-info .kd-section-header {
+    width: 100%;
+    margin: 0 0 24px;
+    gap: 18px;
+}
+
+.kd-info .kd-section-header h2,
+.kd-info .kd-testimonial-heading h2 {
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+.kd-info .kd-section-label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.kd-info .kd-slider-controls {
+    flex: 0 0 auto;
+    gap: 7px;
+}
+
+.kd-info .kd-slider-controls button {
+    width: 40px;
+    height: 40px;
+}
+
+.kd-info .kd-similar-slider {
+    width: 100%;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 0 8px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+.kd-info .kd-similar-card {
+    flex: 0 0 calc(78% - 4px);
+    min-width: 0;
+    border-radius: 12px;
+}
+
+.kd-info .kd-similar-image {
+    height: 235px;
+}
+
+.kd-info .kd-similar-content {
+    padding: 17px;
+}
+
+.kd-info .kd-similar-content h3 {
+    font-size: 18px;
+}
+
+.kd-info .kd-testimonial-section {
+    margin-top: 48px;
+}
+
+.kd-info .kd-testimonial-heading {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 24px;
+}
+
+.kd-info .kd-testimonial-heading p {
+    max-width: 520px;
+    margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.kd-info .kd-testimonial-track {
+    width: 100%;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 0 8px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+.kd-info .kd-testimonial-card {
+    flex: 0 0 82%;
+    min-width: 0;
+    padding: 24px;
+    scroll-snap-align: start;
+}
+
+.kd-info .kd-testimonial-card > p {
+    min-height: auto;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1050px) {
+    .kd-info .kd-inside-info {
+        margin-top: 46px;
+        padding-top: 40px;
+    }
+
+    .kd-info .kd-similar-card,
+    .kd-info .kd-testimonial-card {
+        flex-basis: calc((100% - 16px) / 2);
+    }
+
+    .kd-info .kd-similar-image {
+        height: 260px;
+    }
+}
+
+@media (max-width: 700px) {
+    .kd-info .kd-inside-info {
+        margin-top: 38px;
+        padding-top: 34px;
+    }
+
+    .kd-info .kd-section-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .kd-info .kd-section-header {
+        margin-bottom: 21px;
+        gap: 12px;
+    }
+
+    .kd-info .kd-section-header h2,
+    .kd-info .kd-testimonial-heading h2 {
+        font-size: 23px;
+    }
+
+    .kd-info .kd-slider-controls {
+        display: none;
+    }
+
+    .kd-info .kd-similar-slider {
+        width: auto;
+        margin-right: -18px;
+        padding-right: 18px;
+        padding-bottom: 6px;
+        gap: 13px;
+    }
+
+    .kd-info .kd-similar-card {
+        flex: 0 0 87%;
+    }
+
+    .kd-info .kd-similar-image {
+        height: 220px;
+    }
+
+    .kd-info .kd-testimonial-section {
+        margin-top: 38px;
+    }
+
+    .kd-info .kd-testimonial-heading {
+        margin-bottom: 21px;
+    }
+
+    .kd-info .kd-testimonial-track {
+        width: auto;
+        margin-right: -18px;
+        padding-right: 18px;
+        padding-bottom: 6px;
+        gap: 13px;
+    }
+
+    .kd-info .kd-testimonial-card {
+        flex: 0 0 88%;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kd-info .kd-inside-info {
+        margin-top: 35px;
+        padding-top: 31px;
+    }
+
+    .kd-info .kd-section-header h2,
+    .kd-info .kd-testimonial-heading h2 {
+        font-size: 21px;
+    }
+
+    .kd-info .kd-similar-slider,
+    .kd-info .kd-testimonial-track {
+        margin-right: -16px;
+        padding-right: 16px;
+        gap: 12px;
+    }
+
+    .kd-info .kd-similar-card {
+        flex-basis: 88%;
+    }
+
+    .kd-info .kd-similar-image {
+        height: 210px;
+    }
+
+    .kd-info .kd-testimonial-card {
+        flex-basis: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .kd-info .kd-similar-slider,
+    .kd-info .kd-testimonial-track {
+        margin-right: -14px;
+        padding-right: 14px;
+    }
+
+    .kd-info .kd-similar-card {
+        flex-basis: 91%;
+    }
+
+    .kd-info .kd-testimonial-card {
+        flex-basis: 92%;
+    }
+
+    .kd-info .kd-similar-image {
+        height: 195px;
+    }
+}
+
+
+/* =========================================================
+   FAQ INSIDE RIGHT DETAIL COLUMN — FINAL
+   ========================================================= */
+
+.kd-info .kd-faq-section {
+    width: 100%;
+    margin-top: 48px;
+    padding: 42px 0 0;
+    background: transparent;
+    border-top: 1px solid var(--kd-border);
+    overflow: visible;
+}
+
+.kd-info .kd-faq-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.kd-info .kd-faq-heading {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 24px;
+}
+
+.kd-info .kd-faq-heading h2 {
+    margin: 0;
+    color: #171717;
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -.3px;
+}
+
+.kd-info .kd-faq-heading p {
+    max-width: 520px;
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.kd-info .kd-faq-list {
+    width: 100%;
+}
+
+@media (max-width: 1050px) {
+    .kd-info .kd-faq-section {
+        margin-top: 46px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .kd-info .kd-faq-section {
+        margin-top: 38px;
+        padding: 34px 0 0;
+        overflow: visible;
+    }
+
+    .kd-info .kd-faq-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .kd-info .kd-faq-heading {
+        margin-bottom: 21px;
+    }
+
+    .kd-info .kd-faq-heading h2 {
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    .kd-info .kd-faq-heading p {
+        margin-top: 9px;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .kd-info .kd-faq-question {
+        padding: 18px 2px;
+        font-size: 14px;
+    }
+
+    .kd-info .kd-faq-answer p {
+        padding: 0 18px 18px 2px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kd-info .kd-faq-heading h2 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 360px) {
+    .kd-info .kd-faq-heading h2 {
+        font-size: 20px;
+    }
+}
+
+/* =========================================================
+   LAPTOP / SHORT DESKTOP VIEWPORT FIX
+   Goal:
+   Cost Calculator must remain visible in first screen
+========================================================= */
+
+@media (min-width: 1051px) and (max-height: 850px) {
+
+    /* Main image viewport ke according */
+    .kd-main-image-wrap {
+        height: calc(100vh - var(--kd-header-offset) - 92px);
+        min-height: 590px;
+        max-height: 690px;
+    }
+
+
+    /* Right panel compact */
+    .kd-info {
+        padding:
+            22px 28px
+            30px;
+    }
+
+
+    /* Breadcrumb */
+    .kd-breadcrumb {
+        margin-bottom: 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* Category */
+    .kd-category {
+        margin-bottom: 5px;
+
+        font-size: 14px;
+    }
+
+
+    /* Main Heading */
+    .kd-title-row h1 {
+        font-size: 27px;
+
+        line-height: 1.16;
+    }
+
+
+    /* Share buttons */
+    .kd-top-actions button {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Trust cards */
+    .kd-trust-grid {
+        margin:
+            20px 0
+            25px;
+
+        gap: 7px;
+    }
+
+
+    .kd-trust-card {
+        min-height: 92px;
+
+        padding: 9px 6px;
+    }
+
+
+    .kd-trust-icon {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .kd-trust-card strong {
+        font-size: 15px;
+    }
+
+
+    .kd-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* Details heading */
+    .kd-product-details > h2 {
+        margin-bottom: 15px;
+
+        font-size: 22px;
+    }
+
+
+    /* Specifications */
+    .kd-spec-table {
+        gap: 3px;
+    }
+
+
+    .kd-spec-label,
+    .kd-spec-value {
+        font-size: 14px;
+
+        line-height: 1.45;
+    }
+
+
+    /* Read more */
+    .kd-read-more {
+        margin-top: 12px;
+
+        font-size: 15px;
+    }
+
+
+    /* Calculator Card */
+    .kd-cost-card {
+        min-height: 68px;
+
+        margin-top: 20px;
+
+        padding: 10px 15px;
+    }
+
+
+    .kd-cost-icon {
+        width: 42px;
+        height: 42px;
+
+        flex-basis: 42px;
+    }
+
+
+    .kd-cost-card strong {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SHORT LAPTOP
+   Example: 1366 × 768 / 1280 × 720
+========================================================= */
+
+@media (min-width: 1051px) and (max-height: 760px) {
+
+    .kd-info {
+        padding:
+            16px 24px
+            24px;
+    }
+
+
+    .kd-breadcrumb {
+        margin-bottom: 8px;
+
+        font-size: 14px;
+    }
+
+
+    .kd-category {
+        margin-bottom: 3px;
+
+        font-size: 14px;
+    }
+
+
+    .kd-title-row h1 {
+        font-size: 24px;
+
+        line-height: 1.12;
+    }
+
+
+    .kd-top-actions button {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* Trust Cards */
+
+    .kd-trust-grid {
+        margin:
+            15px 0
+            19px;
+
+        gap: 6px;
+    }
+
+
+    .kd-trust-card {
+        min-height: 78px;
+
+        padding: 7px 5px;
+    }
+
+
+    .kd-trust-icon {
+        width: 30px;
+        height: 30px;
+
+        margin-bottom: 4px;
+
+        font-size: 15px;
+    }
+
+
+    .kd-trust-card strong {
+        font-size: 14px;
+    }
+
+
+    .kd-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* Details */
+
+    .kd-product-details > h2 {
+        margin-bottom: 11px;
+
+        font-size: 20px;
+    }
+
+
+    .kd-spec-table {
+        gap: 1px;
+    }
+
+
+    .kd-spec-label,
+    .kd-spec-value {
+        font-size: 15px;
+
+        line-height: 1.4;
+    }
+
+
+    .kd-read-more {
+        margin-top: 9px;
+
+        font-size: 15px;
+    }
+
+
+    /* Calculator */
+
+    .kd-cost-card {
+        min-height: 60px;
+
+        margin-top: 14px;
+
+        padding: 8px 13px;
+
+        border-radius: 10px;
+    }
+
+
+    .kd-cost-icon {
+        width: 38px;
+        height: 38px;
+
+        flex: 0 0 38px;
+    }
+
+
+    .kd-cost-card strong {
+        font-size: 15px;
+    }
+
+
+    /* Image height */
+    .kd-main-image-wrap {
+        height: calc(100vh - var(--kd-header-offset) - 92px);
+
+        min-height: 520px;
+        max-height: 620px;
+    }
+
+}

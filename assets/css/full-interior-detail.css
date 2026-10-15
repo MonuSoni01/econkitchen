@@ -1,0 +1,2944 @@
+/* =========================================================
+   ECON KITCHEN — FULL INTERIOR DETAIL PAGE
+   COMPLETE FINAL CSS
+========================================================= */
+
+:root {
+    --fid-black: #171717;
+    --fid-dark: #222222;
+    --fid-text: #555555;
+    --fid-muted: #8d8d8d;
+
+    --fid-gold: #dfb936;
+    --fid-gold-dark: #b8890b;
+    --fid-gold-soft: #fbf1cc;
+
+    --fid-white: #ffffff;
+    --fid-cream: #f8f6f1;
+    --fid-soft: #f5f4f1;
+
+    --fid-border: #e5e1d9;
+
+    --fid-header-offset: 82px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.fid-page {
+    margin: 0;
+    padding-bottom: 92px;
+
+    overflow-x: hidden;
+
+    background: var(--fid-cream);
+    color: var(--fid-black);
+
+    font-family: var(--font-body);
+}
+
+.fid-page button,
+.fid-page input,
+.fid-page textarea,
+.fid-page select {
+    font-family: var(--font-body);
+}
+
+.fid-page a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.fid-main {
+    position: relative;
+
+    width: 100%; 
+
+    background: var(--fid-cream);
+}
+
+.fid-detail-shell {
+    width: min(1440px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(430px, .88fr);
+
+    align-items: stretch;
+
+    background: #fff;
+
+    border: 1px solid var(--fid-border);
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   LEFT GALLERY
+========================================================= */
+
+.fid-gallery {
+    position: relative;
+
+    min-width: 0;
+
+    background: #efede8;
+
+    border-right: 1px solid var(--fid-border);
+}
+
+.fid-gallery-sticky {
+    position: sticky;
+
+    top: var(--fid-header-offset);
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.fid-main-image-wrap {
+    position: relative;
+
+    width: 100%;
+
+    height: clamp(560px, 73vh, 760px);
+
+    overflow: hidden;
+
+    background: #ebe9e4;
+}
+
+.fid-main-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    cursor: zoom-in;
+
+    transition:
+        transform .6s ease,
+        opacity .3s ease;
+}
+
+.fid-main-image-wrap:hover .fid-main-image {
+    transform: scale(1.01);
+}
+
+
+/* =========================================================
+   IMAGE LOADER
+========================================================= */
+
+.fid-image-loader {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 20;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(248, 246, 241, .78);
+
+    color: var(--fid-gold-dark);
+
+    font-size: 28px;
+}
+
+.fid-image-loader.active {
+    display: flex;
+}
+
+
+/* =========================================================
+   IMAGE ARROWS
+========================================================= */
+
+.fid-gallery-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    width: 48px;
+    height: 48px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .96);
+
+    color: var(--fid-black);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.fid-gallery-arrow:hover {
+    background: var(--fid-gold);
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+}
+
+.fid-gallery-prev {
+    left: 20px;
+}
+
+.fid-gallery-next {
+    right: 20px;
+}
+
+
+/* =========================================================
+   IMAGE COUNT
+========================================================= */
+
+.fid-image-count {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 10;
+
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(23, 23, 23, .80);
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   EXPAND BUTTON
+========================================================= */
+
+.fid-expand {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 10;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: var(--fid-black);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.fid-expand:hover {
+    background: var(--fid-gold);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RIGHT DETAILS
+========================================================= */
+
+.fid-info {
+    min-width: 0;
+
+    padding: 28px 34px 42px;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.fid-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 18px;
+
+    color: #777;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.fid-breadcrumb a {
+    color: var(--fid-gold-dark);
+}
+
+.fid-breadcrumb i {
+    color: #bbb;
+
+    font-size: 14px;
+}
+
+.fid-breadcrumb span {
+    min-width: 0;
+    max-width: 300px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.fid-title-row {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 18px;
+}
+
+.fid-title-content {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.fid-category {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--fid-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.fid-title-row h1 {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    letter-spacing: -.5px;
+}
+
+
+/* =========================================================
+   SHARE / FAVOURITE
+========================================================= */
+
+.fid-top-actions {
+    flex: 0 0 auto;
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.fid-top-actions button {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.fid-top-actions button:hover {
+    border-color: var(--fid-gold);
+
+    background: var(--fid-gold-soft);
+}
+
+.fid-top-actions button.active {
+    background: var(--fid-gold);
+
+    border-color: var(--fid-gold);
+}
+
+
+/* =========================================================
+   TRUST CARDS
+========================================================= */
+
+.fid-trust-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 8px;
+
+    margin: 27px 0 34px;
+}
+
+.fid-trust-card {
+    min-width: 0;
+
+    min-height: 108px;
+
+    padding: 12px 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #e3e3e3;
+
+    border-radius: 7px;
+
+    background: #fff;
+}
+
+.fid-trust-icon {
+    width: 37px;
+    height: 37px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--fid-gold-soft);
+
+    color: var(--fid-gold-dark);
+
+    font-size: 14px;
+}
+
+.fid-trust-card strong {
+    color: #171717;
+
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.fid-trust-card small {
+    margin-top: 2px;
+
+    color: #555;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.fid-product-details > h2 {
+    margin: 0 0 21px;
+
+    color: #171717;
+
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SPECIFICATIONS
+========================================================= */
+
+.fid-spec-table {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.fid-spec-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 5px;
+}
+
+.fid-spec-label {
+    flex: 0 0 auto;
+
+    color: #171717;
+
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.fid-spec-label::after {
+    content: ":";
+}
+
+.fid-spec-value {
+    color: #333;
+
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.fid-read-more-content {
+    max-height: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        max-height .55s ease,
+        opacity .3s ease,
+        margin .35s ease;
+}
+
+.fid-read-more-content.active {
+    max-height: 1100px;
+
+    margin-top: 24px;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.fid-about-inner,
+.fid-feature-inner {
+    padding-top: 19px;
+
+    border-top: 1px solid var(--fid-border);
+}
+
+.fid-feature-inner {
+    margin-top: 23px;
+}
+
+.fid-small-heading {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--fid-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+}
+
+.fid-description {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.fid-read-more {
+    margin-top: 17px;
+
+    padding: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--fid-gold-dark);
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fid-read-more i {
+    font-size: 14px;
+
+    transition: transform .3s ease;
+}
+
+.fid-read-more.active i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.fid-features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-top: 14px;
+}
+
+.fid-feature {
+    min-height: 55px;
+
+    padding: 11px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid var(--fid-border);
+
+    border-radius: 8px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.fid-feature i {
+    width: 27px;
+    height: 27px;
+
+    flex: 0 0 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--fid-gold-soft);
+
+    color: var(--fid-gold-dark);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   COST CARD
+========================================================= */
+
+.fid-cost-card {
+    min-height: 82px;
+
+    margin-top: 29px;
+
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    border: 1px solid var(--fid-gold);
+
+    border-radius: 12px;
+
+    background: #fafafa;
+
+    color: #171717;
+
+    transition: .25s ease;
+}
+
+.fid-cost-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .06);
+}
+
+.fid-cost-icon {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--fid-gold-soft);
+
+    color: var(--fid-gold-dark);
+}
+
+.fid-cost-card strong {
+    flex: 1;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FIXED BOTTOM NAVIGATION
+========================================================= */
+
+.fid-sticky-zone {
+    width: 100%;
+    height: 92px;
+}
+
+.fid-sticky-bar {
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    z-index: 9990;
+
+    width: min(1440px, calc(100% - 48px));
+    height: 92px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.12fr .88fr;
+
+    background: rgba(255, 255, 255, .98);
+
+    border: 1px solid var(--fid-border);
+
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, .08);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT
+========================================================= */
+
+.fid-design-navigation {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    border-right: 1px solid var(--fid-border);
+}
+
+.fid-nav-design {
+    min-width: 0;
+
+    padding: 14px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    color: #171717;
+
+    transition: background .25s ease;
+}
+
+.fid-nav-design:hover {
+    background: #faf9f6;
+}
+
+.fid-nav-prev {
+    border-right: 1px solid var(--fid-border);
+}
+
+.fid-nav-next {
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+.fid-nav-copy {
+    min-width: 0;
+}
+
+.fid-nav-copy small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #929292;
+
+    font-size: 14px;
+}
+
+.fid-nav-copy strong {
+    display: block;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #171717;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fid-nav-arrow {
+    width: 39px;
+    height: 39px;
+
+    flex: 0 0 39px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--fid-border);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    font-size: 14px;
+
+    transition: .25s ease;
+}
+
+.fid-nav-design:hover .fid-nav-arrow {
+    border-color: var(--fid-gold);
+
+    background: var(--fid-gold-soft);
+}
+
+
+/* =========================================================
+   GET FREE QUOTE
+========================================================= */
+
+.fid-sticky-quote-wrap {
+    min-width: 0;
+
+    padding: 17px 24px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.fid-sticky-quote {
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 0 20px;
+
+    border-radius: 999px;
+
+    background: var(--fid-gold);
+
+    color: #171717;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: .25s ease;
+}
+
+.fid-sticky-quote:hover {
+    background: #171717;
+
+    color: #fff;
+}
+
+.fid-sticky-quote i {
+    font-size: 15px;
+
+    transition: transform .25s ease;
+}
+
+.fid-sticky-quote:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SECTION CONTAINER
+========================================================= */
+
+.fid-section-container {
+    width: min(1320px, calc(100% - 60px));
+
+    margin: 0 auto;
+}
+
+.fid-section-header {
+    margin-bottom: 29px;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.fid-section-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--fid-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 1.6px;
+}
+
+.fid-section-header h2,
+.fid-testimonial-heading h2,
+.fid-faq-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SIMILAR DESIGNS
+========================================================= */
+
+.fid-similar-section {
+    padding: 78px 0;
+
+    background: #fff;
+}
+
+.fid-slider-controls {
+    display: flex;
+
+    gap: 8px;
+}
+
+.fid-slider-controls button {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--fid-border);
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #171717;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.fid-slider-controls button:hover {
+    border-color: var(--fid-gold);
+
+    background: var(--fid-gold);
+}
+
+.fid-similar-slider {
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    padding-bottom: 8px;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+.fid-similar-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.fid-similar-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border: 1px solid var(--fid-border);
+
+    border-radius: 13px;
+
+    background: #fff;
+
+    color: #171717;
+
+    scroll-snap-align: start;
+
+    transition: .3s ease;
+}
+
+.fid-similar-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, .07);
+}
+
+.fid-similar-image {
+    height: 255px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+.fid-similar-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.fid-similar-card:hover img {
+    transform: scale(1.04);
+}
+
+.fid-similar-content {
+    padding: 18px;
+}
+
+.fid-similar-content small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--fid-gold-dark);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.fid-similar-content h3 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 21px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.fid-similar-size {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.fid-testimonial-section {
+    padding: 78px 0;
+
+    background: var(--fid-cream);
+}
+
+.fid-testimonial-heading {
+    max-width: 680px;
+
+    margin-bottom: 30px;
+}
+
+.fid-testimonial-heading p {
+    margin: 12px 0 0;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.fid-testimonial-track {
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+.fid-testimonial-track::-webkit-scrollbar {
+    display: none;
+}
+
+.fid-testimonial-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+
+    padding: 27px;
+
+    border: 1px solid var(--fid-border);
+
+    border-radius: 13px;
+
+    background: #fff;
+
+    scroll-snap-align: start;
+}
+
+.fid-stars {
+    margin-bottom: 16px;
+
+    color: var(--fid-gold-dark);
+
+    letter-spacing: 3px;
+}
+
+.fid-testimonial-card > p {
+    min-height: 110px;
+
+    margin: 0 0 23px;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.fid-customer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.fid-customer-avatar {
+    width: 43px;
+    height: 43px;
+
+    flex: 0 0 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--fid-gold-soft);
+
+    color: var(--fid-gold-dark);
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fid-customer strong {
+    display: block;
+
+    color: #171717;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fid-customer small {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.fid-faq-section {
+    padding: 78px 0 90px;
+
+    background: #fff;
+}
+
+.fid-faq-container {
+    width: min(1050px, calc(100% - 60px));
+
+    margin: 0 auto;
+}
+
+.fid-faq-heading {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.fid-faq-heading p {
+    margin: 12px auto 0;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.fid-faq-list {
+    border-top: 1px solid var(--fid-border);
+}
+
+.fid-faq-item {
+    border-bottom: 1px solid var(--fid-border);
+}
+
+.fid-faq-question {
+    width: 100%;
+
+    padding: 21px 4px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #171717;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fid-faq-question i {
+    font-size: 14px;
+
+    transition: transform .3s ease;
+}
+
+.fid-faq-item.active .fid-faq-question i {
+    transform: rotate(180deg);
+}
+
+.fid-faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height .4s ease,
+        opacity .3s ease;
+}
+
+.fid-faq-item.active .fid-faq-answer {
+    max-height: 400px;
+
+    opacity: 1;
+}
+
+.fid-faq-answer p {
+    margin: 0;
+
+    padding: 0 40px 21px 4px;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.fid-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    padding: 50px 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(10, 10, 10, .96);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: .3s ease;
+}
+
+.fid-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+.fid-lightbox-image-wrap {
+    position: relative;
+
+    max-width: 1200px;
+    max-height: 88vh;
+}
+
+.fid-lightbox-image-wrap img {
+    max-width: 100%;
+    max-height: 88vh;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.fid-lightbox-close {
+    position: absolute;
+
+    top: 24px;
+    right: 28px;
+
+    z-index: 5;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .08);
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.fid-lightbox-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 5;
+
+    width: 50px;
+    height: 50px;
+
+    transform: translateY(-50%);
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .09);
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.fid-lightbox-prev {
+    left: 25px;
+}
+
+.fid-lightbox-next {
+    right: 25px;
+}
+
+.fid-lightbox-count {
+    position: absolute;
+
+    left: 50%;
+    bottom: 14px;
+
+    transform: translateX(-50%);
+
+    padding: 7px 13px;
+
+    border-radius: 50px;
+
+    background: rgba(0, 0, 0, .65);
+
+    color: #fff;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    body.fid-page {
+        padding-bottom: 92px;
+    }
+
+    .fid-main {
+        padding-top: 0;
+    }
+
+    .fid-detail-shell {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .fid-gallery {
+        border-right: 0;
+    }
+
+    .fid-gallery-sticky {
+        position: relative;
+
+        top: auto;
+    }
+
+    .fid-main-image-wrap {
+        height: min(68vh, 650px);
+    }
+
+    .fid-info {
+        padding: 35px 6vw 44px;
+    }
+
+    .fid-sticky-bar {
+        width: 100%;
+
+        grid-template-columns:
+            1fr .7fr;
+    }
+
+    .fid-similar-card,
+    .fid-testimonial-card {
+        flex-basis:
+            calc((100% - 20px) / 2);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    body.fid-page {
+        padding-bottom:
+            calc(76px + env(safe-area-inset-bottom));
+
+        overflow-x: hidden;
+    }
+
+    .fid-main {
+        padding-top: 0;
+    }
+
+    .fid-detail-shell {
+        width: 100%;
+
+        display: block;
+
+        margin: 0;
+
+        border: 0;
+    }
+
+
+    /* =====================================================
+       MOBILE GALLERY
+    ===================================================== */
+
+    .fid-gallery {
+        width: 100%;
+
+        border: 0;
+    }
+
+    .fid-gallery-sticky {
+        position: relative;
+
+        top: auto;
+
+        width: 100%;
+    }
+
+    .fid-main-image-wrap {
+        width: 100%;
+
+        height: clamp(280px, 47vh, 420px);
+
+        min-height: 280px;
+        max-height: 420px;
+
+        overflow: hidden;
+
+        background: #ebe9e4;
+    }
+
+    .fid-main-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+        object-position: center;
+
+        transform: none !important;
+    }
+
+    .fid-main-image-wrap:hover .fid-main-image {
+        transform: none;
+    }
+
+
+    /* Gallery Arrows */
+
+    .fid-gallery-arrow {
+        top: 50%;
+
+        width: 42px;
+        height: 42px;
+
+        transform: translateY(-50%);
+
+        box-shadow:
+            0 5px 18px rgba(0, 0, 0, .12);
+    }
+
+    .fid-gallery-arrow:hover {
+        transform: translateY(-50%);
+    }
+
+    .fid-gallery-prev {
+        left: 14px;
+    }
+
+    .fid-gallery-next {
+        right: 14px;
+    }
+
+
+    /* Image Counter */
+
+    .fid-image-count {
+        left: 14px;
+        bottom: 14px;
+
+        padding: 7px 11px;
+
+        font-size: 14px;
+    }
+
+
+    /* Expand */
+
+    .fid-expand {
+        right: 14px;
+        bottom: 14px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* =====================================================
+       INFO
+    ===================================================== */
+
+    .fid-info {
+        width: 100%;
+
+        padding:
+            18px 18px
+            38px;
+
+        background: #fff;
+    }
+
+
+    /* =====================================================
+       BREADCRUMB
+    ===================================================== */
+
+    .fid-breadcrumb {
+        margin: 0 0 12px;
+
+        gap: 5px;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .fid-breadcrumb span {
+        max-width: 160px;
+    }
+
+
+    /* =====================================================
+       TITLE
+    ===================================================== */
+
+    .fid-title-row {
+        position: relative;
+
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .fid-title-content {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+    .fid-category {
+        margin-bottom: 5px;
+
+        font-size: 14px;
+        line-height: 1.4;
+
+        letter-spacing: 1.2px;
+    }
+
+    .fid-title-row h1 {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        color: #171717;
+
+        font-size: 23px;
+        line-height: 1.25;
+        font-weight: 600;
+
+        letter-spacing: -.3px;
+
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+
+    /* =====================================================
+       TOP ACTIONS
+    ===================================================== */
+
+    .fid-top-actions {
+        flex: 0 0 auto;
+
+        display: flex;
+
+        gap: 5px;
+    }
+
+    .fid-top-actions button {
+        width: 38px;
+        height: 38px;
+
+        flex: 0 0 38px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TRUST CARDS
+    ===================================================== */
+
+    .fid-trust-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+        margin: 23px 0 29px;
+    }
+
+    .fid-trust-card {
+        min-height: 96px;
+
+        padding: 10px 6px;
+    }
+
+    .fid-trust-icon {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 6px;
+    }
+
+    .fid-trust-card strong {
+        font-size: 15px;
+    }
+
+    .fid-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       PRODUCT DETAILS
+    ===================================================== */
+
+    .fid-product-details > h2 {
+        margin-bottom: 18px;
+
+        font-size: 21px;
+    }
+
+    .fid-spec-table {
+        gap: 5px;
+    }
+
+    .fid-spec-label,
+    .fid-spec-value {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       READ MORE
+    ===================================================== */
+
+    .fid-read-more {
+        margin-top: 15px;
+
+        font-size: 14px;
+    }
+
+    .fid-read-more-content.active {
+        margin-top: 20px;
+    }
+
+    .fid-description {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       FEATURES
+    ===================================================== */
+
+    .fid-features {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .fid-feature {
+        min-height: 52px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       COST CARD
+    ===================================================== */
+
+    .fid-cost-card {
+        min-height: 74px;
+
+        margin-top: 25px;
+
+        padding: 13px 15px;
+
+        border-radius: 11px;
+    }
+
+    .fid-cost-icon {
+        width: 44px;
+        height: 44px;
+
+        flex: 0 0 44px;
+    }
+
+    .fid-cost-card strong {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       MOBILE FIXED BOTTOM BAR
+       PREV | GET FREE QUOTE | NEXT
+    ===================================================== */
+
+    .fid-sticky-zone {
+        width: 100%;
+        height: 0;
+    }
+
+    .fid-sticky-bar {
+        position: fixed !important;
+
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+
+        transform: none !important;
+
+        z-index: 9990;
+
+        width: 100vw !important;
+        max-width: 100vw !important;
+
+        height:
+            calc(70px + env(safe-area-inset-bottom));
+
+        margin: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+            48px
+            minmax(0, 1fr)
+            48px !important;
+
+        grid-template-rows: 1fr;
+
+        align-items: center;
+
+        column-gap: 8px;
+
+        padding:
+            8px 12px
+            calc(8px + env(safe-area-inset-bottom));
+
+        background: rgba(255, 255, 255, .98);
+
+        border: 0;
+
+        border-top: 1px solid var(--fid-border);
+
+        box-shadow:
+            0 -7px 25px rgba(0, 0, 0, .10);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+    }
+
+    .fid-sticky-bar * {
+        box-sizing: border-box;
+    }
+
+    .fid-design-navigation {
+        display: contents !important;
+    }
+
+
+    /* Previous / Next */
+
+    .fid-nav-design {
+        width: 46px !important;
+        height: 46px !important;
+
+        min-width: 0;
+
+        align-self: center;
+
+        padding: 0 !important;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 0 !important;
+
+        border-radius: 50%;
+
+        background: #f7f5f0;
+
+        overflow: hidden;
+    }
+
+    .fid-nav-prev {
+        grid-column: 1;
+        grid-row: 1;
+
+        justify-self: center;
+    }
+
+    .fid-nav-next {
+        grid-column: 3;
+        grid-row: 1;
+
+        justify-self: center;
+    }
+
+    .fid-nav-copy {
+        display: none !important;
+    }
+
+    .fid-nav-arrow {
+        width: 46px;
+        height: 46px;
+
+        flex: 0 0 46px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        border: 0;
+
+        border-radius: 50%;
+
+        background: transparent;
+
+        color: #171717;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       CENTER QUOTE
+    ===================================================== */
+
+    .fid-sticky-quote-wrap {
+        grid-column: 2;
+        grid-row: 1;
+
+        min-width: 0;
+        max-width: 100%;
+
+        width: 100%;
+
+        padding: 0 !important;
+
+        display: block;
+    }
+
+    .fid-sticky-quote {
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        height: 50px;
+
+        margin: 0;
+
+        padding: 0 14px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 9px;
+
+        overflow: hidden;
+
+        border-radius: 999px;
+
+        background: var(--fid-gold);
+
+        color: #171717;
+
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 600;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       SECTION CONTAINERS
+    ===================================================== */
+
+    .fid-section-container,
+    .fid-faq-container {
+        width: calc(100% - 40px);
+    }
+
+    .fid-section-header {
+        margin-bottom: 23px;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .fid-section-header h2,
+    .fid-testimonial-heading h2,
+    .fid-faq-heading h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+
+    /* =====================================================
+       SIMILAR DESIGNS
+    ===================================================== */
+
+    .fid-similar-section {
+        padding: 58px 0;
+
+        overflow: hidden;
+    }
+
+    .fid-slider-controls {
+        display: none;
+    }
+
+    .fid-similar-slider {
+        margin-right: -20px;
+
+        padding-right: 20px;
+        padding-bottom: 5px;
+
+        gap: 14px;
+    }
+
+    .fid-similar-card {
+        flex: 0 0 86%;
+
+        border-radius: 11px;
+    }
+
+    .fid-similar-image {
+        height: 225px;
+    }
+
+    .fid-similar-content {
+        padding: 16px;
+    }
+
+    .fid-similar-content h3 {
+        font-size: 19px;
+        line-height: 1.35;
+    }
+
+    .fid-similar-size {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    .fid-testimonial-section {
+        padding: 58px 0;
+
+        overflow: hidden;
+    }
+
+    .fid-testimonial-heading {
+        margin-bottom: 25px;
+    }
+
+    .fid-testimonial-heading p {
+        font-size: 14px;
+    }
+
+    .fid-testimonial-track {
+        margin-right: -20px;
+
+        padding-right: 20px;
+
+        gap: 14px;
+    }
+
+    .fid-testimonial-card {
+        flex: 0 0 88%;
+
+        padding: 23px;
+    }
+
+    .fid-testimonial-card > p {
+        min-height: auto;
+
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    .fid-faq-section {
+        padding: 58px 0 75px;
+    }
+
+    .fid-faq-heading {
+        margin-bottom: 28px;
+    }
+
+    .fid-faq-heading p {
+        font-size: 14px;
+    }
+
+    .fid-faq-question {
+        padding: 19px 2px;
+
+        font-size: 14px;
+    }
+
+    .fid-faq-answer p {
+        padding: 0 20px 20px 2px;
+
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       WHATSAPP
+       ABOVE FIXED BOTTOM BAR
+    ===================================================== */
+
+    .whatsapp-float,
+    .whatsapp-btn,
+    .floating-whatsapp {
+        bottom:
+            calc(88px + env(safe-area-inset-bottom)) !important;
+    }
+
+
+    /* =====================================================
+       LIGHTBOX
+    ===================================================== */
+
+    .fid-lightbox {
+        padding: 70px 15px;
+    }
+
+    .fid-lightbox-close {
+        top: 17px;
+        right: 17px;
+    }
+
+    .fid-lightbox-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .fid-lightbox-prev {
+        left: 9px;
+    }
+
+    .fid-lightbox-next {
+        right: 9px;
+    }
+}
+
+
+/* =========================================================
+   SHORT HEIGHT MOBILE
+========================================================= */
+
+@media (max-width: 700px) and (max-height: 760px) {
+
+    .fid-main-image-wrap {
+        height: 42vh;
+
+        min-height: 250px;
+        max-height: 330px;
+    }
+
+    .fid-info {
+        padding-top: 15px;
+    }
+
+    .fid-breadcrumb {
+        margin-bottom: 9px;
+    }
+
+    .fid-title-row h1 {
+        font-size: 21px;
+        line-height: 1.22;
+    }
+}
+
+
+/* =========================================================
+   VERY SHORT MOBILE
+========================================================= */
+
+@media (max-width: 700px) and (max-height: 650px) {
+
+    .fid-main-image-wrap {
+        height: 38vh;
+
+        min-height: 220px;
+        max-height: 280px;
+    }
+
+    .fid-info {
+        padding-top: 13px;
+    }
+
+    .fid-title-row h1 {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .fid-info {
+        padding:
+            17px 16px
+            34px;
+    }
+
+    .fid-title-row {
+        gap: 8px;
+    }
+
+    .fid-title-row h1 {
+        font-size: 22px;
+    }
+
+    .fid-top-actions {
+        gap: 4px;
+    }
+
+    .fid-top-actions button {
+        width: 36px;
+        height: 36px;
+
+        flex-basis: 36px;
+    }
+
+    .fid-section-container,
+    .fid-faq-container {
+        width: calc(100% - 32px);
+    }
+
+    .fid-similar-slider,
+    .fid-testimonial-track {
+        margin-right: -16px;
+
+        padding-right: 16px;
+    }
+
+    .fid-similar-card {
+        flex-basis: 88%;
+    }
+
+    .fid-similar-image {
+        height: 215px;
+    }
+
+    .fid-testimonial-card {
+        flex-basis: 90%;
+    }
+
+    .fid-sticky-bar {
+        grid-template-columns:
+            44px
+            minmax(0, 1fr)
+            44px !important;
+
+        column-gap: 6px;
+
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .fid-nav-design,
+    .fid-nav-arrow {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .fid-nav-arrow {
+        flex-basis: 42px;
+    }
+
+    .fid-sticky-quote {
+        height: 48px;
+
+        padding: 0 10px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .fid-title-row h1 {
+        font-size: 20px;
+    }
+
+    .fid-sticky-bar {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            40px !important;
+
+        column-gap: 5px;
+
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .fid-nav-design,
+    .fid-nav-arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .fid-nav-arrow {
+        flex-basis: 40px;
+    }
+
+    .fid-sticky-quote {
+        height: 46px;
+
+        padding: 0 8px;
+
+        gap: 6px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.fid-page button:focus-visible,
+.fid-page a:focus-visible {
+    outline: 3px solid rgba(223, 185, 54, .38);
+
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   RIGHT COLUMN — SIMILAR + TESTIMONIALS + FAQ
+   These sections now live inside .fid-info.
+========================================================= */
+
+.fid-info .fid-similar-section,
+.fid-info .fid-testimonial-section,
+.fid-info .fid-faq-section {
+    width: 100%;
+    padding: 48px 0 0;
+}
+
+.fid-info .fid-section-container,
+.fid-info .fid-faq-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.fid-info .fid-similar-section,
+.fid-info .fid-faq-section {
+    background: #fff;
+}
+
+.fid-info .fid-testimonial-section {
+    background: transparent;
+}
+
+.fid-info .fid-similar-slider,
+.fid-info .fid-testimonial-track {
+    gap: 20px;
+}
+
+.fid-info .fid-similar-card,
+.fid-info .fid-testimonial-card {
+    flex: 0 0 calc((100% - 20px) / 2);
+}
+
+.fid-info .fid-similar-image {
+    height: 210px;
+}
+
+.fid-info .fid-testimonial-card {
+    padding: 22px;
+}
+
+.fid-info .fid-testimonial-card > p {
+    min-height: 0;
+}
+
+.fid-info .fid-faq-heading {
+    max-width: none;
+    margin: 0 0 30px;
+    text-align: left;
+}
+
+.fid-info .fid-faq-heading p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 1050px) {
+    .fid-info .fid-similar-card,
+    .fid-info .fid-testimonial-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 700px) {
+    .fid-info .fid-similar-section,
+    .fid-info .fid-testimonial-section,
+    .fid-info .fid-faq-section {
+        padding: 40px 0 0;
+    }
+
+    .fid-info .fid-section-container,
+    .fid-info .fid-faq-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .fid-info .fid-similar-slider,
+    .fid-info .fid-testimonial-track {
+        margin-right: -18px;
+        padding-right: 18px;
+        gap: 14px;
+    }
+
+    .fid-info .fid-similar-card {
+        flex: 0 0 86%;
+    }
+
+    .fid-info .fid-testimonial-card {
+        flex: 0 0 88%;
+    }
+
+    .fid-info .fid-similar-image {
+        height: 225px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fid-info .fid-similar-slider,
+    .fid-info .fid-testimonial-track {
+        margin-right: -16px;
+        padding-right: 16px;
+    }
+
+    .fid-info .fid-similar-card {
+        flex-basis: 88%;
+    }
+
+    .fid-info .fid-testimonial-card {
+        flex-basis: 90%;
+    }
+
+    .fid-info .fid-similar-image {
+        height: 215px;
+    }
+}
+
+/* =========================================================
+   FULL INTERIOR DETAIL
+   SHORT DESKTOP / LAPTOP VIEWPORT FIX
+
+   Goal:
+   Calculate Your Interior Cost card should remain
+   visible in the first screen on shorter desktops/laptops.
+========================================================= */
+
+@media (min-width: 1051px) and (max-height: 850px) {
+
+    /* LEFT MAIN IMAGE */
+    .fid-main-image-wrap {
+        height: calc(100vh - var(--fid-header-offset) - 92px);
+
+        min-height: 590px;
+        max-height: 690px;
+    }
+
+
+    /* RIGHT INFORMATION PANEL */
+    .fid-info {
+        padding:
+            22px 28px
+            30px;
+    }
+
+
+    /* BREADCRUMB */
+    .fid-breadcrumb {
+        margin-bottom: 12px;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* CATEGORY */
+    .fid-category {
+        margin-bottom: 5px;
+
+        font-size: 14px;
+    }
+
+
+    /* MAIN TITLE */
+    .fid-title-row h1 {
+        font-size: 27px;
+
+        line-height: 1.16;
+    }
+
+
+    /* SHARE / FAVOURITE */
+    .fid-top-actions button {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* TRUST CARDS */
+    .fid-trust-grid {
+        margin:
+            20px 0
+            25px;
+
+        gap: 7px;
+    }
+
+
+    .fid-trust-card {
+        min-height: 92px;
+
+        padding: 9px 6px;
+    }
+
+
+    .fid-trust-icon {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .fid-trust-card strong {
+        font-size: 15px;
+    }
+
+
+    .fid-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* INTERIOR DESIGN DETAILS */
+    .fid-product-details > h2 {
+        margin-bottom: 15px;
+
+        font-size: 22px;
+    }
+
+
+    /* SPECIFICATIONS */
+    .fid-spec-table {
+        gap: 3px;
+    }
+
+
+    .fid-spec-label,
+    .fid-spec-value {
+        font-size: 14px;
+
+        line-height: 1.45;
+    }
+
+
+    /* READ MORE */
+    .fid-read-more {
+        margin-top: 12px;
+
+        font-size: 15px;
+    }
+
+
+    /* COST CALCULATOR CARD */
+    .fid-cost-card {
+        min-height: 68px;
+
+        margin-top: 20px;
+
+        padding: 10px 15px;
+    }
+
+
+    .fid-cost-icon {
+        width: 42px;
+        height: 42px;
+
+        flex: 0 0 42px;
+    }
+
+
+    .fid-cost-card strong {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SHORT LAPTOP
+   1366x768 / 1280x720 / Similar
+========================================================= */
+
+@media (min-width: 1051px) and (max-height: 760px) {
+
+    /* RIGHT PANEL */
+    .fid-info {
+        padding:
+            16px 24px
+            24px;
+    }
+
+
+    /* BREADCRUMB */
+    .fid-breadcrumb {
+        margin-bottom: 8px;
+
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+    /* CATEGORY */
+    .fid-category {
+        margin-bottom: 3px;
+
+        font-size: 14px;
+    }
+
+
+    /* TITLE */
+    .fid-title-row h1 {
+        font-size: 24px;
+
+        line-height: 1.12;
+    }
+
+
+    /* ACTION BUTTONS */
+    .fid-top-actions button {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* TRUST CARDS */
+    .fid-trust-grid {
+        margin:
+            15px 0
+            19px;
+
+        gap: 6px;
+    }
+
+
+    .fid-trust-card {
+        min-height: 78px;
+
+        padding: 7px 5px;
+    }
+
+
+    .fid-trust-icon {
+        width: 30px;
+        height: 30px;
+
+        margin-bottom: 4px;
+
+        font-size: 15px;
+    }
+
+
+    .fid-trust-card strong {
+        font-size: 14px;
+    }
+
+
+    .fid-trust-card small {
+        font-size: 14px;
+    }
+
+
+    /* DETAILS HEADING */
+    .fid-product-details > h2 {
+        margin-bottom: 11px;
+
+        font-size: 20px;
+    }
+
+
+    /* DETAILS */
+    .fid-spec-table {
+        gap: 1px;
+    }
+
+
+    .fid-spec-label,
+    .fid-spec-value {
+        font-size: 15px;
+
+        line-height: 1.4;
+    }
+
+
+    /* READ MORE */
+    .fid-read-more {
+        margin-top: 9px;
+
+        font-size: 15px;
+    }
+
+
+    /* CALCULATOR */
+    .fid-cost-card {
+        min-height: 60px;
+
+        margin-top: 14px;
+
+        padding: 8px 13px;
+
+        border-radius: 10px;
+    }
+
+
+    .fid-cost-icon {
+        width: 38px;
+        height: 38px;
+
+        flex: 0 0 38px;
+    }
+
+
+    .fid-cost-card strong {
+        font-size: 15px;
+    }
+
+
+    /* LEFT IMAGE */
+    .fid-main-image-wrap {
+        height: calc(100vh - var(--fid-header-offset) - 92px);
+
+        min-height: 520px;
+        max-height: 620px;
+    }
+
+}

@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Contact ECON Kitchen | Modular Kitchen & Interior Design
+    </title>
+
+    <meta name="description"
+        content="Contact ECON Kitchen for modular kitchens, kitchen renovation and interior solutions. Book a free design consultation or visit our showroom.">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <meta name="theme-color" content="#080808">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <link rel="stylesheet" href="/assets/css/home.css">
+
+
+    <!-- CONTACT CSS -->
+
+    <link rel="stylesheet" href="/assets/css/contact.css">
+
+
+    <!-- GLOBAL OPTIONAL CSS -->
+
+    <link rel="stylesheet" href="/assets/css/typography.css">
+
+    <link rel="stylesheet" href="/assets/css/readability.css">
+
+    <link rel="stylesheet" href="/assets/css/translator.css">
+
+
+    <!-- =====================================================
+         MAP SECTION CSS
+         Later contact.css me move kar sakte ho
+    ====================================================== -->
+
+    <style>
+        /* =====================================================
+           SHOWROOM MAP SECTION
+        ====================================================== */
+
+        .contact-location-section {
+
+            padding: 90px 0;
+
+            background: #f8f5ef;
+
+        }
+
+
+        .contact-location-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, .75fr) minmax(0, 1.25fr);
+
+            gap: 45px;
+
+            align-items: stretch;
+
+        }
+
+
+        /* =====================================================
+           LEFT CONTENT
+        ====================================================== */
+
+        .contact-location-content {
+
+            padding: 45px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            border-radius: 24px;
+
+            background: #080808;
+
+            color: #fff;
+
+        }
+
+
+        .contact-location-kicker {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 17px;
+
+            color: #d4af37;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .contact-location-kicker::before {
+
+            content: "";
+
+            width: 35px;
+
+            height: 1px;
+
+            background: #d4af37;
+
+        }
+
+
+        .contact-location-content h2 {
+
+            margin: 0;
+
+            max-width: 520px;
+
+            color: #fff;
+
+            font-size:
+                clamp(34px, 4vw, 50px);
+
+            line-height: 1.15;
+
+            letter-spacing: -1.3px;
+
+        }
+
+
+        .contact-location-content h2 em {
+
+            color: #d4af37;
+
+            font-style: normal;
+
+        }
+
+
+        .contact-location-content>p {
+
+            margin: 20px 0 0;
+
+            color: #aaa;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* ADDRESS */
+
+        .contact-location-address {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 30px;
+
+            padding: 20px 0;
+
+            border-top:
+                1px solid rgba(255, 255, 255, .12);
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, .12);
+
+        }
+
+
+        .contact-location-address>i {
+
+            width: 45px;
+
+            height: 45px;
+
+            flex: 0 0 45px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(212, 175, 55, .12);
+
+            color: #d4af37;
+
+            font-size: 18px;
+
+        }
+
+
+        .contact-location-address span {
+
+            display: block;
+
+            color: #777;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .contact-location-address strong {
+
+            display: block;
+
+            margin-top: 5px;
+
+            color: #fff;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* BUTTONS */
+
+        .contact-location-actions {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 28px;
+
+        }
+
+
+        .contact-location-primary,
+        .contact-location-secondary {
+
+            min-height: 52px;
+
+            padding: 0 22px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            border-radius: 50px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: .3s ease;
+
+        }
+
+
+        .contact-location-primary {
+
+            background: #d4af37;
+
+            color: #111 !important;
+
+        }
+
+
+        .contact-location-primary:hover {
+
+            background: #e2bd46;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .contact-location-secondary {
+
+            border:
+                1px solid rgba(255, 255, 255, .30);
+
+            color: #fff !important;
+
+        }
+
+
+        .contact-location-secondary:hover {
+
+            border-color: #d4af37;
+
+            color: #d4af37 !important;
+
+        }
+
+
+        /* =====================================================
+           MAP
+        ====================================================== */
+
+        .contact-map-box {
+
+            position: relative;
+
+            min-height: 560px;
+
+            overflow: hidden;
+
+            border-radius: 24px;
+
+            background: #ddd;
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .10);
+
+        }
+
+
+        .contact-map-box iframe {
+
+            width: 100%;
+
+            height: 100%;
+
+            min-height: 560px;
+
+            display: block;
+
+            border: 0;
+
+        }
+
+
+        /* MAP LABEL */
+
+        .contact-map-label {
+
+            position: absolute;
+
+            left: 22px;
+
+            bottom: 22px;
+
+            z-index: 2;
+
+            padding: 13px 17px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(8, 8, 8, .90);
+
+            color: #fff;
+
+            font-size: 13px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, .25);
+
+            backdrop-filter: blur(10px);
+
+        }
+
+
+        .contact-map-label i {
+
+            color: #d4af37;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media(max-width:950px) {
+
+            .contact-location-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .contact-map-box,
+            .contact-map-box iframe {
+
+                min-height: 470px;
+
+            }
+
+        }
+
+
+        @media(max-width:600px) {
+
+            .contact-location-section {
+
+                padding: 55px 0;
+
+            }
+
+
+            .contact-location-content {
+
+                padding: 30px 22px;
+
+                border-radius: 18px;
+
+            }
+
+
+            .contact-location-content h2 {
+
+                font-size: 34px;
+
+            }
+
+
+            .contact-location-actions {
+
+                flex-direction: column;
+
+            }
+
+
+            .contact-location-actions a {
+
+                width: 100%;
+
+            }
+
+
+            .contact-map-box {
+
+                border-radius: 18px;
+
+            }
+
+
+            .contact-map-box,
+            .contact-map-box iframe {
+
+                min-height: 400px;
+
+            }
+
+
+            .contact-map-label {
+
+                left: 15px;
+
+                right: 15px;
+
+                bottom: 15px;
+
+                justify-content: center;
+
+            }
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/responsive-master.css">
+ 
+
+
+
+<body class="contact-page">
+
+
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <div id="header-slot"></div>
+
+
+
+    <!-- =========================================================
+     MAIN
+========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+         PAGE HEADING
+    ====================================================== -->
+
+        <section class="contact-heading">
+
+
+            <div class="container">
+
+
+                <span class="contact-eyebrow">
+
+
+                    <i></i>
+
+
+                    CONTACT ECON KITCHEN
+
+
+                    <i></i>
+
+
+                </span>
+
+
+                <h1>
+
+                    Let's Plan Your
+
+                    <em>
+                        Dream Kitchen.
+                    </em>
+
+                </h1>
+
+
+                <p>
+
+                    Tell us about your kitchen space and requirements.
+
+                    Our team will help you with the right design,
+
+                    materials and next steps.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+         CONTACT CARDS
+    ====================================================== -->
+
+        <section class="contact-cards-section">
+
+
+            <div class="container-fluid">
+
+
+                <div class="contact-cards">
+
+
+                    <!-- =============================================
+                     CALL
+                ============================================== -->
+
+                    <a href="tel:+917060966889" class="contact-card">
+
+
+                        <div class="contact-card-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                CALL US
+                            </span>
+
+
+                            <strong>
+
+                                +91 70609 66889
+
+                            </strong>
+
+
+                            <small>
+
+                                Talk to our kitchen team
+
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+
+
+                    </a>
+
+
+
+                    <!-- =============================================
+                     WHATSAPP
+                ============================================== -->
+
+                    <a href="https://wa.me/917060966889" target="_blank" rel="noopener" class="contact-card">
+
+
+                        <div class="contact-card-icon">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                WHATSAPP
+                            </span>
+
+
+                            <strong>
+
+                                Chat With Us
+
+                            </strong>
+
+
+                            <small>
+
+                                Share your kitchen requirements
+
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+
+
+                    </a>
+
+
+
+                    <!-- =============================================
+                     EMAIL
+                ============================================== -->
+
+                    <a href="mailto:info@econkitchen.com" class="contact-card">
+
+
+                        <div class="contact-card-icon">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                EMAIL US
+                            </span>
+
+
+                            <strong>
+
+                                info@econkitchen.com
+
+                            </strong>
+
+
+                            <small>
+
+                                Send us your enquiry
+
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow"></i>
+
+
+                    </a>
+
+
+
+                    <!-- =============================================
+                     SHOWROOM
+                ============================================== -->
+
+                    <a href="#showroomLocation" class="contact-card">
+
+
+                        <div class="contact-card-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                VISIT OUR SHOWROOM
+                            </span>
+
+
+                            <strong>
+
+                                Mathura, Uttar Pradesh
+
+                            </strong>
+
+
+                            <small>
+
+                                Explore kitchens, materials & finishes
+
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-down contact-card-arrow"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+         CONSULTATION FORM
+    ====================================================== -->
+
+        <section class="contact-form-section" id="consultation">
+
+
+            <div class="container">
+
+
+                <div class="contact-form-layout">
+
+
+                    <!-- =============================================
+                     LEFT CONTENT
+                ============================================== -->
+
+                    <div class="contact-form-info">
+
+
+                        <span class="contact-small-title">
+
+                            KITCHEN CONSULTATION
+
+                        </span>
+
+
+                        <h2>
+
+                            Let's Plan
+
+                            <em>
+                                Your Kitchen.
+                            </em>
+
+                        </h2>
+
+
+                        <p>
+
+                            Share a few details about your kitchen space
+
+                            and requirements. Our team will help you explore
+
+                            the right layout, materials, finishes and
+
+                            storage options.
+
+                        </p>
+
+
+                        <div class="contact-form-points">
+
+
+                            <div>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Kitchen design guidance
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Material & finish selection
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Storage & functionality planning
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                     FORM
+                ============================================== -->
+
+                    <div class="contact-form-box">
+
+
+                        <form id="leadForm">
+
+
+                            <!-- NAME + PHONE -->
+
+                            <div class="contact-input-row">
+
+
+                                <div class="contact-input-group">
+
+
+                                    <label>
+
+                                        Your Name *
+
+                                    </label>
+
+
+                                    <input type="text" name="name" placeholder="Enter your name" required>
+
+
+                                </div>
+
+
+
+                                <div class="contact-input-group">
+
+
+                                    <label>
+
+                                        Phone Number *
+
+                                    </label>
+
+
+                                    <input type="tel" name="phone" maxlength="10" inputmode="numeric"
+                                        placeholder="10-digit mobile number" required>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- EMAIL + CITY -->
+
+                            <div class="contact-input-row">
+
+
+                                <div class="contact-input-group">
+
+
+                                    <label>
+
+                                        Email Address
+
+                                    </label>
+
+
+                                    <input type="email" name="email" placeholder="Enter your email (Optional)">
+
+
+                                </div>
+
+
+
+                                <div class="contact-input-group">
+
+
+                                    <label>
+
+                                        City *
+
+                                    </label>
+
+
+                                    <select name="city" required>
+
+
+                                        <option value="">
+
+                                            Select your city
+
+                                        </option>
+
+
+                                        <option value="Mathura">
+
+                                            Mathura
+
+                                        </option>
+
+
+                                        <option value="Vrindavan">
+
+                                            Vrindavan
+
+                                        </option>
+
+
+                                        <option value="Goverdhan">
+
+                                            Goverdhan
+
+                                        </option>
+
+
+                                        <option value="Nearby Area">
+
+                                            Nearby Area
+
+                                        </option>
+
+
+                                        <option value="Other">
+
+                                            Other
+
+                                        </option>
+
+
+                                    </select>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- REQUIREMENT -->
+
+                            <div class="contact-input-group">
+
+
+                                <label>
+
+                                    What are you looking for? *
+
+                                </label>
+
+
+                                <select name="service" required>
+
+
+                                    <option value="">
+
+                                        Select your requirement
+
+                                    </option>
+
+
+                                    <option value="New Modular Kitchen">
+
+                                        New Modular Kitchen
+
+                                    </option>
+
+
+                                    <option value="Kitchen Renovation">
+
+                                        Kitchen Renovation
+
+                                    </option>
+
+
+                                    <option value="Material Selection">
+
+                                        Kitchen Materials
+
+                                    </option>
+
+
+                                    <option value="Kitchen Consultation">
+
+                                        Kitchen Consultation
+
+                                    </option>
+
+
+                                    <option value="Not Sure Yet">
+
+                                        Not Sure Yet
+
+                                    </option>
+
+
+                                </select>
+
+
+                            </div>
+
+
+
+                            <!-- MESSAGE -->
+
+                            <div class="contact-input-group">
+
+
+                                <label>
+
+                                    Tell us about your kitchen
+
+                                </label>
+
+
+                                <textarea name="message" rows="5"
+                                    placeholder="Share your kitchen size, layout, storage needs or any other requirement..."></textarea>
+
+
+                            </div>
+
+
+
+                            <!-- HIDDEN -->
+
+                            <input type="hidden" name="formType" value="consultation">
+
+
+
+                            <!-- SUBMIT -->
+
+                            <button type="submit" id="contactSubmit">
+
+
+                                <span class="submit-normal">
+
+
+                                    Book A Consultation
+
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+
+                                </span>
+
+
+                                <span class="submit-loading">
+
+
+                                    <i class="fa-solid fa-spinner fa-spin"></i>
+
+
+                                    Sending...
+
+
+                                </span>
+
+
+                            </button>
+
+
+
+                            <!-- PRIVACY -->
+
+                            <p class="contact-privacy">
+
+
+                                <i class="fa-solid fa-lock"></i>
+
+
+                                Your information is safe with us.
+
+
+                            </p>
+
+
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+         SHOWROOM LOCATION + GOOGLE MAP
+    ====================================================== -->
+
+        <section class="contact-location-section" id="showroomLocation">
+
+
+            <div class="container">
+
+
+                <div class="contact-location-grid">
+
+
+                    <!-- =============================================
+                     LOCATION CONTENT
+                ============================================== -->
+
+                    <div class="contact-location-content">
+
+
+                        <span class="contact-location-kicker">
+
+                            VISIT OUR SHOWROOM
+
+                        </span>
+
+
+                        <h2>
+
+                            Experience Your Kitchen
+
+                            <em>
+                                Before You Choose It.
+                            </em>
+
+                        </h2>
+
+
+                        <p>
+
+                            Visit the ECON Kitchen showroom and explore
+
+                            kitchen displays, materials, finishes,
+
+                            storage solutions and design possibilities
+
+                            with our team.
+
+                        </p>
+
+
+
+                        <!-- ADDRESS -->
+
+                        <div class="contact-location-address">
+
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+
+                            <div>
+
+
+                                <span>
+
+                                    SHOWROOM LOCATION
+
+                                </span>
+
+
+                                <strong>
+
+                                    ECON Kitchen<br>
+
+                                    Mathura, Uttar Pradesh, India
+
+                                </strong>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- ACTIONS -->
+
+                        <div class="contact-location-actions">
+
+
+                            <a href="https://www.google.com/maps/search/?api=1&query=ECON+Kitchen+Mathura+Uttar+Pradesh"
+                                target="_blank" rel="noopener" class="contact-location-primary">
+
+
+                                <i class="fa-solid fa-diamond-turn-right"></i>
+
+
+                                Get Directions
+
+
+                            </a>
+
+
+
+                            <a href="tel:+917060966889" class="contact-location-secondary">
+
+
+                                <i class="fa-solid fa-phone"></i>
+
+
+                                Call Before Visit
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                     GOOGLE MAP
+                ============================================== -->
+
+                    <div class="contact-map-box">
+
+
+                        <iframe
+                            src="https://www.google.com/maps?q=ECON%20Kitchen%20Mathura%20Uttar%20Pradesh&output=embed"
+                            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                            title="ECON Kitchen Showroom Location"></iframe>
+
+
+
+                        <div class="contact-map-label">
+
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+
+                            ECON Kitchen · Mathura
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <div id="footer-slot"></div>
+
+
+
+    <!-- =========================================================
+     GLOBAL COMPONENTS
+========================================================= -->
+
+    <script type="module" src="/assets/js/components.js"></script>
+
+
+
+    <!-- =========================================================
+     CONTACT JS
+========================================================= -->
+
+    <script type="module" src="/assets/js/contact.js"></script>
+
+
+
+    <!-- =========================================================
+     TRANSLATOR
+========================================================= -->
+
+    <script src="/assets/js/translator.js"></script>
+
+
+</body>
+
+</html>

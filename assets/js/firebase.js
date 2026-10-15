@@ -1,0 +1,4 @@
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";import {getFirestore,collection,getDocs,addDoc,query,orderBy,limit} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";import {firebaseConfig} from './firebase-config.js';
+let db=null;try{if(!firebaseConfig.apiKey.startsWith('YOUR_')) db=getFirestore(initializeApp(firebaseConfig))}catch(e){console.warn(e)}
+export {db};export async function rows(name){if(!db)return [];try{return (await getDocs(collection(db,name))).docs.map(d=>({id:d.id,...d.data()}))}catch(e){console.warn(name,e);return []}}
+export async function submitLead(data){if(!db){localStorage.setItem('econLeadDraft',JSON.stringify(data));return {demo:true}}await addDoc(collection(db,'leads'),{...data,status:'new',createdAt:new Date().toISOString()});return {ok:true}}
