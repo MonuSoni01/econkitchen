@@ -8,8 +8,8 @@
 (() => {
     "use strict";
     const catalogues = [
-        { title: "Catalogue 01", image: "/assets/images/catalogues/1.webp", url: "" },
-        { title: "Catalogue 02", image: "/assets/images/catalogues/2.webp", url: "" },
+        { title: "L-Shaped Kitchen Catalogue", image: "/assets/images/catalogues/l-shape.png", url: "https://drive.google.com/file/d/11tqfiFS43XFOSdJBJYtye_BRFCpBCeXR/view?usp=sharing" },
+        { title: "Modular Kitchen Catalogue", image: "/assets/images/catalogues/modular.png", url: "/flipbook.pdf" },
         { title: "Catalogue 03", image: "/assets/images/catalogues/3.webp", url: "" },
         { title: "Catalogue 04", image: "/assets/images/catalogues/4.webp", url: "" },
         { title: "Catalogue 05", image: "/assets/images/catalogues/5.webp", url: "" },

@@ -16,3 +16,223 @@
 
 /* Image and document panels for all seven Blueprint deliverables. */
 .diy-page .diy-deliverable{padding:0 0 20px;overflow:hidden}.diy-page .diy-deliverable-photo{height:125px;margin-bottom:20px;background:#eee7d6}.diy-page .diy-deliverable-photo img{width:100%;height:100%}.diy-page .diy-deliverable>i{display:none}.diy-page .diy-deliverable h3,.diy-page .diy-deliverable p{padding-inline:12px}.diy-page .diy-deliverable-document{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:repeating-linear-gradient(0deg,#f9f7f0,#f9f7f0 19px,#e4dfd2 20px);font-size:14px;font-weight:600;color:#5c4b20}.diy-page .diy-deliverable-document i{font-size:34px}.diy-page .diy-reviews-window{touch-action:pan-y}
+
+/* ECONDIY ENQUIRY MODAL */
+
+#diyEnquiryDialog {
+  width: min(600px, calc(100% - 28px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  overflow: auto;
+  color: #12251d;
+  background: #fff;
+  box-shadow: 0 24px 90px rgba(0, 0, 0, .25);
+  font-family: "Poppins", sans-serif;
+}
+
+#diyEnquiryDialog::backdrop {
+  background: rgba(5, 24, 18, .65);
+  backdrop-filter: blur(5px);
+}
+
+#diyEnquiryDialog,
+#diyEnquiryDialog * {
+  box-sizing: border-box;
+}
+
+#diyEnquiryDialog [hidden] {
+  display: none !important;
+}
+
+.diy-enquiry-panel {
+  position: relative;
+  padding: 34px;
+}
+
+.diy-enquiry-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #eef3ef;
+  color: #143d2b;
+  font: inherit;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.diy-enquiry-label {
+  display: block;
+  margin: 0 30px 12px 0;
+  color: #148247;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#diyEnquiryDialog h2 {
+  margin: 0 20px 10px 0;
+  font-size: clamp(22px, 5vw, 29px);
+  line-height: 1.3;
+}
+
+#diyEnquiryDescription,
+#diyEnquirySuccess > p {
+  margin: 0 0 22px;
+  color: #66736c;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.diy-enquiry-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.diy-enquiry-fields label {
+  display: block;
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.diy-enquiry-fields label > span {
+  color: #cc3030;
+}
+
+.diy-enquiry-fields small {
+  color: #7b847e;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.diy-enquiry-fields input,
+.diy-enquiry-fields textarea {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 12px 13px;
+  border: 1px solid #dce4de;
+  border-radius: 10px;
+  background: #fafcfb;
+  color: #173025;
+  font: inherit;
+  font-size: 14px;
+}
+
+.diy-enquiry-fields textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.diy-enquiry-fields input:focus,
+.diy-enquiry-fields textarea:focus {
+  outline: 2px solid #16864a;
+  outline-offset: 2px;
+}
+
+.diy-enquiry-wide {
+  grid-column: 1 / -1;
+}
+
+.diy-enquiry-note {
+  margin: 18px 0;
+  padding: 11px 13px;
+  border-radius: 9px;
+  background: #f5f7ed;
+  color: #5c6656;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.diy-enquiry-submit {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #078b45;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.diy-enquiry-submit:hover {
+  background: #066e38;
+}
+
+#diyEnquiryDialog button:focus-visible {
+  outline: 3px solid #ddb447;
+  outline-offset: 3px;
+}
+
+#diyEnquiryDialog button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+#diyEnquiryStatus {
+  margin: 12px 0 0;
+  color: #b3261e;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+#diyEnquiryStatus:empty {
+  display: none;
+}
+
+#diyEnquirySuccess {
+  padding: 20px 0 6px;
+  text-align: center;
+}
+
+#diyEnquirySuccess h2 {
+  margin-right: 0;
+}
+
+.diy-enquiry-check {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e6f7eb;
+  color: #078b45;
+  font-size: 40px;
+}
+
+#diyEnquiryReference {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+
+@media (max-width: 520px) {
+  .diy-enquiry-panel {
+    padding: 30px 20px 22px;
+  }
+
+  .diy-enquiry-fields {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .diy-enquiry-fields input,
+  .diy-enquiry-fields textarea {
+    font-size: 16px;
+  }
+}

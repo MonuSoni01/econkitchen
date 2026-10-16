@@ -11,6 +11,8 @@ import {
 
 import {
     getAuth,
+    setPersistence,
+    browserLocalPersistence,
     signInWithEmailAndPassword,
     onAuthStateChanged,
     signOut
@@ -63,6 +65,8 @@ const STATUSES = {
 };
 
 const FORM_LABELS = {
+    econdiy_quotation_compare: "ECONDIY Free Quotation Compare",
+    econdiy_blueprint: "ECONDIY Kitchen Blueprint",
     contact_consultation: "Contact enquiry",
     kitchen_consultation: "Kitchen consultation",
     interior_consultation: "Interior consultation",
@@ -394,7 +398,7 @@ function renderLeads() {
                     </td>
 
                     <td>
-                        <button type="button" class="view-button"
+                        <button type="button" class="view-button" aria-haspopup="dialog" aria-controls="leadDialog"
                             data-lead-id="${escapeHTML(record.id)}">
                             View details →
                         </button>
@@ -475,6 +479,21 @@ function openLead(id) {
     state.selectedLead = id;
 
     const customer = customerOf(record);
+    $("#leadDialogTitle").textContent = customer.name || "Lead details";
+    $("#detailReference").textContent = "Request ID: " + record.id;
+    const phone = String(customer.phone || "").replace(/\D/g, "");
+    const international = /^[6-9]\d{9}$/.test(phone) ? "91" + phone : phone;
+    const actions = [
+      ["detailCall", phone ? "tel:+" + international : ""],
+      ["detailWhatsApp", phone ? "https://wa.me/" + international : ""],
+      ["detailEmail", /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customer.email) ? "mailto:" + encodeURIComponent(customer.email) : ""]
+    ];
+    for (const [id, href] of actions) {
+      const element = document.getElementById(id);
+      element.hidden = !href;
+      if (href) element.href = href;
+      else element.removeAttribute("href");
+    }
 
     $("#leadMeta").innerHTML = `
         <span class="source-tag">${escapeHTML(sourceOf(record))}</span>
@@ -1114,6 +1133,12 @@ $("#logoutButton").addEventListener("click", async () => {
 
 function resetSession() {
     state.authorised = false;
+    for (const id of ["detailCall", "detailWhatsApp", "detailEmail"]) {
+      const link = document.getElementById(id);
+      link.hidden = true;
+      link.removeAttribute("href");
+    }
+    $("#detailReference").textContent = "";
     state.leads = [];
     state.content = [];
     state.selectedLead = null;
@@ -1160,6 +1185,8 @@ try {
         : initializeApp(firebaseConfig);
 
     auth = getAuth(firebaseApp);
+    // Firebase manages the persisted session; never store passwords.
+    await setPersistence(auth, browserLocalPersistence);
     db = getFirestore(firebaseApp);
 
 onAuthStateChanged(auth, async user => {
