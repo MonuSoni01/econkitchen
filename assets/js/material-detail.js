@@ -127,7 +127,7 @@ function renderCategories() {
   if (!categoryGrid) return;
 
   categoryGrid.innerHTML = categories.map(category => `
-    <a class="byk-category-card" href="/shop.html?category=${encodeURIComponent(category.slug)}">
+    <a class="byk-category-card" href="#">
       <div class="byk-category-image">
         <img src="${category.image}" alt="${category.title}" loading="lazy">
       </div>

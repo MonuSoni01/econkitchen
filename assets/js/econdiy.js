@@ -3,7 +3,7 @@
   'use strict';
   const page = document.querySelector('.diy-page');
   if (!page) return;
-  const WHATSAPP_NUMBER = '917060966889';
+  const WHATSAPP_NUMBER = '917900300456';
   const messages = {
     quote: 'Namaste ECONDIY! Mujhe apni kitchen quotation ka FREE comparison karwana hai. Main apni quotation aur kitchen details yahan share karunga. Please guide me.',
     blueprint: 'Namaste ECONDIY! Mujhe ₹5,000 DIY Kitchen Blueprint ke baare mein assistance chahiye. Please 2D layout, 3D design, material, hardware aur costing planning ka process samjhaiye.'

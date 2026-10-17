@@ -596,11 +596,9 @@ if (lightboxWhatsapp) {
     const category =
         getCategoryLabel(item);
 
-    const message =
-    `Hi ECON Kitchen, I’m interested in the "${projectTitle}" design. ` +
-    `I’d like a similar ${category} for my space. Please share more details.`;
+    const message = "Hi! I’m interested in your gallery design. Please share details.";
 
-    const whatsappNumber = "917060966889";
+    const whatsappNumber = "917900300456";
 
     lightboxWhatsapp.href =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
