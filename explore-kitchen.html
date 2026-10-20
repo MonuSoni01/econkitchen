@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Kitchen Designs, Materials & Storage | ECON Kitchen</title>
+  <meta name="description" content="Explore modular kitchen layouts, finishes, materials, smart storage and accessories from ECON Kitchen.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <style>
+    :root{
+      --econ-black:#0b0b0b;
+      --econ-dark:#151515;
+      --econ-gold:#d9aa18;
+      --econ-gold-dark:#aa7e00;
+      --econ-cream:#f5f1e8;
+      --econ-white:#fff;
+      --econ-text:#171717;
+      --econ-muted:#68645d;
+      --econ-border:#ded8cc;
+      --econ-sticky-top:0px;
+      --econ-font:"Poppins",sans-serif;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--econ-cream);color:var(--econ-text);font-family:var(--econ-font);overflow-x:hidden}
+    button,input,textarea,select{font:inherit}
+    button{-webkit-tap-highlight-color:transparent}
+    img{width:100%;display:block}
+    a{color:inherit}
+    .container{width:min(1420px,calc(100% - 80px));margin:0 auto}
+
+    .kitchen-explorer{position:relative;padding:28px 0 110px;background:var(--econ-cream)}
+
+    .explore-tabs-wrap{
+      position:sticky;
+      top:var(--econ-sticky-top);
+      z-index:800;
+      margin-bottom:48px;
+      background:rgba(245,241,232,.96);
+      border-bottom:1px solid rgba(0,0,0,.08);
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      transition:top .22s ease,box-shadow .22s ease;
+    }
+    .explore-tabs-wrap.is-stuck{box-shadow:0 9px 30px rgba(0,0,0,.08)}
+    .explore-tabs{display:flex;align-items:center;gap:10px;overflow-x:auto;padding:14px 0;scrollbar-width:none}
+    .explore-tabs::-webkit-scrollbar{display:none}
+    .explore-tab{
+      flex:0 0 auto;min-height:46px;padding:0 21px;display:inline-flex;align-items:center;justify-content:center;
+      white-space:nowrap;border:1px solid #d8d1c4;border-radius:999px;background:#fff;color:#3f3b34;
+      font-size:13px;font-weight:600;cursor:pointer;
+      transition:background .22s ease,border-color .22s ease,color .22s ease,transform .22s ease,box-shadow .22s ease;
+    }
+    .explore-tab:hover{transform:translateY(-1px);border-color:#b79125;color:#111}
+    .explore-tab.active{border-color:var(--econ-gold);background:var(--econ-gold);color:#101010;box-shadow:0 7px 20px rgba(217,170,24,.22)}
+
+    .explorer-dynamic-area{transition:opacity .18s ease,transform .18s ease}
+    .explorer-dynamic-area.is-switching{opacity:.15;transform:translateY(10px)}
+
+    .explore-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:28px}
+    .explore-heading-text{max-width:820px}
+    .explore-heading-label{
+      display:block;margin-bottom:10px;color:var(--econ-gold-dark);font-size:12px;font-weight:700;
+      letter-spacing:1.8px;text-transform:uppercase;
+    }
+    .explore-heading h1{
+      margin:0;color:var(--econ-text);font-size:clamp(34px,4vw,56px);line-height:1.09;letter-spacing:-1.8px;font-weight:700;
+    }
+    .explore-heading h1 em{color:var(--econ-gold-dark);font-style:normal;font-weight:600}
+    .explore-heading p{max-width:650px;margin-top:14px;color:var(--econ-muted);font-size:15px;line-height:1.75}
+
+    .carousel-controls{flex-shrink:0;display:flex;gap:9px}
+    .carousel-btn{
+      width:50px;height:50px;display:grid;place-items:center;border:1px solid #d4cdbf;border-radius:50%;
+      background:#fff;color:#111;font-size:14px;cursor:pointer;transition:.25s ease;
+    }
+    .carousel-btn:hover{border-color:#111;background:#111;color:var(--econ-gold)}
+
+    .carousel-wrap{position:relative}
+    .explore-carousel{
+      display:flex;gap:18px;overflow-x:auto;padding:4px 2px 18px;scroll-behavior:smooth;
+      scroll-snap-type:x mandatory;scrollbar-width:none;
+    }
+    .explore-carousel::-webkit-scrollbar{display:none}
+
+    .explore-card{
+      position:relative;flex:0 0 calc((100% - 72px) / 5);height:420px;min-height:420px;overflow:hidden;
+      scroll-snap-align:start;border:1px solid #d8d1c6;border-radius:18px;background:#111;cursor:pointer;
+      box-shadow:0 12px 32px rgba(35,25,10,.07);
+      transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;
+    }
+    .explore-card:hover{transform:translateY(-5px);border-color:var(--econ-gold);box-shadow:0 18px 42px rgba(35,25,10,.13)}
+    .explore-card.active{border:2px solid var(--econ-gold)}
+    .explore-card-image{position:absolute;inset:0}
+    .explore-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .explore-card:hover .explore-card-image img{transform:scale(1.035)}
+    .explore-card-image::after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(to bottom,rgba(0,0,0,.02) 0%,rgba(0,0,0,.06) 32%,rgba(0,0,0,.38) 55%,rgba(0,0,0,.82) 78%,rgba(0,0,0,.97) 100%);
+    }
+    .explore-card-number{
+      position:absolute;z-index:3;top:15px;left:15px;width:38px;height:38px;display:grid;place-items:center;
+      border:1px solid rgba(255,255,255,.55);border-radius:50%;background:rgba(0,0,0,.62);color:#fff;
+      font-size:11px;font-weight:600;backdrop-filter:blur(8px);
+    }
+    .explore-card-content{position:absolute;z-index:3;left:20px;right:20px;bottom:20px}
+    .explore-card-type{margin-bottom:7px;color:#efc744;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+    .explore-card h3{margin-bottom:8px;color:#fff;font-size:21px;line-height:1.17;font-weight:600}
+    .explore-card p{
+      display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+      color:#d9d9d9;font-size:11px;line-height:1.55;
+    }
+    .explore-card-arrow{
+      width:36px;height:36px;margin-top:13px;display:grid;place-items:center;border-radius:50%;
+      background:var(--econ-gold);color:#111;font-size:11px;transition:transform .25s ease;
+    }
+    .explore-card:hover .explore-card-arrow{transform:translateX(4px)}
+
+    .explore-detail{
+      position:relative;margin-top:66px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+      overflow:hidden;border:1px solid var(--econ-border);border-radius:24px;background:#fff;
+      box-shadow:0 20px 60px rgba(30,25,15,.08);
+      scroll-margin-top:calc(var(--econ-sticky-top) + 100px);
+      transition:opacity .18s ease,transform .18s ease;
+    }
+    .explore-detail.is-changing{opacity:.22;transform:translateY(8px)}
+    .explore-detail.reverse .explore-detail-image{order:2}
+    .explore-detail.reverse .explore-detail-content{order:1}
+    .explore-detail-image{min-height:520px;background:#ece9e2}
+    .explore-detail-image img{width:100%;height:100%;object-fit:cover}
+    .explore-detail-content{padding:58px;display:flex;flex-direction:column;justify-content:center;background:#fff}
+    .detail-category{
+      display:block;margin-bottom:12px;color:var(--econ-gold-dark);font-size:11px;font-weight:700;
+      letter-spacing:1.7px;text-transform:uppercase;
+    }
+    .explore-detail-content h2{
+      margin-bottom:17px;color:#111;font-size:clamp(32px,3.3vw,50px);line-height:1.08;letter-spacing:-1.5px;font-weight:700;
+    }
+    .explore-detail-content>p{margin-bottom:26px;color:#625e56;font-size:15px;line-height:1.8}
+    .detail-points{display:grid;gap:12px;margin-bottom:30px}
+    .detail-point{display:flex;align-items:center;gap:11px;color:#282828;font-size:14px;line-height:1.5}
+    .detail-point i{
+      width:26px;height:26px;flex:0 0 26px;display:grid;place-items:center;border-radius:50%;
+      background:rgba(217,170,24,.12);color:var(--econ-gold-dark);font-size:10px;
+    }
+    .detail-cta{
+      width:fit-content;min-height:48px;padding:0 21px;display:inline-flex;align-items:center;gap:14px;
+      border:1px solid #111;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-size:13px;font-weight:600;transition:.25s ease;
+    }
+    .detail-cta:hover{border-color:var(--econ-gold);background:var(--econ-gold);color:#111}
+    .detail-cta i{transition:transform .25s ease}
+    .detail-cta:hover i{transform:translateX(4px)}
+
+    .mobile-slide-help{display:none}
+
+    .explore-bottom-cta{
+      padding:100px 0;text-align:center;background:radial-gradient(circle at center top,rgba(217,170,24,.15),transparent 38%),#0b0b0b;color:#fff;
+    }
+    .explore-bottom-cta-label{display:block;color:var(--econ-gold);font-size:11px;font-weight:700;letter-spacing:1.8px}
+    .explore-bottom-cta h2{
+      max-width:800px;margin:15px auto 17px;font-size:clamp(39px,5vw,67px);line-height:1.05;letter-spacing:-2px;font-weight:700;
+    }
+    .explore-bottom-cta h2 em{color:var(--econ-gold);font-style:normal;font-weight:600}
+    .explore-bottom-cta p{max-width:620px;margin:0 auto 28px;color:#c5c5c5;font-size:15px;line-height:1.75}
+    .explore-bottom-cta .detail-cta{border-color:var(--econ-gold);background:var(--econ-gold);color:#111}
+
+    @media(max-width:1150px){
+      .explore-card{flex:0 0 calc((100% - 54px) / 4)}
+      .explore-detail-content{padding:46px}
+    }
+
+    @media(max-width:900px){
+      .container{width:calc(100% - 34px)}
+      .explore-card{flex:0 0 calc((100% - 36px) / 3);height:390px;min-height:390px}
+      .explore-detail{grid-template-columns:1fr}
+      .explore-detail-image,.explore-detail.reverse .explore-detail-image{order:1}
+      .explore-detail-content,.explore-detail.reverse .explore-detail-content{order:2}
+      .explore-detail-image{min-height:380px}
+    }
+
+    @media(max-width:700px){
+      .container{width:calc(100% - 24px)}
+      .kitchen-explorer{padding:10px 0 70px}
+      .explore-tabs-wrap{margin-bottom:28px}
+      .explore-tabs{gap:7px;padding:10px 0}
+      .explore-tab{min-height:40px;padding:0 14px;font-size:11px}
+
+      .explore-heading{
+        display:grid;grid-template-columns:1fr auto;align-items:end;gap:14px 10px;margin-bottom:18px;
+      }
+      .explore-heading-text{grid-column:1/-1}
+      .explore-heading h1{font-size:28px;line-height:1.14;letter-spacing:-.9px}
+      .explore-heading-label{margin-bottom:7px;font-size:10px}
+      .explore-heading p{margin-top:9px;font-size:13px;line-height:1.65}
+
+      .carousel-controls{grid-column:2;justify-self:end;gap:6px}
+      .carousel-btn{width:39px;height:39px;font-size:11px}
+
+      .explore-carousel{
+        display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,205px);
+        grid-auto-columns:min(84vw,340px);gap:11px;overflow-x:auto;overflow-y:hidden;
+        padding:3px 2px 13px;scroll-snap-type:x mandatory;
+      }
+      .explore-card{
+        width:100%;height:205px;min-height:205px;flex:none;border-radius:15px;scroll-snap-align:start;
+      }
+      .explore-card-number{top:10px;left:10px;width:30px;height:30px;font-size:9px}
+      .explore-card-content{left:14px;right:14px;bottom:13px}
+      .explore-card-type{margin-bottom:4px;font-size:8px}
+      .explore-card h3{margin-bottom:4px;padding-right:36px;font-size:17px}
+      .explore-card p{padding-right:30px;-webkit-line-clamp:2;font-size:10px;line-height:1.4}
+      .explore-card-arrow{position:absolute;right:0;bottom:0;width:30px;height:30px;margin:0;font-size:9px}
+
+      .mobile-slide-help{
+        margin-top:5px;display:flex;align-items:center;gap:7px;color:#777269;font-size:10px;font-weight:500;
+      }
+      .mobile-slide-help i{color:var(--econ-gold-dark)}
+
+      .explore-detail{margin-top:38px;border-radius:18px}
+      .explore-detail-image{min-height:260px}
+      .explore-detail-content{padding:27px 20px}
+      .detail-category{margin-bottom:8px;font-size:9px}
+      .explore-detail-content h2{margin-bottom:12px;font-size:27px;letter-spacing:-.8px}
+      .explore-detail-content>p{margin-bottom:20px;font-size:13px;line-height:1.7}
+      .detail-points{gap:9px;margin-bottom:23px}
+      .detail-point{font-size:12px}
+      .detail-point i{width:23px;height:23px;flex-basis:23px}
+      .detail-cta{width:100%;justify-content:center;font-size:12px}
+
+      .explore-bottom-cta{padding:70px 0}
+      .explore-bottom-cta h2{font-size:36px}
+      .explore-bottom-cta p{font-size:13px}
+    }
+
+    @media(max-width:390px){
+      .explore-carousel{grid-auto-columns:86vw;grid-template-rows:repeat(2,195px)}
+      .explore-card{height:195px;min-height:195px}
+      .explore-card h3{font-size:16px}
+    }
+
+    .explore-tab:focus-visible,.carousel-btn:focus-visible,.explore-card:focus-visible{
+      outline:3px solid rgba(217,170,24,.4);outline-offset:3px;
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      *{scroll-behavior:auto!important}
+      .explore-card,.explore-tab,.explorer-dynamic-area,.explore-detail,.explore-card-image img{transition:none!important}
+    }
+  </style>
+    <link rel="stylesheet" href="assets/css/responsive-master.css">
+ 
+
+<body>
+
+<div id="header-slot"></div>
+
+<main>
+  <section class="kitchen-explorer" id="kitchenExplorer">
+
+    <div class="explore-tabs-wrap" id="exploreTabsWrap">
+      <div class="container">
+        <div class="explore-tabs" id="exploreTabs" role="tablist" aria-label="Explore Kitchen">
+          <button type="button" class="explore-tab active" data-category="designs" aria-selected="true">KITCHEN DESIGNS</button>
+          <button type="button" class="explore-tab" data-category="finishes" aria-selected="false">FINISHES</button>
+          <button type="button" class="explore-tab" data-category="materials" aria-selected="false">MATERIALS</button>
+          <button type="button" class="explore-tab" data-category="storage" aria-selected="false">SMART STORAGE</button>
+          <button type="button" class="explore-tab" data-category="accessories" aria-selected="false">ACCESSORIES</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="explorer-dynamic-area" id="explorerDynamicArea">
+
+        <div class="explore-heading">
+          <div class="explore-heading-text">
+            <span class="explore-heading-label" id="exploreLabel">KITCHEN DESIGNS</span>
+            <h1 id="exploreTitle">Find The Right <em>Kitchen Layout.</em></h1>
+            <p id="exploreDescription">Explore different kitchen layouts and find ideas that can work beautifully in your space.</p>
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" id="carouselPrev" aria-label="Previous options">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button type="button" class="carousel-btn" id="carouselNext" aria-label="Next options">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-wrap" id="carouselWrap">
+          <div class="explore-carousel" id="exploreCarousel"></div>
+
+          <div class="mobile-slide-help">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            Swipe to explore more options
+          </div>
+        </div>
+
+        <section class="explore-detail" id="exploreDetail">
+          <div class="explore-detail-image">
+            <img id="detailImage" src="" alt="">
+          </div>
+
+          <div class="explore-detail-content">
+            <span class="detail-category" id="detailCategory"></span>
+            <h2 id="detailTitle"></h2>
+            <p id="detailDescription"></p>
+            <div class="detail-points" id="detailPoints"></div>
+
+            <a href="/contact.html" class="detail-cta">
+              Talk To Our Kitchen Expert
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="explore-bottom-cta">
+    <div class="container">
+      <span class="explore-bottom-cta-label">LET'S PLAN YOUR KITCHEN</span>
+      <h2>Found Something <em>You Like?</em></h2>
+      <p>
+        Share your kitchen space and requirements with us. Our team will help you explore suitable designs,
+        materials, storage and finish options.
+      </p>
+
+      <a href="/contact.html" class="detail-cta">
+        Book A Consultation
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+</main>
+
+<div id="footer-slot"></div>
+
+<script>
+const exploreData = {
+  designs: {
+    label:"KITCHEN DESIGNS",
+    title:`Find The Right <em>Kitchen Layout.</em>`,
+    description:"Explore different kitchen layouts and find ideas that can work beautifully in your space.",
+    items:[
+      {
+        title:"L-Shaped Kitchen",
+        type:"KITCHEN LAYOUT",
+        image:"/assets/images/seo-car.png",
+        description:"A practical layout that uses two adjoining walls and keeps the centre of the kitchen open for comfortable movement.",
+        points:["Efficient corner utilisation","Comfortable everyday workflow","Works across different kitchen sizes"]
+      },
+      {
+        title:"U-Shaped Kitchen",
+        type:"KITCHEN LAYOUT",
+        image:"/assets/images/seo-car01.png",
+        description:"A three-sided kitchen layout that provides generous workspace and plenty of room for organised storage.",
+        points:["Generous counter space","Storage across three sides","Well-defined working area"]
+      },
+      {
+        title:"Parallel Kitchen",
+        type:"KITCHEN LAYOUT",
+        image:"/assets/images/seo-car0.png",
+        description:"Two parallel working sides create an efficient cooking environment with storage and work areas within easy reach.",
+        points:["Efficient two-side workflow","Good storage potential","Practical for dedicated kitchen spaces"]
+      },
+      {
+        title:"Straight Kitchen",
+        type:"KITCHEN LAYOUT",
+        image:"/assets/images/seo-car02.png",
+        description:"A simple single-wall kitchen layout that makes smart use of compact spaces while keeping everyday essentials organised.",
+        points:["Space-efficient layout","Clean and simple planning","Suitable for compact spaces"]
+      },
+      {
+        title:"Island Kitchen",
+        type:"KITCHEN LAYOUT",
+        image:"/assets/images/seo-car03.png",
+        description:"A spacious kitchen layout with a central island that can add extra workspace, storage and a strong visual focal point.",
+        points:["Additional workspace","Extra storage possibilities","Ideal for spacious open kitchens"]
+      }
+    ]
+  },
+
+  finishes: {
+    label:"KITCHEN FINISHES",
+    title:`Choose A Look <em>You Love.</em>`,
+    description:"Explore different finish styles to create the look and feel you want for your kitchen.",
+    items:[
+      {
+        title:"Matte Finish",
+        type:"KITCHEN FINISH",
+        image:"/assets/images/material/08.png",
+        description:"A subtle, understated finish that gives kitchen cabinetry a clean and contemporary appearance.",
+        points:["Soft, understated appearance","Works with modern colour palettes","Suitable for contemporary kitchens"]
+      },
+      {
+        title:"Acrylic Finish",
+        type:"KITCHEN FINISH",
+        image:"/assets/images/material/09.png",
+        description:"A sleek finish option known for its smooth appearance and polished modern character.",
+        points:["Smooth visual appearance","Contemporary styling","Available in different colour options"]
+      },
+      {
+        title:"Wood Finish",
+        type:"KITCHEN FINISH",
+        image:"/assets/images/material/10.png",
+        description:"Wood-inspired finishes introduce warmth and natural character into modern modular kitchen designs.",
+        points:["Warm natural appearance","Pairs well with neutral colours","Works across modern and classic styles"]
+      },
+      {
+        title:"Gloss Finish",
+        type:"KITCHEN FINISH",
+        image:"/assets/images/material/11.png",
+        description:"A reflective finish that creates a bright, polished appearance for contemporary kitchen cabinetry.",
+        points:["Bright visual character","Smooth contemporary look","Multiple colour possibilities"]
+      },
+      {
+        title:"Textured Finish",
+        type:"KITCHEN FINISH",
+        image:"/assets/images/explore/textured-finish.jpg",
+        description:"A finish with visible or tactile character that can add depth and contrast to kitchen cabinetry.",
+        points:["Adds visual depth","Useful for contrasting elements","Distinctive design character"]
+      }
+    ]
+  },
+
+  materials: {
+    label:"KITCHEN MATERIALS",
+    title:`Understand What Goes <em>Inside Your Kitchen.</em>`,
+    description:"Explore material options available for your modular kitchen and discuss the right combination for your requirements.",
+    items:[
+      {
+        title:"BWP Plywood",
+        type:"CORE MATERIAL",
+        image:"/assets/images/material/01.png",
+        description:"BWP plywood is one of the material options available for modular kitchen cabinet construction.",
+        points:["Kitchen cabinet material option","Can be paired with different finishes","Discuss suitability with our kitchen team"]
+      },
+      {
+        title:"HDHMR",
+        type:"CORE MATERIAL",
+        image:"/assets/images/material/02.png",
+        description:"HDHMR is another engineered board option that can be considered depending on your kitchen design and requirements.",
+        points:["Engineered board option","Suitable for different cabinet applications","Available with multiple finish choices"]
+      },
+      {
+        title:"Shutter Options",
+        type:"CABINET OPTIONS",
+        image:"/assets/images/material/12.png",
+        description:"Explore different shutter styles and combinations to create the appearance you want for your kitchen.",
+        points:["Different design possibilities","Multiple finish combinations","Customised to the kitchen design"]
+      },
+      {
+        title:"Surface Options",
+        type:"SURFACE & FINISH",
+        image:"/assets/images/material/03.png",
+        description:"Choose from different surface and finish options to create the colour, texture and overall character of your kitchen.",
+        points:["Multiple colours and textures","Different appearance options","Can be coordinated across cabinetry"]
+      }
+    ]
+  },
+
+  storage: {
+    label:"SMART STORAGE",
+    title:`Make Every Space <em>Work Smarter.</em>`,
+    description:"Explore storage ideas designed to keep everyday kitchen essentials organised and easier to access.",
+    items:[
+      {
+        title:"Drawer Storage",
+        type:"SMART STORAGE",
+        image:"/assets/images/material/04.png",
+        description:"Well-planned drawer systems help keep frequently used kitchen items organised and within easy reach.",
+        points:["Organised everyday storage","Easy access to kitchen essentials","Different internal organisation options"]
+      },
+      {
+        title:"Corner Storage",
+        type:"SMART STORAGE",
+        image:"/assets/images/material/07.png",
+        description:"Corner storage solutions can help make better use of areas that may otherwise be difficult to access.",
+        points:["Better use of corner space","Improved accessibility","Multiple solution options"]
+      },
+      {
+        title:"Tall Unit",
+        type:"SMART STORAGE",
+        image:"/assets/images/material/08.png",
+        description:"Tall storage units use vertical space to provide organised storage for groceries and everyday kitchen supplies.",
+        points:["Uses vertical kitchen space","Useful pantry-style storage","Keeps supplies organised"]
+      },
+      {
+        title:"Cutlery Organiser",
+        type:"SMART STORAGE",
+        image:"/assets/images/material/09.png",
+        description:"Dedicated internal organisers help keep cutlery and smaller kitchen essentials separated and easy to find.",
+        points:["Organised drawer interiors","Easy everyday access","Dedicated storage sections"]
+      },
+      {
+        title:"Bottle Pull-Out",
+        type:"SMART STORAGE",
+        image:"/assets/images/explore/bottle-pullout.jpg",
+        description:"A narrow pull-out can provide dedicated storage for bottles and frequently used kitchen items.",
+        points:["Makes use of narrow spaces","Dedicated bottle storage","Convenient everyday access"]
+      },
+      {
+        title:"Dish Organisation",
+        type:"SMART STORAGE",
+        image:"/assets/images/explore/dish-organiser.jpg",
+        description:"Dedicated dish organisation helps keep plates and related kitchen essentials arranged in a defined storage area.",
+        points:["Dedicated dish storage","Better organisation","Easy access for everyday use"]
+      }
+    ]
+  },
+
+  accessories: {
+    label:"HARDWARE & ACCESSORIES",
+    title:`Details That <em>Complete Your Kitchen.</em>`,
+    description:"Explore hardware and accessory options that contribute to the functionality and finishing of your modular kitchen.",
+    items:[
+      {
+        title:"Drawer Systems",
+        type:"KITCHEN HARDWARE",
+        image:"/assets/images/material/04.png",
+        description:"Drawer systems form an important part of everyday kitchen storage and can be selected according to the cabinet design.",
+        points:["Different drawer configurations","Designed around storage needs","Hardware options available"]
+      },
+      {
+        title:"Hinges",
+        type:"KITCHEN HARDWARE",
+        image:"/assets/images/material/05.png",
+        description:"The right hinge system contributes to the movement and everyday operation of kitchen shutters.",
+        points:["Multiple hardware options","Selected according to cabinetry","Soft-close options available"]
+      },
+      {
+        title:"Handles",
+        type:"KITCHEN ACCESSORY",
+        image:"/assets/images/explore/handles.jpg",
+        description:"Handle styles can change both the appearance and everyday interaction of your kitchen cabinetry.",
+        points:["Different styles available","Multiple finish options","Can complement the kitchen design"]
+      },
+      {
+        title:"Gola Profiles",
+        type:"KITCHEN ACCESSORY",
+        image:"/assets/images/explore/gola-profile.jpg",
+        description:"Gola profiles provide a streamlined approach for creating clean, handle-free kitchen cabinetry.",
+        points:["Clean visual appearance","Handle-free styling","Suitable for modern kitchens"]
+      },
+      {
+        title:"Kitchen Baskets",
+        type:"KITCHEN ACCESSORY",
+        image:"/assets/images/explore/kitchen-baskets.jpg",
+        description:"Kitchen baskets provide dedicated storage options for different utensils, dishes and everyday items.",
+        points:["Multiple basket options","Organised cabinet storage","Different sizes and applications"]
+      },
+      {
+        title:"Kitchen Organisers",
+        type:"KITCHEN ACCESSORY",
+        image:"/assets/images/explore/kitchen-organisers.jpg",
+        description:"Internal organisers help divide storage areas and keep smaller kitchen essentials arranged more efficiently.",
+        points:["Better internal organisation","Dedicated storage sections","Useful for everyday essentials"]
+      }
+    ]
+  }
+};
+
+const tabs = document.querySelectorAll(".explore-tab");
+const tabsWrap = document.getElementById("exploreTabsWrap");
+const carousel = document.getElementById("exploreCarousel");
+const carouselWrap = document.getElementById("carouselWrap");
+const dynamicArea = document.getElementById("explorerDynamicArea");
+const label = document.getElementById("exploreLabel");
+const title = document.getElementById("exploreTitle");
+const description = document.getElementById("exploreDescription");
+const detail = document.getElementById("exploreDetail");
+const detailImage = document.getElementById("detailImage");
+const detailCategory = document.getElementById("detailCategory");
+const detailTitle = document.getElementById("detailTitle");
+const detailDescription = document.getElementById("detailDescription");
+const detailPoints = document.getElementById("detailPoints");
+const prevButton = document.getElementById("carouselPrev");
+const nextButton = document.getElementById("carouselNext");
+const headerSlot = document.getElementById("header-slot");
+
+let currentCategory = "designs";
+let categoryTimer = null;
+let detailTimer = null;
+let stickyRAF = null;
+
+function escapeHTML(value){
+  return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+function createCard(item,index){
+  const card = document.createElement("article");
+  card.className = "explore-card" + (index === 0 ? " active" : "");
+  card.tabIndex = 0;
+  card.setAttribute("role","button");
+  card.setAttribute("aria-label",`View ${item.title}`);
+
+  card.innerHTML = `
+    <div class="explore-card-image">
+      <img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.title)}" loading="lazy" decoding="async">
+    </div>
+
+    <span class="explore-card-number">${String(index + 1).padStart(2,"0")}</span>
+
+    <div class="explore-card-content">
+      <div class="explore-card-type">${escapeHTML(item.type)}</div>
+      <h3>${escapeHTML(item.title)}</h3>
+      <p>${escapeHTML(item.description)}</p>
+
+      <span class="explore-card-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </div>
+  `;
+
+  const chooseCard = () => selectItem(item,index,card,true);
+
+  card.addEventListener("click",chooseCard);
+  card.addEventListener("keydown",event=>{
+    if(event.key === "Enter" || event.key === " "){
+      event.preventDefault();
+      chooseCard();
+    }
+  });
+
+  return card;
+}
+
+function renderCategory(category){
+  const data = exploreData[category];
+  if(!data) return;
+
+  currentCategory = category;
+  label.textContent = data.label;
+  title.innerHTML = data.title;
+  description.textContent = data.description;
+  carousel.innerHTML = "";
+
+  data.items.forEach((item,index)=>{
+    carousel.appendChild(createCard(item,index));
+  });
+
+  carousel.scrollTo({left:0,behavior:"auto"});
+  renderDetail(data.items[0],0);
+}
+
+function selectItem(item,index,card,shouldScroll){
+  carousel.querySelectorAll(".explore-card").forEach(el=>el.classList.remove("active"));
+  card.classList.add("active");
+
+  renderDetail(item,index);
+
+  card.scrollIntoView({
+    behavior:"smooth",
+    block:"nearest",
+    inline:"center"
+  });
+
+  if(shouldScroll){
+    setTimeout(scrollToDetail,160);
+  }
+}
+
+function renderDetail(item,index){
+  if(!item) return;
+
+  clearTimeout(detailTimer);
+  detail.classList.add("is-changing");
+
+  detailTimer = setTimeout(()=>{
+    detailImage.src = item.image;
+    detailImage.alt = item.title;
+    detailCategory.textContent = item.type;
+    detailTitle.textContent = item.title;
+    detailDescription.textContent = item.description;
+    detailPoints.innerHTML = "";
+
+    item.points.forEach(point=>{
+      const row = document.createElement("div");
+      row.className = "detail-point";
+      row.innerHTML = `
+        <i class="fa-solid fa-check"></i>
+        <span>${escapeHTML(point)}</span>
+      `;
+      detailPoints.appendChild(row);
+    });
+
+    detail.classList.toggle("reverse",index % 2 !== 0);
+    detail.classList.remove("is-changing");
+  },120);
+}
+
+function getStickyOffset(){
+  const cssValue = parseFloat(
+    getComputedStyle(document.documentElement)
+      .getPropertyValue("--econ-sticky-top")
+  ) || 0;
+
+  return cssValue;
+}
+
+function scrollToDetail(){
+  const stickyHeight = tabsWrap?.offsetHeight || 0;
+  const top =
+    detail.getBoundingClientRect().top +
+    window.scrollY -
+    stickyHeight -
+    getStickyOffset() -
+    18;
+
+  window.scrollTo({top,behavior:"smooth"});
+}
+
+function scrollToCarousel(){
+  const stickyHeight = tabsWrap?.offsetHeight || 0;
+  const top =
+    carouselWrap.getBoundingClientRect().top +
+    window.scrollY -
+    stickyHeight -
+    getStickyOffset() -
+    100;
+
+  window.scrollTo({top,behavior:"smooth"});
+}
+
+tabs.forEach(tab=>{
+  tab.addEventListener("click",()=>{
+    const category = tab.dataset.category;
+    if(!category || !exploreData[category]) return;
+
+    if(currentCategory === category && tab.classList.contains("active")){
+      carouselWrap.scrollIntoView({behavior:"smooth",block:"center"});
+      return;
+    }
+
+    tabs.forEach(item=>{
+      const active = item === tab;
+      item.classList.toggle("active",active);
+      item.setAttribute("aria-selected",active ? "true" : "false");
+    });
+
+    tab.scrollIntoView({
+      behavior:"smooth",
+      block:"nearest",
+      inline:"center"
+    });
+
+    dynamicArea.classList.add("is-switching");
+    clearTimeout(categoryTimer);
+
+    categoryTimer = setTimeout(()=>{
+      renderCategory(category);
+      dynamicArea.classList.remove("is-switching");
+      setTimeout(scrollToCarousel,80);
+    },170);
+  });
+});
+
+function getCarouselMoveAmount(){
+  const firstCard = carousel.querySelector(".explore-card");
+  if(!firstCard) return 300;
+
+  if(window.matchMedia("(max-width:700px)").matches){
+    return firstCard.offsetWidth + 11;
+  }
+
+  return firstCard.offsetWidth + 18;
+}
+
+nextButton?.addEventListener("click",()=>{
+  carousel.scrollBy({left:getCarouselMoveAmount(),behavior:"smooth"});
+});
+
+prevButton?.addEventListener("click",()=>{
+  carousel.scrollBy({left:-getCarouselMoveAmount(),behavior:"smooth"});
+});
+
+function updateStickyPosition(){
+  if(!tabsWrap) return;
+
+  const actualHeader =
+    headerSlot?.querySelector("header") ||
+    document.querySelector("header");
+
+  let stickyTop = 0;
+
+  if(actualHeader){
+    const rect = actualHeader.getBoundingClientRect();
+
+    if(rect.bottom > 0 && rect.top < window.innerHeight){
+      stickyTop = Math.max(0,rect.bottom);
+    }
+  }
+
+  document.documentElement.style.setProperty(
+    "--econ-sticky-top",
+    `${stickyTop}px`
+  );
+
+  const tabsRect = tabsWrap.getBoundingClientRect();
+
+  tabsWrap.classList.toggle(
+    "is-stuck",
+    tabsRect.top <= stickyTop + 2
+  );
+}
+
+function requestStickyUpdate(){
+  if(stickyRAF) cancelAnimationFrame(stickyRAF);
+  stickyRAF = requestAnimationFrame(updateStickyPosition);
+}
+
+window.addEventListener("scroll",requestStickyUpdate,{passive:true});
+window.addEventListener("resize",requestStickyUpdate);
+
+if(headerSlot){
+  const headerObserver = new MutationObserver(updateStickyPosition);
+
+  headerObserver.observe(headerSlot,{
+    childList:true,
+    subtree:true
+  });
+}
+
+function getInitialCategory(){
+  const params = new URLSearchParams(window.location.search);
+  const requestedCategory = params.get("category");
+
+  if(requestedCategory && exploreData[requestedCategory]){
+    return requestedCategory;
+  }
+
+  return "designs";
+}
+
+function initialiseExplorePage(){
+  const category = getInitialCategory();
+  currentCategory = category;
+
+  tabs.forEach(tab=>{
+    const active = tab.dataset.category === category;
+    tab.classList.toggle("active",active);
+    tab.setAttribute("aria-selected",active ? "true" : "false");
+  });
+
+  renderCategory(category);
+  updateStickyPosition();
+  setTimeout(updateStickyPosition,250);
+}
+
+if(document.readyState === "loading"){
+  document.addEventListener("DOMContentLoaded",initialiseExplorePage);
+}else{
+  initialiseExplorePage();
+}
+</script>
+
+<script type="module" src="/assets/js/components.js"></script>
+
+</body>
+</html>

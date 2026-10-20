@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forms | ECON Kitchen</title>
+  <meta name="description" content="Choose and open the ECON Kitchen form you need.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Shared header/footer styles, matching the existing website -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/readability.css">
+  <link rel="stylesheet" href="/assets/css/translator.css">
+  <link rel="stylesheet" href="/assets/css/responsive-master.css">
+  <style>
+    .econ-forms{--gold:#bd942d;--ink:#191919;--muted:#707070;--line:#e9e2d4}
+    .econ-forms,.econ-forms *{box-sizing:border-box}
+    body{margin:0;background:#fff}
+    .econ-forms{color:var(--ink);font-family:Poppins,Arial,sans-serif}
+    .econ-forms{max-width:1200px;margin:auto;padding:64px 24px 80px}
+    .econ-forms .intro{text-align:center;margin-bottom:38px}
+    .econ-forms .eyebrow{font-size:14px;letter-spacing:3px;font-weight:600;color:#88691a}
+    .econ-forms h1{font-size:clamp(32px,5vw,48px);margin:12px 0;font-weight:600;line-height:1.2}
+    .econ-forms .intro p{margin:0;color:var(--muted);font-size:16px;line-height:1.7}
+    .econ-forms .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+    .econ-forms .card{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 7px 25px #19191906;transition:transform .2s,box-shadow .2s}
+    .econ-forms .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #19191910}
+    .econ-forms .image-wrap{aspect-ratio:4/3;background:#f4f0e7;overflow:hidden}
+    .econ-forms .image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+    .econ-forms .details{padding:24px}
+    .econ-forms h2{margin:0 0 20px;font-size:21px;font-weight:600;line-height:1.4}
+    .econ-forms .form-button{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:14px 20px;border:1px solid var(--gold);border-radius:10px;background:var(--gold);color:#111;text-decoration:none;font:600 16px/1.4 Poppins,Arial,sans-serif;cursor:pointer;transition:background .2s,color .2s}
+    .econ-forms a.form-button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .econ-forms .form-button:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+    .econ-forms .form-button:disabled{opacity:.6;cursor:default}
+    @media(max-width:960px){.econ-forms .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.econ-forms{padding:40px 18px 50px}.econ-forms .grid{grid-template-columns:1fr;gap:22px}.econ-forms .details{padding:22px}.econ-forms .intro{margin-bottom:28px}}
+    @media(prefers-reduced-motion:reduce){.econ-forms .card,.econ-forms .form-button{transition:none}.econ-forms .card:hover{transform:none}}
+  </style>
+</head>
+<body class="forms-page">
+  <div id="header-slot"></div>
+  <main class="econ-forms">
+    <header class="intro">
+      <span class="eyebrow">ECON KITCHEN</span>
+      <h1>Choose Your Form</h1>
+      <p>Select the form you need to get started.</p>
+    </header>
+    <section class="grid" id="formGrid" aria-label="Available forms"></section>
+    <noscript>Please enable JavaScript to view the forms.</noscript>
+  </main>
+  <div id="footer-slot"></div>
+  <script>
+    (() => {
+      "use strict";
+      // Update these six entries with your image paths, names and actual form URLs.
+      // formUrl example: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+      // Empty URLs keep the button disabled until a real link is supplied.
+      const forms = [
+        { title: "Form 01", image: "/assets/images/forms/1.webp", formUrl: "" },
+        { title: "Form 02", image: "/assets/images/forms/2.webp", formUrl: "" },
+        { title: "Form 03", image: "/assets/images/forms/3.webp", formUrl: "" },
+        { title: "Form 04", image: "/assets/images/forms/4.webp", formUrl: "" },
+        { title: "Form 05", image: "/assets/images/forms/5.webp", formUrl: "" },
+        { title: "Form 06", image: "/assets/images/forms/6.webp", formUrl: "" }
+      ];
+      function placeholder(index) {
+        const colors = ["#eee5d3", "#e2ddd4", "#f0e9dd", "#dfd9ce", "#eee3ce", "#e5e1d7"];
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><rect width="800" height="600" fill="${colors[index]}"/><circle cx="660" cy="70" r="200" fill="#bd942d" opacity=".12"/><circle cx="80" cy="580" r="200" fill="#fff" opacity=".4"/><rect x="284" y="140" width="232" height="320" rx="20" fill="#fff" stroke="#bd942d" stroke-width="3"/><rect x="347" y="120" width="106" height="42" rx="12" fill="#191919"/><g stroke="#bd942d" stroke-width="6" fill="none"><rect x="318" y="211" width="26" height="26" rx="4"/><rect x="318" y="278" width="26" height="26" rx="4"/><rect x="318" y="345" width="26" height="26" rx="4"/><path d="M367 224h108M367 291h108M367 358h108"/></g></svg>`;
+        return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+      }
+      function validUrl(value) {
+        if (!value) return null;
+        try {
+          const url = new URL(value, location.href);
+          return ["http:", "https:"].includes(url.protocol) ? url.href : null;
+        } catch { return null; }
+      }
+      const fragment = document.createDocumentFragment();
+      forms.forEach((form,index) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        const imageWrap = document.createElement("div");
+        imageWrap.className = "image-wrap";
+        const image = document.createElement("img");
+        image.width = 800; image.height = 600;
+        image.alt = form.title;
+        image.loading = index < 3 ? "eager" : "lazy";
+        image.decoding = "async";
+        image.addEventListener("error", () => { image.src = placeholder(index); }, {once:true});
+        image.src = form.image || placeholder(index);
+        imageWrap.append(image);
+        const details = document.createElement("div");
+        details.className = "details";
+        const title = document.createElement("h2");
+        title.textContent = form.title;
+        const url = validUrl(form.formUrl);
+        const button = document.createElement(url ? "a" : "button");
+        button.className = "form-button";
+        button.textContent = "Open Form";
+        if (url) {
+          button.href = url; button.target = "_blank";
+          button.rel = "noopener noreferrer";
+          button.setAttribute("aria-label", "Open " + form.title + " in a new tab");
+          const arrow = document.createElement("span");
+          arrow.textContent = "↗"; arrow.setAttribute("aria-hidden","true");
+          button.append(arrow);
+        } else {
+          button.type = "button"; button.disabled = true;
+          button.title = "Form coming soon";
+          button.setAttribute("aria-label", form.title + " — coming soon");
+        }
+        details.append(title,button);
+        card.append(imageWrap,details);
+        fragment.append(card);
+      });
+      document.getElementById("formGrid").replaceChildren(fragment);
+    })();
+  </script>
+  <!-- Uses the website's existing component loader -->
+  <script type="module" src="/assets/js/components.js"></script>
+  <script src="/assets/js/translator.js"></script>
+</body>
+</html>

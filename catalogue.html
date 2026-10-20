@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>Our Catalogue | ECON Kitchen</title>
+    <meta
+        name="description"
+        content="Explore the ECON Kitchen premium interior design catalogue with modular kitchens, wardrobes and complete interior solutions."
+    >
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <meta
+        name="theme-color"
+        content="#171717"
+    >
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <!-- ==========================================
+         GLOBAL ECON CSS
+    =========================================== -->
+    <link
+        rel="stylesheet"
+        href="/assets/css/header.css"
+    >
+    <link
+        rel="stylesheet"
+        href="/assets/css/home.css"
+    >
+    <!-- ==========================================
+         CATALOGUE CSS
+    =========================================== -->
+    <link
+        rel="stylesheet"
+        href="/assets/css/catalogue.css"
+    >
+    <link rel="stylesheet" href="/assets/css/readability.css">
+    <link rel="stylesheet" href="/assets/css/translator.css">
+    <link rel="stylesheet" href="/assets/css/responsive-master.css">
+</head>
+<body>
+    <!-- ==========================================
+         GLOBAL HEADER
+    =========================================== -->
+    <div id="header-slot"></div>
+    <!-- ==========================================
+         MAIN
+    =========================================== -->
+    <main>
+        <!-- ======================================
+             CATALOGUE SECTION
+        ======================================= -->
+        <section
+            class="catalogue-section"
+            id="catalogueSection"
+        >
+            <div class="catalogue-container">
+                <!-- ==================================
+                     CATALOGUE HEADING
+                =================================== -->
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">
+                        ECON COLLECTION
+                    </span>
+                    <h1>
+                        Our Catalogue
+                    </h1>
+                    <p>
+                        Explore our collection page by page.
+                    </p>
+                </header>
+                <!-- ==================================
+                     CATALOGUE VIEWER
+                =================================== -->
+                <div
+                    class="catalogue-viewer"
+                    id="catalogueViewer"
+                >
+                    <!-- ==============================
+                         LOADING STATE
+                    =============================== -->
+                    <div
+                        class="catalogue-loader"
+                        id="catalogueLoader"
+                        role="status"
+                        aria-live="polite"
+                    >
+                        <div
+                            class="catalogue-loader-spinner"
+                        ></div>
+                        <strong>
+                            Loading Catalogue...
+                        </strong>
+                        <span id="catalogueProgress">
+                            Preparing PDF
+                        </span>
+                    </div>
+                    <!-- ==============================
+                         ERROR STATE
+                    =============================== -->
+                    <div
+                        class="catalogue-error"
+                        id="catalogueError"
+                        hidden
+                    >
+                        <div class="catalogue-error-icon">
+                            !
+                        </div>
+                        <strong>
+                            Unable to load catalogue.
+                        </strong>
+                        <p>
+                            Please refresh the page or try again later.
+                        </p>
+                    </div>
+                    <!-- ==============================
+                         FLIPBOOK STAGE
+                    =============================== -->
+                    <div
+                        class="catalogue-stage"
+                        id="catalogueStage"
+                        hidden
+                    >
+                        <div
+                            class="catalogue-book-shell"
+                            id="catalogueBookShell"
+                        >
+                            <!--
+                                PDF.js dynamically renders
+                                the original PDF pages here.
+                            -->
+                            <div
+                                class="catalogue-book"
+                                id="catalogueBook"
+                                aria-label="ECON digital catalogue"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================================
+                     PAGE NAVIGATION
+                =================================== -->
+                <div
+                    class="catalogue-navigation"
+                    id="catalogueNavigation"
+                    hidden
+                >
+                    <!-- PREVIOUS -->
+                    <button
+                        class="catalogue-nav-btn"
+                        id="cataloguePrev"
+                        type="button"
+                        aria-label="Previous catalogue page"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M15 18l-6-6 6-6"
+                            />
+                        </svg>
+                        <span>
+                            Previous
+                        </span>
+                    </button>
+                    <!-- PAGE COUNTER -->
+                    <div
+                        class="catalogue-page-counter"
+                        id="cataloguePageCounter"
+                        aria-live="polite"
+                    >
+                        1 / 10
+                    </div>
+                    <!-- NEXT -->
+                    <button
+                        class="catalogue-nav-btn"
+                        id="catalogueNext"
+                        type="button"
+                        aria-label="Next catalogue page"
+                    >
+                        <span>
+                            Next
+                        </span>
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M9 18l6-6-6-6"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <!-- ==================================
+                     CATALOGUE TOOLBAR
+                =================================== -->
+                <div
+                    class="catalogue-toolbar"
+                    id="catalogueToolbar"
+                    hidden
+                >
+                    <!-- ==============================
+                         ZOOM OUT
+                    =============================== -->
+                    <button
+                        class="catalogue-tool-btn"
+                        id="catalogueZoomOut"
+                        type="button"
+                        aria-label="Zoom out"
+                        title="Zoom Out"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7"
+                            />
+                            <path
+                                d="M8 11h6"
+                            />
+                            <path
+                                d="M20 20l-4-4"
+                            />
+                        </svg>
+                        <span>
+                            Zoom Out
+                        </span>
+                    </button>
+                    <!-- ==============================
+                         ZOOM VALUE
+                    =============================== -->
+                    <div
+                        class="catalogue-zoom-value"
+                        id="catalogueZoomValue"
+                    >
+                        100%
+                    </div>
+                    <!-- ==============================
+                         ZOOM IN
+                    =============================== -->
+                    <button
+                        class="catalogue-tool-btn"
+                        id="catalogueZoomIn"
+                        type="button"
+                        aria-label="Zoom in"
+                        title="Zoom In"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7"
+                            />
+                            <path
+                                d="M8 11h6M11 8v6"
+                            />
+                            <path
+                                d="M20 20l-4-4"
+                            />
+                        </svg>
+                        <span>
+                            Zoom In
+                        </span>
+                    </button>
+                    <!-- ==============================
+                         RESET ZOOM
+                    =============================== -->
+                    <button
+                        class="catalogue-tool-btn"
+                        id="catalogueZoomReset"
+                        type="button"
+                        aria-label="Reset catalogue zoom"
+                        title="Reset Zoom"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M4 4v6h6"
+                            />
+                            <path
+                                d="M5.5 15a8 8 0 1 0 1-8"
+                            />
+                        </svg>
+                        <span>
+                            Reset
+                        </span>
+                    </button>
+                    <!-- DIVIDER -->
+                    <span
+                        class="catalogue-toolbar-divider"
+                        aria-hidden="true"
+                    ></span>
+                    <!-- ==============================
+                         FULLSCREEN
+                    =============================== -->
+                    <button
+                        class="catalogue-tool-btn"
+                        id="catalogueFullscreen"
+                        type="button"
+                        aria-label="Open catalogue fullscreen"
+                        title="Fullscreen"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M8 3H3v5"
+                            />
+                            <path
+                                d="M16 3h5v5"
+                            />
+                            <path
+                                d="M21 16v5h-5"
+                            />
+                            <path
+                                d="M8 21H3v-5"
+                            />
+                        </svg>
+                        <span>
+                            Fullscreen
+                        </span>
+                    </button>
+                    <!-- ==============================
+                         DOWNLOAD PDF
+                    =============================== -->
+                    <a
+                        class="catalogue-tool-btn catalogue-download-btn"
+                        href="/pdf/New-flipbook.pdf"
+                        download="New-flipbook.pdf"
+                        aria-label="Download ECON catalogue"
+                        title="Download Catalogue"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 3v12"
+                            />
+                            <path
+                                d="M7 10l5 5 5-5"
+                            />
+                            <path
+                                d="M5 21h14"
+                            />
+                        </svg>
+                        <span>
+                            Download Catalogue
+                        </span>
+                    </a>
+                </div>
+                <!-- ==================================
+                     INTERACTION HELP
+                =================================== -->
+                <p
+                    class="catalogue-help"
+                    id="catalogueHelp"
+                    hidden
+                >
+                    Drag a page, click its edge, swipe,
+                    or use the arrow keys.
+                </p>
+            </div>
+        </section>
+    
+        <!-- ADDITIONAL CATALOGUES: edit the six entries in catalogue.js -->
+        <section class="ecat-library" aria-labelledby="ecatLibraryTitle">
+            <div class="ecat-container">
+                <header class="ecat-heading">
+                    <span class="ecat-eyebrow">EXPLORE MORE</span>
+                    <h2 id="ecatLibraryTitle">Explore Our Catalogues</h2>
+                    <p>Choose a catalogue to explore the collection.</p>
+                </header>
+                <div class="ecat-grid" id="additionalCatalogueGrid"></div>
+                <noscript>Please enable JavaScript to view our additional catalogues.</noscript>
+            </div>
+        </section>
+
+    </main>
+    <!-- ==========================================
+         GLOBAL ECON FOOTER
+    =========================================== -->
+    <div id="footer-slot"></div>
+    <!-- ==========================================
+         PDF.JS
+    =========================================== -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+    ></script>
+    <!-- ==========================================
+         STPAGEFLIP
+    =========================================== -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"
+    ></script>
+    <!-- ==========================================
+         ECON GLOBAL COMPONENTS
+         Header + Footer
+    =========================================== -->
+    <script
+        type="module"
+        src="/assets/js/components.js"
+    ></script>
+    <!-- ==========================================
+         CATALOGUE JS
+    =========================================== -->
+    <script
+        src="/assets/js/catalogue.js"
+    ></script>
+    <script src="/assets/js/translator.js"></script>
+</body>
+</html>

@@ -1,0 +1,1768 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Full Home Interior Cost Calculator | ECON Kitchen
+    </title>
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <meta name="description"
+        content="Estimate your full home interior cost with ECON Kitchen. Select your BHK, rooms, package and get an indicative interior budget.">
+
+    <meta name="theme-color" content="#171717"> 
+
+    <!-- =========================================
+         EXISTING WEBSITE CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+
+    <!-- =========================================
+         CALCULATOR CSS
+    ========================================== -->
+
+    <link rel="stylesheet" href="/assets/css/full-interior-calculator.css">
+
+    <link rel="stylesheet" href="/assets/css/typography.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/readability.css">
+    <link rel="stylesheet" href="/assets/css/translator.css">
+    <link rel="stylesheet" href="../assets/css/responsive-master.css">
+ 
+
+
+<body class="fi-page">
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <div id="header-slot"></div>
+
+
+
+    <main class="fi-main">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="fi-hero">
+
+            <div class="fi-hero-inner">
+
+                <span class="fi-eyebrow">
+                    ECON INTERIOR ESTIMATOR
+                </span>
+
+                <h1>
+                    Plan Your Dream Home
+                    <span>Interior Budget.</span>
+                </h1>
+
+                <p>
+                    Tell us a little about your home and requirements.
+                    Get an indicative interior budget in just a few steps.
+                </p>
+
+
+                <div class="fi-hero-features">
+
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Quick Estimate
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Custom Requirements
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        No Obligation
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             STEPPER
+        ====================================== -->
+
+        <section class="fi-stepper-section">
+
+            <div class="fi-stepper">
+
+                <div class="fi-stepper-line">
+
+                    <div class="fi-stepper-progress" id="fiStepperProgress">
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 1 -->
+
+                <div class="fi-stepper-item active" data-step-indicator="1">
+
+                    <div class="fi-step-circle">
+
+                        <span>1</span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="fi-step-text">
+
+                        <small>STEP 01</small>
+
+                        <strong>
+                            BHK Type
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <div class="fi-stepper-item" data-step-indicator="2">
+
+                    <div class="fi-step-circle">
+
+                        <span>2</span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="fi-step-text">
+
+                        <small>STEP 02</small>
+
+                        <strong>
+                            Rooms
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <div class="fi-stepper-item" data-step-indicator="3">
+
+                    <div class="fi-step-circle">
+
+                        <span>3</span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="fi-step-text">
+
+                        <small>STEP 03</small>
+
+                        <strong>
+                            Package
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <div class="fi-stepper-item" data-step-indicator="4">
+
+                    <div class="fi-step-circle">
+
+                        <span>4</span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="fi-step-text">
+
+                        <small>STEP 04</small>
+
+                        <strong>
+                            Get Quote
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CALCULATOR
+        ====================================== -->
+
+        <section class="fi-calculator-section">
+
+            <div class="fi-calculator-shell">
+
+
+                <!-- =================================
+                     STEP 1 : BHK
+                ================================== -->
+
+                <section class="fi-calc-step active" data-step="1">
+
+
+                    <div class="fi-step-heading">
+
+                        <span class="fi-mini-eyebrow">
+                            TELL US ABOUT YOUR HOME
+                        </span>
+
+                        <h2>
+                            Select your BHK type
+                        </h2>
+
+                        <p>
+                            Choose your home configuration and approximate
+                            property size.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="fi-bhk-list">
+
+
+                        <!-- 1 BHK -->
+
+                        <div class="fi-bhk-card" data-bhk="1">
+
+                            <button type="button" class="fi-bhk-main">
+
+                                <span class="fi-radio"></span>
+
+                                <span class="fi-bhk-info">
+
+                                    <strong>
+                                        1 BHK
+                                    </strong>
+
+                                    <small>
+                                        Compact home
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- 2 BHK -->
+
+                        <div class="fi-bhk-card" data-bhk="2">
+
+                            <button type="button" class="fi-bhk-main">
+
+                                <span class="fi-radio"></span>
+
+                                <span class="fi-bhk-info">
+
+                                    <strong>
+                                        2 BHK
+                                    </strong>
+
+                                    <small>
+                                        Most popular
+                                    </small>
+
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down fi-bhk-arrow"></i>
+
+                            </button>
+
+
+                            <div class="fi-size-options">
+
+                                <button type="button" class="fi-size-card" data-size="small"
+                                    data-label="Below 800 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Small
+                                        </strong>
+
+                                        <small>
+                                            Below 800 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+
+                                <button type="button" class="fi-size-card" data-size="large"
+                                    data-label="Above 800 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Large
+                                        </strong>
+
+                                        <small>
+                                            Above 800 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 3 BHK -->
+
+                        <div class="fi-bhk-card" data-bhk="3">
+
+                            <button type="button" class="fi-bhk-main">
+
+                                <span class="fi-radio"></span>
+
+                                <span class="fi-bhk-info">
+
+                                    <strong>
+                                        3 BHK
+                                    </strong>
+
+                                    <small>
+                                        Spacious family home
+                                    </small>
+
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down fi-bhk-arrow"></i>
+
+                            </button>
+
+
+                            <div class="fi-size-options">
+
+                                <button type="button" class="fi-size-card" data-size="small"
+                                    data-label="Below 1200 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Small
+                                        </strong>
+
+                                        <small>
+                                            Below 1200 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+
+                                <button type="button" class="fi-size-card" data-size="large"
+                                    data-label="Above 1200 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Large
+                                        </strong>
+
+                                        <small>
+                                            Above 1200 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 4 BHK -->
+
+                        <div class="fi-bhk-card" data-bhk="4">
+
+                            <button type="button" class="fi-bhk-main">
+
+                                <span class="fi-radio"></span>
+
+                                <span class="fi-bhk-info">
+
+                                    <strong>
+                                        4 BHK
+                                    </strong>
+
+                                    <small>
+                                        Large family home
+                                    </small>
+
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down fi-bhk-arrow"></i>
+
+                            </button>
+
+
+                            <div class="fi-size-options">
+
+                                <button type="button" class="fi-size-card" data-size="small"
+                                    data-label="Below 1800 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Small
+                                        </strong>
+
+                                        <small>
+                                            Below 1800 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+
+                                <button type="button" class="fi-size-card" data-size="large"
+                                    data-label="Above 1800 sq ft">
+
+                                    <span class="fi-radio"></span>
+
+                                    <span>
+
+                                        <strong>
+                                            Large
+                                        </strong>
+
+                                        <small>
+                                            Above 1800 sq ft
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- 5 BHK -->
+
+                        <div class="fi-bhk-card" data-bhk="5">
+
+                            <button type="button" class="fi-bhk-main">
+
+                                <span class="fi-radio"></span>
+
+                                <span class="fi-bhk-info">
+
+                                    <strong>
+                                        5 BHK+
+                                    </strong>
+
+                                    <small>
+                                        Luxury residence
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     STEP 2 : ROOMS
+                ================================== -->
+
+                <section class="fi-calc-step" data-step="2">
+
+
+                    <div class="fi-step-heading">
+
+                        <span class="fi-mini-eyebrow">
+                            PERSONALISE YOUR PROJECT
+                        </span>
+
+                        <h2>
+                            Select rooms you'd like us to design
+                        </h2>
+
+                        <p>
+                            Adjust the number of rooms based on your
+                            interior requirements.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="fi-room-list">
+
+
+                        <!-- LIVING -->
+
+                        <div class="fi-room-row" data-room="living">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-couch"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Living Room
+                                    </strong>
+
+                                    <small>
+                                        TV unit, storage & décor
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus"
+                                    aria-label="Decrease Living Room">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    1
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus"
+                                    aria-label="Increase Living Room">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- KITCHEN -->
+
+                        <div class="fi-room-row" data-room="kitchen">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-kitchen-set"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Modular Kitchen
+                                    </strong>
+
+                                    <small>
+                                        Cabinets, storage & finish
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    1
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- BEDROOM -->
+
+                        <div class="fi-room-row" data-room="bedroom">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-bed"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Bedroom
+                                    </strong>
+
+                                    <small>
+                                        Wardrobe & essential storage
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    2
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- BATHROOM -->
+
+                        <div class="fi-room-row" data-room="bathroom">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-bath"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Bathroom
+                                    </strong>
+
+                                    <small>
+                                        Vanity & storage
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    2
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- DINING -->
+
+                        <div class="fi-room-row" data-room="dining">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-utensils"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Dining Area
+                                    </strong>
+
+                                    <small>
+                                        Crockery & dining storage
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    1
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- STUDY -->
+
+                        <div class="fi-room-row" data-room="study">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-laptop"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Study / Home Office
+                                    </strong>
+
+                                    <small>
+                                        Desk & smart storage
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    0
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- POOJA -->
+
+                        <div class="fi-room-row" data-room="pooja">
+
+                            <div class="fi-room-left">
+
+                                <div class="fi-room-icon">
+
+                                    <i class="fa-solid fa-house"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Pooja Unit
+                                    </strong>
+
+                                    <small>
+                                        Dedicated spiritual space
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-counter">
+
+                                <button type="button" class="fi-counter-btn minus" data-action="minus">
+
+                                    <i class="fa-solid fa-minus"></i>
+
+                                </button>
+
+                                <span class="fi-count">
+                                    0
+                                </span>
+
+                                <button type="button" class="fi-counter-btn plus" data-action="plus">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     STEP 3 : PACKAGE
+                ================================== -->
+
+                <section class="fi-calc-step" data-step="3">
+
+
+                    <div class="fi-step-heading">
+
+                        <span class="fi-mini-eyebrow">
+                            CHOOSE YOUR EXPERIENCE
+                        </span>
+
+                        <h2>
+                            Pick your interior package
+                        </h2>
+
+                        <p>
+                            Select a package based on your preferred
+                            materials, finishes and overall experience.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="fi-package-grid">
+
+
+                        <!-- ESSENTIAL -->
+
+                        <button type="button" class="fi-package-card" data-package="essential">
+
+                            <div class="fi-package-top">
+
+                                <span class="fi-package-radio"></span>
+
+                                <div>
+
+                                    <span class="fi-package-tag">
+                                        SMART START
+                                    </span>
+
+                                    <h3>
+                                        Essential
+                                    </h3>
+
+                                    <p>
+                                        Functional interiors designed
+                                        for practical everyday living.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-package-image">
+
+                                <img src="/assets/images/interior/essential-package.jpg"
+                                    alt="Essential Interior Package">
+
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Value-focused materials
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Laminate finishes
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Standard hardware
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Essential accessories
+                                </li>
+
+                            </ul>
+
+                        </button>
+
+
+
+                        <!-- PREMIUM -->
+
+                        <button type="button" class="fi-package-card recommended" data-package="premium">
+
+                            <span class="fi-recommended">
+                                MOST POPULAR
+                            </span>
+
+
+                            <div class="fi-package-top">
+
+                                <span class="fi-package-radio"></span>
+
+                                <div>
+
+                                    <span class="fi-package-tag">
+                                        PREMIUM LIVING
+                                    </span>
+
+                                    <h3>
+                                        Premium
+                                    </h3>
+
+                                    <p>
+                                        Enhanced materials, finishes and
+                                        smarter storage for modern homes.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-package-image">
+
+                                <img src="/assets/images/interior/premium-package.jpg" alt="Premium Interior Package">
+
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Premium material options
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Better finish selection
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Premium hardware
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Enhanced accessories
+                                </li>
+
+                            </ul>
+
+                        </button>
+
+
+
+                        <!-- LUXURY -->
+
+                        <button type="button" class="fi-package-card" data-package="luxury">
+
+                            <div class="fi-package-top">
+
+                                <span class="fi-package-radio"></span>
+
+                                <div>
+
+                                    <span class="fi-package-tag">
+                                        SIGNATURE
+                                    </span>
+
+                                    <h3>
+                                        Luxury
+                                    </h3>
+
+                                    <p>
+                                        High-end interiors with sophisticated
+                                        materials and premium detailing.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="fi-package-image">
+
+                                <img src="/assets/images/interior/luxury-package.jpg" alt="Luxury Interior Package">
+
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Premium-grade materials
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Acrylic / glass finishes
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Premium hardware
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    High-end accessories
+                                </li>
+
+                            </ul>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     STEP 4 : LEAD FORM
+                ================================== -->
+
+                <section class="fi-calc-step" data-step="4">
+
+
+                    <div class="fi-step-heading">
+
+                        <span class="fi-mini-eyebrow">
+                            JUST ONE LAST STEP
+                        </span>
+
+                        <h2>
+                            Your estimate is almost ready
+                        </h2>
+
+                        <p>
+                            Enter your details to view your estimated
+                            interior budget.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="fi-lead-layout">
+
+
+                        <!-- FORM -->
+
+                        <form class="fi-lead-form" id="fiLeadForm" novalidate>
+
+
+                            <div class="fi-form-group">
+
+                                <label for="fiName">
+                                    Full Name
+                                </label>
+
+                                <div class="fi-input">
+
+                                    <i class="fa-regular fa-user"></i>
+
+                                    <input type="text" id="fiName" name="name" placeholder="Enter your full name"
+                                        autocomplete="name" required>
+
+                                </div>
+
+                                <small class="fi-error"></small>
+
+                            </div>
+
+
+
+                            <div class="fi-form-group">
+
+                                <label for="fiEmail">
+                                    Email Address
+                                </label>
+
+                                <div class="fi-input">
+
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                    <input type="email" id="fiEmail" name="email" placeholder="Enter your email address"
+                                        autocomplete="email" required>
+
+                                </div>
+
+                                <small class="fi-error"></small>
+
+                            </div>
+
+
+
+                            <div class="fi-form-group">
+
+                                <label for="fiPhone">
+                                    Phone Number
+                                </label>
+
+                                <div class="fi-input">
+
+                                    <span class="fi-country">
+                                        +91
+                                    </span>
+
+                                    <input type="tel" id="fiPhone" name="phone"
+                                        placeholder="Enter 10-digit mobile number" maxlength="10" inputmode="numeric"
+                                        autocomplete="tel" required>
+
+                                </div>
+
+                                <small class="fi-error"></small>
+
+                            </div>
+
+
+
+                            <label class="fi-whatsapp">
+
+                                <input type="checkbox" name="whatsappConsent" checked>
+
+                                <span class="fi-check-box">
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                </span>
+
+                                <span>
+                                    Send me project updates on WhatsApp
+                                </span>
+
+                            </label>
+
+
+
+                            <div class="fi-form-group">
+
+                                <label for="fiCity">
+                                    City
+                                </label>
+
+                                <div class="fi-input">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <select id="fiCity" name="city" required>
+
+                                        <option value="">
+                                            Select your city
+                                        </option>
+
+                                        <option value="Delhi">
+                                            Delhi
+                                        </option>
+
+                                        <option value="Gurugram">
+                                            Gurugram
+                                        </option>
+
+                                        <option value="Noida">
+                                            Noida
+                                        </option>
+
+                                        <option value="Ghaziabad">
+                                            Ghaziabad
+                                        </option>
+
+                                        <option value="Faridabad">
+                                            Faridabad
+                                        </option>
+
+                                        <option value="Meerut">
+                                            Meerut
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <small class="fi-error"></small>
+
+                            </div>
+
+
+                            <p class="fi-form-privacy">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                By submitting, you agree to be contacted
+                                regarding your interior requirement.
+
+                            </p>
+
+                        </form>
+
+
+
+                        <!-- SUMMARY -->
+
+                        <aside class="fi-mini-summary">
+
+                            <span class="fi-summary-eyebrow">
+                                YOUR SELECTION
+                            </span>
+
+                            <h3>
+                                Project Summary
+                            </h3>
+
+
+                            <div class="fi-summary-row">
+
+                                <span>
+                                    Home
+                                </span>
+
+                                <strong id="fiSummaryBhk">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="fi-summary-row">
+
+                                <span>
+                                    Property Size
+                                </span>
+
+                                <strong id="fiSummarySize">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="fi-summary-row">
+
+                                <span>
+                                    Rooms
+                                </span>
+
+                                <strong id="fiSummaryRooms">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="fi-summary-row">
+
+                                <span>
+                                    Package
+                                </span>
+
+                                <strong id="fiSummaryPackage">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="fi-summary-note">
+
+                                <i class="fa-solid fa-circle-info"></i>
+
+                                <span>
+                                    Your final quotation will depend on
+                                    measurements, materials and actual
+                                    project requirements.
+                                </span>
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     BOTTOM NAVIGATION
+                ================================== -->
+
+                <div class="fi-navigation" id="fiNavigation">
+
+                    <button type="button" class="fi-back-btn" id="fiBackBtn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        BACK
+
+                    </button>
+
+
+                    <div class="fi-navigation-right">
+
+                        <span class="fi-step-counter" id="fiStepCounter">
+
+                            Step 1 of 4
+
+                        </span>
+
+
+                        <button type="button" class="fi-next-btn" id="fiNextBtn" disabled>
+
+                            <span>
+                                NEXT
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             RESULT SCREEN
+        ========================================== -->
+
+        <section class="fi-result-section" id="fiResultSection" hidden>
+
+
+            <div class="fi-result-container">
+
+
+                <!-- RESULT HERO -->
+
+                <div class="fi-result-card">
+
+
+                    <div class="fi-result-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+
+                    <span class="fi-result-eyebrow">
+                        YOUR ESTIMATED BUDGET
+                    </span>
+
+
+                    <h2>
+                        Here's your estimated
+                        interior budget range
+                    </h2>
+
+
+                    <div class="fi-price" id="fiEstimatedPrice">
+
+                        ₹0 – ₹0
+
+                    </div>
+
+
+                    <p class="fi-result-disclaimer">
+
+                        This is an indicative estimate and not a final
+                        quotation. Final pricing may vary based on actual
+                        measurements, materials, finishes, civil work and
+                        project requirements.
+
+                    </p>
+
+
+                    <button type="button" class="fi-summary-toggle" id="fiSummaryToggle">
+
+                        View detailed summary
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+
+
+                    <!-- DETAIL -->
+
+                    <div class="fi-detailed-summary" id="fiDetailedSummary">
+
+
+                        <div class="fi-detail-row">
+
+                            <span>
+                                Property
+                            </span>
+
+                            <strong id="fiResultProperty">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="fi-detail-row">
+
+                            <span>
+                                Size Category
+                            </span>
+
+                            <strong id="fiResultSize">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="fi-detail-row">
+
+                            <span>
+                                Package
+                            </span>
+
+                            <strong id="fiResultPackage">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="fi-detail-divider"></div>
+
+
+                        <div class="fi-room-summary" id="fiRoomSummary">
+                        </div>
+
+                    </div>
+
+
+                    <!-- QUOTE CTA -->
+
+                    <div class="fi-accurate-quote">
+
+                        <span class="fi-free-label">
+                            FREE DESIGN CONSULTATION
+                        </span>
+
+                        <h3>
+                            Want an accurate quote?
+                        </h3>
+
+                        <p>
+                            Book a free consultation with our designer
+                            for a detailed quotation based on your exact
+                            measurements and requirements.
+                        </p>
+
+
+                        <a href="/contact.html" class="fi-quote-btn">
+
+                            GET DETAILED QUOTE
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WHY ECON -->
+
+                <div class="fi-why-card">
+
+                    <div class="fi-why-heading">
+
+                        <span class="fi-mini-eyebrow">
+                            THE ECON EXPERIENCE
+                        </span>
+
+                        <h2>
+                            Why choose ECON?
+                        </h2>
+
+                    </div>
+
+
+                    <div class="fi-benefit-grid">
+
+
+                        <div class="fi-benefit">
+
+                            <div class="fi-benefit-icon">
+
+                                <i class="fa-solid fa-pen-ruler"></i>
+
+                            </div>
+
+                            <strong>
+                                Custom Design
+                            </strong>
+
+                            <span>
+                                Made for your space
+                            </span>
+
+                        </div>
+
+
+                        <div class="fi-benefit">
+
+                            <div class="fi-benefit-icon">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                            </div>
+
+                            <strong>
+                                Premium Materials
+                            </strong>
+
+                            <span>
+                                Quality focused
+                            </span>
+
+                        </div>
+
+
+                        <div class="fi-benefit">
+
+                            <div class="fi-benefit-icon">
+
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                            </div>
+
+                            <strong>
+                                Installation
+                            </strong>
+
+                            <span>
+                                Professional execution
+                            </span>
+
+                        </div>
+
+
+                        <div class="fi-benefit">
+
+                            <div class="fi-benefit-icon">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                            </div>
+
+                            <strong>
+                                Quality Checks
+                            </strong>
+
+                            <span>
+                                Detailed inspection
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RESET -->
+
+                <button type="button" class="fi-recalculate-btn" id="fiRecalculateBtn">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Recalculate Estimate
+
+                </button>
+
+
+
+                <p class="fi-final-note">
+
+                    *This calculator provides an indicative planning
+                    estimate only. It should not be treated as a final
+                    quotation or commitment.
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <div id="footer-slot"></div>
+
+
+
+    <!-- =========================================
+         JS
+    ========================================== -->
+
+    <script type="module" src="/assets/js/components.js">
+    </script>
+
+    <script type="module" src="/assets/js/full-interior-calculator.js">
+    </script>
+
+
+    <script src="/assets/js/translator.js"></script>
+</body>
+
+</html>

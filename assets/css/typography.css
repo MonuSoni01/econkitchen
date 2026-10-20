@@ -1,0 +1,17 @@
+/* ECON Global Typography
+   Change the two variables below to update typography site-wide. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --font-body: "DM Sans", Arial, sans-serif;
+ --font-heading: "Poppins", Arial, sans-serif;
+}
+
+html, body, button, input, select, textarea {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.heading, .section-title, .display-title {
+  font-family: var(--font-heading);
+}

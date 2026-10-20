@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Shade Cards | ECON Kitchen</title>
+
+  <meta
+    name="description"
+    content="Explore ECON Kitchen shade cards to discover colours, textures and finishes for your kitchen and interiors."
+  >
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <!-- SHARED WEBSITE STYLES -->
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/readability.css">
+  <link rel="stylesheet" href="/assets/css/translator.css">
+  <link rel="stylesheet" href="/assets/css/responsive-master.css">
+
+  <style>
+    /* =========================================
+       ECON KITCHEN — SHADE CARDS
+    ========================================= */
+
+    body {
+      margin: 0;
+      background: #fff;
+    }
+
+    .econ-shades {
+      --gold: #bd942d;
+      --ink: #191919;
+      --muted: #707070;
+      --line: #e9e2d4;
+
+      max-width: 1200px;
+      margin: auto;
+      padding: 64px 24px 80px;
+
+      color: var(--ink);
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    .econ-shades,
+    .econ-shades * {
+      box-sizing: border-box;
+    }
+
+    .econ-shades .shade-intro {
+      margin-bottom: 38px;
+      text-align: center;
+    }
+
+    .econ-shades .shade-eyebrow {
+      color: #88691a;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+
+    .econ-shades h1 {
+      margin: 12px 0;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .econ-shades .shade-intro p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .econ-shades .shade-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .econ-shades .shade-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 7px 25px #19191906;
+
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .econ-shades .shade-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px #19191910;
+    }
+
+    .econ-shades .shade-image {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #f4f0e7;
+    }
+
+    .econ-shades .shade-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .econ-shades .shade-details {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .econ-shades h2 {
+      margin: 0 0 20px;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .econ-shades .shade-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      width: 100%;
+      min-height: 52px;
+      margin-top: auto;
+      padding: 14px 20px;
+
+      background: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 10px;
+
+      color: #111;
+      text-align: center;
+      text-decoration: none;
+      font: 600 16px / 1.4 "Poppins", Arial, sans-serif;
+
+      cursor: pointer;
+
+      transition:
+        background 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    }
+
+    .econ-shades a.shade-button:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #fff;
+    }
+
+    .econ-shades .shade-button:focus-visible {
+      outline: 3px solid var(--ink);
+      outline-offset: 4px;
+    }
+
+    .econ-shades .shade-button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    .econ-shades .shade-note {
+      margin: 28px 0 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 960px) {
+      .econ-shades .shade-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .econ-shades {
+        padding: 40px 18px 50px;
+      }
+
+      .econ-shades .shade-intro {
+        margin-bottom: 28px;
+      }
+
+      .econ-shades .shade-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .econ-shades .shade-details {
+        padding: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .econ-shades .shade-card,
+      .econ-shades .shade-button {
+        transition: none;
+      }
+
+      .econ-shades .shade-card:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="shade-card-page">
+
+  <div id="header-slot"></div>
+
+  <main class="econ-shades">
+
+    <header class="shade-intro">
+      <span class="shade-eyebrow">ECON KITCHEN</span>
+
+      <h1>Explore Our Shade Cards</h1>
+
+      <p>
+        Find the colours, textures and finishes that suit your space.
+      </p>
+    </header>
+
+    <section
+      class="shade-grid"
+      id="shadeGrid"
+      aria-label="Available shade cards"
+    ></section>
+
+    <p class="shade-note">
+      Colours on screen may vary from actual finishes.
+      Please confirm your selection with a physical sample.
+    </p>
+
+    <noscript>
+      Please enable JavaScript to view our shade cards.
+    </noscript>
+
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      /* =========================================
+         UPDATE YOUR SHADE CARDS HERE
+
+         title:
+         Name displayed on the card.
+
+         image:
+         Cover image path.
+
+         shadeUrl:
+         PDF path or Google Drive link.
+
+         Empty links keep the buttons disabled.
+         Add more entries to create more cards.
+      ========================================= */
+
+      const shadeCards = [
+        {
+          title: "Acrylam lk",
+          image: "/assets/images/shade-card/Acrylam.png",
+          shadeUrl: "https://drive.google.com/file/d/1oVO-3OkBztUVzgXasU5D_pIjDb03phQ9/view?usp=drive_link"
+        },
+        {
+          title: "Action Tesa Acrylic",
+          image: "/assets/images/shade-card/action.png",
+          shadeUrl: "https://drive.google.com/file/d/1BVpexZ1uNY7V0OloUY9m3gBAmonsiPxG/view?usp=drive_link"
+        },
+        {
+          title: "CLIO_LAYOUT",
+          image: "/assets/images/shade-card/clio.png",
+          shadeUrl: "https://drive.google.com/file/d/1IHxFiICj2QdxzNLBgtqZBPADX1cPvT5N/view?usp=drive_link"
+        },
+        {
+          title: "Cross Bond",
+          image: "/assets/images/shade-card/crossbond.png",
+          shadeUrl: "https://drive.google.com/file/d/1m8S4KNl1FWj-90HjK3lxjQ9xL58XI69H/view?usp=drive_link"
+        },
+        {
+          title: "Econ 1m Acrylic",
+          image: "/assets/images/shade-card/acrylic.png",
+          shadeUrl: "https://drive.google.com/file/d/101zSd7a_D5zHDDHMkfr3Jzw9Oic6YNxB/view?usp=drive_link"
+        },
+        {
+          title: "Econ Floral Lam",
+          image: "/assets/images/shade-card/floral.png",
+          shadeUrl: "https://drive.google.com/file/d/1zQe1XG2akLQ4RmMgccwfpfSEn8f6Iibl/view?usp=drive_link"
+        }
+      ];
+
+      /* =========================================
+         FALLBACK IMAGE
+      ========================================= */
+
+      function placeholder(index) {
+        const palettes = [
+          ["#ddd1ba", "#b7aa90", "#798773", "#344c40"],
+          ["#eee8df", "#bdc3be", "#77828b", "#343d43"],
+          ["#e7d8bb", "#c3b08c", "#a07550", "#644a36"],
+          ["#e9e1d5", "#b7b8ab", "#8e9c88", "#536451"],
+          ["#d9b68b", "#ba8f62", "#936b43", "#61452e"],
+          ["#d5d0c4", "#b7b2a6", "#96978f", "#737970"]
+        ];
+
+        const colours = palettes[index % palettes.length];
+
+        const swatches = colours.map((colour, position) => {
+          const x = 170 + position * 112;
+          const y = 175 + position * 14;
+
+          return `
+            <rect
+              x="${x + 8}"
+              y="${y + 12}"
+              width="125"
+              height="235"
+              rx="6"
+              fill="#000"
+              opacity=".06"
+            />
+
+            <rect
+              x="${x}"
+              y="${y}"
+              width="125"
+              height="235"
+              rx="6"
+              fill="${colour}"
+              stroke="#fff"
+              stroke-width="4"
+            />
+          `;
+        }).join("");
+
+        const svg = `
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="800"
+            height="600"
+            viewBox="0 0 800 600"
+          >
+            <rect width="800" height="600" fill="#f4f0e7"/>
+
+            <circle
+              cx="680"
+              cy="60"
+              r="195"
+              fill="#bd942d"
+              opacity=".10"
+            />
+
+            <circle
+              cx="70"
+              cy="580"
+              r="190"
+              fill="#fff"
+              opacity=".5"
+            />
+
+            ${swatches}
+          </svg>
+        `;
+
+        return (
+          "data:image/svg+xml;charset=utf-8," +
+          encodeURIComponent(svg)
+        );
+      }
+
+      /* =========================================
+         VALIDATE PDF / EXTERNAL LINK
+      ========================================= */
+
+      function validUrl(value) {
+        if (typeof value !== "string" || !value.trim()) {
+          return null;
+        }
+
+        try {
+          const url = new URL(value.trim(), location.href);
+
+          return ["http:", "https:"].includes(url.protocol)
+            ? url.href
+            : null;
+        } catch {
+          return null;
+        }
+      }
+
+      /* =========================================
+         RENDER CARDS
+      ========================================= */
+
+      const grid = document.getElementById("shadeGrid");
+
+      if (!grid) return;
+
+      const fragment = document.createDocumentFragment();
+
+      shadeCards.forEach((shade, index) => {
+        const card = document.createElement("article");
+        card.className = "shade-card";
+
+        const imageWrap = document.createElement("div");
+        imageWrap.className = "shade-image";
+
+        const image = document.createElement("img");
+
+        image.width = 800;
+        image.height = 600;
+        image.alt = shade.title;
+        image.loading = index < 3 ? "eager" : "lazy";
+        image.decoding = "async";
+
+        image.addEventListener(
+          "error",
+          () => {
+            image.src = placeholder(index);
+          },
+          { once: true }
+        );
+
+        image.src = shade.image || placeholder(index);
+
+        imageWrap.append(image);
+
+        const details = document.createElement("div");
+        details.className = "shade-details";
+
+        const title = document.createElement("h2");
+        title.textContent = shade.title;
+
+        const url = validUrl(shade.shadeUrl);
+
+        const button = document.createElement(
+          url ? "a" : "button"
+        );
+
+        button.className = "shade-button";
+        button.textContent = "Open Shade Card";
+
+        if (url) {
+          button.href = url;
+          button.target = "_blank";
+          button.rel = "noopener noreferrer";
+
+          button.setAttribute(
+            "aria-label",
+            "Open " + shade.title + " in a new tab"
+          );
+
+          const arrow = document.createElement("span");
+          arrow.textContent = "↗";
+          arrow.setAttribute("aria-hidden", "true");
+
+          button.append(arrow);
+        } else {
+          button.type = "button";
+          button.disabled = true;
+          button.title = "Shade card coming soon";
+
+          button.setAttribute(
+            "aria-label",
+            shade.title + " — coming soon"
+          );
+        }
+
+        details.append(title, button);
+        card.append(imageWrap, details);
+        fragment.append(card);
+      });
+
+      grid.replaceChildren(fragment);
+    })();
+  </script>
+
+  <!-- SHARED HEADER / FOOTER -->
+  <script
+    type="module"
+    src="/assets/js/components.js"
+  ></script>
+
+  <script src="/assets/js/translator.js"></script>
+
+</body>
+</html>

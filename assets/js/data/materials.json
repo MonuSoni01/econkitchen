@@ -1,0 +1,522 @@
+[
+  {
+    "id": "bwp-plywood",
+    "name": "BWP Plywood",
+    "subtitle": "High Moisture Resistance For Modular Kitchens",
+    "rating": 4.8,
+    "reviews": 128,
+
+    "description": "Premium BWP grade plywood designed for long-lasting modular kitchen cabinets. It provides strong screw holding, dependable moisture resistance and reliable structural performance for everyday kitchen use.",
+
+    "images": [
+      "/assets/images/materials/bwp/01.jpg",
+      "/assets/images/materials/bwp/02.jpg",
+      "/assets/images/materials/bwp/03.jpg",
+      "/assets/images/materials/bwp/04.jpg",
+      "/assets/images/materials/bwp/05.jpg"
+    ],
+
+    "overviewImage": "/assets/images/materials/bwp/kitchen.jpg",
+
+    "overviewTitle": "Engineered For Strength. Built For Kitchens.",
+
+    "overview": "BWP plywood is suitable for kitchen cabinets, drawers and storage units where strength and resistance to everyday moisture are important. Its layered construction provides dependable screw holding and structural stability for modular kitchen applications.",
+
+    "quickFeatures": [
+      {
+        "icon": "fa-solid fa-droplet",
+        "title": "BWP Grade",
+        "text": "Moisture resistant"
+      },
+      {
+        "icon": "fa-solid fa-bug-slash",
+        "title": "Termite Resistant",
+        "text": "Longer life"
+      },
+      {
+        "icon": "fa-solid fa-shield-halved",
+        "title": "Strong & Durable",
+        "text": "Kitchen ready"
+      },
+      {
+        "icon": "fa-solid fa-layer-group",
+        "title": "Smooth Surface",
+        "text": "Finish friendly"
+      }
+    ],
+
+    "thickness": [
+      "6 mm",
+      "12 mm",
+      "18 mm",
+      "25 mm"
+    ],
+
+    "finishes": [
+      {
+        "name": "Natural Wood",
+        "image": "/assets/images/materials/bwp/finish-natural.jpg"
+      },
+      {
+        "name": "Walnut",
+        "image": "/assets/images/materials/bwp/finish-walnut.jpg"
+      },
+      {
+        "name": "Teak",
+        "image": "/assets/images/materials/bwp/finish-teak.jpg"
+      },
+      {
+        "name": "Light Oak",
+        "image": "/assets/images/materials/bwp/finish-oak.jpg"
+      },
+      {
+        "name": "Dark Oak",
+        "image": "/assets/images/materials/bwp/finish-dark.jpg"
+      },
+      {
+        "name": "Grey",
+        "image": "/assets/images/materials/bwp/finish-grey.jpg"
+      },
+      {
+        "name": "White",
+        "image": "/assets/images/materials/bwp/finish-white.jpg"
+      },
+      {
+        "name": "Matte",
+        "image": "/assets/images/materials/bwp/finish-matte.jpg"
+      }
+    ],
+
+    "specifications": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Material Type",
+        "value": "BWP Plywood"
+      },
+      {
+        "icon": "fa-solid fa-ruler",
+        "name": "Thickness",
+        "value": "6 / 12 / 18 / 25 mm"
+      },
+      {
+        "icon": "fa-solid fa-tree",
+        "name": "Core",
+        "value": "Plywood Core"
+      },
+      {
+        "icon": "fa-solid fa-weight-hanging",
+        "name": "Construction",
+        "value": "Multi-layered Board"
+      },
+      {
+        "icon": "fa-solid fa-droplet",
+        "name": "Moisture Resistance",
+        "value": "High"
+      },
+      {
+        "icon": "fa-solid fa-kitchen-set",
+        "name": "Application",
+        "value": "Kitchen Cabinets"
+      },
+      {
+        "icon": "fa-solid fa-palette",
+        "name": "Finish Compatibility",
+        "value": "Laminate / Acrylic / Veneer"
+      },
+      {
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "name": "Installation",
+        "value": "Modular Kitchen Use"
+      }
+    ],
+
+    "applications": [
+      {
+        "icon": "fa-solid fa-box",
+        "name": "Base Cabinets"
+      },
+      {
+        "icon": "fa-solid fa-table-columns",
+        "name": "Wall Cabinets"
+      },
+      {
+        "icon": "fa-solid fa-door-closed",
+        "name": "Tall Units"
+      },
+      {
+        "icon": "fa-solid fa-box-open",
+        "name": "Drawers"
+      },
+      {
+        "icon": "fa-solid fa-border-all",
+        "name": "Shutters"
+      },
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Interior Panels"
+      }
+    ],
+
+    "benefits": [
+      {
+        "icon": "fa-solid fa-droplet",
+        "title": "Moisture Resistance",
+        "text": "Suitable for moisture-prone kitchen environments."
+      },
+      {
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "title": "Strong Screw Holding",
+        "text": "Supports fittings and modular hardware."
+      },
+      {
+        "icon": "fa-solid fa-bug-slash",
+        "title": "Better Durability",
+        "text": "Designed for long-term kitchen usage."
+      },
+      {
+        "icon": "fa-solid fa-shield",
+        "title": "Dimensionally Stable",
+        "text": "Reliable structural performance."
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Is BWP plywood suitable for modular kitchens?",
+        "answer": "Yes. BWP plywood is commonly selected for modular kitchen cabinets because of its strength and improved resistance to moisture."
+      },
+      {
+        "question": "Which thickness is generally used for cabinets?",
+        "answer": "Thickness depends on cabinet design and application. Your final specification should be selected according to the design and structural requirement."
+      },
+      {
+        "question": "Can laminate or acrylic be applied on BWP plywood?",
+        "answer": "Yes. Appropriate laminates, acrylic surfaces, veneers and other decorative finishes can be applied depending on the selected system."
+      },
+      {
+        "question": "Can I see material samples before finalising?",
+        "answer": "Yes. You can visit the ECON Kitchen experience centre and review available materials and finish samples."
+      }
+    ]
+  },
+
+  {
+    "id": "hdhmr",
+    "name": "HDHMR Board",
+    "subtitle": "Dense Engineered Board For Modern Kitchen Applications",
+    "rating": 4.7,
+    "reviews": 94,
+
+    "description": "High-density board designed for smooth machining, clean finishing and modern modular furniture applications.",
+
+    "images": [
+      "/assets/images/materials/hdhmr/01.jpg",
+      "/assets/images/materials/hdhmr/02.jpg",
+      "/assets/images/materials/hdhmr/03.jpg"
+    ],
+
+    "overviewImage": "/assets/images/materials/hdhmr/kitchen.jpg",
+
+    "overviewTitle": "Smooth Finish. Modern Performance.",
+
+    "overview": "HDHMR is an engineered board suitable for shutters, cabinets and furniture applications where surface uniformity and machining quality are important.",
+
+    "quickFeatures": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "title": "High Density",
+        "text": "Dense structure"
+      },
+      {
+        "icon": "fa-solid fa-droplet",
+        "title": "Moisture Resistant",
+        "text": "Improved protection"
+      },
+      {
+        "icon": "fa-solid fa-gears",
+        "title": "CNC Friendly",
+        "text": "Easy machining"
+      },
+      {
+        "icon": "fa-solid fa-paint-roller",
+        "title": "Smooth Finish",
+        "text": "Premium surfaces"
+      }
+    ],
+
+    "thickness": [
+      "8 mm",
+      "12 mm",
+      "18 mm"
+    ],
+
+    "finishes": [
+      {
+        "name": "Natural",
+        "image": "/assets/images/materials/hdhmr/finish-01.jpg"
+      },
+      {
+        "name": "Grey",
+        "image": "/assets/images/materials/hdhmr/finish-02.jpg"
+      },
+      {
+        "name": "White",
+        "image": "/assets/images/materials/hdhmr/finish-03.jpg"
+      }
+    ],
+
+    "specifications": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Material Type",
+        "value": "HDHMR"
+      },
+      {
+        "icon": "fa-solid fa-ruler",
+        "name": "Thickness",
+        "value": "8 / 12 / 18 mm"
+      },
+      {
+        "icon": "fa-solid fa-gears",
+        "name": "Machining",
+        "value": "CNC Compatible"
+      },
+      {
+        "icon": "fa-solid fa-droplet",
+        "name": "Moisture Resistance",
+        "value": "Good"
+      }
+    ],
+
+    "applications": [
+      {
+        "icon": "fa-solid fa-door-closed",
+        "name": "Shutters"
+      },
+      {
+        "icon": "fa-solid fa-table-columns",
+        "name": "Cabinets"
+      },
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Decorative Panels"
+      }
+    ],
+
+    "benefits": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "title": "Dense Structure",
+        "text": "Uniform engineered construction."
+      },
+      {
+        "icon": "fa-solid fa-gears",
+        "title": "CNC Friendly",
+        "text": "Suitable for routed designs."
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Where is HDHMR used?",
+        "answer": "It can be used in selected cabinet, shutter and furniture applications depending on project requirements."
+      }
+    ]
+  },
+
+  {
+    "id": "mdf",
+    "name": "MDF Board",
+    "subtitle": "Smooth Engineered Surface For Decorative Kitchen Elements",
+    "rating": 4.5,
+    "reviews": 67,
+
+    "description": "MDF provides a uniform surface suitable for paint, routed patterns and selected interior applications.",
+
+    "images": [
+      "/assets/images/materials/mdf/01.jpg",
+      "/assets/images/materials/mdf/02.jpg"
+    ],
+
+    "overviewImage": "/assets/images/materials/mdf/kitchen.jpg",
+
+    "overviewTitle": "Smooth Surface For Decorative Design.",
+
+    "overview": "MDF is known for its smooth surface and machinability, making it suitable for decorative panels and selected kitchen furniture applications.",
+
+    "quickFeatures": [
+      {
+        "icon": "fa-solid fa-paint-roller",
+        "title": "Smooth Surface",
+        "text": "Paint friendly"
+      },
+      {
+        "icon": "fa-solid fa-gears",
+        "title": "Easy Machining",
+        "text": "CNC suitable"
+      },
+      {
+        "icon": "fa-solid fa-shapes",
+        "title": "Design Friendly",
+        "text": "Decorative use"
+      },
+      {
+        "icon": "fa-solid fa-wallet",
+        "title": "Value Option",
+        "text": "Selected use"
+      }
+    ],
+
+    "thickness": [
+      "6 mm",
+      "12 mm",
+      "18 mm"
+    ],
+
+    "finishes": [
+      {
+        "name": "Natural",
+        "image": "/assets/images/materials/mdf/finish-01.jpg"
+      },
+      {
+        "name": "White",
+        "image": "/assets/images/materials/mdf/finish-02.jpg"
+      }
+    ],
+
+    "specifications": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Material Type",
+        "value": "MDF"
+      },
+      {
+        "icon": "fa-solid fa-ruler",
+        "name": "Thickness",
+        "value": "6 / 12 / 18 mm"
+      },
+      {
+        "icon": "fa-solid fa-paint-roller",
+        "name": "Surface",
+        "value": "Smooth"
+      }
+    ],
+
+    "applications": [
+      {
+        "icon": "fa-solid fa-border-all",
+        "name": "Decorative Panels"
+      },
+      {
+        "icon": "fa-solid fa-door-closed",
+        "name": "Selected Shutters"
+      }
+    ],
+
+    "benefits": [
+      {
+        "icon": "fa-solid fa-paint-roller",
+        "title": "Smooth Finish",
+        "text": "Suitable for decorative surfaces."
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Can MDF be used in kitchens?",
+        "answer": "Its suitability depends on the specific area, finish, moisture exposure and project specification."
+      }
+    ]
+  },
+
+  {
+    "id": "particle-board",
+    "name": "Particle Board",
+    "subtitle": "Economical Engineered Board For Selected Interior Applications",
+    "rating": 4.3,
+    "reviews": 45,
+
+    "description": "Particle board is an economical engineered panel suitable for selected dry-area interior and furniture applications.",
+
+    "images": [
+      "/assets/images/materials/particle/01.jpg",
+      "/assets/images/materials/particle/02.jpg"
+    ],
+
+    "overviewImage": "/assets/images/materials/particle/kitchen.jpg",
+
+    "overviewTitle": "Smart Value For Selected Applications.",
+
+    "overview": "Particle board offers an economical option for selected dry-area furniture and cabinetry applications where heavy moisture exposure is not expected.",
+
+    "quickFeatures": [
+      {
+        "icon": "fa-solid fa-wallet",
+        "title": "Economical",
+        "text": "Budget friendly"
+      },
+      {
+        "icon": "fa-solid fa-weight-hanging",
+        "title": "Lightweight",
+        "text": "Easy handling"
+      },
+      {
+        "icon": "fa-solid fa-layer-group",
+        "title": "Engineered",
+        "text": "Consistent board"
+      },
+      {
+        "icon": "fa-solid fa-house",
+        "title": "Dry Areas",
+        "text": "Interior use"
+      }
+    ],
+
+    "thickness": [
+      "12 mm",
+      "18 mm"
+    ],
+
+    "finishes": [
+      {
+        "name": "Natural",
+        "image": "/assets/images/materials/particle/finish-01.jpg"
+      }
+    ],
+
+    "specifications": [
+      {
+        "icon": "fa-solid fa-layer-group",
+        "name": "Material Type",
+        "value": "Particle Board"
+      },
+      {
+        "icon": "fa-solid fa-ruler",
+        "name": "Thickness",
+        "value": "12 / 18 mm"
+      }
+    ],
+
+    "applications": [
+      {
+        "icon": "fa-solid fa-box",
+        "name": "Dry Area Cabinets"
+      }
+    ],
+
+    "benefits": [
+      {
+        "icon": "fa-solid fa-wallet",
+        "title": "Economical",
+        "text": "Suitable for selected budget applications."
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Is particle board recommended for wet areas?",
+        "answer": "Material selection should consider moisture exposure and the project requirement. It is generally more suitable for dry-area applications."
+      }
+    ]
+  }
+]
