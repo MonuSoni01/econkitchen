@@ -3617,3 +3617,278 @@ body.estimator-body {
     }
 
 }
+
+/* ================================================
+   ECON KITCHEN — DYNAMIC KITCHEN LAYOUT DIAGRAM
+   Straight / L-Shaped / U-Shaped / Parallel
+================================================ */
+
+/* Main diagram container */
+
+.measurement-diagram .diagram-l {
+    position: relative;
+    width: 250px;
+    height: 210px;
+}
+
+/* Reset all sides */
+
+.measurement-diagram .diagram-l .diagram-a,
+.measurement-diagram .diagram-l .diagram-b,
+.measurement-diagram .diagram-l .diagram-c {
+    position: absolute;
+
+    display: none;
+
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    width: auto;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: linear-gradient(
+        135deg,
+        #dfb936,
+        #b68b13
+    );
+
+    color: #171717;
+
+    box-shadow: 0 12px 25px rgba(182,139,19,.18);
+}
+
+/* Common labels */
+
+.measurement-diagram .diagram-l .diagram-a span,
+.measurement-diagram .diagram-l .diagram-b span,
+.measurement-diagram .diagram-l .diagram-c span {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #171717;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ================================================
+   STRAIGHT KITCHEN — A
+================================================ */
+
+.measurement-diagram .diagram-straight .diagram-a {
+    display: flex;
+
+    left: 20px;
+    top: 78px;
+
+    width: 210px;
+    height: 54px;
+}
+
+.measurement-diagram .diagram-straight .diagram-a span {
+    left: 50%;
+    bottom: -14px;
+    top: auto;
+    right: auto;
+
+    transform: translateX(-50%);
+}
+
+/* ================================================
+   L-SHAPED KITCHEN — A + B
+================================================ */
+
+.measurement-diagram .diagram-l-shaped .diagram-a {
+    display: flex;
+
+    left: 20px;
+    bottom: 20px;
+
+    width: 54px;
+    height: 170px;
+}
+
+.measurement-diagram .diagram-l-shaped .diagram-b {
+    display: flex;
+
+    left: 20px;
+    bottom: 20px;
+
+    width: 210px;
+    height: 54px;
+}
+
+.measurement-diagram .diagram-l-shaped .diagram-a span {
+    left: -14px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+
+    transform: translateY(-50%);
+}
+
+.measurement-diagram .diagram-l-shaped .diagram-b span {
+    left: 50%;
+    bottom: -14px;
+    top: auto;
+    right: auto;
+
+    transform: translateX(-50%);
+}
+
+/* ================================================
+   U-SHAPED KITCHEN — A + B + C
+================================================ */
+
+.measurement-diagram .diagram-u-shaped .diagram-a {
+    display: flex;
+
+    left: 20px;
+    top: 20px;
+
+    width: 54px;
+    height: 170px;
+}
+
+.measurement-diagram .diagram-u-shaped .diagram-b {
+    display: flex;
+
+    left: 20px;
+    bottom: 20px;
+
+    width: 210px;
+    height: 54px;
+}
+
+.measurement-diagram .diagram-u-shaped .diagram-c {
+    display: flex;
+
+    right: 20px;
+    top: 20px;
+
+    width: 54px;
+    height: 170px;
+}
+
+.measurement-diagram .diagram-u-shaped .diagram-a span {
+    left: -14px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+
+    transform: translateY(-50%);
+}
+
+.measurement-diagram .diagram-u-shaped .diagram-b span {
+    left: 50%;
+    bottom: -14px;
+    top: auto;
+    right: auto;
+
+    transform: translateX(-50%);
+}
+
+.measurement-diagram .diagram-u-shaped .diagram-c span {
+    right: -14px;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+
+    transform: translateY(-50%);
+}
+
+/* ================================================
+   PARALLEL KITCHEN — A + B
+================================================ */
+
+.measurement-diagram .diagram-parallel .diagram-a {
+    display: flex;
+
+    left: 20px;
+    top: 30px;
+
+    width: 210px;
+    height: 54px;
+}
+
+.measurement-diagram .diagram-parallel .diagram-b {
+    display: flex;
+
+    left: 20px;
+    bottom: 30px;
+
+    width: 210px;
+    height: 54px;
+}
+
+.measurement-diagram .diagram-parallel .diagram-a span,
+.measurement-diagram .diagram-parallel .diagram-b span {
+    left: 50%;
+    bottom: -14px;
+    top: auto;
+    right: auto;
+
+    transform: translateX(-50%);
+}
+
+/* C side value */
+
+.measurement-diagram .diagram-c strong {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Mobile adjustment */
+
+@media (max-width: 700px) {
+
+    .measurement-diagram .diagram-l {
+        transform: scale(.8);
+        transform-origin: center;
+    }
+}
+
+/* ==========================================
+   ECON KITCHEN — PRICE LOCKED PREVIEW
+========================================== */
+
+/* Hide actual price before lead submission */
+.package-card .package-price,
+.package-summary .live-estimate,
+.quote-summary-card .summary-estimate {
+    font-size: 0 !important;
+}
+
+/* Display rupee symbol instead */
+.package-card .package-price::after,
+.package-summary .live-estimate::after,
+.quote-summary-card .summary-estimate::after {
+    content: "₹";
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #b68b13;
+}
+
+/* Hide nested amount text */
+.package-card .package-price > *,
+.package-summary .live-estimate > *,
+.quote-summary-card .summary-estimate > * {
+    display: none !important;
+}

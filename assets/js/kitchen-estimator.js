@@ -42,12 +42,88 @@ document.addEventListener("DOMContentLoaded", () => {
         packageRate: 0,
 
 
-        approximateEstimate: 0
+        approximateEstimate: 0,
+        leadSubmitted: false,
+        estimateId: null
 
 
 
     };
 
+
+    /* ==========================================
+       ECON KITCHEN — WHATSAPP QUOTE REQUEST
+    ========================================== */
+
+    const quoteWhatsAppButton = document.getElementById(
+        "getDetailedQuoteWhatsApp"
+    );
+
+    // Enter official ECON Kitchen WhatsApp number
+    const ECON_WHATSAPP_NUMBER = "917900300456";
+
+    if (quoteWhatsAppButton) {
+
+        quoteWhatsAppButton.addEventListener("click", (event) => {
+
+            event.preventDefault();
+
+            // Only allow after successful lead submission
+            if (!state.leadSubmitted) {
+                alert("Please submit your contact details first.");
+                return;
+            }
+
+            if (!state.estimateId) {
+    alert("Estimate ID is missing. Please try again.");
+    return;
+}
+
+const estimateId = state.estimateId;
+
+            const layout =
+                state.layoutName || "Not Selected";
+
+            const { a = 0, b = 0, c = 0 } =
+                state.dimensions || {};
+
+            const measurements = [
+                `A: ${a} ft`,
+                ...(state.layout !== "straight" ? [`B: ${b} ft`] : []),
+                ...(state.layout === "u-shaped" ? [`C: ${c} ft`] : [])
+            ].join(" | ");
+
+            const selectedPackage =
+                calculatorConfig.packages[state.package]?.name ||
+                "Not Selected";
+
+            const estimateAmount = Number(
+                state.approximateEstimate || 0
+            ).toLocaleString("en-IN");
+
+            const message = `Hello ECON Kitchen Team! 👋
+
+I have completed my Kitchen Cost Estimate and would like to receive a detailed quotation.
+
+*Estimate ID:* ${estimateId}
+
+*Kitchen Details*
+Layout: ${layout}
+Measurements: ${measurements}
+Running Feet: ${state.runningFeet || 0}
+Package: ${selectedPackage}
+Estimated Cost: ₹${estimateAmount}
+
+Please guide me through the next steps.`;
+
+            const url =
+                `https://wa.me/${ECON_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+            window.open(url, "_blank", "noopener,noreferrer");
+
+        });
+
+    }
 
 
     /* =====================================================
@@ -277,9 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 layoutNext.disabled = false;
 
 
-                configureMeasurements();
-
-                calculateRunningFeet();
+                configureMeasurements(); 
 
                 updateMobileBar();
 
@@ -293,39 +367,46 @@ document.addEventListener("DOMContentLoaded", () => {
        CONFIGURE MEASUREMENT FIELDS
     ===================================================== */
 
+
     function configureMeasurements() {
 
-        measurementLayoutName.textContent =
-            state.layoutName;
+        // Selected layout name
+        measurementLayoutName.textContent = state.layoutName;
 
+        // Update diagram according to selected layout
+        const diagram = document.getElementById("diagramL");
 
-        dimensionBField.classList.remove(
-            "hidden"
-        );
+        if (diagram) {
 
-        dimensionCField.classList.add(
-            "hidden"
-        );
+            diagram.classList.remove(
+                "diagram-straight",
+                "diagram-l-shaped",
+                "diagram-u-shaped",
+                "diagram-parallel"
+            );
 
+            if (state.layout) {
+                diagram.classList.add(`diagram-${state.layout}`);
+            }
+        }
+
+        // Show/hide measurement fields
+        dimensionBField.classList.remove("hidden");
+        dimensionCField.classList.add("hidden");
 
         if (state.layout === "straight") {
-
-            dimensionBField.classList.add(
-                "hidden"
-            );
-
+            dimensionBField.classList.add("hidden");
         }
-
 
         if (state.layout === "u-shaped") {
-
-            dimensionCField.classList.remove(
-                "hidden"
-            );
-
+            dimensionCField.classList.remove("hidden");
         }
 
+        // Refresh measurements and diagram values
+        readDimensions();
     }
+
+
 
 
     /* =====================================================
@@ -506,11 +587,17 @@ document.addEventListener("DOMContentLoaded", () => {
             state.runningFeet;
 
 
-        diagramAValue.textContent =
-            `${a} FT`;
 
-        diagramBValue.textContent =
-            `${b} FT`;
+        diagramAValue.textContent = `${a} FT`;
+
+        diagramBValue.textContent = `${b} FT`;
+
+        const diagramCValue =
+            document.getElementById("diagramCValue");
+
+        if (diagramCValue) {
+            diagramCValue.textContent = `${c} FT`;
+        }
 
 
         calculateEstimate();
@@ -991,7 +1078,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     state.packageName,
 
                 packageRate:
-    state.packageRate,
+                    state.packageRate,
 
                 estimate:
                     state.approximateEstimate,
@@ -1012,11 +1099,37 @@ document.addEventListener("DOMContentLoaded", () => {
             form.dataset.saving = 'true';
             const button = form.querySelector('[type="submit"]');
             if (button) button.disabled = true;
-            try {
-                await submitLead({...leadData, dimensions:{...state.dimensions}, formId:'kitchen_estimator', leadType:'calculator', calculatorType:'kitchen'});
-                showLoader();
-            } catch(error) { console.error(error); alert('Your estimate could not be saved. Please try again.'); }
-            finally { form.dataset.saving = 'false'; if(button) button.disabled = false; }
+          
+try {
+    const result = await submitLead({
+        ...leadData,
+        dimensions: { ...state.dimensions },
+        formId: "kitchen_estimator",
+        leadType: "calculator",
+        calculatorType: "kitchen"
+    });
+
+    // Requires submitLead() to return { ok: true, id: "..." }
+    if (!result?.ok || !result?.id) {
+        throw new Error("Lead saved status or Estimate ID missing");
+    }
+
+    state.estimateId = result.id;
+    state.leadSubmitted = true;
+
+    showLoader();
+
+} catch (error) {
+    console.error("Estimator submission error:", error);
+    alert("Your estimate could not be confirmed. Please try again.");
+
+} finally {
+    form.dataset.saving = "false";
+
+    if (button) {
+        button.disabled = false;
+    }
+}
 
 
             /*
