@@ -1,0 +1,25 @@
+ECON WEBSITE OPTIMIZATION — 23 Sep 2026
+
+Completed safely:
+- Added /assets/css/typography.css as the single typography control point.
+- Reduced website typography to 2 families: DM Sans (body/UI) and Playfair Display (headings).
+- Removed page-level Google Fonts imports and centralized font loading.
+- Replaced Poppins / DM Sans / Archivo Black body declarations with --font-body.
+- Replaced Playfair Display heading declarations with --font-heading.
+- Normalized Font Awesome to one version (6.7.2) per page where it was already used.
+- Preserved Firebase/data JS modules that may look unreferenced from HTML but are imported by other JS modules.
+
+Files updated:
+- HTML files updated: 21
+- CSS files with typography declarations updated: 13
+- Google Fonts/preconnect lines removed: 52
+- Duplicate Font Awesome links removed: 6
+
+Global font change:
+Open /assets/css/typography.css and edit only:
+  --font-body
+  --font-heading
+The whole website will inherit those choices.
+
+Important cleanup note:
+I used a conservative cleanup strategy. I did NOT blindly delete CSS selectors or JS modules solely because static HTML does not contain them; this project creates/imports content dynamically (Firebase, kitchen designs, wardrobe designs), so aggressive purge can break live pages.

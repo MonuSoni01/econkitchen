@@ -1,0 +1,2100 @@
+/* =========================================================
+   ECON KITCHEN
+   WHO WE ARE PAGE
+   LEGACY / AUTHORITY / CROSS-BRAND STORY
+   PREMIUM BLACK + GOLD + CREAM
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* =========================================================
+   PAGE ROOT
+========================================================= */
+
+.who-we-are-page{
+    --wwa-gold:#D4AF37;
+    --wwa-gold-dark:#B88917;
+    --wwa-gold-light:#E9D48D;
+
+    --wwa-black:#080808;
+    --wwa-black-soft:#111111;
+    --wwa-dark-card:#151515;
+
+    --wwa-white:#FFFFFF;
+    --wwa-cream:#F8F5EF;
+    --wwa-paper:#EEE7D8;
+
+    --wwa-text:#171717;
+    --wwa-body:#666666;
+
+    --wwa-heritage:#2A2118;
+    --wwa-wood:#5A3924;
+
+    --wwa-border:rgba(212,175,55,.24);
+
+    background:var(--wwa-white);
+    color:var(--wwa-text);
+    overflow-x:hidden;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.who-we-are-page,
+.who-we-are-page *{
+    font-family:var(--font-body);
+}
+
+.who-we-are-page h1,
+.who-we-are-page h2,
+.who-we-are-page h3,
+.who-we-are-page h4,
+.who-we-are-page h5,
+.who-we-are-page h6{
+    font-family:var(--font-body);
+    font-weight:600;
+}
+
+.who-we-are-page p{
+    font-family:var(--font-body);
+    font-weight:400;
+}
+
+.who-we-are-page i[class^="fa-"],
+.who-we-are-page i[class*=" fa-"]{
+    font-family:"Font Awesome 6 Free" !important;
+}
+
+.who-we-are-page i[class*="fa-brands"]{
+    font-family:"Font Awesome 6 Brands" !important;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.who-we-are-page *{
+    box-sizing:border-box;
+}
+
+.who-we-are-page img{
+    display:block;
+    max-width:100%;
+}
+
+.who-we-are-page a{
+    text-decoration:none;
+}
+
+.who-we-are-page button{
+    font:inherit;
+}
+
+.who-we-are-page .container{
+    width:min(1240px,92%);
+    margin:0 auto;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.wwa-eyebrow{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:var(--wwa-gold-dark);
+
+    font-size:13px;
+    line-height:1.4;
+    font-weight:700;
+
+    letter-spacing:2.6px;
+    text-transform:uppercase;
+}
+
+.wwa-eyebrow > span{
+    width:34px;
+    height:1px;
+    flex:0 0 34px;
+
+    background:var(--wwa-gold);
+}
+
+.wwa-eyebrow-light{
+    color:var(--wwa-gold);
+}
+
+.wwa-eyebrow-center{
+    justify-content:center;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.wwa-btn{
+    min-height:52px;
+    padding:0 24px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:13px;
+
+    border-radius:50px;
+
+    font-size:14px;
+    line-height:1;
+    font-weight:700;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.wwa-btn-gold{
+    color:#111;
+    background:var(--wwa-gold);
+    border:1px solid var(--wwa-gold);
+}
+
+.wwa-btn-gold:hover{
+    transform:translateY(-3px);
+    background:#E1BE49;
+    box-shadow:0 18px 40px rgba(212,175,55,.27);
+}
+
+.wwa-btn-outline{
+    color:#fff;
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.24);
+}
+
+.wwa-btn-outline:hover{
+    transform:translateY(-3px);
+    color:var(--wwa-gold);
+    border-color:var(--wwa-gold);
+    background:rgba(212,175,55,.05);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.wwa-section-heading{
+    max-width:820px;
+    margin:0 auto 58px;
+    text-align:center;
+}
+
+.wwa-section-heading h2{
+    margin:18px 0 0;
+
+    color:var(--wwa-text);
+
+    font-size:clamp(40px,4.5vw,62px);
+    line-height:1.07;
+    letter-spacing:-2px;
+}
+
+.wwa-section-heading h2 em{
+    color:var(--wwa-gold);
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-section-heading > p{
+    max-width:700px;
+    margin:20px auto 0;
+
+    color:var(--wwa-body);
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+.wwa-section-heading-light h2{
+    color:#fff;
+}
+
+.wwa-section-heading-light > p{
+    color:#aaa;
+}
+
+
+/* =========================================================
+   01. HERO
+========================================================= */
+
+.wwa-hero{
+    position:relative;
+
+    width:100%;
+    min-height:clamp(680px,84vh,860px);
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+    background:var(--wwa-black);
+}
+
+.wwa-hero-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    overflow:hidden;
+}
+
+.wwa-hero-bg img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    object-position:center;
+
+    transform:scale(1.055);
+    animation:wwaHeroZoom 12s ease-out forwards;
+}
+
+@keyframes wwaHeroZoom{
+    from{ transform:scale(1.085); }
+    to{ transform:scale(1.025); }
+}
+
+.wwa-hero-overlay{
+    position:absolute;
+    inset:0;
+    z-index:1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,5,5,.97) 0%,
+            rgba(5,5,5,.92) 26%,
+            rgba(5,5,5,.77) 48%,
+            rgba(5,5,5,.38) 73%,
+            rgba(5,5,5,.56) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.10),
+            rgba(0,0,0,.30)
+        );
+}
+
+.wwa-hero-glow{
+    position:absolute;
+    z-index:2;
+
+    width:600px;
+    height:600px;
+
+    left:-180px;
+    bottom:-310px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.20),
+            transparent 68%
+        );
+
+    pointer-events:none;
+}
+
+.wwa-hero .container{
+    position:relative;
+    z-index:3;
+}
+
+.wwa-hero-content{
+    max-width:760px;
+    padding:120px 0 110px;
+}
+
+.wwa-hero-content h1{
+    max-width:760px;
+    margin:22px 0 0;
+
+    color:#fff;
+
+    font-size:clamp(52px,6.1vw,82px);
+    line-height:.98;
+    letter-spacing:-3px;
+}
+
+.wwa-hero-content h1 em{
+    display:block;
+
+    margin-top:6px;
+
+    color:var(--wwa-gold);
+
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-hero-description{
+    max-width:690px;
+    margin:26px 0 0;
+
+    color:#c6c6c6;
+
+    font-size:17px;
+    line-height:1.8;
+}
+
+.wwa-hero-actions{
+    margin-top:33px;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.wwa-hero-trust{
+    margin-top:43px;
+    padding-top:27px;
+
+    display:flex;
+    align-items:center;
+    gap:26px;
+
+    border-top:1px solid rgba(255,255,255,.14);
+}
+
+.wwa-hero-trust > div{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.wwa-hero-trust strong{
+    color:#fff;
+
+    font-size:15px;
+    line-height:1.2;
+    font-weight:700;
+}
+
+.wwa-hero-trust span{
+    color:#8f8f8f;
+
+    font-size:12px;
+    line-height:1.4;
+}
+
+.wwa-hero-divider{
+    width:1px;
+    height:42px;
+    flex:0 0 1px;
+
+    background:rgba(212,175,55,.32);
+}
+
+.wwa-scroll-indicator{
+    position:absolute;
+    z-index:4;
+
+    left:50%;
+    bottom:24px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+
+    color:#bbb;
+}
+
+.wwa-scroll-indicator span{
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.wwa-scroll-indicator i{
+    color:var(--wwa-gold);
+    font-size:12px;
+
+    animation:wwaScrollBounce 1.7s ease-in-out infinite;
+}
+
+@keyframes wwaScrollBounce{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(6px); }
+}
+
+
+/* =========================================================
+   02. STORY
+========================================================= */
+
+.wwa-story-section{
+    position:relative;
+    padding:120px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff 0%,
+            #fbfaf7 100%
+        );
+
+    overflow:hidden;
+}
+
+.wwa-story-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    right:-240px;
+    top:-240px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.10),
+            transparent 68%
+        );
+}
+
+.wwa-story-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);
+    align-items:center;
+    gap:75px;
+}
+
+.wwa-story-media{
+    position:relative;
+}
+
+.wwa-story-image{
+    position:relative;
+
+    height:610px;
+
+    overflow:hidden;
+    border-radius:28px;
+
+    background:#ddd;
+
+    box-shadow:0 28px 65px rgba(33,26,17,.10);
+}
+
+.wwa-story-image::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 48%,
+            rgba(0,0,0,.42)
+        );
+}
+
+.wwa-story-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.wwa-story-badge{
+    position:absolute;
+    z-index:3;
+
+    left:28px;
+    right:28px;
+    bottom:28px;
+
+    max-width:430px;
+    padding:20px 22px;
+
+    border-radius:17px;
+    border:1px solid rgba(255,255,255,.18);
+
+    background:rgba(8,8,8,.78);
+    backdrop-filter:blur(12px);
+}
+
+.wwa-story-badge span{
+    display:block;
+    margin-bottom:6px;
+
+    color:var(--wwa-gold);
+
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.wwa-story-badge strong{
+    display:block;
+
+    color:#fff;
+
+    font-size:18px;
+    line-height:1.45;
+    font-weight:600;
+}
+
+.wwa-story-content h2{
+    margin:18px 0 0;
+
+    color:var(--wwa-text);
+
+    font-size:clamp(40px,4vw,56px);
+    line-height:1.06;
+    letter-spacing:-1.8px;
+}
+
+.wwa-story-content h2 em{
+    display:block;
+
+    color:var(--wwa-gold);
+
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-story-content > p{
+    margin:18px 0 0;
+
+    color:var(--wwa-body);
+
+    font-size:16px;
+    line-height:1.78;
+}
+
+.wwa-story-content .wwa-lead{
+    margin-top:24px;
+
+    color:#333;
+
+    font-size:18px;
+    line-height:1.75;
+    font-weight:500;
+}
+
+.wwa-story-points{
+    margin-top:30px;
+
+    display:grid;
+    gap:12px;
+}
+
+.wwa-story-points > div{
+    min-height:84px;
+    padding:15px 16px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    border:1px solid #eee5d5;
+    border-radius:16px;
+
+    background:#fff;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.wwa-story-points > div:hover{
+    transform:translateX(5px);
+    border-color:rgba(212,175,55,.60);
+    box-shadow:0 14px 32px rgba(36,29,18,.06);
+}
+
+.wwa-story-points i{
+    width:42px;
+    height:42px;
+    flex:0 0 42px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--wwa-gold-dark);
+    background:#F8F1DD;
+}
+
+.wwa-story-points span{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.wwa-story-points strong{
+    color:#252525;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.wwa-story-points small{
+    color:#8a8a8a;
+
+    font-size:12px;
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   03. LEGACY VAULT
+========================================================= */
+
+.wwa-vault-section{
+    position:relative;
+
+    padding:115px 0;
+
+    background:
+        radial-gradient(
+            circle at 12% 0%,
+            rgba(212,175,55,.10),
+            transparent 28%
+        ),
+        var(--wwa-black);
+
+    overflow:hidden;
+}
+
+.wwa-vault-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:18px;
+}
+
+.wwa-vault-card{
+    position:relative;
+
+    min-height:265px;
+    padding:27px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+    border:1px solid rgba(212,175,55,.18);
+
+    background:#111;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+}
+
+.wwa-vault-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(212,175,55,.62);
+    background:#151515;
+}
+
+.wwa-vault-card-large{
+    grid-column:span 2;
+    grid-row:span 2;
+
+    min-height:548px;
+    padding:0;
+}
+
+.wwa-vault-image{
+    position:absolute;
+    inset:0;
+}
+
+.wwa-vault-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.wwa-vault-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.08),
+            rgba(0,0,0,.20) 35%,
+            rgba(0,0,0,.88) 100%
+        );
+}
+
+.wwa-vault-content{
+    position:absolute;
+    z-index:2;
+
+    left:30px;
+    right:30px;
+    bottom:30px;
+}
+
+.wwa-vault-content > span,
+.wwa-vault-number{
+    display:block;
+
+    color:var(--wwa-gold);
+
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.8px;
+}
+
+.wwa-vault-content h3{
+    margin:9px 0 0;
+
+    color:#fff;
+
+    font-size:27px;
+    line-height:1.2;
+}
+
+.wwa-vault-content p{
+    max-width:500px;
+    margin:10px 0 0;
+
+    color:#c7c7c7;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.wwa-vault-icon{
+    width:48px;
+    height:48px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:23px;
+
+    border-radius:50%;
+
+    color:var(--wwa-gold);
+    background:rgba(212,175,55,.10);
+    border:1px solid rgba(212,175,55,.18);
+}
+
+.wwa-vault-card > h3{
+    margin:10px 0 0;
+
+    color:#fff;
+
+    font-size:20px;
+    line-height:1.3;
+}
+
+.wwa-vault-card > p{
+    margin:12px 0 0;
+
+    color:#888;
+
+    font-size:14px;
+    line-height:1.7;
+}
+
+.wwa-vault-note{
+    max-width:900px;
+    margin:28px auto 0;
+    padding:17px 20px;
+
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+
+    border-radius:15px;
+    border:1px solid rgba(212,175,55,.18);
+
+    background:rgba(255,255,255,.035);
+}
+
+.wwa-vault-note i{
+    margin-top:3px;
+    color:var(--wwa-gold);
+}
+
+.wwa-vault-note p{
+    color:#888;
+
+    font-size:13px;
+    line-height:1.65;
+}
+
+.wwa-vault-note strong{
+    color:#bbb;
+}
+
+
+/* =========================================================
+   04. TIMELINE
+========================================================= */
+
+.wwa-timeline-section{
+    padding:120px 0;
+
+    background:var(--wwa-cream);
+}
+
+.wwa-timeline{
+    position:relative;
+
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:20px;
+
+    padding-top:35px;
+}
+
+.wwa-timeline-line{
+    position:absolute;
+
+    left:8%;
+    right:8%;
+    top:50px;
+
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(212,175,55,.20),
+            rgba(212,175,55,.90),
+            rgba(212,175,55,.20)
+        );
+}
+
+.wwa-timeline-item{
+    position:relative;
+    z-index:2;
+}
+
+.wwa-timeline-dot{
+    position:relative;
+
+    width:30px;
+    height:30px;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+    border:7px solid var(--wwa-cream);
+
+    background:#d8cda9;
+    box-shadow:0 0 0 1px rgba(212,175,55,.45);
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+.wwa-timeline-item.is-active .wwa-timeline-dot,
+.wwa-timeline-item:hover .wwa-timeline-dot{
+    transform:scale(1.08);
+    background:var(--wwa-gold);
+    box-shadow:
+        0 0 0 1px var(--wwa-gold),
+        0 0 0 8px rgba(212,175,55,.10);
+}
+
+.wwa-timeline-card{
+    min-height:245px;
+    padding:26px 23px;
+
+    border-radius:20px;
+    border:1px solid #e8dec9;
+
+    background:#fff;
+
+    box-shadow:0 18px 40px rgba(37,29,16,.045);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.wwa-timeline-item.is-active .wwa-timeline-card,
+.wwa-timeline-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(212,175,55,.65);
+    box-shadow:0 24px 50px rgba(37,29,16,.075);
+}
+
+.wwa-timeline-stage{
+    color:var(--wwa-gold-dark);
+
+    font-size:11px;
+    line-height:1.4;
+    font-weight:700;
+
+    letter-spacing:1.5px;
+}
+
+.wwa-timeline-card h3{
+    margin:13px 0 0;
+
+    color:#252525;
+
+    font-size:22px;
+    line-height:1.25;
+}
+
+.wwa-timeline-card p{
+    margin:12px 0 0;
+
+    color:#777;
+
+    font-size:14px;
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   05. AUTHORITY
+========================================================= */
+
+.wwa-authority-section{
+    padding:0 0 120px;
+
+    background:var(--wwa-cream);
+}
+
+.wwa-authority-box{
+    min-height:610px;
+
+    display:grid;
+    grid-template-columns:minmax(0,.93fr) minmax(0,1.07fr);
+
+    overflow:hidden;
+
+    border-radius:30px;
+    border:1px solid rgba(212,175,55,.25);
+
+    background:var(--wwa-black);
+
+    box-shadow:0 30px 70px rgba(27,21,12,.11);
+}
+
+.wwa-authority-content{
+    padding:62px 54px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(212,175,55,.12),
+            transparent 35%
+        ),
+        #090909;
+}
+
+.wwa-authority-content h2{
+    margin:18px 0 0;
+
+    color:#fff;
+
+    font-size:clamp(39px,4vw,54px);
+    line-height:1.07;
+    letter-spacing:-1.8px;
+}
+
+.wwa-authority-content h2 em{
+    display:block;
+
+    color:var(--wwa-gold);
+
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-authority-content > p{
+    margin:22px 0 0;
+
+    color:#aaa;
+
+    font-size:16px;
+    line-height:1.78;
+}
+
+.wwa-authority-list{
+    margin-top:30px;
+
+    display:grid;
+    gap:12px;
+}
+
+.wwa-authority-list > div{
+    display:flex;
+    align-items:center;
+    gap:11px;
+
+    color:#d2d2d2;
+
+    font-size:14px;
+}
+
+.wwa-authority-list i{
+    width:26px;
+    height:26px;
+    flex:0 0 26px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--wwa-gold);
+    background:rgba(212,175,55,.10);
+
+    font-size:9px;
+}
+
+.wwa-authority-visual{
+    position:relative;
+
+    min-height:610px;
+    overflow:hidden;
+}
+
+.wwa-authority-image{
+    position:absolute;
+    inset:0;
+}
+
+.wwa-authority-image::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.04),
+            rgba(0,0,0,.52)
+        );
+}
+
+.wwa-authority-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.wwa-authority-stat{
+    position:absolute;
+    z-index:3;
+
+    left:28px;
+    right:28px;
+    bottom:28px;
+
+    max-width:390px;
+    padding:20px;
+
+    border-radius:17px;
+    border:1px solid rgba(255,255,255,.18);
+
+    background:rgba(7,7,7,.76);
+    backdrop-filter:blur(12px);
+}
+
+.wwa-authority-stat strong{
+    display:block;
+
+    color:var(--wwa-gold);
+
+    font-size:38px;
+    line-height:1;
+}
+
+.wwa-authority-stat span{
+    display:block;
+    margin-top:7px;
+
+    color:#fff;
+
+    font-size:13px;
+    line-height:1.55;
+}
+
+
+/* =========================================================
+   06. CROSS AUTHORITY
+========================================================= */
+
+.wwa-cross-section{
+    padding:120px 0;
+
+    background:#fff;
+}
+
+.wwa-cross-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 170px minmax(0,1fr);
+    align-items:stretch;
+    gap:20px;
+}
+
+.wwa-brand-card{
+    position:relative;
+
+    min-height:470px;
+    padding:38px;
+
+    overflow:hidden;
+
+    border-radius:26px;
+    border:1px solid #eadfca;
+
+    background:#fff;
+
+    box-shadow:0 18px 45px rgba(30,23,13,.06);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease;
+}
+
+.wwa-brand-card:hover{
+    transform:translateY(-7px);
+    border-color:rgba(212,175,55,.70);
+    box-shadow:0 30px 60px rgba(30,23,13,.10);
+}
+
+.wwa-brand-card::before{
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    top:-120px;
+    right:-120px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.12),
+            transparent 68%
+        );
+}
+
+.wwa-brand-card-ply{
+    background:
+        linear-gradient(
+            160deg,
+            #fff 0%,
+            #fbf7f0 100%
+        );
+}
+
+.wwa-brand-card-kitchen{
+    background:
+        linear-gradient(
+            160deg,
+            #fff 0%,
+            #f8f8f8 100%
+        );
+}
+
+.wwa-brand-number{
+    position:absolute;
+
+    right:28px;
+    top:24px;
+
+    color:#ece3d3;
+
+    font-size:62px;
+    line-height:1;
+    font-weight:700;
+}
+
+.wwa-brand-label{
+    position:relative;
+    z-index:2;
+
+    color:var(--wwa-gold-dark);
+
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.8px;
+}
+
+.wwa-brand-card h3{
+    position:relative;
+    z-index:2;
+
+    margin:15px 0 0;
+
+    color:#222;
+
+    font-size:34px;
+    line-height:1.1;
+}
+
+.wwa-brand-card > p{
+    position:relative;
+    z-index:2;
+
+    margin:19px 0 0;
+
+    color:#727272;
+
+    font-size:15px;
+    line-height:1.75;
+}
+
+.wwa-brand-card ul{
+    position:relative;
+    z-index:2;
+
+    margin:26px 0 0;
+    padding:0;
+
+    display:grid;
+    gap:11px;
+
+    list-style:none;
+}
+
+.wwa-brand-card li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#505050;
+
+    font-size:14px;
+}
+
+.wwa-brand-card li i{
+    width:23px;
+    height:23px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--wwa-gold-dark);
+    background:#F8F1DD;
+
+    font-size:9px;
+}
+
+.wwa-text-link{
+    position:relative;
+    z-index:2;
+
+    margin-top:31px;
+    padding-bottom:6px;
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    border-bottom:1px solid var(--wwa-gold);
+
+    color:#222;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:
+        gap .3s ease,
+        color .3s ease;
+}
+
+.wwa-text-link:hover{
+    gap:14px;
+    color:var(--wwa-gold-dark);
+}
+
+.wwa-cross-bridge{
+    position:relative;
+
+    min-height:470px;
+    padding:30px 18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:26px;
+
+    background:
+        radial-gradient(
+            circle at 50% 38%,
+            rgba(212,175,55,.16),
+            transparent 38%
+        ),
+        var(--wwa-black);
+}
+
+.wwa-cross-bridge > span{
+    color:var(--wwa-gold);
+
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.wwa-cross-bridge-icon{
+    width:58px;
+    height:58px;
+
+    display:grid;
+    place-items:center;
+
+    margin:20px 0;
+
+    border-radius:50%;
+
+    color:var(--wwa-gold);
+    border:1px solid rgba(212,175,55,.40);
+    background:rgba(212,175,55,.08);
+
+    font-size:18px;
+}
+
+.wwa-cross-bridge strong{
+    color:#fff;
+
+    font-size:19px;
+    line-height:1.35;
+    letter-spacing:.4px;
+}
+
+.wwa-cross-bridge small{
+    margin-top:10px;
+
+    color:#777;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   07. BRAND BRIDGE
+========================================================= */
+
+.wwa-bridge-section{
+    padding:0 0 120px;
+    background:#fff;
+}
+
+.wwa-bridge-box{
+    padding:58px;
+
+    border-radius:30px;
+    border:1px solid rgba(212,175,55,.25);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(212,175,55,.13),
+            transparent 30%
+        ),
+        var(--wwa-black);
+
+    overflow:hidden;
+}
+
+.wwa-bridge-copy{
+    max-width:760px;
+}
+
+.wwa-bridge-copy > span{
+    color:var(--wwa-gold);
+
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2.2px;
+}
+
+.wwa-bridge-copy h2{
+    margin:14px 0 0;
+
+    color:#fff;
+
+    font-size:clamp(40px,4.2vw,58px);
+    line-height:1.06;
+    letter-spacing:-1.8px;
+}
+
+.wwa-bridge-copy h2 em{
+    color:var(--wwa-gold);
+
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-bridge-copy p{
+    max-width:720px;
+    margin:18px 0 0;
+
+    color:#9a9a9a;
+
+    font-size:16px;
+    line-height:1.75;
+}
+
+.wwa-bridge-flow{
+    margin-top:45px;
+
+    display:grid;
+    grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+    align-items:center;
+    gap:17px;
+}
+
+.wwa-bridge-flow > div{
+    min-height:150px;
+    padding:24px 18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border-radius:18px;
+    border:1px solid rgba(212,175,55,.18);
+
+    background:#111;
+}
+
+.wwa-bridge-flow > div i{
+    margin-bottom:13px;
+
+    color:var(--wwa-gold);
+
+    font-size:23px;
+}
+
+.wwa-bridge-flow > div strong{
+    color:#fff;
+
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+.wwa-bridge-flow > div small{
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:11px;
+}
+
+.wwa-bridge-flow > i{
+    color:var(--wwa-gold);
+    opacity:.8;
+}
+
+
+/* =========================================================
+   08. FINAL CTA
+========================================================= */
+
+.wwa-final-cta{
+    padding:0 0 120px;
+
+    background:#fff;
+}
+
+.wwa-final-box{
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    border-radius:30px;
+}
+
+.wwa-final-bg{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.wwa-final-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4,4,4,.55),
+            rgba(4,4,4,.88)
+        );
+}
+
+.wwa-final-content{
+    position:relative;
+    z-index:2;
+
+    max-width:830px;
+    padding:70px 30px;
+
+    text-align:center;
+}
+
+.wwa-final-content h2{
+    margin:18px 0 0;
+
+    color:#fff;
+
+    font-size:clamp(42px,4.8vw,64px);
+    line-height:1.04;
+    letter-spacing:-2px;
+}
+
+.wwa-final-content h2 em{
+    display:block;
+
+    color:var(--wwa-gold);
+
+    font-style:italic;
+    font-weight:500;
+}
+
+.wwa-final-content > p{
+    max-width:680px;
+    margin:20px auto 0;
+
+    color:#b6b6b6;
+
+    font-size:16px;
+    line-height:1.75;
+}
+
+.wwa-final-actions{
+    margin-top:31px;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATIONS
+========================================================= */
+
+[data-reveal]{
+    opacity:0;
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.65,.3,1);
+}
+
+[data-reveal="up"]{
+    transform:translateY(34px);
+}
+
+[data-reveal="left"]{
+    transform:translateX(-42px);
+}
+
+[data-reveal="right"]{
+    transform:translateX(42px);
+}
+
+[data-reveal].is-visible{
+    opacity:1;
+    transform:none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1100px){
+
+    .wwa-story-grid{
+        gap:45px;
+    }
+
+    .wwa-story-image{
+        height:560px;
+    }
+
+    .wwa-vault-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .wwa-vault-card-large{
+        grid-column:span 2;
+        grid-row:auto;
+        min-height:470px;
+    }
+
+    .wwa-timeline{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:26px;
+        padding-top:0;
+    }
+
+    .wwa-timeline-line{
+        display:none;
+    }
+
+    .wwa-timeline-dot{
+        margin:0 0 14px 15px;
+    }
+
+    .wwa-cross-grid{
+        grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    }
+
+    .wwa-cross-bridge{
+        grid-column:1 / -1;
+        min-height:auto;
+        padding:24px;
+
+        flex-direction:row;
+        gap:18px;
+    }
+
+    .wwa-cross-bridge-icon{
+        margin:0;
+    }
+
+    .wwa-cross-bridge strong br{
+        display:none;
+    }
+
+    .wwa-cross-bridge small{
+        margin:0;
+    }
+
+    .wwa-bridge-flow{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .wwa-bridge-flow > i{
+        display:none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media(max-width:820px){
+
+    .wwa-hero{
+        min-height:760px;
+    }
+
+    .wwa-hero-overlay{
+        background:
+            linear-gradient(
+                180deg,
+                rgba(5,5,5,.76) 0%,
+                rgba(5,5,5,.86) 45%,
+                rgba(5,5,5,.96) 100%
+            );
+    }
+
+    .wwa-hero-content{
+        max-width:100%;
+        padding:135px 0 120px;
+    }
+
+    .wwa-hero-content h1{
+        font-size:clamp(46px,10vw,65px);
+        letter-spacing:-2px;
+    }
+
+    .wwa-hero-trust{
+        flex-wrap:wrap;
+        gap:18px;
+    }
+
+    .wwa-hero-divider{
+        display:none;
+    }
+
+    .wwa-story-section{
+        padding:90px 0;
+    }
+
+    .wwa-story-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .wwa-story-image{
+        height:500px;
+    }
+
+    .wwa-vault-section,
+    .wwa-timeline-section,
+    .wwa-cross-section{
+        padding:90px 0;
+    }
+
+    .wwa-authority-section{
+        padding:0 0 90px;
+    }
+
+    .wwa-authority-box{
+        grid-template-columns:1fr;
+    }
+
+    .wwa-authority-visual{
+        min-height:500px;
+    }
+
+    .wwa-cross-grid{
+        grid-template-columns:1fr;
+    }
+
+    .wwa-cross-bridge{
+        grid-column:auto;
+    }
+
+    .wwa-bridge-section,
+    .wwa-final-cta{
+        padding:0 0 90px;
+    }
+
+    .wwa-bridge-box{
+        padding:42px 28px;
+    }
+
+    .wwa-bridge-flow{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .who-we-are-page .container{
+        width:min(100% - 30px,1240px);
+    }
+
+    .wwa-eyebrow{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+
+    .wwa-eyebrow > span{
+        width:25px;
+        flex-basis:25px;
+    }
+
+    .wwa-section-heading{
+        margin-bottom:40px;
+    }
+
+    .wwa-section-heading h2{
+        font-size:36px;
+        letter-spacing:-1.3px;
+    }
+
+    .wwa-section-heading > p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .wwa-hero{
+        min-height:740px;
+    }
+
+    .wwa-hero-content{
+        padding:125px 0 105px;
+    }
+
+    .wwa-hero-content h1{
+        margin-top:18px;
+        font-size:43px;
+        line-height:1.02;
+        letter-spacing:-1.7px;
+    }
+
+    .wwa-hero-description{
+        margin-top:20px;
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .wwa-hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .wwa-btn{
+        width:100%;
+    }
+
+    .wwa-hero-trust{
+        margin-top:31px;
+        padding-top:22px;
+
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .wwa-hero-trust > div:first-child{
+        grid-column:1 / -1;
+    }
+
+    .wwa-scroll-indicator{
+        bottom:17px;
+    }
+
+    .wwa-story-section{
+        padding:75px 0;
+    }
+
+    .wwa-story-image{
+        height:410px;
+        border-radius:22px;
+    }
+
+    .wwa-story-badge{
+        left:16px;
+        right:16px;
+        bottom:16px;
+        padding:15px;
+    }
+
+    .wwa-story-badge strong{
+        font-size:15px;
+    }
+
+    .wwa-story-content h2{
+        font-size:36px;
+        letter-spacing:-1.2px;
+    }
+
+    .wwa-story-content .wwa-lead{
+        font-size:16px;
+    }
+
+    .wwa-vault-section,
+    .wwa-timeline-section,
+    .wwa-cross-section{
+        padding:75px 0;
+    }
+
+    .wwa-vault-grid{
+        grid-template-columns:1fr;
+    }
+
+    .wwa-vault-card-large{
+        grid-column:auto;
+        min-height:420px;
+    }
+
+    .wwa-vault-content{
+        left:21px;
+        right:21px;
+        bottom:22px;
+    }
+
+    .wwa-vault-content h3{
+        font-size:23px;
+    }
+
+    .wwa-vault-card{
+        min-height:235px;
+    }
+
+    .wwa-timeline{
+        grid-template-columns:1fr;
+    }
+
+    .wwa-timeline-card{
+        min-height:auto;
+    }
+
+    .wwa-authority-section{
+        padding-bottom:75px;
+    }
+
+    .wwa-authority-box{
+        border-radius:24px;
+    }
+
+    .wwa-authority-content{
+        padding:42px 24px;
+    }
+
+    .wwa-authority-content h2{
+        font-size:36px;
+        letter-spacing:-1.2px;
+    }
+
+    .wwa-authority-visual{
+        min-height:410px;
+    }
+
+    .wwa-authority-stat{
+        left:16px;
+        right:16px;
+        bottom:16px;
+    }
+
+    .wwa-brand-card{
+        min-height:auto;
+        padding:28px 23px;
+    }
+
+    .wwa-cross-bridge{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .wwa-cross-bridge-icon{
+        margin:4px 0;
+    }
+
+    .wwa-bridge-section,
+    .wwa-final-cta{
+        padding-bottom:75px;
+    }
+
+    .wwa-bridge-box{
+        padding:35px 20px;
+        border-radius:24px;
+    }
+
+    .wwa-bridge-copy h2{
+        font-size:36px;
+        letter-spacing:-1.2px;
+    }
+
+    .wwa-bridge-flow{
+        grid-template-columns:1fr;
+    }
+
+    .wwa-bridge-flow > div{
+        min-height:125px;
+    }
+
+    .wwa-final-box{
+        min-height:540px;
+        border-radius:24px;
+    }
+
+    .wwa-final-content{
+        padding:55px 18px;
+    }
+
+    .wwa-final-content h2{
+        font-size:37px;
+        letter-spacing:-1.3px;
+    }
+
+    .wwa-final-actions{
+        flex-direction:column;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    .wwa-hero-bg img,
+    .wwa-scroll-indicator i{
+        animation:none;
+    }
+
+    [data-reveal]{
+        opacity:1;
+        transform:none;
+        transition:none;
+    }
+
+    *{
+        scroll-behavior:auto !important;
+    }
+
+}

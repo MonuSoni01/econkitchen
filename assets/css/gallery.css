@@ -1,0 +1,2722 @@
+/* =========================================================
+   ECON KITCHEN
+   PREMIUM DYNAMIC GALLERY
+   /assets/css/gallery.css
+========================================================= */
+
+
+/* =========================================================
+   01. VARIABLES
+========================================================= */
+
+:root {
+    --gallery-black: #171717;
+    --gallery-dark: #211c19;
+    --gallery-dark-2: #2c2622;
+
+    --gallery-text: #555555;
+    --gallery-muted: #8c8984;
+
+    --gallery-gold: #dfb936;
+    --gallery-gold-dark: #b68b13;
+    --gallery-gold-light: #f7edc7;
+
+    --gallery-cream: #f8f5ef;
+    --gallery-soft: #f3efe7;
+    --gallery-soft-2: #eee8dd;
+
+    --gallery-white: #ffffff;
+
+    --gallery-border: #e5dfd4;
+    --gallery-border-dark: #d8d0c3;
+
+    --gallery-font: "Poppins", sans-serif;
+
+    --gallery-radius-sm: 12px;
+    --gallery-radius: 18px;
+    --gallery-radius-lg: 26px;
+
+    --gallery-shadow-sm:
+        0 8px 25px rgba(35, 29, 20, 0.06);
+
+    --gallery-shadow:
+        0 20px 55px rgba(35, 29, 20, 0.10);
+
+    --gallery-shadow-lg:
+        0 30px 80px rgba(35, 29, 20, 0.15);
+}
+
+
+/* =========================================================
+   02. RESET / BASE
+========================================================= */
+
+.gallery-page {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--gallery-font);
+
+    color: var(--gallery-black);
+
+    background: var(--gallery-cream);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.gallery-page *,
+.gallery-page *::before,
+.gallery-page *::after {
+    box-sizing: border-box;
+}
+
+
+.gallery-page img {
+    max-width: 100%;
+}
+
+
+.gallery-page button,
+.gallery-page input,
+.gallery-page select,
+.gallery-page textarea {
+    font-family: inherit;
+}
+
+
+.gallery-container {
+    width: min(1280px, calc(100% - 48px));
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gallery-no-scroll {
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   03. EYEBROW
+========================================================= */
+
+.gallery-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: var(--gallery-gold-dark);
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+.gallery-eyebrow::before {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    display: inline-block;
+
+    background: var(--gallery-gold);
+}
+
+
+/* =========================================================
+   04. HERO
+========================================================= */
+
+.gallery-hero {
+    min-height: 540px;
+
+    padding:
+        100px
+        24px
+        90px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 5%,
+            rgba(223, 185, 54, 0.17),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fbf9f5 48%,
+            var(--gallery-cream) 100%
+        );
+}
+
+
+/* decorative glow */
+
+.gallery-hero::before {
+    content: "";
+
+    width: 420px;
+    height: 420px;
+
+    position: absolute;
+
+    top: -250px;
+    left: -170px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(223, 185, 54, 0.07);
+
+    pointer-events: none;
+}
+
+
+.gallery-hero::after {
+    content: "";
+
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+
+    right: -270px;
+    bottom: -330px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(182, 139, 19, 0.06);
+
+    pointer-events: none;
+}
+
+
+.gallery-hero .gallery-container {
+    max-width: 950px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.gallery-hero .gallery-eyebrow {
+    justify-content: center;
+}
+
+
+.gallery-hero .gallery-eyebrow::before {
+    display: none;
+}
+
+
+.gallery-hero h1 {
+    max-width: 900px;
+
+    margin:
+        0
+        auto
+        24px;
+
+    color: var(--gallery-black);
+
+    font-size: clamp(44px, 5.5vw, 72px);
+
+    line-height: 1.08;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+
+.gallery-hero h1 span {
+    color: var(--gallery-gold-dark);
+}
+
+
+.gallery-hero p {
+    max-width: 760px;
+
+    margin:
+        0
+        auto
+        34px;
+
+    color: var(--gallery-text);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+}
+
+
+.gallery-hero-link {
+    min-height: 56px;
+
+    padding:
+        0
+        28px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border:
+        1px solid var(--gallery-border);
+
+    border-radius: 999px;
+
+    background: var(--gallery-white);
+
+    color: var(--gallery-black);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.04em;
+
+    box-shadow:
+        0 10px 30px rgba(35, 29, 20, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.gallery-hero-link i {
+    color: var(--gallery-gold-dark);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.gallery-hero-link:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(223, 185, 54, 0.8);
+
+    background: #fffdf8;
+
+    box-shadow:
+        0 16px 40px rgba(35, 29, 20, 0.11);
+}
+
+
+.gallery-hero-link:hover i {
+    transform: translateY(4px);
+}
+
+
+/* =========================================================
+   05. INTRO
+========================================================= */
+
+.gallery-intro {
+    padding:
+        90px
+        0;
+
+    background: var(--gallery-white);
+
+    border-top:
+        1px solid var(--gallery-border);
+
+    border-bottom:
+        1px solid var(--gallery-border);
+}
+
+
+.gallery-intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(320px, 0.75fr);
+
+    gap: 90px;
+
+    align-items: end;
+}
+
+
+.gallery-intro-heading h2 {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: var(--gallery-black);
+
+    font-size: 40px;
+
+    line-height: 1.22;
+
+    font-weight: 600;
+
+    letter-spacing: -0.035em;
+}
+
+
+.gallery-intro-heading h2 span {
+    color: var(--gallery-gold-dark);
+}
+
+
+.gallery-intro-copy {
+    padding-bottom: 4px;
+}
+
+
+.gallery-intro-copy p {
+    margin: 0;
+
+    color: var(--gallery-text);
+
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   06. GALLERY COLLECTION
+========================================================= */
+
+.gallery-collection {
+    padding:
+        100px
+        0
+        115px;
+
+    background: var(--gallery-cream);
+}
+
+
+.gallery-section-head {
+    margin-bottom: 42px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+.gallery-section-head > div {
+    min-width: 0;
+}
+
+
+.gallery-section-head h2 {
+    margin: 0;
+
+    color: var(--gallery-black);
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: -0.035em;
+}
+
+
+.gallery-section-head h2 span {
+    color: var(--gallery-gold-dark);
+}
+
+
+.gallery-section-head > p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: var(--gallery-text);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   07. FILTERS
+========================================================= */
+
+.gallery-filter-wrap {
+    margin-bottom: 42px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.gallery-filter {
+    min-height: 48px;
+
+    padding:
+        0
+        23px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid var(--gallery-border);
+
+    border-radius: 999px;
+
+    background: var(--gallery-white);
+
+    color: var(--gallery-text);
+
+    font-size: 14px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 4px 15px rgba(35, 29, 20, 0.025);
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.gallery-filter:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--gallery-gold);
+
+    color: var(--gallery-black);
+
+    box-shadow:
+        var(--gallery-shadow-sm);
+}
+
+
+.gallery-filter.active {
+    border-color: var(--gallery-dark);
+
+    background: var(--gallery-dark);
+
+    color: var(--gallery-white);
+
+    box-shadow:
+        0 10px 28px rgba(33, 28, 25, 0.15);
+}
+
+
+.gallery-filter.active:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--gallery-dark);
+
+    background: var(--gallery-dark);
+}
+
+
+/* =========================================================
+   08. GALLERY GRID
+========================================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   09. GALLERY CARD
+========================================================= */
+
+.gallery-card {
+    min-width: 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--gallery-border);
+
+    border-radius: var(--gallery-radius);
+
+    background: var(--gallery-white);
+
+    cursor: pointer;
+
+    outline: none;
+
+    box-shadow:
+        0 5px 20px rgba(35, 29, 20, 0.035);
+
+    transition:
+        transform 0.35s cubic-bezier(.2,.7,.2,1),
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(223, 185, 54, 0.65);
+
+    box-shadow:
+        0 24px 55px rgba(35, 29, 20, 0.12);
+}
+
+
+.gallery-card:focus-visible {
+    border-color:
+        var(--gallery-gold);
+
+    box-shadow:
+        0 0 0 4px rgba(223, 185, 54, 0.17),
+        var(--gallery-shadow);
+}
+
+
+/* =========================================================
+   10. CARD IMAGE
+========================================================= */
+
+.gallery-card-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        var(--gallery-soft);
+}
+
+
+.gallery-card-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(18, 15, 13, 0.13) 100%
+        );
+}
+
+
+.gallery-card-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1);
+
+    transition:
+        transform 0.75s cubic-bezier(.2,.7,.2,1),
+        filter 0.4s ease;
+}
+
+
+.gallery-card:hover
+.gallery-card-image img {
+    transform: scale(1.065);
+}
+
+
+/* =========================================================
+   11. IMAGE OVERLAY
+========================================================= */
+
+.gallery-card-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(19, 16, 14, 0.20);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.gallery-card:hover
+.gallery-card-overlay {
+    opacity: 1;
+}
+
+
+.gallery-view-btn {
+    width: 58px;
+    height: 58px;
+
+    padding: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid rgba(255,255,255,.65);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.94);
+
+    color: var(--gallery-black);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.15);
+
+    transform:
+        translateY(10px)
+        scale(.85);
+
+    opacity: 0;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.gallery-card:hover
+.gallery-view-btn {
+    transform:
+        translateY(0)
+        scale(1);
+
+    opacity: 1;
+}
+
+
+.gallery-view-btn:hover {
+    background:
+        var(--gallery-gold-light);
+}
+
+
+/* =========================================================
+   12. CARD CONTENT
+========================================================= */
+
+.gallery-card-content {
+    padding:
+        24px
+        24px
+        23px;
+}
+
+
+.gallery-card-top {
+    min-height: 24px;
+
+    margin-bottom: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+
+.gallery-card-category {
+    min-width: 0;
+
+    color:
+        var(--gallery-gold-dark);
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: 0.09em;
+
+    text-transform: uppercase;
+}
+
+
+.gallery-card-location {
+    flex-shrink: 0;
+
+    color: var(--gallery-muted);
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+.gallery-card-location i {
+    margin-right: 5px;
+
+    color:
+        var(--gallery-gold-dark);
+}
+
+
+.gallery-card-content h3 {
+    margin: 0;
+
+    color:
+        var(--gallery-black);
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: -0.025em;
+}
+
+
+.gallery-card-content p {
+    min-height: 74px;
+
+    margin:
+        11px
+        0
+        20px;
+
+    color:
+        var(--gallery-text);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   13. CARD FOOTER
+========================================================= */
+
+.gallery-card-footer {
+    padding-top: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    border-top:
+        1px solid #eee9e2;
+
+    color:
+        var(--gallery-black);
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: 0.075em;
+}
+
+
+.gallery-card-footer i {
+    color:
+        var(--gallery-gold-dark);
+
+    font-size: 15px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.gallery-card:hover
+.gallery-card-footer i {
+    transform:
+        translateX(6px);
+}
+
+
+/* =========================================================
+   14. CARD LOAD ANIMATION
+========================================================= */
+
+@keyframes galleryCardEnter {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+.gallery-card {
+    animation:
+        galleryCardEnter
+        0.5s
+        ease
+        both;
+}
+
+
+.gallery-card:nth-child(2) {
+    animation-delay: .05s;
+}
+
+.gallery-card:nth-child(3) {
+    animation-delay: .10s;
+}
+
+.gallery-card:nth-child(4) {
+    animation-delay: .15s;
+}
+
+.gallery-card:nth-child(5) {
+    animation-delay: .20s;
+}
+
+.gallery-card:nth-child(6) {
+    animation-delay: .25s;
+}
+
+
+/* =========================================================
+   15. EMPTY STATE
+========================================================= */
+
+.gallery-empty {
+    padding:
+        85px
+        25px;
+
+    text-align: center;
+
+    border:
+        1px dashed var(--gallery-border-dark);
+
+    border-radius:
+        var(--gallery-radius-lg);
+
+    background:
+        var(--gallery-white);
+}
+
+
+.gallery-empty[hidden] {
+    display: none !important;
+}
+
+
+.gallery-empty-icon {
+    width: 68px;
+    height: 68px;
+
+    margin:
+        0
+        auto
+        20px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--gallery-gold-light);
+
+    color:
+        var(--gallery-gold-dark);
+
+    font-size: 24px;
+}
+
+
+.gallery-empty h3 {
+    margin:
+        0
+        0
+        9px;
+
+    color:
+        var(--gallery-black);
+
+    font-size: 23px;
+
+    font-weight: 600;
+}
+
+
+.gallery-empty p {
+    margin: 0;
+
+    color:
+        var(--gallery-text);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   16. CTA SECTION
+========================================================= */
+
+.gallery-cta-section {
+    padding:
+        0
+        0
+        110px;
+
+    background:
+        var(--gallery-cream);
+}
+
+
+.gallery-cta {
+    min-height: 300px;
+
+    padding:
+        58px
+        62px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 55px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:
+        26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1b1816 0%,
+            #26211e 100%
+        );
+
+    color:
+        var(--gallery-white);
+
+    box-shadow:
+        0 30px 70px rgba(33, 28, 25, 0.16);
+}
+
+
+.gallery-cta::before {
+    content: "";
+
+    width: 420px;
+    height: 420px;
+
+    position: absolute;
+
+    top: -280px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(223,185,54,.15);
+
+    pointer-events: none;
+}
+
+
+.gallery-cta::after {
+    content: "";
+
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+
+    left: -180px;
+    bottom: -220px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(223,185,54,.07);
+
+    pointer-events: none;
+}
+
+
+.gallery-cta > * {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.gallery-cta .gallery-eyebrow {
+    color:
+        var(--gallery-gold);
+}
+
+
+.gallery-cta .gallery-eyebrow::before {
+    background:
+        var(--gallery-gold);
+}
+
+
+.gallery-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 36px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    letter-spacing: -0.035em;
+}
+
+
+.gallery-cta h2 span {
+    color:
+        var(--gallery-gold);
+}
+
+
+.gallery-cta p {
+    max-width: 650px;
+
+    margin:
+        16px
+        0
+        0;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+.gallery-cta-btn {
+    min-width: 255px;
+    min-height: 58px;
+
+    padding:
+        0
+        26px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    border-radius: 999px;
+
+    background:
+        var(--gallery-gold);
+
+    color:
+        #15130f;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    box-shadow:
+        0 14px 35px rgba(223,185,54,.16);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.gallery-cta-btn i {
+    transition:
+        transform .3s ease;
+}
+
+
+.gallery-cta-btn:hover {
+    transform:
+        translateY(-3px);
+
+    background:
+        #e8c64d;
+
+    box-shadow:
+        0 18px 40px rgba(223,185,54,.25);
+}
+
+
+.gallery-cta-btn:hover i {
+    transform:
+        translateX(5px);
+}
+
+
+/* =========================================================
+   17. LIGHTBOX
+========================================================= */
+
+.gallery-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    padding:
+        45px
+        85px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+}
+
+
+.gallery-lightbox.open {
+    visibility: visible;
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+
+.gallery-lightbox-backdrop {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(13, 11, 9, .90);
+
+    backdrop-filter:
+        blur(13px);
+
+    -webkit-backdrop-filter:
+        blur(13px);
+}
+
+
+/* =========================================================
+   18. LIGHTBOX DIALOG
+========================================================= */
+
+.gallery-lightbox-dialog {
+    width:
+        min(1100px, 100%);
+
+    max-height:
+        calc(100vh - 90px);
+
+    position: relative;
+
+    z-index: 2;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius:
+        20px;
+
+    background:
+        var(--gallery-white);
+
+    box-shadow:
+        0 40px 120px rgba(0,0,0,.5);
+
+    transform:
+        translateY(24px)
+        scale(.975);
+
+    opacity: 0;
+
+    transition:
+        transform .35s cubic-bezier(.2,.7,.2,1),
+        opacity .35s ease;
+}
+
+
+.gallery-lightbox.open
+.gallery-lightbox-dialog {
+    transform:
+        translateY(0)
+        scale(1);
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   19. LIGHTBOX IMAGE
+========================================================= */
+
+.gallery-lightbox-image {
+    width: 100%;
+
+    height:
+        min(68vh, 700px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        #0e0d0c;
+}
+
+
+.gallery-lightbox-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+/* =========================================================
+   20. LIGHTBOX INFO
+========================================================= */
+
+.gallery-lightbox-info {
+    min-height: 94px;
+
+    padding:
+        18px
+        25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background:
+        var(--gallery-white);
+}
+
+
+.gallery-lightbox-info > div {
+    min-width: 0;
+}
+
+
+.gallery-lightbox-info span:first-child {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color:
+        var(--gallery-gold-dark);
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: .1em;
+
+    text-transform: uppercase;
+}
+
+
+.gallery-lightbox-info h3 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color:
+        var(--gallery-black);
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.gallery-lightbox-counter {
+    flex-shrink: 0;
+
+    color:
+        var(--gallery-muted);
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   21. LIGHTBOX CLOSE
+========================================================= */
+
+.gallery-lightbox-close {
+    width: 50px;
+    height: 50px;
+
+    padding: 0;
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 22px;
+    right: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.12);
+
+    color:
+        var(--gallery-white);
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+
+.gallery-lightbox-close:hover {
+    transform:
+        rotate(90deg);
+
+    background:
+        rgba(255,255,255,.22);
+}
+
+
+/* =========================================================
+   22. LIGHTBOX ARROWS
+========================================================= */
+
+.gallery-lightbox-arrow {
+    width: 54px;
+    height: 54px;
+
+    padding: 0;
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid rgba(255,255,255,.22);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.12);
+
+    color:
+        var(--gallery-white);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+
+.gallery-lightbox-arrow:hover {
+    background:
+        rgba(255,255,255,.22);
+}
+
+
+.gallery-lightbox-prev {
+    left: 20px;
+}
+
+
+.gallery-lightbox-prev:hover {
+    transform:
+        translateY(-50%)
+        translateX(-3px);
+}
+
+
+.gallery-lightbox-next {
+    right: 20px;
+}
+
+
+.gallery-lightbox-next:hover {
+    transform:
+        translateY(-50%)
+        translateX(3px);
+}
+
+
+/* =========================================================
+   23. LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1450px) {
+
+    .gallery-container {
+        width:
+            min(1320px, calc(100% - 70px));
+    }
+
+}
+
+
+/* =========================================================
+   24. TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .gallery-intro-grid {
+        gap: 55px;
+    }
+
+
+    .gallery-grid {
+        gap: 22px;
+    }
+
+
+    .gallery-card-content {
+        padding:
+            21px
+            20px
+            20px;
+    }
+
+
+    .gallery-card-content h3 {
+        font-size: 20px;
+    }
+
+
+    .gallery-card-content p {
+        min-height: 78px;
+
+        font-size: 14px;
+    }
+
+
+    .gallery-cta {
+        padding:
+            48px
+            45px;
+
+        gap: 35px;
+    }
+
+
+    .gallery-cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   25. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-hero {
+        min-height: 500px;
+    }
+
+
+    .gallery-hero h1 {
+        font-size:
+            clamp(40px, 7vw, 58px);
+    }
+
+
+    .gallery-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .gallery-intro-heading h2 {
+        max-width: 700px;
+    }
+
+
+    .gallery-intro-copy {
+        max-width: 700px;
+    }
+
+
+    .gallery-section-head {
+        display: block;
+    }
+
+
+    .gallery-section-head > p {
+        margin-top: 16px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .gallery-card-content p {
+        min-height: 52px;
+    }
+
+
+    .gallery-cta {
+        display: block;
+    }
+
+
+    .gallery-cta-btn {
+        width: fit-content;
+
+        margin-top: 30px;
+    }
+
+
+    .gallery-lightbox {
+        padding:
+            55px
+            70px;
+    }
+
+}
+
+
+/* =========================================================
+   26. MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* CONTAINER */
+
+    .gallery-container {
+        width:
+            calc(100% - 30px);
+    }
+
+
+    /* HERO */
+
+    .gallery-hero {
+        min-height: 440px;
+
+        padding:
+            65px
+            15px
+            60px;
+    }
+
+
+    .gallery-eyebrow {
+        margin-bottom: 12px;
+
+        font-size: 14px;
+
+        letter-spacing: .13em;
+    }
+
+
+    .gallery-eyebrow::before {
+        width: 20px;
+    }
+
+
+    .gallery-hero h1 {
+        margin-bottom: 18px;
+
+        font-size: 34px;
+
+        line-height: 1.14;
+
+        letter-spacing: -.035em;
+    }
+
+
+    .gallery-hero p {
+        max-width: 560px;
+
+        margin-bottom: 27px;
+
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    .gallery-hero-link {
+        min-height: 50px;
+
+        padding:
+            0
+            22px;
+
+        font-size: 15px;
+    }
+
+
+    /* INTRO */
+
+    .gallery-intro {
+        padding:
+            60px
+            0;
+    }
+
+
+    .gallery-intro-grid {
+        gap: 20px;
+    }
+
+
+    .gallery-intro-heading h2 {
+        font-size: 28px;
+
+        line-height: 1.3;
+    }
+
+
+    .gallery-intro-copy p {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    /* COLLECTION */
+
+    .gallery-collection {
+        padding:
+            65px
+            0
+            75px;
+    }
+
+
+    .gallery-section-head {
+        margin-bottom: 28px;
+    }
+
+
+    .gallery-section-head h2 {
+        font-size: 29px;
+
+        line-height: 1.3;
+    }
+
+
+    .gallery-section-head > p {
+        margin-top: 13px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* FILTER SCROLL */
+
+    .gallery-filter-wrap {
+        margin:
+            0
+            -15px
+            30px;
+
+        padding:
+            0
+            15px
+            6px;
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        gap: 9px;
+
+        overflow-x: auto;
+
+        overscroll-behavior-inline: contain;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .gallery-filter-wrap::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .gallery-filter {
+        min-height: 44px;
+
+        padding:
+            0
+            19px;
+
+        flex:
+            0
+            0
+            auto;
+
+        font-size: 15px;
+    }
+
+
+    /* GRID */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* CARD */
+
+    .gallery-card {
+        border-radius: 17px;
+    }
+
+
+    .gallery-card:hover {
+        transform: none;
+    }
+
+
+    .gallery-card-image {
+        aspect-ratio:
+            4 / 3;
+    }
+
+
+    .gallery-card-image img {
+        transform: none;
+    }
+
+
+    .gallery-card:hover
+    .gallery-card-image img {
+        transform: none;
+    }
+
+
+    /* always show expand on mobile */
+
+    .gallery-card-overlay {
+        padding: 14px;
+
+        align-items: flex-end;
+
+        justify-content: flex-end;
+
+        background:
+            linear-gradient(
+                180deg,
+                transparent 55%,
+                rgba(0,0,0,.32)
+            );
+
+        opacity: 1;
+    }
+
+
+    .gallery-view-btn {
+        width: 46px;
+        height: 46px;
+
+        opacity: 1;
+
+        transform: none;
+
+        font-size: 14px;
+    }
+
+
+    /* CARD CONTENT */
+
+    .gallery-card-content {
+        padding:
+            20px
+            19px
+            19px;
+    }
+
+
+    .gallery-card-top {
+        margin-bottom: 9px;
+    }
+
+
+    .gallery-card-category {
+        font-size: 14px;
+    }
+
+
+    .gallery-card-location {
+        font-size: 14px;
+    }
+
+
+    .gallery-card-content h3 {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+
+    .gallery-card-content p {
+        min-height: 0;
+
+        margin:
+            9px
+            0
+            17px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .gallery-card-footer {
+        padding-top: 15px;
+
+        font-size: 14px;
+    }
+
+
+    /* CTA */
+
+    .gallery-cta-section {
+        padding-bottom: 70px;
+    }
+
+
+    .gallery-cta {
+        min-height: 0;
+
+        padding:
+            38px
+            26px;
+
+        display: block;
+
+        border-radius: 20px;
+    }
+
+
+    .gallery-cta h2 {
+        font-size: 27px;
+
+        line-height: 1.35;
+    }
+
+
+    .gallery-cta p {
+        margin-top: 13px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .gallery-cta-btn {
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 54px;
+
+        margin-top: 27px;
+
+        font-size: 15px;
+    }
+
+
+    /* LIGHTBOX */
+
+    .gallery-lightbox {
+        padding:
+            62px
+            14px
+            18px;
+    }
+
+
+    .gallery-lightbox-dialog {
+        width: 100%;
+
+        max-height:
+            calc(100vh - 90px);
+
+        border-radius: 16px;
+    }
+
+
+    .gallery-lightbox-image {
+        height:
+            min(60vh, 520px);
+    }
+
+
+    .gallery-lightbox-info {
+        min-height: 82px;
+
+        padding:
+            14px
+            17px;
+    }
+
+
+    .gallery-lightbox-info h3 {
+        max-width:
+            calc(100vw - 110px);
+
+        font-size: 16px;
+    }
+
+
+    .gallery-lightbox-info span:first-child {
+        font-size: 14px;
+    }
+
+
+    .gallery-lightbox-counter {
+        font-size: 14px;
+    }
+
+
+    /* CLOSE */
+
+    .gallery-lightbox-close {
+        width: 44px;
+        height: 44px;
+
+        top: 10px;
+        right: 14px;
+
+        font-size: 16px;
+    }
+
+
+    /* ARROWS */
+
+    .gallery-lightbox-arrow {
+        width: 44px;
+        height: 44px;
+
+        top: auto;
+
+        bottom: 102px;
+
+        transform: none;
+
+        font-size: 14px;
+    }
+
+
+    .gallery-lightbox-prev {
+        left: 24px;
+    }
+
+
+    .gallery-lightbox-next {
+        right: 24px;
+    }
+
+
+    .gallery-lightbox-prev:hover,
+    .gallery-lightbox-next:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   27. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .gallery-container {
+        width:
+            calc(100% - 24px);
+    }
+
+
+    .gallery-hero {
+        min-height: 410px;
+
+        padding:
+            55px
+            12px;
+    }
+
+
+    .gallery-hero h1 {
+        font-size: 31px;
+    }
+
+
+    .gallery-hero p {
+        font-size: 14px;
+    }
+
+
+    .gallery-intro-heading h2,
+    .gallery-section-head h2 {
+        font-size: 26px;
+    }
+
+
+    .gallery-filter-wrap {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .gallery-card-content h3 {
+        font-size: 19px;
+    }
+
+
+    .gallery-card-top {
+        gap: 8px;
+    }
+
+
+    .gallery-card-location {
+        max-width: 105px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .gallery-cta {
+        padding:
+            32px
+            21px;
+    }
+
+
+    .gallery-cta h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   28. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gallery-page *,
+    .gallery-page *::before,
+    .gallery-page *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
+/* =========================================================
+   GALLERY CARD — FINAL STRUCTURE FIX
+========================================================= */
+
+.gallery-grid .gallery-card {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #e5dfd4 !important;
+    border-radius: 18px !important;
+}
+
+
+/* IMAGE */
+
+.gallery-grid .gallery-card-image {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 285px !important;
+
+    flex: 0 0 285px !important;
+
+    overflow: hidden !important;
+
+    border-radius: 0 !important;
+}
+
+
+.gallery-grid .gallery-card-image img {
+    position: relative !important;
+
+    inset: auto !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+
+    object-position: center !important;
+}
+
+
+/* ONLY OVERLAY CAN STAY OVER IMAGE */
+
+.gallery-grid .gallery-card-overlay {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    z-index: 2 !important;
+}
+
+
+/* =========================================================
+   CONTENT MUST BE BELOW IMAGE
+========================================================= */
+
+.gallery-grid .gallery-card-content {
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    inset: auto !important;
+
+    z-index: 3 !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    padding: 22px !important;
+
+    display: block !important;
+
+    transform: none !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    background: #ffffff !important;
+
+    color: #171717 !important;
+}
+
+
+/* CATEGORY + LOCATION */
+
+.gallery-grid .gallery-card-top {
+    position: static !important;
+
+    width: 100% !important;
+
+    margin: 0 0 10px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 12px !important;
+
+    transform: none !important;
+}
+
+
+.gallery-grid .gallery-card-category {
+    position: static !important;
+
+    margin: 0 !important;
+
+    color: #b68b13 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: .08em !important;
+
+    text-transform: uppercase !important;
+}
+
+
+.gallery-grid .gallery-card-location {
+    position: static !important;
+
+    margin: 0 !important;
+
+    color: #8c8984 !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.4 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* TITLE */
+
+.gallery-grid .gallery-card-content h3 {
+    position: static !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    color: #171717 !important;
+
+    font-size: 21px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: -.02em !important;
+
+    transform: none !important;
+}
+
+
+/* DESCRIPTION */
+
+.gallery-grid .gallery-card-content p {
+    position: static !important;
+
+    min-height: 75px !important;
+
+    margin: 10px 0 18px !important;
+
+    padding: 0 !important;
+
+    color: #555555 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1.7 !important;
+
+    transform: none !important;
+}
+
+
+/* VIEW PROJECT */
+
+.gallery-grid .gallery-card-footer {
+    position: static !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 16px 0 0 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    border-top: 1px solid #eee9e2 !important;
+
+    color: #171717 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: .08em !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .gallery-grid .gallery-card-image {
+        height: 270px !important;
+
+        flex-basis: 270px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .gallery-grid .gallery-card-image {
+        height: 260px !important;
+
+        flex-basis: 260px !important;
+    }
+
+
+    .gallery-grid .gallery-card-content {
+        padding: 19px !important;
+    }
+
+
+    .gallery-grid .gallery-card-content h3 {
+        font-size: 19px !important;
+    }
+
+
+    .gallery-grid .gallery-card-content p {
+        min-height: 0 !important;
+
+        font-size: 14px !important;
+    }
+
+}
+
+/* =========================================================
+   LIGHTBOX WHATSAPP
+========================================================= */
+
+.gallery-lightbox-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.gallery-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 11px 18px;
+
+    background: #25D366;
+    color: #fff;
+
+    border-radius: 50px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.gallery-whatsapp-btn i {
+    font-size: 21px;
+}
+
+.gallery-whatsapp-btn:hover {
+    background: #1ebe5d;
+    color: #fff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 24px rgba(37, 211, 102, .25);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .gallery-lightbox-info {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .gallery-lightbox-actions {
+        gap: 10px;
+    }
+
+    .gallery-whatsapp-btn {
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+
+        border-radius: 50%;
+    }
+
+    .gallery-whatsapp-btn span {
+        display: none;
+    }
+
+    .gallery-whatsapp-btn i {
+        font-size: 23px;
+    }
+}
