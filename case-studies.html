@@ -1,0 +1,479 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kitchen Case Studies | ECON Kitchen</title>
+  <meta name="description" content="Explore real ECON Kitchen case studies, project challenges, design decisions, material selections and final outcomes.">
+  <meta name="theme-color" content="#080808">
+
+<!-- Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+>
+  <!-- Existing shared ECON styles -->
+   
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/readability.css">
+  <link rel="stylesheet" href="/assets/css/translator.css">
+
+  <!-- Page CSS -->
+  <style>
+    :root{
+  --gold:#D4AF37;
+  --gold-light:#E6C766;
+  --black:#080808;
+  --black-soft:#141414;
+  --white:#fff;
+  --cream:#F8F5EF;
+  --text:#171717;
+  --body:#5b5b5b;
+  --border:#e8e1d9;
+  --font:"Poppins",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.econ-case-page{margin:0;overflow-x:hidden;background:#fff;color:var(--text);font-family:var(--font)}
+.econ-case-page *{font-family:var(--font)}
+.econ-case-page img{width:100%;display:block}
+.econ-case-page a{text-decoration:none;}
+.cs-container{width:min(1240px,92%);margin:auto}
+.cs-section{padding:95px 0}
+.cs-kicker{display:flex;align-items:center;gap:12px;color:#B88A20;font-size:14px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase}
+.cs-kicker>span{width:34px;height:1px;background:var(--gold);flex:0 0 34px}
+.cs-kicker-center{justify-content:center}
+.cs-kicker-light{color:var(--gold)}
+.cs-heading-row{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:60px;align-items:end;margin-bottom:48px}
+.cs-heading-center{max-width:880px;text-align:center;margin:0 auto 48px}
+.cs-heading h2,.cs-content-block h2{font-size:clamp(38px,4.5vw,58px);line-height:1.08;letter-spacing:-1.8px;margin:16px 0 0;font-weight:600}
+.cs-heading h2 em,.cs-content-block h2 em{color:var(--gold);font-style:italic}
+.cs-heading p,.cs-content-block p{font-size:16px;line-height:1.8;color:var(--body)}
+.cs-heading-row>p{margin:0}.cs-heading-light h2{color:#fff}.cs-heading-light p{color:#aaa}
+.fa-solid,
+.fa-regular,
+.fa-brands{
+    font-family:"Font Awesome 6 Free";
+}
+
+.fa-solid{
+    font-weight:900;
+}
+
+.fa-regular{
+    font-weight:400;
+}
+/* hero */
+.cs-hero{position:relative;min-height:680px;background:#000;overflow:hidden;display:flex;align-items:center;color:#fff}
+.cs-hero-media{position:absolute;inset:0}.cs-hero-media img{width:100%;height:100%;object-fit:cover}
+.cs-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.62) 46%,rgba(0,0,0,.2) 100%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 50%)}
+.cs-hero-inner{position:relative;z-index:2;padding:100px 0 140px}
+.cs-hero-copy{max-width:760px}.cs-hero h1{font-size:clamp(46px,5vw,72px);line-height:1.02;letter-spacing:-2.8px;margin:22px 0 20px;font-weight:600;color:#fff}
+.cs-hero h1 em{display:block;color:var(--gold);font-style:italic}.cs-hero-copy p{max-width:690px;color:#ddd;font-size:17px;line-height:1.8}
+.cs-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.cs-btn{min-height:52px;padding:0 22px;border-radius:50px;display:inline-flex;align-items:center;justify-content:center;gap:12px;font-size:14px;font-weight:600;transition:.3s}
+.cs-btn-gold{background:var(--gold);color:#111}.cs-btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(212,175,55,.25)}
+.cs-btn-outline{border:1px solid rgba(212,175,55,.55);color:#fff;background:rgba(0,0,0,.28)}.cs-btn-outline:hover{background:var(--gold);color:#111}
+.cs-hero-stats{position:absolute;left:0;right:0;bottom:0;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);background:rgba(8,8,8,.88);backdrop-filter:blur(12px);border-top:1px solid rgba(212,175,55,.2)}
+.cs-hero-stats>div{padding:20px 28px;border-right:1px solid rgba(255,255,255,.1)}.cs-hero-stats strong{display:block;color:var(--gold);font-size:15px}.cs-hero-stats span{display:block;color:#fff;font-size:13px;margin-top:5px}
+
+/* intro/meta */
+.cs-intro{background:#fff}.cs-project-meta{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--border);border-radius:22px;overflow:hidden}
+.cs-project-meta>div{padding:22px 18px;border-right:1px solid var(--border)}.cs-project-meta>div:last-child{border-right:0}.cs-project-meta small{display:block;color:#B88A20;font-size:11px;font-weight:600;letter-spacing:1.5px}.cs-project-meta strong{display:block;margin-top:7px;font-size:15px}
+
+/* overview */
+.cs-overview{background:var(--cream)}.cs-two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.cs-image-card{position:relative;border-radius:28px;overflow:hidden}.cs-image-tall{min-height:560px}.cs-image-card img{height:100%;min-height:560px;object-fit:cover}
+.cs-image-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.75))}.cs-image-label{position:absolute;z-index:2;left:28px;right:28px;bottom:26px;color:#fff}.cs-image-label span{color:var(--gold);font-size:12px;letter-spacing:2px}.cs-image-label strong{display:block;font-size:20px;margin-top:6px}
+.cs-content-block p{margin:20px 0 0}.cs-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.cs-check-grid div{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:14px}.cs-check-grid i{color:#111;background:var(--gold);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12px}.cs-check-grid span{font-size:13px;font-weight:500}
+.cs-process-grid article > i{
+    width:48px;
+    height:48px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:#111;
+    color:#D4AF37;
+    font-size:19px;
+    line-height:1;
+}
+/* dark */
+.cs-dark-section{background:radial-gradient(circle at 85% 10%,rgba(212,175,55,.12),transparent 28%),linear-gradient(135deg,#050505,#141414)}
+.cs-challenge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cs-dark-card{position:relative;min-height:300px;padding:28px;border-radius:22px;border:1px solid rgba(212,175,55,.22);background:rgba(255,255,255,.035)}
+.cs-number{position:absolute;right:18px;top:10px;font-size:56px;font-weight:700;color:rgba(255,255,255,.06)}.cs-card-icon{width:54px;height:54px;border-radius:16px;background:var(--gold);color:#111;display:grid;place-items:center;font-size:20px}.cs-dark-card h3{color:#fff;font-size:21px;margin:62px 0 10px}.cs-dark-card p{color:#aaa;line-height:1.75;font-size:14px}
+
+/* solution */
+.cs-solution{background:#fff}.cs-solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.cs-solution-card{overflow:hidden;border:1px solid var(--border);border-radius:24px;background:#fff;transition:.3s}.cs-solution-card:hover{transform:translateY(-5px);box-shadow:0 22px 48px rgba(0,0,0,.08);border-color:rgba(212,175,55,.6)}
+.cs-solution-card img{height:260px;object-fit:cover}.cs-solution-body{padding:24px}.cs-solution-body small{color:#B88A20;font-size:11px;letter-spacing:1.5px;font-weight:600}.cs-solution-body h3{font-size:21px;margin:8px 0}.cs-solution-body p{font-size:14px;color:#707070;line-height:1.7;margin:0}
+
+/* materials */
+.cs-materials{background:var(--cream)}.cs-material-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cs-material-item{padding:28px;background:#fff;border:1px solid var(--border);border-radius:22px;text-align:center}.cs-material-icon{width:58px;height:58px;margin:0 auto 20px;display:grid;place-items:center;border-radius:18px;background:#111;color:var(--gold);font-size:20px}.cs-material-item small{display:block;color:#B88A20;letter-spacing:1.4px;font-size:11px;font-weight:600}.cs-material-item strong{display:block;margin-top:8px;font-size:16px}.cs-material-item span{display:block;margin-top:6px;color:#777;font-size:12px}
+
+/* compare */
+.cs-before-after{background:#fff}.cs-compare{position:relative;height:560px;border-radius:28px;overflow:hidden;background:#111;user-select:none}.cs-compare-before,.cs-compare-after{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.cs-compare-after-wrap{position:absolute;inset:0 auto 0 0;width:50%;overflow:hidden}.cs-compare-after{width:100vw;max-width:none}.cs-compare-line{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}.cs-compare-line span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#111;border:4px solid #fff}.cs-compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}.cs-compare-tag{position:absolute;top:22px;padding:8px 12px;border-radius:50px;background:rgba(0,0,0,.62);color:#fff;font-size:11px;letter-spacing:1.5px}.cs-before-tag{left:22px}.cs-after-tag{right:22px}
+
+/* process */
+.cs-process{background:var(--cream)}.cs-process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}.cs-process-grid:before{content:"";position:absolute;left:9%;right:9%;top:36px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold),transparent)}
+.cs-process-grid article{position:relative;z-index:2;min-height:250px;padding:26px;background:#fff;border:1px solid var(--border);border-radius:22px}.cs-process-grid article>span{color:#B88A20;font-weight:600;font-size:13px;letter-spacing:2px}.cs-process-grid article>i{float:right;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold)}.cs-process-grid h3{clear:both;padding-top:54px;margin:0 0 8px;font-size:19px}.cs-process-grid p{font-size:13px;line-height:1.7;color:#777;margin:0}
+
+/* result */
+.cs-results{background:#0b0b0b;color:#fff}.cs-results-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.cs-result-copy h2{font-size:clamp(40px,4.5vw,60px);line-height:1.08;letter-spacing:-2px;margin:18px 0;color:#fff}.cs-result-copy h2 em{color:var(--gold);font-style:italic}.cs-result-copy>p{color:#aaa;line-height:1.8}.cs-result-list{display:grid;gap:12px;margin-top:28px}.cs-result-list div{padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}.cs-result-list strong{display:block;color:var(--gold);font-size:15px}.cs-result-list span{display:block;color:#ccc;font-size:13px;margin-top:4px}.cs-result-image{border-radius:28px;overflow:hidden;border:1px solid rgba(212,175,55,.22)}.cs-result-image img{height:520px;object-fit:cover}
+
+/* quote */
+.cs-testimonial{background:#fff}.cs-quote-card{max-width:950px;margin:auto;text-align:center;padding:50px;border:1px solid var(--border);border-radius:28px;background:var(--cream)}.cs-quote-card>i{color:var(--gold);font-size:36px}.cs-quote-card blockquote{font-size:clamp(24px,3vw,38px);line-height:1.45;font-weight:500;margin:24px 0;color:#242424}.cs-client strong,.cs-client span{display:block}.cs-client span{margin-top:4px;color:#777;font-size:13px}
+
+/* more */
+.cs-more{background:var(--cream)}.cs-text-link{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px}.cs-text-link i{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--gold)}.cs-more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.cs-more-card{overflow:hidden;border-radius:22px;background:#fff;border:1px solid var(--border)}.cs-more-card img{height:230px;object-fit:cover}.cs-more-card>div{padding:22px}.cs-more-card small{color:#B88A20;letter-spacing:1.4px;font-weight:600;font-size:11px}.cs-more-card h3{font-size:19px;line-height:1.4;margin:8px 0 12px}.cs-more-card span{color:#B88A20;font-size:13px;font-weight:600}
+
+/* final */
+.cs-final-cta{padding:68px 0;background:linear-gradient(120deg,#080808,#171717);border-top:1px solid rgba(212,175,55,.2)}.cs-final-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}.cs-final-cta h2{color:#fff;font-size:40px;margin:14px 0 8px}.cs-final-cta p{color:#aaa;margin:0}.cs-final-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+@media(max-width:1050px){.cs-project-meta{grid-template-columns:repeat(3,1fr)}.cs-project-meta>div:nth-child(3){border-right:0}.cs-project-meta>div:nth-child(-n+3){border-bottom:1px solid var(--border)}.cs-challenge-grid,.cs-material-grid,.cs-process-grid{grid-template-columns:repeat(2,1fr)}.cs-process-grid:before{display:none}}
+@media(max-width:900px){.cs-section{padding:74px 0}.cs-heading-row,.cs-two-col,.cs-results-grid,.cs-final-grid{grid-template-columns:1fr;gap:34px}.cs-solution-grid,.cs-more-grid{grid-template-columns:1fr 1fr}.cs-hero-stats{grid-template-columns:repeat(2,1fr)}.cs-hero-stats>div:nth-child(2){border-right:0}.cs-compare{height:440px}.cs-final-actions{justify-content:flex-start}}
+@media(max-width:640px){.cs-container{width:min(100% - 28px,1240px)}.cs-section{padding:58px 0}.cs-hero{min-height:760px}.cs-hero-inner{padding:75px 0 190px}.cs-hero h1{font-size:42px;letter-spacing:-1.8px}.cs-hero-copy p{font-size:15px}.cs-hero-actions{flex-direction:column;align-items:stretch}.cs-btn{width:100%}.cs-hero-stats>div{padding:16px}.cs-heading h2,.cs-content-block h2{font-size:34px;letter-spacing:-1.2px}.cs-project-meta{grid-template-columns:1fr 1fr}.cs-project-meta>div{border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.cs-project-meta>div:nth-child(2n){border-right:0}.cs-project-meta>div:nth-last-child(-n+2){border-bottom:0}.cs-check-grid,.cs-challenge-grid,.cs-solution-grid,.cs-material-grid,.cs-process-grid,.cs-more-grid{grid-template-columns:1fr}.cs-image-tall,.cs-image-card img{min-height:420px}.cs-compare{height:360px}.cs-result-image img{height:360px}.cs-quote-card{padding:32px 20px}.cs-final-cta h2{font-size:32px}}
+  </style>
+    <link rel="stylesheet" href="assets/css/responsive-master.css">
+ 
+<body class="econ-case-page">
+
+  <div id="header-slot"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="cs-hero" id="top">
+      <div class="cs-hero-media">
+        <img src="/assets/images/seo-car.png" alt="ECON Kitchen completed kitchen case study">
+      </div>
+      <div class="cs-hero-overlay"></div>
+
+      <div class="cs-container cs-hero-inner">
+        <div class="cs-hero-copy">
+          <div class="cs-kicker"><span></span>REAL PROJECTS. REAL DETAILS.</div>
+          <h1>Kitchen Case Studies<br><em>Designed around real homes.</em></h1>
+          <p>
+            Explore how ECON Kitchen solves space, storage, material and execution challenges
+            through thoughtful design, factory manufacturing and professional installation.
+          </p>
+          <div class="cs-hero-actions">
+            <a href="#featured-case" class="cs-btn cs-btn-gold">Explore Case Study <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="/contact.html" class="cs-btn cs-btn-outline">Plan Your Kitchen <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-hero-stats">
+        <div><strong>01</strong><span>Project Story</span></div>
+        <div><strong>02</strong><span>Design Challenge</span></div>
+        <div><strong>03</strong><span>Material Decisions</span></div>
+        <div><strong>04</strong><span>Final Outcome</span></div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="cs-section cs-intro" id="featured-case">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-row">
+          <div>
+            <div class="cs-kicker"><span></span>FEATURED CASE STUDY</div>
+            <h2>A compact kitchen transformed into a<br><em>high-function everyday space.</em></h2>
+          </div>
+          <p>
+            This sample structure is ready for your real project content. Replace dummy details
+            with actual client city, kitchen size, material specification, photos and timeline.
+          </p>
+        </div>
+
+        <div class="cs-project-meta">
+          <div><small>PROJECT TYPE</small><strong>Modular Kitchen</strong></div>
+          <div><small>LAYOUT</small><strong>L-Shaped</strong></div>
+          <div><small>LOCATION</small><strong>Delhi NCR</strong></div>
+          <div><small>SIZE</small><strong>Approx. 11' × 9'</strong></div>
+          <div><small>STYLE</small><strong>Modern Minimal</strong></div>
+          <div><small>STATUS</small><strong>Completed</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="cs-section cs-overview">
+      <div class="cs-container cs-two-col">
+        <div class="cs-image-card cs-image-tall">
+          <img src="/assets/images/seo-car01.png" alt="Kitchen before redesign">
+          <div class="cs-image-label"><span>BEFORE / EXISTING SPACE</span><strong>Limited storage and inefficient corners</strong></div>
+        </div>
+
+        <div class="cs-content-block">
+          <div class="cs-kicker"><span></span>PROJECT OVERVIEW</div>
+          <h2>The brief was simple:<br><em>more storage, less clutter.</em></h2>
+          <p>
+            The homeowners wanted a kitchen that felt clean, practical and easy to maintain,
+            without making the room visually heavy.
+          </p>
+          <p>
+            The existing layout had underused corners, limited drawer storage and an unplanned
+            appliance zone. The project focused on improving workflow while keeping the design calm.
+          </p>
+
+          <div class="cs-check-grid">
+            <div><i class="fa-solid fa-check"></i><span>Better work triangle</span></div>
+            <div><i class="fa-solid fa-check"></i><span>More drawer storage</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Cleaner appliance planning</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Easy-to-maintain finishes</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGE / SOLUTION -->
+    <section class="cs-section cs-dark-section">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-center cs-heading-light">
+          <div class="cs-kicker cs-kicker-center"><span></span>DESIGN THINKING<span></span></div>
+          <h2>Every project starts with a challenge.<br><em>Every detail needs a reason.</em></h2>
+        </div>
+
+        <div class="cs-challenge-grid">
+          <article class="cs-dark-card">
+            <span class="cs-number">01</span>
+            <div class="cs-card-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+            <h3>Space Constraint</h3>
+            <p>Compact dimensions required careful cabinet sizing and better corner planning.</p>
+          </article>
+          <article class="cs-dark-card">
+            <span class="cs-number">02</span>
+            <div class="cs-card-icon"><i class="fa-solid fa-box-open"></i></div>
+            <h3>Storage Need</h3>
+            <p>Daily-use utensils, groceries and appliances needed dedicated storage zones.</p>
+          </article>
+          <article class="cs-dark-card">
+            <span class="cs-number">03</span>
+            <div class="cs-card-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Material Selection</h3>
+            <p>Materials needed to balance durability, maintenance and the desired finish.</p>
+          </article>
+          <article class="cs-dark-card">
+            <span class="cs-number">04</span>
+            <div class="cs-card-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Execution</h3>
+            <p>Accurate manufacturing and site coordination were critical for a clean final fit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN SOLUTION -->
+    <section class="cs-section cs-solution">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-row">
+          <div>
+            <div class="cs-kicker"><span></span>THE SOLUTION</div>
+            <h2>Designed around the way<br><em>the family actually cooks.</em></h2>
+          </div>
+          <p>Use this section to explain your design logic, not just the final look.</p>
+        </div>
+
+        <div class="cs-solution-grid">
+          <article class="cs-solution-card">
+            <img src="/assets/images/seo-car02.png" alt="Kitchen storage solution">
+            <div class="cs-solution-body"><small>01 — LAYOUT</small><h3>Smarter L-Shape Planning</h3><p>Work zones were separated for prep, cooking and cleaning while preserving movement.</p></div>
+          </article>
+          <article class="cs-solution-card">
+            <img src="/assets/images/03.png" alt="Kitchen drawer storage">
+            <div class="cs-solution-body"><small>02 — STORAGE</small><h3>Drawer-First Storage</h3><p>Deep drawers improved accessibility and reduced the need to bend into deep cabinets.</p></div>
+          </article>
+          <article class="cs-solution-card">
+            <img src="/assets/images/04.png" alt="Kitchen hardware and accessories">
+            <div class="cs-solution-body"><small>03 — FUNCTION</small><h3>Hardware & Accessories</h3><p>Selected hardware and internal accessories improved daily usability and organisation.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAL SPEC -->
+    <section class="cs-section cs-materials">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-center">
+          <div class="cs-kicker cs-kicker-center"><span></span>MATERIAL & FINISH SPECIFICATION<span></span></div>
+          <h2>What went into the kitchen.</h2>
+          <p>Replace these sample specifications with the exact materials used in the real project.</p>
+        </div>
+
+        <div class="cs-material-grid">
+          <div class="cs-material-item"><div class="cs-material-icon"><i class="fa-solid fa-layer-group"></i></div><small>CARCASS</small><strong>BWP Plywood / HDHMR</strong><span>Project-specific selection</span></div>
+          <div class="cs-material-item"><div class="cs-material-icon"><i class="fa-solid fa-palette"></i></div><small>SHUTTER FINISH</small><strong>Laminate / Acrylic</strong><span>Selected colour combination</span></div>
+          <div class="cs-material-item"><div class="cs-material-icon"><i class="fa-solid fa-border-all"></i></div><small>EDGE</small><strong>Machine Edge Banding</strong><span>Clean and consistent finish</span></div>
+          <div class="cs-material-item"><div class="cs-material-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><small>HARDWARE</small><strong>Selected Premium Hardware</strong><span>Hinges & drawer systems</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE AFTER -->
+    <section class="cs-section cs-before-after">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-row">
+          <div>
+            <div class="cs-kicker"><span></span>BEFORE & AFTER</div>
+            <h2>See the transformation.</h2>
+          </div>
+          <p>Drag the slider to compare the existing space with the completed kitchen.</p>
+        </div>
+
+        <div class="cs-compare" id="compareBox">
+          <img class="cs-compare-before" src="/assets/images/before/2.png" alt="Kitchen before">
+          <div class="cs-compare-after-wrap" id="afterWrap">
+            <img class="cs-compare-after" src="/assets/images/before/1.png" alt="Kitchen after">
+          </div>
+          <div class="cs-compare-line" id="compareLine"><span><i class="fa-solid fa-arrows-left-right"></i></span></div>
+          <span class="cs-compare-tag cs-before-tag">BEFORE</span>
+          <span class="cs-compare-tag cs-after-tag">AFTER</span>
+          <input type="range" id="compareRange" min="0" max="100" value="50" aria-label="Before and after comparison">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="cs-section cs-process">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-center">
+          <div class="cs-kicker cs-kicker-center"><span></span>PROJECT JOURNEY<span></span></div>
+          <h2>From site measurement to<br><em>final installation.</em></h2>
+        </div>
+
+        <div class="cs-process-grid">
+          <article><span>01</span><i class="fa-solid fa-ruler"></i><h3>Site Measurement</h3><p>Dimensions, services and site conditions documented.</p></article>
+          <article><span>02</span><i class="fa-solid fa-pen-ruler"></i><h3>Design Finalisation</h3><p>Layout, storage, materials and finish selections finalised.</p></article>
+          <article><span>03</span><i class="fa-solid fa-industry"></i><h3>Factory Production</h3><p>Components manufactured, finished and quality checked.</p></article>
+          <article><span>04</span><i class="fa-solid fa-screwdriver-wrench"></i><h3>Installation</h3><p>On-site fitting, alignment and finishing completed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="cs-section cs-results">
+      <div class="cs-container cs-results-grid">
+        <div class="cs-result-copy">
+          <div class="cs-kicker cs-kicker-light"><span></span>FINAL OUTCOME</div>
+          <h2>A cleaner kitchen.<br><em>Better everyday workflow.</em></h2>
+          <p>
+            The final kitchen delivers improved storage, a more organised work zone and a calmer visual experience.
+          </p>
+          <div class="cs-result-list">
+            <div><strong>+ Storage</strong><span>Better use of base & wall cabinets</span></div>
+            <div><strong>+ Workflow</strong><span>Improved cooking and prep movement</span></div>
+            <div><strong>+ Finish</strong><span>Factory-made consistency</span></div>
+          </div>
+        </div>
+        <div class="cs-result-image"><img src="/assets/images/seo-car.png" alt="Completed ECON Kitchen project"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="cs-section cs-testimonial">
+      <div class="cs-container">
+        <div class="cs-quote-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <blockquote>
+            “The kitchen feels more organised and much easier to use every day. The final finish is exactly what we wanted.”
+          </blockquote>
+          <div class="cs-client"><strong>Sample Client Name</strong><span>Homeowner • Delhi NCR</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER CASE STUDIES -->
+    <section class="cs-section cs-more">
+      <div class="cs-container">
+        <div class="cs-heading cs-heading-row">
+          <div>
+            <div class="cs-kicker"><span></span>MORE PROJECT STORIES</div>
+            <h2>Explore more case studies.</h2>
+          </div>
+          <a href="#" class="cs-text-link">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cs-more-grid">
+          <a href="#" class="cs-more-card"><img src="/assets/images/parallel-shape.png" alt="Parallel kitchen case study"><div><small>PARALLEL KITCHEN</small><h3>Storage-first planning for a busy family</h3><span>View Case Study →</span></div></a>
+          <a href="#" class="cs-more-card"><img src="/assets/images/island.png" alt="Island kitchen case study"><div><small>ISLAND KITCHEN</small><h3>Open kitchen designed for hosting</h3><span>View Case Study →</span></div></a>
+          <a href="#" class="cs-more-card"><img src="/assets/images/seo-car02.png" alt="Straight kitchen case study"><div><small>STRAIGHT KITCHEN</small><h3>Compact kitchen for an urban apartment</h3><span>View Case Study →</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cs-final-cta">
+      <div class="cs-container cs-final-grid">
+        <div>
+          <div class="cs-kicker cs-kicker-light"><span></span>YOUR PROJECT COULD BE NEXT</div>
+          <h2>Planning a new kitchen?</h2>
+          <p>Share your space, requirement and project details with ECON Kitchen.</p>
+        </div>
+        <div class="cs-final-actions">
+          <a href="/contact.html" class="cs-btn cs-btn-gold">Talk to Kitchen Expert <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="/calculators/kitchen-estimator.html" class="cs-btn cs-btn-outline">Start Estimate <i class="fa-solid fa-calculator"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <!-- Existing component loader -->
+  <script src="/assets/js/components.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+  const range = document.getElementById('compareRange');
+  const afterWrap = document.getElementById('afterWrap');
+  const line = document.getElementById('compareLine');
+
+  const setCompare = (value) => {
+    const v = Math.max(0, Math.min(100, Number(value)));
+    if (afterWrap) afterWrap.style.width = `${v}%`;
+    if (line) line.style.left = `${v}%`;
+  };
+
+  if (range) {
+    setCompare(range.value);
+    range.addEventListener('input', (e) => setCompare(e.target.value));
+  }
+
+  // Gentle reveal animation without any library dependency.
+  const revealItems = document.querySelectorAll(
+    '.cs-dark-card,.cs-solution-card,.cs-material-item,.cs-process-grid article,.cs-more-card,.cs-project-meta>div'
+  );
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('cs-revealed');
+        obs.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item, index) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(18px)';
+      item.style.transition = `opacity .55s ease ${Math.min(index % 4, 3) * .07}s, transform .55s ease ${Math.min(index % 4, 3) * .07}s`;
+      observer.observe(item);
+    });
+
+    const style = document.createElement('style');
+    style.textContent = '.cs-revealed{opacity:1!important;transform:translateY(0)!important;}';
+    document.head.appendChild(style);
+  }
+});</script>
+</body>
+</html>

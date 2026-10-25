@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Brochures | ECON Kitchen</title>
+
+  <meta
+    name="description"
+    content="Explore ECON Kitchen brochures for modular kitchens, wardrobes, interiors, materials and finishes."
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/images/favicon.png"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <!-- EXISTING WEBSITE STYLES -->
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/readability.css">
+  <link rel="stylesheet" href="/assets/css/translator.css">
+  <link rel="stylesheet" href="/assets/css/responsive-master.css">
+
+  <style>
+    /* ==========================================
+       ECON KITCHEN — BROCHURES
+    ========================================== */
+
+    body {
+      margin: 0;
+      background: #ffffff;
+    }
+
+    .econ-brochures {
+      --gold: #bd942d;
+      --ink: #191919;
+      --muted: #707070;
+      --line: #e9e2d4;
+
+      max-width: 1200px;
+      margin: auto;
+      padding: 64px 24px 80px;
+
+      color: var(--ink);
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    .econ-brochures,
+    .econ-brochures * {
+      box-sizing: border-box;
+    }
+
+    .econ-brochures .intro {
+      margin-bottom: 38px;
+      text-align: center;
+    }
+
+    .econ-brochures .eyebrow {
+      color: #88691a;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+
+    .econ-brochures h1 {
+      margin: 12px 0;
+
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .econ-brochures .intro p {
+      margin: 0;
+
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .econ-brochures .brochure-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .econ-brochures .brochure-card {
+      overflow: hidden;
+
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 7px 25px #19191906;
+
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    }
+
+    .econ-brochures .brochure-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px #19191910;
+    }
+
+    .econ-brochures .image-wrap {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #f4f0e7;
+    }
+
+    .econ-brochures .image-wrap img {
+      display: block;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    .econ-brochures .brochure-details {
+      display: flex;
+      flex-direction: column;
+
+      padding: 24px;
+    }
+
+    .econ-brochures h2 {
+      margin: 0 0 20px;
+
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .econ-brochures .brochure-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 20px;
+
+      background: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 10px;
+
+      color: #111111;
+      text-align: center;
+      text-decoration: none;
+      font: 600 16px / 1.4 "Poppins", Arial, sans-serif;
+
+      cursor: pointer;
+
+      transition:
+        background 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    }
+
+    .econ-brochures a.brochure-button:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #ffffff;
+    }
+
+    .econ-brochures .brochure-button:focus-visible {
+      outline: 3px solid var(--ink);
+      outline-offset: 4px;
+    }
+
+    .econ-brochures .brochure-button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    @media (max-width: 960px) {
+      .econ-brochures .brochure-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .econ-brochures {
+        padding: 40px 18px 50px;
+      }
+
+      .econ-brochures .intro {
+        margin-bottom: 28px;
+      }
+
+      .econ-brochures .brochure-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .econ-brochures .brochure-details {
+        padding: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .econ-brochures .brochure-card,
+      .econ-brochures .brochure-button {
+        transition: none;
+      }
+
+      .econ-brochures .brochure-card:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="brochures-page">
+
+  <div id="header-slot"></div>
+
+  <main class="econ-brochures">
+
+    <header class="intro">
+      <span class="eyebrow">ECON KITCHEN</span>
+
+      <h1>Explore Our Brochures</h1>
+
+      <p>
+        Discover designs, materials and possibilities for your home.
+      </p>
+    </header>
+
+    <section
+      class="brochure-grid"
+      id="brochureGrid"
+      aria-label="Available brochures"
+    ></section>
+
+    <noscript>
+      Please enable JavaScript to view our brochures.
+    </noscript>
+
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      /* ==========================================
+         UPDATE BROCHURES HERE
+
+         title:
+         Name shown below the image.
+
+         image:
+         Brochure cover image path.
+
+         brochureUrl:
+         PDF path, Google Drive link or flipbook URL.
+
+         Example:
+         brochureUrl: "/assets/pdfs/kitchen-brochure.pdf"
+
+         Empty URLs keep the button disabled.
+      ========================================== */
+
+      const brochures = [
+        {
+          title: "Econ Care Tips",
+          image: "/assets/images/brochures/econ-care.png",
+          brochureUrl: "https://drive.google.com/file/d/1jxCwXRH-YRVEXf3bEMPynjyuZIhmIyB7/view?usp=drive_link"
+        },
+        {
+          title: "ECON Fabric Carcass",
+          image: "/assets/images/brochures/fabric.png",
+          brochureUrl: "https://drive.google.com/file/d/1c-BB1iJQTDlyrEd81FoDCijdnZ8SN2Aj/view?usp=drive_link"
+        },
+        {
+          title: "ECON Lighting Brochure",
+          image: "/assets/images/brochures/lighting.png",
+          brochureUrl: "https://drive.google.com/file/d/1bi4ClYVusvpG7b_-oRxjoVH1lEbsJOAE/view?usp=drive_link"
+        },
+        {
+          title: "Econ Touch Book",
+          image: "/assets/images/brochures/touch.png",
+          brochureUrl: "https://drive.google.com/file/d/1PUkhYQRgRQHG_A6EYnZUkbeYzOc1p1g-/view?usp=drive_link"
+        },
+        {
+          title: "Membrane Brochure",
+          image: "/assets/images/brochures/membrane.png",
+          brochureUrl: "https://drive.google.com/file/d/1-fSls2WdCokmdI6B2GgkVJgVzJmMlA49/view?usp=drive_link"
+        }
+      ];
+
+      /* ==========================================
+         FALLBACK COVER IMAGE
+      ========================================== */
+
+      function placeholder(index) {
+        const colors = [
+          "#eee5d3",
+          "#e2ddd4",
+          "#f0e9dd",
+          "#dfd9ce",
+          "#eee3ce",
+          "#e5e1d7"
+        ];
+
+        const background = colors[index % colors.length];
+
+        const svg = `
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="800"
+            height="600"
+            viewBox="0 0 800 600"
+          >
+            <rect
+              width="800"
+              height="600"
+              fill="${background}"
+            />
+
+            <circle
+              cx="660"
+              cy="70"
+              r="200"
+              fill="#bd942d"
+              opacity=".12"
+            />
+
+            <circle
+              cx="80"
+              cy="580"
+              r="200"
+              fill="#ffffff"
+              opacity=".4"
+            />
+
+            <g
+              stroke="#bd942d"
+              stroke-width="4"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M400 194
+                   C352 158 285 158 211 170
+                   V410
+                   C285 398 352 398 400 434
+                   Z"
+                fill="#ffffff"
+              />
+
+              <path
+                d="M400 194
+                   C448 158 515 158 589 170
+                   V410
+                   C515 398 448 398 400 434
+                   Z"
+                fill="#ffffff"
+              />
+
+              <path
+                d="M400 194V434"
+                fill="none"
+              />
+
+              <path
+                d="M248 235H350
+                   M248 275H350
+                   M248 315H325
+                   M450 235H552
+                   M450 275H552
+                   M450 315H525"
+                fill="none"
+              />
+            </g>
+          </svg>
+        `;
+
+        return (
+          "data:image/svg+xml;charset=utf-8," +
+          encodeURIComponent(svg)
+        );
+      }
+
+      /* ==========================================
+         VALIDATE BROCHURE LINK
+      ========================================== */
+
+      function validUrl(value) {
+        if (!value || !value.trim()) return null;
+
+        try {
+          const url = new URL(value.trim(), location.href);
+
+          return ["http:", "https:"].includes(url.protocol)
+            ? url.href
+            : null;
+        } catch {
+          return null;
+        }
+      }
+
+      /* ==========================================
+         BUILD BROCHURE CARDS
+      ========================================== */
+
+      const grid = document.getElementById("brochureGrid");
+      const fragment = document.createDocumentFragment();
+
+      brochures.forEach((brochure, index) => {
+        const card = document.createElement("article");
+        card.className = "brochure-card";
+
+        const imageWrap = document.createElement("div");
+        imageWrap.className = "image-wrap";
+
+        const image = document.createElement("img");
+
+        image.width = 800;
+        image.height = 600;
+        image.alt = brochure.title;
+        image.loading = index < 3 ? "eager" : "lazy";
+        image.decoding = "async";
+
+        image.addEventListener(
+          "error",
+          () => {
+            image.src = placeholder(index);
+          },
+          { once: true }
+        );
+
+        image.src = brochure.image || placeholder(index);
+
+        imageWrap.append(image);
+
+        const details = document.createElement("div");
+        details.className = "brochure-details";
+
+        const title = document.createElement("h2");
+        title.textContent = brochure.title;
+
+        const url = validUrl(brochure.brochureUrl);
+
+        const button = document.createElement(
+          url ? "a" : "button"
+        );
+
+        button.className = "brochure-button";
+        button.textContent = "Open Brochure";
+
+        if (url) {
+          button.href = url;
+          button.target = "_blank";
+          button.rel = "noopener noreferrer";
+
+          button.setAttribute(
+            "aria-label",
+            "Open " + brochure.title + " in a new tab"
+          );
+
+          const arrow = document.createElement("span");
+          arrow.textContent = "↗";
+          arrow.setAttribute("aria-hidden", "true");
+
+          button.append(arrow);
+        } else {
+          button.type = "button";
+          button.disabled = true;
+          button.title = "Brochure coming soon";
+
+          button.setAttribute(
+            "aria-label",
+            brochure.title + " — coming soon"
+          );
+        }
+
+        details.append(title, button);
+        card.append(imageWrap, details);
+        fragment.append(card);
+      });
+
+      grid.replaceChildren(fragment);
+    })();
+  </script>
+
+  <!-- EXISTING WEBSITE HEADER / FOOTER LOADER -->
+  <script
+    type="module"
+    src="/assets/js/components.js"
+  ></script>
+
+  <script src="/assets/js/translator.js"></script>
+
+</body>
+</html>

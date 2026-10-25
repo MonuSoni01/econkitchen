@@ -1,0 +1,231 @@
+/* ECON — layout cards, dimension diagrams and saved-result screen. */
+.estimator-page .layout-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.estimator-page .layout-option{position:relative;background:#fff;border:1px solid #e1e0d8;border-radius:7px;padding:0;text-align:left;overflow:hidden;color:#171714}.estimator-page .layout-option.selected{border-color:#a38858;box-shadow:0 0 0 1px #a38858}.selection-check{position:absolute;right:13px;top:12px;z-index:1;width:19px;height:19px;border-radius:50%;background:#fff;border:1px solid #dad9ce;display:grid;place-items:center;font-size:14px;color:transparent}.selected .selection-check{background:#9d804b;border-color:#9d804b;color:white}.layout-visual{height:150px;display:flex;align-items:center;justify-content:center;background:#f5f4ee}.layout-option.selected .layout-visual{background:#efebdf}.kitchen-shape{position:relative;width:115px;height:90px}.kitchen-shape span{position:absolute;background:#b7ad96;border:1px solid #a89d84;border-radius:2px;box-shadow:3px 4px 0 #d4cdbd}.l-shape .shape-horizontal{left:12px;bottom:10px;width:92px;height:23px}.l-shape .shape-vertical{left:12px;top:10px;width:23px;height:70px}.straight-shape span{left:6px;top:34px;width:105px;height:25px}.u-shape .u-left{left:9px;top:12px;width:23px;height:65px}.u-shape .u-right{right:8px;top:12px;width:23px;height:65px}.u-shape .u-bottom{left:9px;bottom:13px;width:98px;height:23px}.parallel-shape span{left:6px;width:105px;height:23px}.parallel-shape span:first-child{top:12px}.parallel-shape span:last-child{bottom:12px}.layout-option-content{padding:16px}.layout-number{color:#aaa08a;font-size:14px;letter-spacing:1px}.layout-option-content h3{font-size:14px;font-weight:500;margin:10px 0 15px}.layout-select-text{font-size:14px;letter-spacing:.8px;display:flex;align-items:center;justify-content:space-between}.measurement-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px}.measurement-preview{background:#f4f3ec;border:1px solid #e6e3d9;border-radius:7px;padding:24px}.measurement-preview-top>span,.running-total>span{display:block;font-size:14px;letter-spacing:1.3px;color:#9a978b}.measurement-preview-top strong{display:block;font-size:14px;font-weight:500;margin-top:7px}.measurement-diagram{height:240px;display:flex;align-items:center;justify-content:center}.diagram-l{width:170px;height:155px;position:relative}.diagram-l>div{position:absolute;display:flex;align-items:center;justify-content:center;gap:5px;background:#b4aa91;border:1px solid #9e9278;color:#fff;font-size:14px;border-radius:3px}.diagram-l>div>strong{font-size:14px;font-weight:500}.diagram-a{bottom:0;left:0;width:100%;height:38px}.diagram-b{top:0;left:0;width:38px;height:117px;flex-direction:column}.diagram-c{right:0;top:0;width:38px;height:117px;flex-direction:column}.diagram-l:not(.diagram-u-shaped) .diagram-c{display:none}.diagram-straight .diagram-b{display:none}.diagram-parallel .diagram-a{top:20px;bottom:auto}.diagram-parallel .diagram-b{top:auto;bottom:20px;left:0;width:100%;height:38px;flex-direction:row}.running-total{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dfdbcf;padding-top:18px;gap:15px}.running-total strong{font-size:28px;font-weight:500}.running-total small{font-size:14px;color:#8a8779;margin-left:6px}.measurement-controls{padding:12px 0}.measurement-title{display:flex;align-items:center;gap:13px;margin-bottom:20px}.measurement-icon{height:38px;width:38px;background:#f2eee4;display:grid;place-items:center;color:#a78a56;border-radius:5px}.measurement-title small{font-size:14px;letter-spacing:1px;color:#929082}.measurement-title h3{font-size:16px;font-weight:500;margin:5px 0}.measurement-note{display:flex;gap:10px;background:#f8f6f0;padding:12px 14px;border-radius:5px;margin-bottom:20px;color:#a28c67}.measurement-note p{margin:0;font-size:14px;color:#8a8578;line-height:1.8}.dimension-field{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:15px 0;border-bottom:1px solid #efede5}.dimension-label{display:flex;gap:11px;align-items:center}.dimension-label>strong{border:1px solid #e1ded1;background:#f8f6ee;padding:6px 9px;font-size:14px}.dimension-label>span{font-size:14px;color:#777468}.dimension-input{display:flex;align-items:center;border:1px solid #dedacf;border-radius:4px;overflow:hidden}.dimension-input button{height:37px;width:34px;flex-shrink:0;background:#f6f4ed;border:0;color:#6c6658;font-size:17px}.dimension-input input{width:65px;min-width:0;border:0;padding:8px 3px 8px 10px;font:14px 'Poppins',Arial;appearance:textfield;text-align:center;outline:none}.dimension-input input::-webkit-inner-spin-button{appearance:none}.dimension-input>span{font-size:14px;color:#8e887a;padding-right:8px}.measurement-help{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:#a09a8b;line-height:1.8;margin-top:20px}.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.quote-summary-card{background:#f6f5ef;border:1px solid #e6e3d8;border-radius:6px;padding:22px;margin-top:25px}.summary-label{font-size:14px;color:#9b926f}.summary-row,.result-detail-row{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid #e5e1d4;font-size:14px}.summary-row>span,.result-detail-row>span{color:#8d8778}.summary-row strong,.result-detail-row strong{text-align:right;font-weight:500;overflow-wrap:anywhere}.quote-form-card{border:1px solid #e5e2d8;border-radius:7px;padding:25px}.quote-form-heading{display:flex;align-items:center;gap:12px;margin-bottom:25px}.quote-icon{height:39px;width:39px;display:grid;place-items:center;background:#f2eee4;color:#9b824f;border-radius:5px}.quote-form-heading small{font-size:14px;letter-spacing:1px;color:#99917e}.quote-form-heading h3{font-size:14px;font-weight:500;margin:5px 0}.estimate-loader{text-align:center;padding:65px 10px}.loader-animation{width:70px;height:70px;position:relative;margin:0 auto 25px}.loader-ring{position:absolute;inset:0;border:2px solid #eae5d7;border-top-color:#a08551;border-radius:50%;animation:spin 1s linear infinite}.loader-logo{height:100%;display:grid;place-items:center;color:#9a804e;font-size:23px}.loader-small{font-size:14px;letter-spacing:2px;color:#ad9b75}.estimate-loader h2{font-weight:500;font-size:27px}.estimate-loader p{font-size:14px;color:#8c8778}.loader-progress{height:3px;width:180px;background:#ece8dc;margin:25px auto;overflow:hidden}.loader-progress span{display:block;height:100%;width:50%;background:#a58d5d;animation:loading 1.5s ease-in-out infinite}.estimate-result{max-width:820px;margin:auto;text-align:center;padding:15px 0}.result-success{display:flex;flex-direction:column;align-items:center;gap:13px}.success-icon{height:50px;width:50px;display:grid;place-items:center;border-radius:50%;background:#edf0e7;color:#718253}.result-success>span{font-size:14px;letter-spacing:1.5px;color:#949078}.result-heading{margin:28px 0}.result-heading p{font-size:14px;color:#8a8575}.result-heading h2{font-size:clamp(28px,4vw,42px);font-weight:500;margin:15px 0;letter-spacing:-1px}.result-heading>span{font-size:14px;color:#8a8575}.result-disclaimer{display:flex;gap:10px;text-align:left;background:#f9f7ef;padding:15px 18px;border-radius:5px;color:#a38d57}.result-disclaimer p{font-size:14px;line-height:1.8;color:#8c8471;margin:0}.result-details{text-align:left;margin:25px 0;border:1px solid #e6e2d8;border-radius:6px;padding:22px}.result-details-head{display:flex;flex-direction:column;gap:6px;padding-bottom:8px}.result-details-head>span{font-size:14px;letter-spacing:1px;color:#a2977c}.result-details-head>strong{font-size:14px;font-weight:500}.sheet-status{font-size:14px;line-height:1.8;color:#8c7851}.accurate-quote{padding:25px 0}.accurate-label{font-size:14px;color:#aa9a75}.accurate-quote h3{font-weight:500;font-size:29px;line-height:1.3}.accurate-quote h3 em{display:block;color:#8c7753}.accurate-quote p{font-size:14px;line-height:1.8;color:#8b8574}.result-actions{display:flex;align-items:center;justify-content:center;gap:25px;margin-top:25px}.why-econ{margin-top:25px;padding:30px 0;border-top:1px solid #e9e5d9}.why-econ-heading>span{font-size:14px;letter-spacing:1px;color:#9b906f}.why-econ-heading h3{font-size:23px;font-weight:500;line-height:1.4}.why-econ-heading h3 em{display:block;color:#99845c}.why-econ-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}.why-item{display:flex;flex-direction:column;align-items:center;gap:8px}.why-item>i{font-size:20px;color:#a58f62}.why-item>strong{font-size:14px;font-weight:500}.why-item>span{font-size:14px;color:#98917c}@keyframes spin{to{transform:rotate(360deg)}}@keyframes loading{0%,100%{transform:translateX(-100%)}50%{transform:translateX(200%)}}@media(max-width:800px){.estimator-page .layout-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.layout-visual{height:130px}.measurement-layout,.quote-grid{grid-template-columns:1fr;gap:25px}.measurement-diagram{height:190px}.quote-form-card{padding:20px}.measurement-preview{padding:20px}.result-actions{flex-direction:column;gap:8px}.result-primary{width:100%}.why-econ-grid{grid-template-columns:repeat(2,1fr);gap:25px}.dimension-field{gap:8px}.dimension-label>span{font-size:14px}}@media(prefers-reduced-motion:reduce){.loader-ring,.loader-progress span{animation:none}}
+
+
+/* ============================================================
+   VIBRANT GOLD LAYOUTS — MATCHES SUPPLIED ECON REFERENCE
+   ============================================================ */
+.estimator-page .layout-options { gap: 20px; }
+.estimator-page .layout-option {
+  border: 1px solid #e8e1d9;
+  border-radius: 20px;
+  background: #fff;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.estimator-page .layout-option:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 12px 30px rgba(170,130,14,.10);
+  transform: translateY(-3px);
+}
+.estimator-page .layout-option.selected {
+  border-color: #B68A0E;
+  box-shadow: 0 0 0 1px #B68A0E, 0 12px 30px rgba(170,130,14,.10);
+}
+.estimator-page .selection-check { right: 17px; top: 17px; }
+.estimator-page .layout-visual {
+  height: 205px;
+  background: linear-gradient(145deg, #FCFAF5, #F4F0E6);
+  border-bottom: 1px solid #e8e1d9;
+}
+.estimator-page .layout-option.selected .layout-visual { background: linear-gradient(145deg, #FFFBEF, #F5E8B2); }
+.estimator-page .kitchen-shape { width: 132px; height: 110px; isolation: isolate; }
+.estimator-page .kitchen-shape::before {
+  content: '';
+  position: absolute;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,175,55,.22);
+  background: rgba(255,255,255,.62);
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.estimator-page .kitchen-shape span {
+  background: linear-gradient(125deg, #E7C343, #BC941C 60%, #9C790E);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 11px 22px rgba(175,130,10,.19);
+}
+.estimator-page .l-shape .shape-horizontal { left: 14px; bottom: 12px; width: 104px; height: 26px; }
+.estimator-page .l-shape .shape-vertical { left: 14px; top: 15px; width: 26px; height: 83px; }
+.estimator-page .straight-shape span { left: 8px; top: 43px; width: 116px; height: 27px; }
+.estimator-page .u-shape .u-left { left: 10px; top: 18px; width: 26px; height: 78px; }
+.estimator-page .u-shape .u-right { right: 10px; top: 18px; width: 26px; height: 78px; }
+.estimator-page .u-shape .u-bottom { left: 10px; bottom: 14px; width: 112px; height: 26px; }
+.estimator-page .parallel-shape span { left: 8px; width: 116px; height: 26px; }
+.estimator-page .parallel-shape span:first-child { top: 22px; }
+.estimator-page .parallel-shape span:last-child { bottom: 20px; }
+.estimator-page .layout-option-content { padding: 23px 20px; }
+.estimator-page .layout-number { color: #9D7608; font-size: 14px; font-weight: 600; }
+.estimator-page .layout-option-content h3 { margin: 12px 0; font-size: 19px; line-height: 1.45; font-weight: 600; letter-spacing: -.4px; }
+.estimator-page .layout-select-text { font-size: 14px; letter-spacing: .5px; font-weight: 500; gap: 8px; }
+.estimator-page .layout-select-text > i { color: #9D7608; font-size: 18px; }
+.estimator-page .measurement-preview { padding: 28px; background: #fffaf0; border-color: #e8dfc9; border-radius: 18px; }
+.estimator-page .measurement-preview-top > span,
+.estimator-page .running-total > span { font-size: 14px; letter-spacing: .7px; color: #6b5d3e; }
+.estimator-page .measurement-preview-top strong { font-size: 20px; font-weight: 600; margin-top: 10px; }
+.estimator-page .measurement-diagram { height: 260px; }
+.estimator-page .diagram-l { width: 190px; height: 170px; }
+.estimator-page .diagram-l > div {
+  background: linear-gradient(120deg, #E7C343, #B88D12);
+  border-color: #B88D12;
+  color: #171717;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 15px rgba(150,110,12,.12);
+}
+.estimator-page .diagram-l > div > strong { font-size: 14px; font-weight: 500; }
+.estimator-page .diagram-a { height: 42px; }
+.estimator-page .diagram-b, .estimator-page .diagram-c { width: 42px; height: 128px; }
+.estimator-page .diagram-parallel .diagram-b { width: 100%; height: 42px; }
+.estimator-page .running-total { border-top-color: #e8dfc9; }
+.estimator-page .running-total strong { font-size: 30px; font-weight: 600; }
+.estimator-page .running-total small { font-size: 14px; color: #666; }
+.estimator-page .measurement-title { margin-bottom: 22px; }
+.estimator-page .measurement-icon { height: 48px; width: 48px; background: #F3E6B0; color: #805c00; font-size: 20px; }
+.estimator-page .measurement-title small { font-size: 14px; letter-spacing: .5px; color: #666; }
+.estimator-page .measurement-title h3 { font-size: 22px; font-weight: 600; margin-top: 6px; }
+.estimator-page .measurement-note { padding: 16px; background: #fff7df; color: #805c00; }
+.estimator-page .measurement-note p { font-size: 14px; color: #605535; }
+.estimator-page .dimension-label > strong { font-size: 16px; background: #F7EDC6; color: #775500; border-color: #e5d5a0; }
+.estimator-page .dimension-label > span { font-size: 16px; color: #555; }
+.estimator-page .dimension-input { border-color: #dcd2bc; border-radius: 10px; background: #fff; }
+.estimator-page .dimension-input button { height: 46px; width: 40px; font-size: 22px; color: #775500; background: #F7EDC6; }
+.estimator-page .dimension-input input { width: 76px; font-family: 'Poppins',Arial,sans-serif; font-size: 18px; color: #171717; }
+.estimator-page .dimension-input > span { font-size: 14px; color: #555; }
+.estimator-page .measurement-help { font-size: 14px; color: #666; gap: 10px; }
+.estimator-page .quote-form-card { padding: 30px; background: #fff; border-color: #e8e1d9; border-radius: 18px; }
+.estimator-page .quote-form-heading small { font-size: 14px; color: #805c00; letter-spacing: .5px; }
+.estimator-page .quote-form-heading h3 { font-size: 20px; font-weight: 600; }
+.estimator-page .quote-icon { height: 48px; width: 48px; flex: 0 0 48px; background: #F7EDC6; color: #805c00; font-size: 20px; }
+.estimator-page .quote-summary-card { padding: 26px; background: #fffaf0; border-color: #e8dfc9; border-radius: 16px; }
+.estimator-page .summary-label { font-size: 14px; color: #805c00; letter-spacing: .8px; }
+.estimator-page .summary-row, .estimator-page .result-detail-row { font-size: 16px; padding: 17px 0; border-color: #e8e1d9; }
+.estimator-page .summary-row > span, .estimator-page .result-detail-row > span { color: #666; }
+.estimator-page .summary-row strong, .estimator-page .result-detail-row strong { color: #171717; font-weight: 500; }
+.estimator-page .estimate-loader h2 { font-size: 30px; font-weight: 600; }
+.estimator-page .estimate-loader p { font-size: 16px; color: #555; }
+.estimator-page .loader-small { font-size: 14px; letter-spacing: 1.5px; color: #805c00; }
+.estimator-page .loader-ring { border-top-color: #D4AF37; }
+.estimator-page .loader-logo { color: #9D7608; }
+.estimator-page .loader-progress span { background: #D4AF37; }
+.estimator-page .estimate-result { max-width: 900px; }
+.estimator-page .success-icon { width: 58px; height: 58px; background: #F7EDC6; color: #805c00; font-size: 22px; }
+.estimator-page .result-success > span { font-size: 14px; color: #805c00; letter-spacing: 1px; }
+.estimator-page .result-heading p { font-size: 18px; color: #555; }
+.estimator-page .result-heading h2 { font-size: clamp(28px,3vw,40px); font-weight: 600; }
+.estimator-page .result-heading > span { font-size: 16px; color: #555; }
+.estimator-page .result-disclaimer { padding: 20px; background: #fff5d8; border: 1px solid #eddfa9; border-radius: 12px; color: #805c00; }
+.estimator-page .result-disclaimer p { font-size: 16px; line-height: 1.8; color: #605535; }
+.estimator-page .result-details { padding: 26px; background: #fff; border-color: #e8e1d9; border-radius: 16px; }
+.estimator-page .result-details-head > span { font-size: 14px; color: #805c00; }
+.estimator-page .result-details-head > strong { font-size: 20px; font-weight: 600; }
+.estimator-page .sheet-status { font-size: 15px; color: #665024; }
+.estimator-page .accurate-label { font-size: 14px; color: #805c00; }
+.estimator-page .accurate-quote h3 { font-size: 32px; font-weight: 600; }
+.estimator-page .accurate-quote h3 em { color: #9D7608; }
+.estimator-page .accurate-quote p { font-size: 16px; color: #555; }
+.estimator-page .why-econ-heading > span { font-size: 14px; color: #805c00; }
+.estimator-page .why-econ-heading h3 { font-size: 26px; font-weight: 600; }
+.estimator-page .why-econ-heading h3 em { color: #9D7608; }
+.estimator-page .why-item > i { font-size: 24px; color: #9D7608; }
+.estimator-page .why-item > strong { font-size: 16px; font-weight: 500; }
+.estimator-page .why-item > span { font-size: 14px; color: #666; }
+@media (max-width: 1100px) and (min-width: 801px) {
+  .estimator-page .layout-options { gap: 14px; }
+  .estimator-page .layout-option-content { padding: 20px 14px; }
+  .estimator-page .layout-option-content h3 { font-size: 17px; }
+  .estimator-page .layout-select-text { letter-spacing: 0; }
+}
+@media (max-width: 800px) {
+  .estimator-page .layout-options { gap: 14px; }
+  .estimator-page .layout-visual { height: 178px; }
+  .estimator-page .measurement-preview { padding: 24px; }
+  .estimator-page .quote-grid { gap: 32px; }
+  .estimator-page .quote-form-card { padding: 24px; }
+  .estimator-page .running-total { flex-wrap: wrap; }
+  .estimator-page .result-actions { align-items: stretch; }
+  .estimator-page .result-secondary { justify-content: center; }
+}
+@media (max-width: 480px) {
+  .estimator-page .layout-options { gap: 12px; }
+  .estimator-page .layout-option { border-radius: 15px; }
+  .estimator-page .layout-visual { height: 150px; }
+  .estimator-page .kitchen-shape { transform: scale(.76); }
+  .estimator-page .layout-option-content { padding: 18px 13px; }
+  .estimator-page .layout-option-content h3 { font-size: 16px; letter-spacing: -.3px; min-height: 47px; }
+  .estimator-page .layout-select-text { font-size: 14px; letter-spacing: 0; gap: 4px; }
+  .estimator-page .layout-select-text > i { font-size: 16px; }
+  .estimator-page .selection-check { height: 24px; width: 24px; top: 12px; right: 12px; }
+  .estimator-page .measurement-preview { padding: 22px 18px; }
+  .estimator-page .dimension-input input { width: 68px; }
+  .estimator-page .dimension-label > span { font-size: 14px; }
+  .estimator-page .quote-form-card { padding: 24px 18px; }
+  .estimator-page .summary-row, .estimator-page .result-detail-row { font-size: 14px; gap: 14px; }
+  .estimator-page .quote-summary-card, .estimator-page .result-details { padding: 22px 18px; }
+  .estimator-page .quote-form-heading h3 { font-size: 18px; }
+  .estimator-page .result-detail-row > strong { max-width: 62%; }
+}
+@media (max-width: 360px) {
+  .estimator-page .dimension-label > span { display: none; }
+  .estimator-page .layout-option-content { padding: 16px 10px; }
+  .estimator-page .layout-select-text { flex-wrap: wrap; }
+}
+.estimator-page .whatsapp-form-intro {
+    margin: 0 0 24px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.estimator-page .quote-form-heading h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .estimator-page .quote-form-heading h3 {
+        font-size: 18px;
+    }
+}/* Keep the introduction compact so the form gets more space */
+body.estimator-body .estimator-hero {
+    min-height: 0;
+    padding: 20px 0;
+}
+
+body.estimator-body .estimator-hero-content {
+    padding: 0;
+}
+
+body.estimator-body .estimator-hero h1 {
+    margin: 8px 0 0;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+body.estimator-body .estimator-progress-wrapper {
+    padding: 16px 0;
+}
+
+body.estimator-body .estimator-main {
+    padding-top: 24px;
+}
+
+@media (max-width: 760px) {
+    /* On mobile, start with the steps and actual questions */
+    body.estimator-body .estimator-hero {
+        display: none;
+    }
+
+    body.estimator-body .step-heading {
+        margin-bottom: 20px;
+    }
+
+    body.estimator-body .step-heading h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+}

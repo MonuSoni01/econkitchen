@@ -1,0 +1,263 @@
+/* ECON form — Poppins styling; original navbar styles remain in header.css. */
+.estimator-body{margin:0;background:#f7f6f2;color:#151515;font-family:'Poppins',Arial,sans-serif}.estimator-page *,.mobile-estimator-bar *{box-sizing:border-box}.estimator-container{width:min(1180px,calc(100% - 48px));margin:auto}.estimator-page button,.mobile-estimator-bar button{font:inherit;cursor:pointer}.estimator-page button:disabled,.mobile-estimator-bar button:disabled{opacity:.4;cursor:not-allowed}.estimator-page button:focus-visible,.estimator-page input:focus-visible,.mobile-estimator-bar button:focus-visible{outline:3px solid #b68a54;outline-offset:4px}.estimator-page a{color:inherit}.estimator-page .hidden,.estimator-page [hidden],.mobile-estimator-bar[hidden]{display:none!important}.estimator-hero{position:relative;overflow:hidden;background:#0e0f0d;color:#fff;padding:76px 0 66px}.estimator-hero-content{position:relative;z-index:1;max-width:760px}.estimator-eyebrow,.step-count,.accurate-label,.summary-label{font-size:14px;letter-spacing:2.3px;font-weight:700}.estimator-eyebrow{color:#c9a36e}.estimator-hero h1{font-size:clamp(35px,4.5vw,58px);line-height:1.15;margin:20px 0;font-weight:500;letter-spacing:-1.8px}.estimator-page em{font-family:'Poppins',Arial,sans-serif;font-weight:500}.estimator-hero h1 em{display:block;color:#d6b889}.estimator-hero p{color:#b4b4ad;max-width:560px;font-size:14px;line-height:1.8}.estimator-hero-glow{position:absolute;width:340px;height:340px;border-radius:50%;filter:blur(90px);background:#b1945b;opacity:.09}.glow-1{right:7%;top:-110px}.glow-2{right:20%;bottom:-260px}.estimator-progress-wrapper{padding:32px 0;background:white;border-bottom:1px solid #e8e6df}.estimator-progress{display:flex;align-items:center;justify-content:center;gap:24px}.progress-step{display:flex;align-items:center;gap:12px;color:#9f9f98}.progress-number{width:35px;height:35px;border:1px solid #dfdfd7;border-radius:50%;display:grid;place-items:center;font-size:14px}.progress-number i{display:none}.progress-copy small{display:block;letter-spacing:1px;font-size:14px;margin-bottom:2px}.progress-copy strong{font-size:14px;font-weight:500}.progress-step.active{color:#151515}.progress-step.active .progress-number{background:#151515;border-color:#151515;color:#fff}.progress-step.completed{color:#78613e}.progress-step.completed .progress-number{background:#ece3d5;border-color:#ece3d5}.progress-step.completed .progress-number span{display:none}.progress-step.completed .progress-number i{display:block}.progress-line{width:65px;height:1px;background:#e6e5df}.progress-line.completed{background:#ae8c58}.estimator-main{padding:48px 0 72px}.estimator-shell{background:#fff;border:1px solid #e8e6de;border-radius:13px;padding:38px;box-shadow:0 8px 35px #1c1c1505}.estimator-step,.estimate-loader,.estimate-result{display:none}.estimator-step.active,.estimate-loader.active,.estimate-result.active{display:block}.step-count{color:#a18150;font-size:14px}.step-heading{margin-bottom:30px}.step-heading h2,.quote-summary h2{font-size:clamp(28px,3.1vw,39px);font-weight:500;line-height:1.25;letter-spacing:-1px;margin:14px 0}.step-heading h2 em,.quote-summary h2 em{display:block;color:#8d744d}.step-heading p,.quote-summary>p{font-size:14px;color:#7b7b73;line-height:1.8;max-width:610px}.step-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ecebe4;margin-top:30px;padding-top:22px;gap:16px}.selection-status>span,.package-summary>div>span{display:block;color:#97978d;font-size:14px;letter-spacing:1.3px;margin-bottom:5px}.selection-status strong,.package-summary strong{font-size:14px;font-weight:600}.estimator-next,.reveal-estimate-btn,.result-primary{background:#151515;border:1px solid #151515;color:white;padding:15px 21px;border-radius:4px;font-size:14px!important;font-weight:600!important;letter-spacing:.8px;display:inline-flex;align-items:center;justify-content:center;gap:18px;text-decoration:none}.estimator-next:hover,.reveal-estimate-btn:hover,.result-primary:hover{background:#39352c}.estimator-back,.result-secondary{background:transparent;border:0;color:#707068;padding:12px 0;font-size:14px!important;letter-spacing:.6px;display:inline-flex;align-items:center;gap:10px;text-decoration:none}.package-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.package-card{position:relative;background:#fff;border:1px solid #deded5;border-radius:8px;padding:28px;text-align:left;color:#171714}.package-card.selected{border-color:#9e8051;background:#fcfaf5;box-shadow:0 0 0 1px #9e8051}.package-check{position:absolute;right:18px;top:18px;border:1px solid #d6d5cb;border-radius:50%;height:19px;width:19px;display:grid;place-items:center;font-size:14px;color:transparent}.selected .package-check{color:white;background:#9c7b48;border-color:#9c7b48}.package-level{font-size:14px;letter-spacing:1.6px;color:#9a7d4e}.package-head h3{font-weight:500;font-size:23px;margin:15px 0 10px}.package-head p{font-size:14px;line-height:1.7;color:#7d7d73;max-width:320px}.package-divider{height:1px;background:#e9e6dc;margin:23px 0}.package-card ul{padding:0;list-style:none}.package-card li{display:flex;align-items:center;gap:9px;color:#6c6c62;font-size:14px;margin:12px 0}.package-card li i{color:#a68a5a;font-size:14px}.package-select{display:block;font-size:14px;letter-spacing:1px;font-weight:600;margin-top:26px}.package-summary{padding:18px 20px;background:#f6f5ef;border-radius:5px;margin-top:23px}.form-field{margin-bottom:17px}.form-field label{display:block;font-size:14px;font-weight:600;margin-bottom:7px}.input-wrap{display:flex;align-items:center;border:1px solid #deded6;border-radius:4px;background:#fff}.input-wrap>i{font-size:14px;color:#aaa99d;margin-left:14px}.input-wrap input{width:100%;min-width:0;border:0;outline:none;background:transparent;padding:13px 12px;font:14px 'Poppins',Arial;color:#151515}.input-wrap:focus-within{border-color:#9c7b48}.country-code{font-size:14px;padding:0 12px 0 14px;border-right:1px solid #deded6;white-space:nowrap}.whatsapp-check{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#77776e;line-height:1.7;margin:20px 0}.whatsapp-check input{accent-color:#9a7b49;margin:3px 0 0}.custom-checkbox{display:none}.reveal-estimate-btn{width:100%;justify-content:space-between}.privacy-note{font-size:14px;line-height:1.7;color:#9b9b91;text-align:center;margin-top:14px}.form-message{color:#a22c2c;font-size:14px;line-height:1.7}.form-message:empty{display:none}.mobile-estimator-bar{display:none}@media(max-width:760px){.estimator-container{width:calc(100% - 28px)}.estimator-shell{padding:24px 18px}.estimator-main{padding:25px 0 100px}.estimator-hero{padding:45px 0}.estimator-progress{gap:10px}.progress-line{width:20px}.progress-copy small{display:none}.progress-copy strong{font-size:14px}.progress-step{gap:6px}.progress-number{height:28px;width:28px;font-size:14px}.estimator-progress-wrapper{padding:20px 0}.package-grid{grid-template-columns:1fr}.package-card{padding:24px 20px}.mobile-estimator-bar{display:flex;position:fixed;z-index:50;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5e4db;padding:12px 18px calc(12px + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:10px}.mobile-estimator-bar button{border:0;border-radius:3px;padding:11px 17px;font-size:14px}.mobile-back{background:#f1f0e9;color:#666}.mobile-next{background:#151515;color:#fff}.mobile-step{font-size:14px;letter-spacing:.8px;color:#8a897f}.step-bottom .estimator-next{padding:13px 16px}.step-heading h2,.quote-summary h2{font-size:29px}.estimator-hero h1{letter-spacing:-1px}}@media(max-width:380px){.progress-copy{display:none}.progress-line{width:30px}.estimator-progress{gap:17px}}
+
+
+/* ============================================================
+   ECON REFERENCE THEME — POPPINS / BLACK / CREAM / VIBRANT GOLD
+   Component-safe: form colours use private --ge-* variables.
+   Existing header.css / home.css variables are never overwritten.
+   ============================================================ */
+body.estimator-body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  background: #F8F5EF;
+  color: #171717;
+}
+.estimator-page,
+.mobile-estimator-bar {
+  --ge-gold: #D4AF37;
+  --ge-gold-dark: #9D7608;
+  --ge-gold-bright: #FFCC00;
+  --ge-cream: #F8F5EF;
+  --ge-ink: #171717;
+  --ge-body: #555555;
+  --ge-border: #e8e1d9;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.estimator-page button,
+.estimator-page input,
+.mobile-estimator-bar button {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.estimator-page h1,
+.estimator-page h2,
+.estimator-page h3,
+.estimator-page h4,
+.estimator-page em {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-style: normal;
+}
+.estimator-page p { font-size: 16px; line-height: 1.8; }
+.estimator-page button:focus-visible,
+.estimator-page input:focus-visible,
+.estimator-page a:focus-visible,
+.mobile-estimator-bar button:focus-visible {
+  outline: 3px solid #9D7608;
+  outline-offset: 4px;
+}
+.estimator-page .estimator-container {
+  width: min(1240px, calc(100% - 64px));
+}
+.estimator-page .estimator-hero {
+  padding: 68px 0 62px;
+  background: radial-gradient(ellipse at 90% 10%, #40310d 0, transparent 48%), #080808;
+  border-bottom: 1px solid rgba(212,175,55,.28);
+}
+.estimator-page .estimator-hero-content { max-width: 950px; }
+.estimator-page .estimator-eyebrow {
+  color: #FFCC00;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.estimator-page .estimator-hero h1 {
+  font-size: clamp(36px, 4.3vw, 58px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+.estimator-page .estimator-hero h1 em {
+  color: #E6C766;
+  font-weight: 600;
+}
+.estimator-page .estimator-hero p {
+  max-width: 760px;
+  font-size: 18px;
+  color: #e5e5e5;
+}
+.estimator-page .estimator-hero-glow { background: #FFCC00; opacity: .12; }
+.estimator-page .estimator-progress-wrapper {
+  background: #fff;
+  padding: 26px 0;
+  border-bottom-color: var(--ge-border);
+}
+.estimator-page .estimator-progress { gap: 22px; }
+.estimator-page .progress-step { gap: 12px; color: #666; }
+.estimator-page .progress-copy small {
+  font-size: 14px;
+  letter-spacing: .6px;
+  color: #666;
+}
+.estimator-page .progress-copy strong { font-size: 16px; font-weight: 500; }
+.estimator-page .progress-number {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  font-size: 14px;
+}
+.estimator-page .progress-step.active { color: #080808; }
+.estimator-page .progress-step.active .progress-number {
+  color: #FFCC00;
+  background: #080808;
+  border-color: #080808;
+}
+.estimator-page .progress-step.completed { color: #805c00; }
+.estimator-page .progress-step.completed .progress-number {
+  color: #171717;
+  background: #F4D96D;
+  border-color: #F4D96D;
+}
+.estimator-page .progress-line { flex: 1; max-width: 70px; width: auto; }
+.estimator-page .progress-line.completed { background: #D4AF37; }
+.estimator-page .estimator-main { padding: 48px 0 80px; }
+.estimator-page .estimator-shell {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.estimator-page .step-heading { margin-bottom: 34px; }
+.estimator-page .step-count {
+  color: #9D7608;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+.estimator-page .step-heading h2,
+.estimator-page .quote-summary h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.8px;
+  margin: 18px 0;
+}
+.estimator-page .step-heading h2 em {
+  display: inline;
+  color: #9D7608;
+  font-weight: 600;
+}
+.estimator-page .quote-summary h2 em { color: #9D7608; }
+.estimator-page .step-heading p,
+.estimator-page .quote-summary > p {
+  max-width: 850px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--ge-body);
+}
+.estimator-page .step-bottom { margin-top: 34px; padding-top: 26px; border-color: var(--ge-border); }
+.estimator-page .selection-status > span,
+.estimator-page .package-summary > div > span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  letter-spacing: .9px;
+  margin-bottom: 6px;
+}
+.estimator-page .selection-status strong,
+.estimator-page .package-summary strong { font-size: 16px; font-weight: 500; }
+.estimator-page .estimator-next,
+.estimator-page .reveal-estimate-btn,
+.estimator-page .result-primary {
+  min-height: 52px;
+  padding: 14px 25px;
+  border: 1px solid #D4AF37;
+  border-radius: 50px;
+  background: linear-gradient(115deg, #F3D668, #D4AF37);
+  color: #171717;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: .2px;
+  transition: background .2s, box-shadow .2s, transform .2s;
+}
+.estimator-page .estimator-next:not(:disabled):hover,
+.estimator-page .reveal-estimate-btn:not(:disabled):hover,
+.estimator-page .result-primary:hover {
+  background: #FFCC00;
+  box-shadow: 0 8px 24px rgba(180,138,12,.20);
+  transform: translateY(-2px);
+}
+.estimator-page button:disabled { opacity: .55; cursor: not-allowed; }
+.estimator-page .estimator-back,
+.estimator-page .result-secondary {
+  min-height: 48px;
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #4d493f;
+  letter-spacing: .2px;
+}
+.estimator-page .package-card {
+  padding: 30px;
+  border-radius: 18px;
+  border-color: var(--ge-border);
+  background: #fff;
+}
+.estimator-page .package-card.selected {
+  border-color: #B68A0E;
+  box-shadow: 0 0 0 1px #B68A0E, 0 12px 30px rgba(150,115,15,.07);
+  background: #fffdf6;
+}
+.estimator-page .package-check,
+.estimator-page .selection-check {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+.estimator-page .selected .package-check,
+.estimator-page .selected .selection-check {
+  background: #D4AF37;
+  color: #171717;
+  border-color: #D4AF37;
+}
+.estimator-page .package-level { font-size: 14px; letter-spacing: 1px; color: #8B670A; font-weight: 600; }
+.estimator-page .package-head h3 { font-size: 26px; font-weight: 600; }
+.estimator-page .package-head p { font-size: 16px; color: #555; max-width: 440px; }
+.estimator-page .package-card li { font-size: 16px; color: #4d4d4d; margin: 15px 0; }
+.estimator-page .package-card li i { font-size: 14px; color: #9D7608; }
+.estimator-page .package-select { font-size: 14px; letter-spacing: .5px; }
+.estimator-page .package-summary { padding: 20px 24px; border: 1px solid var(--ge-border); border-radius: 12px; background: #fffaf0; }
+.estimator-page .form-field { margin-bottom: 20px; }
+.estimator-page .form-field label { font-size: 15px; margin-bottom: 8px; }
+.estimator-page .input-wrap { min-height: 54px; border-radius: 10px; border-color: #dcd5c8; }
+.estimator-page .input-wrap input { font-size: 16px; padding: 14px; }
+.estimator-page .input-wrap > i { font-size: 16px; color: #8B670A; }
+.estimator-page .country-code { font-size: 16px; }
+.estimator-page .whatsapp-check { font-size: 14px; color: #555; line-height: 1.8; gap: 12px; }
+.estimator-page .whatsapp-check input { accent-color: #A97D00; width: 18px; height: 18px; flex: 0 0 18px; }
+.estimator-page .privacy-note { font-size: 14px; line-height: 1.8; color: #666; }
+.estimator-page .form-message { font-size: 15px; }
+.mobile-estimator-bar { border-top-color: #e8e1d9; }
+.mobile-estimator-bar button { min-height: 46px; font-size: 14px; font-weight: 600; border-radius: 50px; }
+.mobile-estimator-bar .mobile-next { background: #D4AF37; color: #171717; }
+.mobile-estimator-bar .mobile-back { background: #f4eee0; color: #333; }
+.mobile-estimator-bar .mobile-step { font-size: 14px; letter-spacing: 0; color: #555; }
+@media (max-width: 1000px) {
+  .estimator-page .estimator-progress { gap: 14px; }
+  .estimator-page .progress-copy small { display: none; }
+  .estimator-page .progress-copy strong { font-size: 14px; }
+  .estimator-page .progress-line { max-width: 35px; }
+}
+@media (max-width: 760px) {
+  .estimator-page .estimator-container { width: calc(100% - 32px); }
+  .estimator-page .estimator-hero { padding: 42px 0; }
+  .estimator-page .estimator-hero h1 { font-size: 36px; letter-spacing: -.9px; }
+  .estimator-page .estimator-hero p { font-size: 16px; }
+  .estimator-page .estimator-main { padding: 32px 0 118px; }
+  .estimator-page .estimator-progress { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 8px; }
+  .estimator-page .progress-line { display: none; }
+  .estimator-page .progress-step { flex-direction: column; align-items: center; gap: 7px; min-width: 0; }
+  .estimator-page .progress-number { height: 36px; width: 36px; flex-basis: 36px; }
+  .estimator-page .progress-copy { display: block; text-align: center; }
+  .estimator-page .progress-copy strong { font-size: 14px; letter-spacing: -.3px; }
+  .estimator-page .step-heading h2, .estimator-page .quote-summary h2 { font-size: 29px; letter-spacing: -.5px; }
+  .estimator-page .step-heading p, .estimator-page .quote-summary > p { font-size: 16px; }
+  .estimator-page .package-card { padding: 26px 22px; }
+  .estimator-page .package-head h3 { font-size: 23px; }
+  .estimator-page .estimator-next { padding: 13px 20px; font-size: 14px !important; }
+  .estimator-page .step-bottom { gap: 16px; flex-wrap: wrap; }
+  .estimator-page .selection-status { flex: 1 1 160px; }
+  .estimator-page .step-count { font-size: 14px; }
+  .mobile-estimator-bar { padding-left: 12px; padding-right: 12px; gap: 8px; }
+  .mobile-estimator-bar button { padding: 11px 15px; }
+}

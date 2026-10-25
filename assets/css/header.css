@@ -1,0 +1,4732 @@
+/* =========================================================
+   ECON KITCHEN
+   PREMIUM BLACK + GOLD HEADER CSS
+   PART 1/3
+========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONT
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'
+);
+
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+
+:root {
+
+
+    /* BRAND COLORS */
+
+    --black:
+        #080808;
+
+    --black-soft:
+        #111111;
+
+    --black-card:
+        #151515;
+
+
+    --gold:
+        #ffcc00;
+
+    --gold-light:
+        #ffcc00;
+
+    --gold-dark:
+        #ffcc00;
+
+
+
+    /* TEXT */
+
+    --white:
+        #ffffff;
+
+    --heading:
+        #171717;
+
+    --text:
+        #555555;
+
+    --muted:
+        #999999;
+
+
+
+    /* BORDER */
+
+    --gold-border:
+        rgba(212, 175, 55, .28);
+
+
+    --dark-border:
+        rgba(255, 255, 255, .12);
+
+
+
+    /* FONT */
+
+    --header-font:
+        "Poppins",
+        Arial,
+        sans-serif;
+
+
+
+    /* SHADOW */
+
+    --header-shadow:
+
+        0 25px 70px rgba(0, 0, 0, .45);
+
+
+
+    /* RADIUS */
+
+    --radius:
+        18px;
+
+}
+
+
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+
+.site-header,
+.site-header *,
+.mobile-nav,
+.mobile-nav *,
+.mobile-overlay {
+
+
+    box-sizing: border-box;
+
+
+}
+
+
+
+.site-header a,
+.mobile-nav a {
+
+
+    text-decoration: none;
+
+
+}
+
+
+
+.site-header button,
+.mobile-nav button,
+.site-header input {
+
+
+    font-family: var(--font-body);
+
+
+}
+
+
+
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+
+
+.site-header {
+
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 9000;
+
+    font-family: var(--font-body);
+
+
+}
+
+
+
+
+.header-container {
+
+
+    width:
+        min(1720px, calc(100% - 80px));
+
+
+    margin: auto;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+
+.topbar {
+
+
+    height: 44px;
+
+
+    width: 100%;
+
+
+    background:
+
+        linear-gradient(90deg,
+            #050505,
+            #111111,
+            #050505);
+
+
+    border-bottom:
+
+        1px solid var(--gold-border);
+
+
+
+    color: white;
+
+
+}
+
+
+
+
+
+.topbar-inner {
+
+
+    height: 100%;
+
+
+    display: grid;
+
+
+    grid-template-columns:
+
+        1fr 520px 1fr;
+
+
+
+    align-items: center;
+
+
+    gap: 30px;
+
+
+}
+
+
+
+
+
+/* LEFT */
+
+
+.topbar-left {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 15px;
+
+
+}
+
+
+
+.topbar-item {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    color: #eeeeee;
+
+
+    font-size: 15px;
+
+
+    font-weight: 400;
+
+
+    white-space: nowrap;
+
+
+}
+
+
+
+.top-icon {
+
+
+    color:
+        var(--gold);
+
+
+    font-size: 15px;
+
+
+}
+
+
+
+.top-divider {
+
+
+    width: 1px;
+
+
+    height: 18px;
+
+
+    background:
+
+        rgba(212, 175, 55, .35);
+
+
+}
+
+
+
+
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+
+.topbar-search {
+
+
+    height: 34px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+
+    padding:
+        0 18px;
+
+
+    border-radius: 50px;
+
+
+    background:
+
+        rgba(255, 255, 255, .06);
+
+
+
+    border:
+
+        1px solid rgba(212, 175, 55, .25);
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+.topbar-search:focus-within {
+
+
+    border-color:
+        var(--gold);
+
+
+    background:
+
+        rgba(255, 255, 255, .1);
+
+
+}
+
+
+
+.search-icon {
+
+
+    color:
+        var(--gold);
+
+
+    font-size: 17px;
+
+
+}
+
+
+
+
+.topbar-search input {
+
+
+    width: 100%;
+
+
+    border: 0;
+
+
+    outline: 0;
+
+
+    background: none;
+
+
+    color: white;
+
+
+    font-size: 15px;
+
+
+}
+
+
+
+
+.topbar-search input::placeholder {
+
+
+    color: #aaa;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   TOP RIGHT
+========================================================= */
+
+
+.topbar-right {
+
+
+    display: flex;
+
+
+    justify-content: flex-end;
+
+
+    align-items: center;
+
+
+    gap: 18px;
+
+
+}
+
+
+
+
+.topbar-right a {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    color: white;
+
+
+    font-size: 15px;
+
+
+    font-weight: 500;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.topbar-right a:hover {
+
+
+    color:
+        var(--gold);
+
+
+}
+
+
+
+
+
+/* =========================================================
+   MAIN NAV WRAPPER
+========================================================= */
+
+
+.navwrap {
+
+
+    width: 100%;
+
+
+    background:
+
+        rgba(8, 8, 8, .96);
+
+
+
+    border-bottom:
+
+        1px solid var(--gold-border);
+
+
+
+    backdrop-filter:
+        blur(15px);
+
+
+}
+
+
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+
+.navbar {
+
+
+    height: 96px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 35px;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+
+.header-logo {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+
+
+.header-logo img {
+
+    width: 270px;
+
+    max-height: 80px;
+
+}
+
+
+
+
+
+/* =========================================================
+   DESKTOP NAV
+========================================================= */
+
+
+.desktop-nav {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    gap:
+
+        clamp(22px,
+            1.8vw,
+            38px);
+
+
+
+    margin-left: auto;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+
+.desktop-nav>.nav-link,
+.navitem>.nav-trigger {
+
+
+    position: relative;
+
+
+    height: 96px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 7px;
+
+
+
+    padding: 0;
+
+
+    border: 0;
+
+
+    background: none;
+
+
+    cursor: pointer;
+
+
+    color: white;
+
+
+    font-family: var(--font-body);
+
+
+
+    font-size: 15px;
+
+
+    font-weight: 500;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.desktop-nav>.nav-link:hover,
+.navitem>.nav-trigger:hover {
+
+
+    color:
+        var(--gold);
+
+
+}
+
+
+
+
+
+/* GOLD ACTIVE LINE */
+
+
+.desktop-nav>.nav-link::after,
+.navitem>.nav-trigger::after {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    left: 50%;
+
+
+    bottom: 18px;
+
+
+    width: 0;
+
+
+    height: 2px;
+
+
+    background:
+
+        var(--gold);
+
+
+
+    transform:
+        translateX(-50%);
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.desktop-nav>.nav-link:hover::after,
+.navitem:hover>.nav-trigger::after {
+
+
+    width: 30px;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   NAV ITEM
+========================================================= */
+
+
+.navitem {
+
+
+    position: relative;
+
+
+}
+
+
+
+.mega-navitem {
+
+
+    position: static;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   CHEVRON
+========================================================= */
+
+
+.nav-chevron {
+
+
+    color:
+        var(--gold);
+
+
+    font-size: 15px;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+.navitem:hover .nav-chevron {
+
+
+    transform:
+        rotate(180deg);
+
+
+}
+
+
+/* =========================================================
+   PART 2/3
+   MEGA MENU
+========================================================= */
+
+
+
+/* =========================================================
+   SERVICES MEGA MENU
+========================================================= */
+
+
+.mega-menu {
+
+
+    position: absolute;
+
+
+    top: 96px;
+
+
+    left: 50%;
+
+
+    width:
+
+        min(1250px,
+            calc(100vw - 80px));
+
+
+
+    padding: 25px;
+
+
+
+    background:
+
+        linear-gradient(145deg,
+            #111111,
+            #050505);
+
+
+
+    border:
+
+        1px solid var(--gold-border);
+
+
+
+    border-radius:
+
+        20px;
+
+
+
+    box-shadow:
+
+        var(--header-shadow);
+
+
+
+    opacity: 0;
+
+
+    visibility: hidden;
+
+
+    pointer-events: none;
+
+
+
+    transform:
+
+        translate(-50%, 15px);
+
+
+
+    transition: .3s ease;
+
+
+}
+
+
+
+
+.mega-navitem:hover>.mega-menu,
+.mega-navitem:focus-within>.mega-menu {
+
+
+    opacity: 1;
+
+
+    visibility: visible;
+
+
+    pointer-events: auto;
+
+
+
+    transform:
+
+        translate(-50%, 0);
+
+
+}
+
+
+
+
+
+/* HOVER BRIDGE */
+
+
+.mega-menu::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    top: -18px;
+
+
+    left: 0;
+
+
+    width: 100%;
+
+
+    height: 20px;
+
+
+}
+
+
+
+
+
+/* POINTER */
+
+
+.mega-pointer {
+
+
+    position: absolute;
+
+
+    top: -8px;
+
+
+    left: 38%;
+
+
+    width: 16px;
+
+
+    height: 16px;
+
+
+    background: #111;
+
+
+
+    border-top:
+
+        1px solid var(--gold-border);
+
+
+
+    border-left:
+
+        1px solid var(--gold-border);
+
+
+
+    transform:
+
+        rotate(45deg);
+
+
+}
+
+
+
+
+
+/* =========================================================
+   MEGA GRID
+========================================================= */
+
+
+.mega-menu-grid {
+
+
+    display: grid;
+
+
+    grid-template-columns:
+
+        1.4fr repeat(3, 1fr);
+
+
+}
+
+
+
+
+
+/* =========================================================
+   FEATURE SERVICE COLUMN
+========================================================= */
+
+
+.mega-featured {
+
+
+    padding-right: 25px;
+
+
+    border-right:
+
+        1px solid var(--dark-border);
+
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 12px;
+
+
+}
+
+
+
+
+
+/* SERVICE CARD */
+
+
+.mega-service-card {
+
+
+    display: grid;
+
+
+    grid-template-columns:
+
+        90px 1fr 40px;
+
+
+
+    align-items: center;
+
+
+
+    gap: 15px;
+
+
+
+    padding: 10px;
+
+
+
+    background:
+
+        #161616;
+
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, .06);
+
+
+
+    border-radius: 14px;
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+.mega-service-card:hover {
+
+
+    border-color:
+
+        var(--gold);
+
+
+
+    transform:
+
+        translateX(5px);
+
+
+
+    background: #101010;
+
+
+}
+
+
+
+
+
+/* IMAGE */
+
+
+.mega-service-image {
+
+
+    width: 90px;
+
+
+    height: 60px;
+
+
+    overflow: hidden;
+
+
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+.mega-service-image img {
+
+
+    width: 100%;
+
+
+    height: 100%;
+
+
+    object-fit: cover;
+
+
+
+    transition: .4s;
+
+
+}
+
+
+
+.mega-service-card:hover img {
+
+
+    transform:
+
+        scale(1.08);
+
+
+}
+
+
+
+
+
+/* COPY */
+
+
+.mega-service-copy strong {
+
+
+    display: block;
+
+
+    color: white;
+
+
+    font-size: 14px;
+
+
+    font-weight: 600;
+
+
+    margin-bottom: 4px;
+
+
+}
+
+
+
+
+
+.mega-service-copy span {
+
+
+    color: #aaa;
+
+
+    font-size: 14px;
+
+
+    font-weight: 400;
+
+
+}
+
+
+
+
+
+/* ARROW */
+
+
+.mega-arrow {
+
+
+    width: 34px;
+
+
+    height: 34px;
+
+
+    display: grid;
+
+
+    place-items: center;
+
+
+
+    border-radius: 50%;
+
+
+
+    background:
+
+        rgba(212, 175, 55, .12);
+
+
+
+    color:
+
+        var(--gold);
+
+
+
+    font-size: 18px;
+
+
+}
+
+
+
+.mega-service-card:hover .mega-arrow {
+
+
+    background:
+
+        var(--gold);
+
+
+
+    color: black;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   MEGA TEXT COLUMNS
+========================================================= */
+
+
+.mega-column {
+
+
+    padding:
+
+        10px 25px;
+
+
+
+    border-right:
+
+        1px solid var(--dark-border);
+
+
+}
+
+
+
+.mega-column:last-child {
+
+
+    border-right: 0;
+
+
+}
+
+
+
+
+.mega-heading {
+
+
+    display: block;
+
+
+    margin-bottom: 15px;
+
+
+    color:
+
+        var(--gold);
+
+
+
+    font-size: 15px;
+
+
+    font-weight: 600;
+
+
+    letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+.mega-column a {
+
+
+    display: block;
+
+
+    padding: 8px 0;
+
+
+
+    color: #dddddd;
+
+
+
+    font-size: 15px;
+
+
+
+    font-weight: 400;
+
+
+
+    transition: .25s;
+
+
+}
+
+
+
+
+.mega-column a:hover {
+
+
+    color:
+
+        var(--gold);
+
+
+
+    padding-left: 8px;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   CONSULTATION STRIP
+========================================================= */
+
+
+.mega-consultation {
+
+
+    margin-top: 22px;
+
+
+    padding: 15px;
+
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        45px 1fr auto;
+
+
+
+    align-items: center;
+
+
+    gap: 15px;
+
+
+
+    background:
+
+        rgba(212, 175, 55, .08);
+
+
+
+    border:
+
+        1px solid var(--gold-border);
+
+
+
+    border-radius: 14px;
+
+
+}
+
+
+
+
+
+.consult-icon {
+
+
+    width: 40px;
+
+
+    height: 40px;
+
+
+
+    display: grid;
+
+
+    place-items: center;
+
+
+
+    border-radius: 50%;
+
+
+
+    color:
+
+        var(--gold);
+
+
+
+    border:
+
+        1px solid var(--gold);
+
+
+}
+
+
+
+
+
+.consult-copy strong {
+
+
+    display: block;
+
+
+    color: white;
+
+
+    font-size: 15px;
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+.consult-copy span {
+
+
+    color: #bbb;
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+
+
+.consult-btn {
+
+
+    padding:
+
+        13px 22px;
+
+
+
+    border-radius: 50px;
+
+
+
+    background:
+
+        var(--gold);
+
+
+
+    color: black;
+
+
+
+    font-size: 15px;
+
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+.consult-btn:hover {
+
+
+    background:
+
+        var(--gold-light);
+
+
+}
+
+
+
+
+
+
+/* =========================================================
+   SMALL DROPDOWN
+========================================================= */
+
+
+.small-dropdown {
+
+
+    position: absolute;
+
+
+
+    top: calc(100% - 1px);
+
+
+
+    left: 50%;
+
+
+
+    width: 330px;
+
+
+
+    padding: 15px;
+
+
+
+    background:
+
+        linear-gradient(145deg,
+            #111,
+            #050505);
+
+
+
+    border:
+
+        1px solid var(--gold-border);
+
+
+
+    border-radius: 16px;
+
+
+
+    box-shadow:
+
+        var(--header-shadow);
+
+
+
+    opacity: 0;
+
+
+    visibility: hidden;
+
+
+    pointer-events: none;
+
+
+
+    transform:
+
+        translate(-50%, 15px);
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.navitem:hover>.small-dropdown,
+.navitem:focus-within>.small-dropdown {
+
+
+    opacity: 1;
+
+
+    visibility: visible;
+
+
+    pointer-events: auto;
+
+
+
+    transform:
+
+        translate(-50%, 0);
+
+
+}
+
+
+
+
+
+.dropdown-pointer {
+
+
+    position: absolute;
+
+
+    top: -8px;
+
+
+    left: 50%;
+
+
+    width: 15px;
+
+
+    height: 15px;
+
+
+
+    background: #111;
+
+
+
+    border-top:
+
+        1px solid var(--gold-border);
+
+
+
+    border-left:
+
+        1px solid var(--gold-border);
+
+
+
+    transform:
+
+        translateX(-50%) rotate(45deg);
+
+
+}
+
+
+
+
+
+.dropdown-title {
+
+
+    display: block;
+
+
+    padding: 10px;
+
+
+
+    color:
+
+        var(--gold);
+
+
+
+    font-size: 14px;
+
+
+    font-weight: 600;
+
+
+    letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+.small-dropdown>a {
+
+
+    display: grid;
+
+
+
+    grid-template-columns:
+
+        40px 1fr;
+
+
+
+    gap: 12px;
+
+
+
+    align-items: center;
+
+
+
+    padding: 12px;
+
+
+
+    border-radius: 10px;
+
+
+}
+
+
+
+
+.small-dropdown>a:hover {
+
+
+    background:
+
+        rgba(212, 175, 55, .08);
+
+
+}
+
+
+
+
+
+.dropdown-icon {
+
+
+    width: 36px;
+
+
+    height: 36px;
+
+
+
+    display: grid;
+
+
+    place-items: center;
+
+
+
+    border-radius: 10px;
+
+
+
+    background:
+
+        rgba(212, 175, 55, .15);
+
+
+
+    color:
+
+        var(--gold);
+
+
+}
+
+
+
+
+
+.small-dropdown strong {
+
+
+    display: block;
+
+
+
+    color: white;
+
+
+    font-size: 15px;
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+.small-dropdown small {
+
+
+    color: #999;
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+
+.header-actions {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+}
+
+
+
+
+
+/* DESIGN BUTTON */
+
+
+.design-btn {
+
+
+    height: 50px;
+
+
+
+    padding:
+
+        0 28px;
+
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+
+    gap: 15px;
+
+
+
+    border-radius: 50px;
+
+
+
+    background:
+
+        linear-gradient(135deg,
+            #F5D77A,
+            #ffcc00);
+
+
+
+    color: #080808;
+
+
+
+    font-size: 15px;
+
+
+
+    font-weight: 600;
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+.design-btn:hover {
+
+
+    transform:
+
+        translateY(-3px);
+
+
+
+    box-shadow:
+
+        0 12px 25px rgba(212, 175, 55, .3);
+
+
+}
+
+
+
+
+.design-arrow {
+
+
+    font-size: 18px;
+
+
+}
+
+
+
+
+
+/* SEARCH BUTTON */
+
+
+.header-search-btn {
+
+
+    width: 50px;
+
+
+    height: 50px;
+
+
+
+    border: 1px solid var(--gold-border);
+
+
+
+    border-radius: 50%;
+
+
+
+    background:
+
+        transparent;
+
+
+
+    color:
+
+        var(--gold);
+
+
+
+    font-size: 20px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+.header-search-btn:hover {
+
+
+    background:
+
+        var(--gold);
+
+
+
+    color: black;
+
+
+}
+
+
+
+
+
+/* MOBILE BUTTON DEFAULT */
+
+
+.menuBtn {
+
+
+    display: none;
+
+
+}
+
+/* =========================================================
+   PART 3/3
+   MOBILE HEADER + RESPONSIVE
+========================================================= */
+
+
+
+/* =========================================================
+   MOBILE DEFAULT
+========================================================= */
+
+
+.mobile-overlay,
+.mobile-nav {
+
+
+    display: none;
+
+
+}
+
+
+
+
+/* =========================================================
+   TABLET + MOBILE
+========================================================= */
+
+
+@media(max-width:1120px) {
+
+
+
+    body.menu-open {
+
+        overflow: hidden;
+
+    }
+
+
+
+    /* =========================
+       TOP BAR
+    ========================== */
+
+
+    .topbar {
+
+        height: 36px;
+
+    }
+
+
+
+    .topbar-inner {
+
+
+        display: flex;
+
+        justify-content: center;
+
+
+    }
+
+
+
+    .topbar-search {
+
+
+        display: none;
+
+    }
+
+
+
+    .experience-link {
+
+
+        display: none !important;
+
+    }
+
+
+
+    .topbar-right .top-divider {
+
+
+        display: none;
+
+    }
+
+
+
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+
+    .navbar {
+
+
+        height: 78px;
+
+
+    }
+
+
+
+    .header-container {
+
+
+        width:
+
+            calc(100% - 40px);
+
+
+    }
+
+
+
+
+
+    /* LOGO */
+
+
+    .header-logo img {
+
+
+        width: 190px;
+
+
+    }
+
+
+
+
+
+    /* DESKTOP OFF */
+
+
+    .desktop-nav {
+
+
+        display: none;
+
+
+    }
+
+
+
+
+
+    /* ACTION */
+
+
+    .header-actions {
+
+
+        margin-left: auto;
+
+
+    }
+
+
+
+
+
+    .header-search-btn {
+
+
+        display: none;
+
+
+    }
+
+
+
+
+
+    /* DESIGN BUTTON */
+
+
+    .design-btn {
+
+
+        display: none;
+
+
+    }
+
+
+
+
+
+
+
+    /* =====================================================
+       MOBILE MENU BUTTON
+    ===================================================== */
+
+
+    .menuBtn {
+
+
+        width: 46px;
+
+
+        height: 46px;
+
+
+        display: flex;
+
+
+        flex-direction: column;
+
+
+        justify-content: center;
+
+
+        align-items: center;
+
+
+
+        gap: 5px;
+
+
+
+        border-radius: 50%;
+
+
+
+        background:
+
+            rgba(212, 175, 55, .12);
+
+
+
+        border:
+
+            1px solid var(--gold-border);
+
+
+
+        cursor: pointer;
+
+
+    }
+
+
+
+
+
+    .menuBtn span {
+
+
+        width: 20px;
+
+
+        height: 2px;
+
+
+
+        background:
+
+            var(--gold);
+
+
+
+        border-radius: 20px;
+
+
+    }
+
+
+
+
+
+
+    /* =====================================================
+       OVERLAY
+    ===================================================== */
+
+
+    .mobile-overlay {
+
+
+        position: fixed;
+
+
+        inset: 0;
+
+
+
+        z-index: 99990;
+
+
+
+        display: block;
+
+
+
+        background:
+
+            rgba(0, 0, 0, .75);
+
+
+
+        backdrop-filter:
+
+            blur(5px);
+
+
+
+        opacity: 0;
+
+
+        visibility: hidden;
+
+
+
+        transition: .3s;
+
+
+    }
+
+
+
+
+    .mobile-overlay.active {
+
+
+        opacity: 1;
+
+
+        visibility: visible;
+
+
+    }
+
+
+
+
+
+    /* =====================================================
+       MOBILE DRAWER
+    ===================================================== */
+
+
+    .mobile-nav {
+
+
+        position: fixed;
+
+
+
+        top: 0;
+
+
+        right: 0;
+
+
+
+        width:
+
+            min(420px, 92vw);
+
+
+
+        height: 100vh;
+
+
+
+        display: flex;
+
+
+
+        flex-direction: column;
+
+
+
+        background:
+
+            #080808;
+
+
+
+        z-index: 99999;
+
+
+
+        box-shadow:
+
+            -20px 0 60px rgba(0, 0, 0, .5);
+
+
+
+        transform:
+
+            translateX(110%);
+
+
+
+        transition:
+
+            .35s ease;
+
+
+    }
+
+
+
+
+
+    .mobile-nav.active {
+
+
+        transform:
+
+            translateX(0);
+
+
+    }
+
+
+
+
+
+
+
+    /* =====================================================
+       MOBILE HEADER
+    ===================================================== */
+
+
+    .mobile-head {
+
+
+        height: 82px;
+
+
+
+        min-height: 82px;
+
+
+
+        display: flex;
+
+
+
+        align-items: center;
+
+
+
+        justify-content: space-between;
+
+
+
+        padding:
+
+            0 22px;
+
+
+
+        border-bottom:
+
+            1px solid var(--gold-border);
+
+
+    }
+
+
+
+
+
+
+
+    .mobile-logo img {
+
+
+        width: 170px;
+
+
+
+        max-height: 55px;
+
+
+
+        object-fit: contain;
+
+
+    }
+
+
+
+
+
+    .mobile-close {
+
+
+        width: 42px;
+
+
+        height: 42px;
+
+
+
+        display: grid;
+
+
+
+        place-items: center;
+
+
+
+        border-radius: 50%;
+
+
+
+        border:
+
+            1px solid var(--gold-border);
+
+
+
+        background:
+
+            rgba(212, 175, 55, .1);
+
+
+
+        color:
+
+            var(--gold);
+
+
+
+        font-size: 28px;
+
+
+
+        cursor: pointer;
+
+
+    }
+
+
+
+
+
+
+
+    /* =====================================================
+       MOBILE CONTENT
+    ===================================================== */
+
+
+    .mobile-content {
+
+
+        flex: 1;
+
+
+
+        overflow-y: auto;
+
+
+
+        padding:
+
+            10px 22px 35px;
+
+
+    }
+
+
+
+
+
+
+
+    /* =====================================================
+       MOBILE LINKS
+    ===================================================== */
+
+
+    .mobile-main-link,
+    .mobile-dropdown-trigger {
+
+
+        width: 100%;
+
+
+
+        min-height: 60px;
+
+
+
+        display: flex;
+
+
+
+        align-items: center;
+
+
+
+        justify-content: space-between;
+
+
+
+        color: white;
+
+
+
+        background: none;
+
+
+
+        border: 0;
+
+
+
+        border-bottom:
+
+            1px solid rgba(212, 175, 55, .15);
+
+
+
+        font-size: 15px;
+
+
+
+        font-weight: 500;
+
+
+
+        font-family: var(--font-body);
+
+
+
+        cursor: pointer;
+
+
+    }
+
+
+
+
+
+    .mobile-main-link:hover {
+
+
+        color:
+
+            var(--gold);
+
+
+    }
+
+
+
+
+
+
+    /* PLUS BUTTON */
+
+
+    .mobile-dropdown-trigger i {
+
+
+        width: 32px;
+
+
+        height: 32px;
+
+
+
+        display: grid;
+
+
+
+        place-items: center;
+
+
+
+        border-radius: 50%;
+
+
+
+        background:
+
+            rgba(212, 175, 55, .15);
+
+
+
+        color:
+
+            var(--gold);
+
+
+
+        font-size: 20px;
+
+
+
+        font-style: normal;
+
+
+    }
+
+
+
+
+
+
+
+    /* =====================================================
+       SUB MENU
+    ===================================================== */
+
+
+    .mobile-submenu {
+
+
+        max-height: 0;
+
+
+
+        overflow: hidden;
+
+
+
+        opacity: 0;
+
+
+
+        transition: .4s ease;
+
+
+    }
+
+
+
+
+
+    .mobile-dropdown.open .mobile-submenu {
+
+
+        max-height: 1200px;
+
+
+
+        opacity: 1;
+
+
+
+        padding-bottom: 15px;
+
+
+    }
+
+
+
+
+
+
+    .mobile-section-title {
+
+
+        display: block;
+
+
+
+        margin:
+
+            18px 0 8px;
+
+
+
+        color:
+
+            var(--gold);
+
+
+
+        font-size: 14px;
+
+
+
+        font-weight: 600;
+
+
+
+        letter-spacing: 1px;
+
+
+    }
+
+
+
+
+
+    .mobile-submenu a {
+
+
+        display: block;
+
+
+
+        padding:
+
+            10px 15px;
+
+
+
+        color: #ddd;
+
+
+
+        font-size: 14px;
+
+
+
+        font-weight: 400;
+
+
+
+        border-radius: 8px;
+
+
+    }
+
+
+
+
+
+    .mobile-submenu a:hover {
+
+
+        background:
+
+            rgba(212, 175, 55, .1);
+
+
+
+        color:
+
+            var(--gold);
+
+
+    }
+
+
+
+
+
+
+    /* =====================================================
+       MOBILE CTA
+    ===================================================== */
+
+
+    .mobile-design-btn {
+
+
+        margin-top: 25px;
+
+
+
+        min-height: 55px;
+
+
+
+        display: flex;
+
+
+
+        align-items: center;
+
+
+
+        justify-content: space-between;
+
+
+
+        padding:
+
+            0 22px;
+
+
+
+        border-radius: 50px;
+
+
+
+        background:
+
+            linear-gradient(135deg,
+                #F5D77A,
+                #ffcc00);
+
+
+
+        color: #080808;
+
+
+
+        font-size: 14px;
+
+
+
+        font-weight: 600;
+
+
+    }
+
+
+
+
+
+    /* =====================================================
+       CONTACT BOX
+    ===================================================== */
+
+
+    .mobile-contact-box {
+
+
+        margin-top: 25px;
+
+
+
+        padding: 20px;
+
+
+
+        border-radius: 15px;
+
+
+
+        background:
+
+            #111;
+
+
+
+        border:
+
+            1px solid var(--gold-border);
+
+
+    }
+
+
+
+
+
+    .mobile-contact-label {
+
+
+        display: block;
+
+
+
+        color:
+
+            var(--gold);
+
+
+
+        font-size: 14px;
+
+
+
+        font-weight: 600;
+
+
+
+        margin-bottom: 8px;
+
+
+    }
+
+
+
+
+
+    .mobile-contact-box a {
+
+
+        color: white;
+
+
+
+        font-size: 18px;
+
+
+
+        font-weight: 600;
+
+
+    }
+
+
+
+
+
+    .mobile-contact-box p {
+
+
+        color: #aaa;
+
+
+
+        font-size: 15px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+
+@media(max-width:640px) {
+
+
+
+    .topbar {
+
+
+        height: 30px;
+
+
+    }
+
+
+
+
+    .topbar-left .top-divider,
+    .topbar-left .topbar-item:first-child {
+
+
+        display: none;
+
+
+    }
+
+
+
+
+
+    .topbar-item {
+
+
+        font-size: 16px;
+
+
+    }
+
+
+
+
+
+    .navbar {
+
+
+        height: 70px;
+
+
+    }
+
+
+
+
+
+    .header-container {
+
+
+        width:
+
+            calc(100% - 28px);
+
+
+    }
+
+
+
+
+
+    .header-logo img {
+
+
+        width: 155px;
+
+
+    }
+
+
+
+
+
+    .menuBtn {
+
+
+        width: 42px;
+
+
+        height: 42px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+
+@media(max-width:380px) {
+
+
+
+    .header-logo img {
+
+
+        width: 140px;
+
+
+    }
+
+
+
+
+    .mobile-nav {
+
+
+        width: 94vw;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+
+@media(prefers-reduced-motion:reduce) {
+
+
+    * {
+
+
+        transition: none !important;
+
+
+        animation: none !important;
+
+
+    }
+
+
+}
+
+/* =====================================================
+   FINAL DROPDOWN CONFLICT FIX
+===================================================== */
+
+
+.site-header,
+.navwrap,
+.navbar,
+.header-container {
+
+    overflow: visible !important;
+
+}
+
+
+
+.site-header {
+
+    z-index: 99999 !important;
+
+}
+
+
+
+/* Remove old white dropdown backgrounds */
+
+.mega-menu,
+.small-dropdown {
+
+    background:
+
+        linear-gradient(145deg,
+            #080808,
+            #151515) !important;
+
+
+}
+
+
+
+/* Fix Services Mega Menu Position */
+
+
+.mega-menu {
+    width: min(1250px, calc(100vw - 80px));
+    padding: 25px;
+}
+
+
+
+/* Keep dropdown above everything */
+
+
+.mega-menu,
+.small-dropdown {
+
+    z-index: 999999 !important;
+
+
+}
+
+
+
+
+/* Remove unwanted transparency */
+
+
+.mega-menu::after,
+.small-dropdown::after {
+
+    display: none !important;
+
+}
+
+
+
+
+
+/* Services open animation */
+
+.mega-navitem:hover .mega-menu {
+
+
+    transform:
+
+        translate(-50%, 0) !important;
+
+
+}
+
+
+
+
+/* Dropdown text fix */
+
+
+.mega-column a,
+.small-dropdown a {
+
+
+    color: #dddddd !important;
+
+
+}
+
+
+
+.mega-column a:hover,
+.small-dropdown a:hover {
+
+
+    color: #ffcc00 !important;
+
+
+}
+
+/* =====================================================
+   ECON KITCHEN SERVICES ONLY DROPDOWN
+   FINAL FIX
+===================================================== */
+
+
+/* Mega Menu Container */
+
+.mega-menu {
+
+
+    width: 360px !important;
+
+    max-width: 360px !important;
+
+
+    padding: 20px !important;
+
+
+    left: 50% !important;
+
+
+    border-radius: 18px !important;
+
+
+}
+
+
+
+
+
+
+/* Only One Column */
+
+
+.mega-menu-grid {
+
+
+    display: block !important;
+
+
+}
+
+.mega-menu {
+    width: 360px;
+}
+
+.mega-menu-grid {
+    display: block;
+}
+
+.mega-column {
+    padding: 0;
+    border: 0;
+}
+
+
+
+/* Hide Left Cards */
+
+
+.mega-featured {
+
+
+    display: none !important;
+
+
+}
+
+
+
+
+
+/* Hide All Extra Columns */
+
+
+.mega-column:not(:first-child) {
+
+
+    display: none !important;
+
+
+}
+
+
+
+
+
+
+/* First Column */
+
+
+.mega-column {
+
+
+    padding: 0 !important;
+
+
+    border: 0 !important;
+
+
+}
+
+
+
+
+
+
+/* Heading */
+
+
+.mega-heading {
+
+
+    font-size: 15px !important;
+
+
+    color: #ffcc00 !important;
+
+
+    margin-bottom: 15px !important;
+
+
+    letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+
+/* Menu Links */
+
+
+.mega-column a {
+
+
+    display: flex !important;
+
+
+    align-items: center;
+
+
+    justify-content: space-between;
+
+
+    padding: 10px 12px !important;
+
+
+    border-radius: 8px;
+
+
+    font-size: 14px !important;
+
+
+    color: #dddddd !important;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+
+.mega-column a:hover {
+
+
+    background:
+
+        rgba(212, 175, 55, .12);
+
+
+    color: #ffcc00 !important;
+
+
+    padding-left: 18px !important;
+
+
+}
+
+
+
+
+
+/* Remove Consultation */
+
+
+.mega-consultation {
+
+
+    display: none !important;
+
+
+}
+
+
+
+
+
+/* Remove Pointer Issue */
+
+
+.mega-pointer {
+
+
+    left: 50% !important;
+
+
+}
+
+
+
+
+
+
+
+/* Dropdown Position */
+
+
+.mega-menu {
+
+
+    top: 96px !important;
+
+
+}
+
+
+
+
+
+/* =====================================
+   NAV CHEVRON PREMIUM STYLE
+===================================== */
+
+
+.nav-chevron {
+
+    width: 18px;
+    height: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    color: #D4AF37;
+
+
+    font-size: 15px;
+
+
+    border-radius: 50%;
+
+
+    transition: .3s ease;
+
+}
+
+
+
+.navitem:hover .nav-chevron {
+
+
+    transform: rotate(180deg);
+
+
+    color: #F3D77A;
+
+
+}
+
+/* =====================================
+   KITCHEN DROPDOWN ICON STYLE
+===================================== */
+
+
+.mega-column a::before {
+
+
+    content: "✦";
+
+
+    width: 28px;
+
+    height: 28px;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    margin-right: 12px;
+
+
+
+    border-radius: 8px;
+
+
+
+    background:
+
+        rgba(212, 175, 55, .12);
+
+
+
+    color: #D4AF37;
+
+
+    font-size: 15px;
+
+
+
+}
+
+
+
+.mega-column a {
+
+
+    justify-content: flex-start !important;
+
+
+    padding: 12px !important;
+
+
+}
+
+
+
+
+.mega-column a:hover::before {
+
+
+    background: #D4AF37;
+
+
+    color: #080808;
+
+
+}
+
+/* =====================================================
+   ECON KITCHEN PREMIUM FOOTER
+   BLACK + GOLD THEME
+===================================================== */
+
+
+
+.footer {
+
+
+    background:
+
+        linear-gradient(145deg,
+            #050505,
+            #111111);
+
+
+    color: #ffffff;
+
+
+    padding:
+
+        90px 0 30px;
+
+
+    border-top:
+
+        1px solid rgba(212, 175, 55, .25);
+
+
+
+    font-family: var(--font-body);
+
+
+}
+
+
+
+
+.footer .container {
+
+
+    width:
+
+        min(1250px, calc(100% - 80px));
+
+
+    margin: auto;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   FOOTER GRID
+===================================================== */
+
+
+.footgrid {
+
+
+    display: grid;
+margin-bottom: 20px !important;
+
+    grid-template-columns:
+
+
+        1.7fr 1fr 1fr 1fr;
+
+
+
+    gap: 55px;
+
+
+}
+
+
+
+.developer-credit {
+    margin-left: 8px;
+    color: #8f8f8f;
+}
+
+.developer-credit a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.developer-credit a:hover {
+    color: #ffcc00;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+
+.footer-brand img {
+
+
+    width: 250px;
+
+
+    max-height: 85px;
+
+
+    object-fit: contain;
+
+
+}
+
+
+
+
+.footer-brand p {
+
+
+    margin-top: 25px;
+
+
+    max-width: 360px;
+
+
+    color: #cfcfcf;
+
+
+    font-size: 16px;
+
+
+    line-height: 1.8;
+
+
+    font-weight: 400;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+
+.footer-social {
+
+
+    display: flex;
+
+
+    gap: 12px;
+
+
+    margin-top: 28px;
+
+
+}
+
+
+
+.footer-social a {
+
+
+    width: 42px;
+
+
+    height: 42px;
+
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+
+    border-radius: 50%;
+
+
+
+    border:
+
+        1px solid rgba(212, 175, 55, .35);
+
+
+
+    color: #D4AF37;
+
+
+
+    font-size: 17px;
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+.footer-social a:hover {
+
+
+    background: #D4AF37;
+
+
+    color: #080808;
+
+
+    transform:
+
+        translateY(-4px);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+
+.footer-links {
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 15px;
+
+
+}
+
+
+
+
+
+.footer-links b {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 10px;
+
+
+
+    color: #D4AF37;
+
+
+
+    font-size: 18px;
+
+
+
+    font-weight: 600;
+
+
+
+    margin-bottom: 12px;
+
+
+}
+
+
+
+
+
+.footer-links b i {
+
+
+    font-size: 17px;
+
+
+}
+
+
+
+
+
+
+
+.footer-links a,
+.footer-links span {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+
+    color: #d0d0d0;
+
+
+
+    text-decoration: none;
+
+
+
+    font-size: 15px;
+
+
+
+    font-weight: 400;
+
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+
+
+.footer-links a i,
+.footer-links span i {
+
+
+    width: 18px;
+
+
+    color: #D4AF37;
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+
+
+
+.footer-links a:hover {
+
+
+    color: #D4AF37;
+
+
+
+    transform:
+
+        translateX(6px);
+
+
+}
+
+
+
+
+
+.footer-links a:hover i {
+
+
+    color: #F3D77A;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   CONNECT SECTION
+===================================================== */
+
+
+.footer-contact a:first-of-type {
+
+
+    color: white;
+
+
+
+    font-size: 20px;
+
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+
+
+.footer-contact span {
+
+
+    line-height: 1.6;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+
+.footer-bottom {
+
+
+    margin-top: 60px;
+
+
+}
+
+
+
+
+.footer-line {
+
+
+    width: 100%;
+
+
+    height: 1px;
+
+
+    background:
+
+        rgba(212, 175, 55, .25);
+
+
+}
+
+
+
+
+.footer-bottom p {
+
+
+    text-align: center;
+
+
+
+    margin-top: 22px;
+
+
+
+    color: #999;
+
+
+
+    font-size: 14px;
+
+
+
+    font-weight: 400;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   WHATSAPP FLOAT BUTTON
+===================================================== */
+
+
+/* Desktop पर नीचे वाली पट्टी नहीं दिखेगी */
+.econ-mobile-contact-bar {
+    display: none;
+}
+
+@media (max-width: 760px) {
+
+    /* Mobile पर पुराना गोल WhatsApp icon हटाएँ */
+    a.wa {
+        display: none !important;
+    }
+
+    /* Bottom: Call + WhatsApp */
+    .econ-mobile-contact-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1001;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        box-sizing: border-box;
+        width: 100%;
+
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        background: #111111;
+
+        box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .econ-mobile-contact-bar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        min-height: 56px;
+        padding: 12px;
+
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+    }
+
+    .econ-mobile-contact-bar a i {
+        font-size: 20px;
+    }
+
+    .econ-mobile-contact-bar .econ-mobile-call {
+        background: #FFCC00;
+        color: #080808;
+    }
+
+    .econ-mobile-contact-bar .econ-mobile-whatsapp {
+        background: #19C65A;
+        color: #FFFFFF;
+    }
+
+    /* Form के Back/Next को contact पट्टी के ऊपर रखें */
+    body.estimator-body .mobile-estimator-bar {
+        bottom: calc(
+            56px + env(safe-area-inset-bottom, 0px)
+        );
+
+        z-index: 1000;
+
+        /* Safe-area spacing नीचे contact पट्टी संभालती है */
+        padding-bottom: 12px;
+    }
+
+    /* नीचे का content fixed bars के पीछे न छिपे */
+    body.estimator-body {
+        padding-bottom: calc(
+            56px + env(safe-area-inset-bottom, 0px)
+        );
+    }
+
+    body.estimator-body .estimator-page .estimator-main {
+        padding-bottom: 110px;
+    }
+}
+
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+
+@media(max-width:1000px) {
+
+
+    .footgrid {
+
+
+        grid-template-columns:
+
+            repeat(2, 1fr);
+
+
+
+        gap: 45px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+
+@media(max-width:600px) {
+
+
+
+    .footer {
+
+
+        padding:
+
+            60px 0 25px;
+
+
+    }
+
+
+
+
+    .footer .container {
+
+
+        width:
+
+            calc(100% - 40px);
+
+
+    }
+
+
+
+
+    .footgrid {
+
+
+        grid-template-columns:
+
+            1fr;
+
+
+
+        gap: 38px;
+
+
+    }
+
+
+
+
+    .footer-brand img {
+
+
+        width: 210px;
+
+
+    }
+
+
+
+
+    .footer-brand p {
+
+
+        font-size: 14px;
+
+
+    }
+
+
+
+
+    .footer-links b {
+
+
+        font-size: 17px;
+
+
+    }
+
+
+
+
+    .footer-links a,
+    .footer-links span {
+
+
+        font-size: 14px;
+
+
+    }
+
+
+
+
+    .footer-contact a:first-of-type {
+
+
+        font-size: 18px;
+
+
+    }
+
+
+
+
+    .wa {
+
+
+        width: 54px;
+
+
+        height: 54px;
+
+
+
+        right: 18px;
+
+
+        bottom: 18px;
+
+
+    }
+
+
+
+
+}
+
+/* =====================================================
+   DROPDOWN CONFLICT FIX
+   Only one dropdown open at a time
+===================================================== */
+
+
+/* Happy Clients dropdown */
+.desktop-nav > .navitem:not(.mega-navitem):hover > .small-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* Services dropdown */
+.desktop-nav > .mega-navitem:hover > .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* Prevent small dropdown from opening with Services */
+.desktop-nav > .mega-navitem:hover > .small-dropdown {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+
+/* Prevent mega menu from opening with other nav items */
+.desktop-nav > .navitem:not(.mega-navitem):hover > .mega-menu {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   BACK TO TOP - FINAL
+========================================================= */
+
+#backToTop.back-to-top {
+    position: fixed !important;
+
+    right: 24px !important;
+    bottom: 95px !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    min-width: 48px !important;
+    min-height: 48px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 1px solid rgba(255, 204, 0, .45) !important;
+    border-radius: 50% !important;
+
+    background: #111 !important;
+    color: #ffcc00 !important;
+
+    font-size: 17px !important;
+
+    cursor: pointer !important;
+
+    z-index: 2147483640 !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    transform: translateY(15px) !important;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease !important;
+}
+
+
+#backToTop.back-to-top.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    transform: translateY(0) !important;
+}
+
+
+#backToTop.back-to-top:hover {
+    background: #ffcc00 !important;
+    color: #080808 !important;
+
+    transform: translateY(-4px) !important;
+}
+
+
+#backToTop.back-to-top i {
+    pointer-events: none;
+}
+
+
+@media (max-width: 767px) {
+
+    #backToTop.back-to-top {
+        width: 42px !important;
+        height: 42px !important;
+
+        min-width: 42px !important;
+        min-height: 42px !important;
+
+        right: 16px !important;
+        bottom: 126px !important;
+    }
+
+}
+/* =========================================================
+   FOOTER BOTTOM - CLEAN PREMIUM
+========================================================= */
+
+.footer-bottom-simple {
+    margin-top: 38px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+
+    background: rgba(212, 175, 55, .35);
+
+    margin-bottom: 20px;
+}
+
+.footer-bottom-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    padding-bottom: 6px;
+}
+
+.footer-copyright {
+    margin: 0 !important;
+
+    color: #9f9f9f;
+
+    font-size: 13px !important;
+    line-height: 1.6;
+
+    text-align: left !important;
+}
+
+.footer-legal {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    flex-shrink: 0;
+}
+
+.footer-legal a {
+    color: #bdbdbd;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: .25s ease;
+}
+
+.footer-legal a:hover {
+    color: #d4af37;
+}
+
+.footer-legal-divider {
+    width: 1px;
+    height: 18px;
+
+    background: rgba(212, 175, 55, .45);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .footer-bottom-simple {
+        margin-top: 28px;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 12px !important;
+    }
+
+    .footer-legal {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .footer-legal a {
+        font-size: 12px;
+    }
+}

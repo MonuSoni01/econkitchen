@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Product Details | ECON Kitchen</title>
+  <meta name="description" content="Explore premium ECON Kitchen products, specifications, pricing and delivery details.">
+  <meta name="theme-color" content="#171717">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/product-detail.css">
+    <link rel="stylesheet" href="/assets/css/readability.css">
+    <link rel="stylesheet" href="/assets/css/translator.css">
+    <link rel="stylesheet" href="../assets/css/responsive-master.css">
+ 
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+<body class="ep-page">
+
+<div id="header-slot"></div>
+
+<main>
+
+  <!-- PRODUCT HERO -->
+  <section class="ep-product">
+    <div class="ep-container">
+
+      <nav class="ep-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="/products.html">Products</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span id="breadcrumbName">Premium Modular Kitchen</span>
+      </nav>
+
+      <div class="ep-product-grid">
+
+        <!-- LEFT: GALLERY -->
+        <div class="ep-gallery">
+          <div class="ep-gallery-sticky">
+
+            <div class="ep-thumbs" id="productThumbs"></div>
+
+            <div class="ep-main-media">
+              <span class="ep-badge" id="discountBadge">20% OFF</span>
+
+              <button class="ep-icon-btn ep-fav" id="favoriteBtn" type="button" aria-label="Save product">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img id="mainProductImage" src="" alt="Product">
+
+              <button class="ep-media-arrow ep-prev" id="imagePrev" type="button" aria-label="Previous image">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <button class="ep-media-arrow ep-next" id="imageNext" type="button" aria-label="Next image">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button class="ep-zoom" id="zoomBtn" type="button">
+                <i class="fa-solid fa-expand"></i>
+                <span>View larger</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT: BUY BOX -->
+        <aside class="ep-buybox">
+
+          <div class="ep-brand-row">
+            <span class="ep-brand">ECON KITCHEN</span>
+            <button class="ep-share" id="shareBtn" type="button" aria-label="Share product">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+
+          <h1 id="productTitle">Premium Modular Kitchen Cabinet</h1>
+
+          <p class="ep-subtitle" id="productSubtitle">
+            Custom-designed kitchen solution with premium finish and intelligent storage.
+          </p>
+
+          <div class="ep-rating-row">
+            <span class="ep-rating">4.8 <i class="fa-solid fa-star"></i></span>
+            <a href="#reviews">128 Ratings &amp; 42 Reviews</a>
+          </div>
+
+          <div class="ep-price-block">
+            <span class="ep-special-price">Special price</span>
+            <div class="ep-price-row">
+              <strong id="salePrice">₹1,28,600</strong>
+              <del id="mrpPrice">₹1,59,420</del>
+              <span id="discountText">19% off</span>
+            </div>
+            <small>Inclusive of all taxes</small>
+          </div>
+
+          <div class="ep-divider"></div>
+
+          <!-- FINISH -->
+          <div class="ep-option-block">
+            <div class="ep-option-title">
+              <span>Selected Finish</span>
+              <strong id="selectedFinish">Frosty White &amp; Aquamarine Green</strong>
+            </div>
+
+            <div class="ep-swatches" id="finishSwatches">
+              <button class="ep-swatch active" type="button" data-finish="Frosty White & Aquamarine Green" aria-label="Aquamarine" style="--swatch:#087f83"></button>
+              <button class="ep-swatch" type="button" data-finish="Walnut & Ivory" aria-label="Walnut" style="--swatch:#74533f"></button>
+              <button class="ep-swatch" type="button" data-finish="Graphite Grey" aria-label="Graphite" style="--swatch:#55575b"></button>
+            </div>
+          </div>
+
+          <!-- OFFERS -->
+          <div class="ep-info-section">
+            <h2>Available offers</h2>
+            <ul class="ep-offers">
+              <li><i class="fa-solid fa-tag"></i><span><strong>Special Offer</strong> Get an additional design consultation at no extra cost.</span></li>
+              <li><i class="fa-solid fa-tag"></i><span><strong>Partner Offer</strong> Special benefits available on complete home interior packages.</span></li>
+              <li><i class="fa-solid fa-tag"></i><span><strong>Easy Planning</strong> Get a personalised estimate before finalising your design.</span></li>
+            </ul>
+          </div>
+
+          <!-- PINCODE -->
+          <div class="ep-info-section">
+            <h2>Delivery details</h2>
+
+            <div class="ep-pincode">
+              <i class="fa-solid fa-location-dot"></i>
+              <input id="pincodeInput" type="text" inputmode="numeric" maxlength="6" placeholder="Enter delivery pincode">
+              <button id="checkPincode" type="button">Check</button>
+            </div>
+
+            <p class="ep-pincode-result" id="pincodeResult"></p>
+          </div>
+
+          <!-- TRUST -->
+          <div class="ep-service-grid">
+            <div><i class="fa-solid fa-shield-halved"></i><span>Quality<br>Assured</span></div>
+            <div><i class="fa-solid fa-pen-ruler"></i><span>Custom<br>Design</span></div>
+            <div><i class="fa-solid fa-screwdriver-wrench"></i><span>Expert<br>Installation</span></div>
+          </div>
+
+          <!-- CTA -->
+          <div class="ep-cta-row">
+            <button class="ep-secondary-btn" id="addToPlanBtn" type="button">
+              <i class="fa-regular fa-bookmark"></i>
+              Save Design
+            </button>
+
+            <a class="ep-primary-btn" href="/contact.html">
+              Get Free Quote
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="ep-details-section">
+    <div class="ep-container ep-details-grid">
+
+      <div class="ep-details-main">
+
+        <section class="ep-card ep-about">
+          <span class="ep-kicker">PRODUCT OVERVIEW</span>
+          <h2>Designed around your everyday life.</h2>
+          <p id="productDescription">
+            A refined modular kitchen concept created to combine elegant aesthetics, practical storage and efficient everyday movement. Materials, colours, internal accessories and dimensions can be customised to suit your space.
+          </p>
+        </section>
+
+        <section class="ep-card">
+          <div class="ep-section-head">
+            <div>
+              <span class="ep-kicker">DETAILS</span>
+              <h2>Specifications</h2>
+            </div>
+          </div>
+
+          <div class="ep-specs" id="specificationList">
+            <div><span>Product Type</span><strong>Modular Kitchen</strong></div>
+            <div><span>Configuration</span><strong>Customisable</strong></div>
+            <div><span>Material</span><strong>Premium Engineered Wood</strong></div>
+            <div><span>Finish</span><strong>Matte / Custom Finish</strong></div>
+            <div><span>Installation</span><strong>Professional Installation</strong></div>
+            <div><span>Warranty</span><strong>As per selected material &amp; hardware</strong></div>
+          </div>
+        </section>
+
+        <section class="ep-card">
+          <span class="ep-kicker">WHY ECON</span>
+          <h2>Built for better living</h2>
+
+          <div class="ep-feature-grid">
+            <article><i class="fa-solid fa-ruler-combined"></i><h3>Made to Measure</h3><p>Designed according to your available space and functional requirements.</p></article>
+            <article><i class="fa-solid fa-layer-group"></i><h3>Premium Materials</h3><p>Choose finishes, surfaces and hardware according to your style and budget.</p></article>
+            <article><i class="fa-solid fa-boxes-stacked"></i><h3>Smart Storage</h3><p>Thoughtfully planned drawers, cabinets and internal storage solutions.</p></article>
+            <article><i class="fa-solid fa-headset"></i><h3>Expert Support</h3><p>Guidance from planning and selection through final installation.</p></article>
+          </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="ep-card" id="reviews">
+          <div class="ep-section-head">
+            <div>
+              <span class="ep-kicker">CUSTOMER STORIES</span>
+              <h2>Ratings &amp; Reviews</h2>
+            </div>
+            <button class="ep-outline-small" type="button">Write a Review</button>
+          </div>
+
+          <div class="ep-review-summary">
+            <div class="ep-score">
+              <strong>4.8</strong>
+              <span><i class="fa-solid fa-star"></i> out of 5</span>
+              <small>Based on verified customer feedback</small>
+            </div>
+
+            <div class="ep-bars">
+              <div><span>5</span><div><i style="width:88%"></i></div><small>88%</small></div>
+              <div><span>4</span><div><i style="width:72%"></i></div><small>72%</small></div>
+              <div><span>3</span><div><i style="width:22%"></i></div><small>22%</small></div>
+            </div>
+          </div>
+
+          <div class="ep-review-list">
+            <article>
+              <div class="ep-review-top"><span class="ep-rating">5 <i class="fa-solid fa-star"></i></span><strong>Beautiful and practical</strong></div>
+              <p>The layout was planned around our storage needs and the final finish looks very premium.</p>
+              <small>Ankit Sharma · Verified Customer</small>
+            </article>
+
+            <article>
+              <div class="ep-review-top"><span class="ep-rating">5 <i class="fa-solid fa-star"></i></span><strong>Excellent planning</strong></div>
+              <p>Every cabinet was explained clearly and the kitchen feels much more organised now.</p>
+              <small>Neha Kapoor · Verified Customer</small>
+            </article>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="ep-card">
+          <span class="ep-kicker">NEED TO KNOW</span>
+          <h2>Questions &amp; Answers</h2>
+
+          <div class="ep-faq" id="faqList">
+            <article class="active">
+              <button type="button"><span>Can this design be customised for my kitchen?</span><i class="fa-solid fa-chevron-down"></i></button>
+              <div><p>Yes. Dimensions, colours, finishes, storage layout and accessories can be planned according to your space and requirements.</p></div>
+            </article>
+            <article>
+              <button type="button"><span>How is the final price calculated?</span><i class="fa-solid fa-chevron-down"></i></button>
+              <div><p>The final estimate depends on dimensions, material, finish, hardware, accessories and installation requirements.</p></div>
+            </article>
+            <article>
+              <button type="button"><span>Do you provide installation?</span><i class="fa-solid fa-chevron-down"></i></button>
+              <div><p>Installation support can be coordinated as part of the approved project scope.</p></div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDE SUMMARY -->
+      <aside class="ep-side-card">
+        <span class="ep-kicker">NEED HELP?</span>
+        <h3>Planning your kitchen?</h3>
+        <p>Talk to an ECON design expert and get a personalised recommendation for your space.</p>
+        <a href="/contact.html">Book Free Consultation <i class="fa-solid fa-arrow-right"></i></a>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- SIMILAR PRODUCTS -->
+  <section class="ep-similar">
+    <div class="ep-container">
+
+      <div class="ep-section-head">
+        <div>
+          <span class="ep-kicker">EXPLORE MORE</span>
+          <h2>Similar Products</h2>
+        </div>
+
+        <div class="ep-slider-buttons">
+          <button id="similarPrev" type="button" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="similarNext" type="button" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="ep-product-slider" id="similarProducts"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- MOBILE CTA -->
+<div class="ep-mobile-cta">
+  <button id="mobileSave" type="button"><i class="fa-regular fa-heart"></i></button>
+  <a href="/contact.html">Get Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="ep-lightbox" id="productLightbox" aria-hidden="true">
+  <button class="ep-lightbox-close" id="lightboxClose" type="button"><i class="fa-solid fa-xmark"></i></button>
+  <button class="ep-lightbox-arrow ep-lightbox-prev" id="lightboxPrev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lightboxImage" src="" alt="Product preview">
+  <button class="ep-lightbox-arrow ep-lightbox-next" id="lightboxNext" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<div id="footer-slot"></div>
+
+<script type="module" src="/assets/js/components.js"></script>
+<script src="/assets/js/product-detail.js"></script>
+
+    <script src="/assets/js/translator.js"></script>
+</body>
+</html>

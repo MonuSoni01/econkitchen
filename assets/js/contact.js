@@ -1,0 +1,1 @@
+import { submitLead } from './firebase.js'; document.querySelector('#leadForm')?.addEventListener('submit', async e => { e.preventDefault(); const f = new FormData(e.target); await submitLead(Object.fromEntries(f.entries())); e.target.reset(); toast('Thank you. Your design request has been submitted.'); });

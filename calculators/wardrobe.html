@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+
+    <title>Wardrobe Cost Calculator | ECON Kitchen</title>
+
+    <meta
+        name="description"
+        content="Estimate your wardrobe cost with ECON Kitchen. Select wardrobe size, type, finish, material and accessories to get an indicative estimate."
+    >
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <meta name="theme-color" content="#f8f5ef">
+
+    <!-- Poppins -->
+
+    <link
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <!-- Font Awesome -->
+    
+
+    <!-- Existing ECON -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <!-- Calculator -->
+    <link
+        rel="stylesheet"
+        href="/assets/css/wardrobe-estimator.css"
+    >
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/readability.css">
+    <link rel="stylesheet" href="/assets/css/translator.css">
+    <link rel="stylesheet" href="../assets/css/responsive-master.css">
+ 
+
+
+<body class="wardrobe-estimator-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<div id="header-slot"></div>
+
+
+
+<!-- =====================================================
+     ESTIMATOR
+===================================================== -->
+
+<main class="we-main">
+
+
+    <!-- =================================================
+         PROGRESS
+    ================================================== -->
+
+    <section class="we-progress-section">
+
+        <div class="we-container">
+
+            <div class="we-progress">
+
+
+                <div
+                    class="we-progress-item active"
+                    data-progress="1"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-ruler"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Size
+                    </span>
+                </div>
+
+
+                <div class="we-progress-line"></div>
+
+
+                <div
+                    class="we-progress-item"
+                    data-progress="2"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Type
+                    </span>
+                </div>
+
+
+                <div class="we-progress-line"></div>
+
+
+                <div
+                    class="we-progress-item"
+                    data-progress="3"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-palette"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Finish
+                    </span>
+                </div>
+
+
+                <div class="we-progress-line"></div>
+
+
+                <div
+                    class="we-progress-item"
+                    data-progress="4"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Material
+                    </span>
+                </div>
+
+
+                <div class="we-progress-line"></div>
+
+
+                <div
+                    class="we-progress-item"
+                    data-progress="5"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-box-open"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Accessories
+                    </span>
+                </div>
+
+
+                <div class="we-progress-line"></div>
+
+
+                <div
+                    class="we-progress-item"
+                    data-progress="6"
+                >
+                    <span class="we-progress-circle">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </span>
+
+                    <span class="we-progress-label">
+                        Estimate
+                    </span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ESTIMATOR SHELL
+    ================================================== -->
+
+    <section class="we-estimator-section">
+
+        <div class="we-estimator-shell">
+
+
+            <!-- =========================================
+                 STEP 1 — SIZE
+            ========================================== -->
+
+            <section
+                class="we-step active"
+                data-step="1"
+            >
+
+                <header class="we-step-header">
+
+                    <span class="we-eyebrow">
+                        STEP 01 / 06
+                    </span>
+
+                    <h1>
+                        Let's start with your
+                        <span>wardrobe size.</span>
+                    </h1>
+
+                    <p>
+                        Enter the approximate dimensions.
+                        You can confirm exact measurements
+                        with our designer later.
+                    </p>
+
+                </header>
+
+
+                <div class="we-size-panel">
+
+
+                    <div class="we-field">
+
+                        <label for="wardrobeWidth">
+                            Wardrobe Width
+                        </label>
+
+                        <div class="we-input-wrap">
+
+                            <input
+                                type="number"
+                                id="wardrobeWidth"
+                                 name="wardrobeLength"
+                                min="2"
+                                max="30"
+                                step="0.5"
+                                placeholder="e.g. 8"
+                            >
+
+                            <span>ft</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="we-field">
+
+                        <label for="wardrobeHeight">
+                            Wardrobe Height
+                        </label>
+
+                        <div class="we-input-wrap">
+
+                            <input
+                                type="number"
+                                id="wardrobeHeight"
+                                 name="wardrobeHeight"
+                                min="4"
+                                max="12"
+                                step="0.5"
+                                value="7"
+                            >
+
+                            <span>ft</span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="we-info-strip">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        Standard wardrobe height is pre-filled
+                        at 7 ft. You can change it if required.
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 STEP 2 — TYPE
+            ========================================== -->
+
+            <section
+                class="we-step"
+                data-step="2"
+            >
+
+                <header class="we-step-header">
+
+                    <span class="we-eyebrow">
+                        STEP 02 / 06
+                    </span>
+
+                    <h2>
+                        Select your
+                        <span>wardrobe type.</span>
+                    </h2>
+
+                    <p>
+                        Choose the opening style that works
+                        best for your room and available space.
+                    </p>
+
+                </header>
+
+
+                <div class="we-option-grid we-type-grid">
+
+
+                    <!-- Sliding -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="type"
+                        data-value="Sliding Wardrobe"
+                        data-multiplier="1.15"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/sliding-wardrobe.jpg"
+                                alt="Sliding wardrobe"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <span class="we-card-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Sliding Wardrobe
+                            </h3>
+
+                            <p>
+                                Space-efficient sliding shutters
+                                with a clean contemporary look.
+                            </p>
+
+                            <span class="we-select-label">
+                                SELECT TYPE
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- Hinged -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="type"
+                        data-value="Hinged Wardrobe"
+                        data-multiplier="1"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/hinged-wardrobe.jpg"
+                                alt="Hinged wardrobe"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <span class="we-card-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Hinged Wardrobe
+                            </h3>
+
+                            <p>
+                                Classic swing-door wardrobe with
+                                convenient full-access storage.
+                            </p>
+
+                            <span class="we-select-label">
+                                SELECT TYPE
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 STEP 3 — FINISH
+            ========================================== -->
+
+            <section
+                class="we-step"
+                data-step="3"
+            >
+
+                <header class="we-step-header">
+
+                    <span class="we-eyebrow">
+                        STEP 03 / 06
+                    </span>
+
+                    <h2>
+                        Choose your preferred
+                        <span>finish.</span>
+                    </h2>
+
+                    <p>
+                        Select a finish based on the look,
+                        feel and budget you prefer.
+                    </p>
+
+                </header>
+
+
+                <div class="we-option-grid we-three-grid">
+
+
+                    <!-- Essential -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="finish"
+                        data-value="Essential Laminate"
+                        data-multiplier="1"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/finish-laminate.jpg"
+                                alt="Laminate wardrobe finish"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <span class="we-card-number">
+                                ESSENTIAL
+                            </span>
+
+                            <h3>
+                                Laminate
+                            </h3>
+
+                            <p>
+                                Durable, practical and easy
+                                to maintain.
+                            </p>
+
+                            <span class="we-select-label">
+                                SELECT FINISH
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- Premium -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="finish"
+                        data-value="Premium Membrane"
+                        data-multiplier="1.25"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/finish-membrane.jpg"
+                                alt="Premium membrane wardrobe finish"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <span class="we-card-number">
+                                PREMIUM
+                            </span>
+
+                            <h3>
+                                Membrane
+                            </h3>
+
+                            <p>
+                                Refined seamless appearance
+                                with a premium finish.
+                            </p>
+
+                            <span class="we-select-label">
+                                SELECT FINISH
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- Luxury -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="finish"
+                        data-value="Luxury Acrylic"
+                        data-multiplier="1.55"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/finish-acrylic.jpg"
+                                alt="Luxury acrylic wardrobe finish"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <span class="we-card-number">
+                                LUXURY
+                            </span>
+
+                            <h3>
+                                Acrylic
+                            </h3>
+
+                            <p>
+                                Sophisticated high-end finish
+                                for statement interiors.
+                            </p>
+
+                            <span class="we-select-label">
+                                SELECT FINISH
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 STEP 4 — MATERIAL
+            ========================================== -->
+
+            <section
+                class="we-step"
+                data-step="4"
+            >
+
+                <header class="we-step-header">
+
+                    <span class="we-eyebrow">
+                        STEP 04 / 06
+                    </span>
+
+                    <h2>
+                        Select your preferred
+                        <span>core material.</span>
+                    </h2>
+
+                    <p>
+                        The core determines the wardrobe's
+                        strength, durability and overall budget.
+                    </p>
+
+                </header>
+
+
+                <div class="we-info-strip">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <span>
+                        Material availability may vary depending
+                        on your selected finish and design.
+                    </span>
+
+                </div>
+
+
+                <div class="we-option-grid we-three-grid">
+
+
+                    <!-- MDF -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="material"
+                        data-value="MDF"
+                        data-multiplier="1"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/material-mdf.jpg"
+                                alt="MDF wardrobe core material"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <h3>MDF</h3>
+
+                            <p>
+                                Smooth engineered board suitable
+                                for clean wardrobe finishes.
+                            </p>
+
+                            <div class="we-pro-tip">
+
+                                <strong>Best For</strong>
+
+                                <span>
+                                    Stylish interiors and
+                                    everyday wardrobes.
+                                </span>
+
+                            </div>
+
+
+                            <span class="we-select-label">
+                                SELECT MATERIAL
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- HDF-HMR -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="material"
+                        data-value="HDF-HMR"
+                        data-multiplier="1.18"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/material-hdf.jpg"
+                                alt="HDF HMR wardrobe material"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <h3>HDF-HMR</h3>
+
+                            <p>
+                                Dense engineered board with
+                                improved moisture resistance.
+                            </p>
+
+                            <div class="we-pro-tip">
+
+                                <strong>Best For</strong>
+
+                                <span>
+                                    Premium durability and
+                                    stronger applications.
+                                </span>
+
+                            </div>
+
+
+                            <span class="we-select-label">
+                                SELECT MATERIAL
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- Plywood -->
+
+                    <button
+                        type="button"
+                        class="we-option-card we-image-card"
+                        data-group="material"
+                        data-value="Plywood"
+                        data-multiplier="1.35"
+                    >
+
+                        <span class="we-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+
+                        <div class="we-card-image">
+
+                            <img
+                                src="/assets/images/wardrobe/material-plywood.jpg"
+                                alt="Plywood wardrobe core material"
+                            >
+
+                        </div>
+
+
+                        <div class="we-card-content">
+
+                            <h3>
+                                Premium Plywood
+                            </h3>
+
+                            <p>
+                                Strong layered core designed
+                                for long-term performance.
+                            </p>
+
+
+                            <div class="we-pro-tip">
+
+                                <strong>Best For</strong>
+
+                                <span>
+                                    High-use premium wardrobes.
+                                </span>
+
+                            </div>
+
+
+                            <span class="we-select-label">
+                                SELECT MATERIAL
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 STEP 5 — ACCESSORIES
+            ========================================== -->
+
+            <section
+                class="we-step"
+                data-step="5"
+            >
+
+                <header class="we-step-header">
+
+                    <span class="we-eyebrow">
+                        STEP 05 / 06
+                    </span>
+
+                    <h2>
+                        Add your preferred
+                        <span>accessories.</span>
+                    </h2>
+
+                    <p>
+                        Optional — select as many internal
+                        accessories as you need.
+                    </p>
+
+                </header>
+
+
+                <div class="we-accessory-grid">
+
+
+                    <button
+                        type="button"
+                        class="we-accessory-card"
+                        data-accessory="Loft"
+                        data-price="3500"
+                    >
+
+                        <span class="we-accessory-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <img
+                            src="/assets/images/wardrobe/accessory-loft.jpg"
+                            alt="Wardrobe loft"
+                        >
+
+                        <div>
+                            <h3>Loft</h3>
+                            <span>+ ₹3,500</span>
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="we-accessory-card"
+                        data-accessory="Full-size Drawer"
+                        data-price="2500"
+                    >
+
+                        <span class="we-accessory-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <img
+                            src="/assets/images/wardrobe/accessory-full-drawer.jpg"
+                            alt="Full size wardrobe drawer"
+                        >
+
+                        <div>
+                            <h3>Full-size Drawer</h3>
+                            <span>+ ₹2,500</span>
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="we-accessory-card"
+                        data-accessory="Half Drawer"
+                        data-price="1800"
+                    >
+
+                        <span class="we-accessory-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <img
+                            src="/assets/images/wardrobe/accessory-half-drawer.jpg"
+                            alt="Half wardrobe drawer"
+                        >
+
+                        <div>
+                            <h3>Half Drawer</h3>
+                            <span>+ ₹1,800</span>
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="we-accessory-card"
+                        data-accessory="Double Drawer"
+                        data-price="3200"
+                    >
+
+                        <span class="we-accessory-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <img
+                            src="/assets/images/wardrobe/accessory-double-drawer.jpg"
+                            alt="Double wardrobe drawer"
+                        >
+
+                        <div>
+                            <h3>Double Drawer</h3>
+                            <span>+ ₹3,200</span>
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="we-accessory-card"
+                        data-accessory="Pull-out Basket"
+                        data-price="4500"
+                    >
+
+                        <span class="we-accessory-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <img
+                            src="/assets/images/wardrobe/accessory-pullout.jpg"
+                            alt="Wardrobe pull out basket"
+                        >
+
+                        <div>
+                            <h3>Pull-out Basket</h3>
+                            <span>+ ₹4,500</span>
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+
+                <div class="we-optional-note">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Don't need accessories? You can continue
+                    without selecting any.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 STEP 6 — LEAD + ESTIMATE
+            ========================================== -->
+
+            <section
+                class="we-step"
+                data-step="6"
+            >
+
+                <div class="we-final-grid">
+
+
+                    <!-- SUMMARY -->
+
+                    <div class="we-summary">
+
+                        <span class="we-eyebrow">
+                            YOUR ESTIMATE
+                        </span>
+
+                        <h2>
+                            Your wardrobe plan is
+                            <span>almost ready.</span>
+                        </h2>
+
+                        <p>
+                            Enter your details to view your
+                            indicative ECON wardrobe estimate.
+                        </p>
+
+
+                        <div class="we-summary-card">
+
+
+                            <div>
+                                <span>Wardrobe Size</span>
+                                <strong id="summarySize">—</strong>
+                            </div>
+
+
+                            <div>
+                                <span>Type</span>
+                                <strong id="summaryType">—</strong>
+                            </div>
+
+
+                            <div>
+                                <span>Finish</span>
+                                <strong id="summaryFinish">—</strong>
+                            </div>
+
+
+                            <div>
+                                <span>Material</span>
+                                <strong id="summaryMaterial">—</strong>
+                            </div>
+
+
+                            <div>
+                                <span>Accessories</span>
+                                <strong id="summaryAccessories">
+                                    None
+                                </strong>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FORM -->
+
+                    <div class="we-lead-card">
+
+                        <form id="wardrobeLeadForm">
+
+
+                            <div class="we-form-field">
+
+                                <label for="customerName">
+                                    Name
+                                </label>
+
+                                <input
+                                    id="customerName"
+                                    name="name"
+                                    type="text"
+                                    autocomplete="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="we-form-field">
+
+                                <label for="customerPhone">
+                                    Mobile Number
+                                </label>
+
+                                <div class="we-phone-field">
+
+                                    <span>+91</span>
+
+                                    <input
+                                        id="customerPhone"
+                                        name="phone"
+                                        type="tel"
+                                        inputmode="numeric"
+                                        maxlength="10"
+                                        placeholder="10-digit mobile"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="we-form-field">
+
+                                <label for="customerEmail">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="customerEmail"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    placeholder="Email address"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="we-form-field">
+
+                                <label for="customerCity">
+                                    City
+                                </label>
+
+                                <input
+                                    id="customerCity"
+                                    name="city"
+                                    type="text"
+                                    placeholder="Your city"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <label class="we-whatsapp-consent">
+
+                                <input
+                                    type="checkbox"
+                                    name="whatsappConsent"
+                                    checked
+                                >
+
+                                <span>
+                                    Send my estimate and updates
+                                    on WhatsApp
+                                </span>
+
+                            </label>
+
+
+                            <button
+                                type="submit"
+                                class="we-submit"
+                            >
+                                VIEW MY ESTIMATE
+
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+
+                            <p class="we-form-note">
+                                By submitting, you agree to be
+                                contacted regarding your wardrobe
+                                requirement.
+                            </p>
+
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 DESKTOP NAVIGATION
+            ========================================== -->
+
+            <div class="we-navigation">
+
+                <button
+                    type="button"
+                    id="wardrobeBack"
+                    class="we-back"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    BACK
+                </button>
+
+
+                <div class="we-nav-step">
+                    STEP
+                    <strong id="wardrobeCurrentStep">1</strong>
+                    OF 6
+                </div>
+
+
+                <button
+                    type="button"
+                    id="wardrobeNext"
+                    class="we-next"
+                >
+                    NEXT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     ESTIMATE RESULT MODAL
+===================================================== -->
+
+<div
+    class="we-result-modal"
+    id="wardrobeResultModal"
+    aria-hidden="true"
+>
+
+    <div class="we-result-backdrop"></div>
+
+
+    <div
+        class="we-result-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="estimateResultTitle"
+    >
+
+        <button
+            type="button"
+            class="we-result-close"
+            id="wardrobeResultClose"
+            aria-label="Close"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="we-result-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+
+        <span class="we-eyebrow">
+            ECON WARDROBE ESTIMATE
+        </span>
+
+
+        <h2 id="estimateResultTitle">
+            Your indicative estimate
+        </h2>
+
+
+        <div class="we-price-result">
+
+            <span>Starting from</span>
+
+            <strong id="wardrobeEstimatePrice">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <p>
+            This is an indicative planning estimate.
+            Final pricing depends on measurements,
+            design, material specifications, hardware
+            and site requirements.
+        </p>
+
+
+        <a
+            href="/contact.html"
+            class="we-result-cta"
+        >
+            BOOK FREE CONSULTATION
+
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MOBILE FIXED NAV
+===================================================== -->
+
+<div class="we-mobile-nav">
+
+    <button
+        type="button"
+        id="wardrobeMobileBack"
+        class="we-mobile-back"
+        aria-label="Previous step"
+    >
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+
+    <div class="we-mobile-step">
+
+        <span>
+            STEP
+            <strong id="wardrobeMobileCurrentStep">
+                1
+            </strong>
+            OF 6
+        </span>
+
+        <div class="we-mobile-progress">
+
+            <span id="wardrobeMobileProgressBar"></span>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        id="wardrobeMobileNext"
+        class="we-mobile-next"
+    >
+        NEXT
+
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<div id="footer-slot"></div>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+    type="module"
+    src="/assets/js/components.js"
+></script>
+
+<script
+    type="module"
+    src="/assets/js/wardrobe-estimator.js"
+></script>
+
+
+    <script src="/assets/js/translator.js"></script>
+</body>
+</html>

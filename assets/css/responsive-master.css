@@ -1,0 +1,420 @@
+ :root{
+  --econ-container: 1280px;
+  --econ-gutter: clamp(16px, 3vw, 40px);
+  --econ-section: clamp(42px, 7vw, 96px);
+  --econ-gap: clamp(14px, 2.2vw, 28px);
+}
+*,*::before,*::after{box-sizing:border-box} 
+img,svg,video,canvas,iframe{display:block;max-width:100%}
+img,video{height:auto}
+iframe{width:100%}
+input,select,textarea,button{max-width:100%;font:inherit}
+button,a{touch-action:manipulation}
+table{max-width:100%}
+pre,code{white-space:pre-wrap;overflow-wrap:anywhere}
+
+/* Universal width safety */
+.container,.mk-container,.content-container,.page-container,.section-container,.wrapper,.inner-container,
+[class$="-container"]{max-width:min(var(--econ-container),calc(100% - (var(--econ-gutter) * 2)));margin-left:auto;margin-right:auto}
+section{max-width:100%}
+[class*="grid"],[class*="row"],[class*="flex"]{min-width:0}
+[class*="card"],[class*="item"],[class*="content"],[class*="details"],[class*="info"]{min-width:0}
+
+/* Fluid type: prevents huge/small text across breakpoints */  
+p,li,label,input,select,textarea,button{font-size:clamp(14px,1.15vw,17px);line-height:1.6}
+
+/* Media / banner safety */
+.hero img,[class*="hero"] img,[class*="banner"] img,[class*="image-wrap"] img,[class*="card-image"] img{
+  width:100%;max-width:100%;object-fit:cover
+} 
+
+/* Forms */
+form{max-width:100%}
+input,select,textarea{width:100%;min-width:0}
+textarea{resize:vertical}
+.contact-input-group,.mk-input-wrap,.wd-input-wrap{min-width:0;width:100%}
+
+/* Tables */
+.table-responsive,.responsive-table,[class*="table-wrap"]{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse}
+
+/* Header / navigation defensive rules */
+header,.header,.site-header,.main-header{max-width:100vw}
+.navbar,.nav-wrap,.header-inner,.header-container{min-width:0}
+.mega-menu{max-width:min(1180px,calc(100vw - 24px))!important}
+
+/* Prevent fixed dimensions from breaking screens */
+@media (max-width:1023px){
+  [style*="width:"][style*="px"],[style*="min-width:"][style*="px"]{max-width:100%!important}
+  .mk-sticky-action,.fi-sticky{max-width:calc(100vw - 24px)}
+}
+
+/* ===== TABLET + SMALL LAPTOP ===== */
+@media (max-width:1199px){
+  :root{--econ-container:1080px;--econ-gutter:clamp(18px,3vw,32px)}
+  .mk-project-grid,.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .mk-discovery-panel,.mk-series-selector,.mk-category-selector{max-width:100%}
+  .kd-info,.fid-info{min-width:0}
+  .mega-menu{left:12px!important;right:12px!important;width:auto!important}
+}
+
+/* ===== TABLET ===== */
+@media (max-width:991px){
+  :root{--econ-gutter:20px;--econ-section:clamp(38px,7vw,68px)}
+  .mk-project-grid,.gallery-grid,[class*="projects-grid"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .mk-project-card,.gallery-card,.wd-project-card{width:100%!important;max-width:none!important}
+  .mk-hero-content,[class*="hero-content"]{max-width:100%!important}
+  .mk-layout-pills,[class*="pills"]{overflow-x:auto;flex-wrap:nowrap!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .mk-layout-pills::-webkit-scrollbar,[class*="pills"]::-webkit-scrollbar{display:none}
+  .mk-layout-pill,[class*="pill"]{flex:0 0 auto;white-space:nowrap}
+  .catalogue-stage{max-width:100%;overflow:hidden}
+  .catalogue-tool-btn,.catalogue-nav-btn{min-width:42px;min-height:42px}
+  .kd-title-row,.fid-title-row{align-items:flex-start;gap:14px;flex-wrap:wrap}
+  .ep-side-card{position:static!important;width:100%!important}
+  .mk-custom-banner{max-width:100%;overflow:hidden}
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:767px){
+  :root{--econ-gutter:16px;--econ-gap:16px;--econ-section:42px}
+  body{font-size:15px}
+  section{scroll-margin-top:76px}
+  .container,.mk-container,.content-container,.page-container,.section-container,.wrapper,.inner-container,
+  [class$="-container"]{max-width:calc(100% - 32px)}
+  .mk-project-grid,.gallery-grid,[class*="projects-grid"],[class*="cards-grid"],[class*="product-grid"],
+  .ep-feature-grid,.trust-grid,.journey-grid,.process-grid{grid-template-columns:1fr!important}
+  .mk-project-card,.gallery-card,.wd-project-card,.ep-product-card,[class*="package-card"],[class*="type-card"]{
+    width:100%!important;max-width:100%!important;margin-left:0!important;margin-right:0!important
+  }
+  .mk-project-image,.gallery-card-image,.calc-card-image{width:100%!important}
+  .mk-project-actions{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .mk-project-actions>a,.mk-project-actions>button{width:100%!important;justify-content:center}
+  .mk-page-intro,.mk-section-head,.gallery-section-head{text-align:left}
+  .mk-discovery-heading,.wd-collection-heading,.catalogue-heading{max-width:100%}
+  .mk-sticky-action,.fi-sticky{left:12px!important;right:12px!important;bottom:12px!important;width:auto!important;max-width:none!important}
+  .mk-custom-banner img{min-height:0!important;object-fit:cover}
+  .catalogue-section{padding-left:0!important;padding-right:0!important}
+  .catalogue-stage{min-height:0!important;height:auto!important}
+  .catalogue-nav-btn{position:static!important;transform:none!important}
+  .contact-input-group{display:block!important}
+  .contact-input-group>*{width:100%!important;margin:0 0 12px!important}
+  .kd-info,.fid-info{padding-left:0!important;padding-right:0!important}
+  .kd-similar-card{min-width:min(82vw,320px)!important}
+  .we-accessory-card{width:100%!important}
+  .wwa-bridge-flow{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .main-overlay{padding:18px!important}
+  .small-dropdown{max-width:100%!important}
+  .sh-form,.bx-form{width:100%!important;max-width:100%!important}
+  /* Footer stacks cleanly */
+  .footer-links,.footer-grid,[class*="footer-columns"]{display:grid!important;grid-template-columns:1fr!important;gap:24px!important}
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width:479px){
+  :root{--econ-gutter:14px}
+  .container,.mk-container,.content-container,.page-container,.section-container,.wrapper,.inner-container,
+  [class$="-container"]{max-width:calc(100% - 28px)}
+  h1,.h1{font-size:clamp(28px,9vw,38px)!important}
+  h2,.h2{font-size:clamp(23px,7vw,31px)!important}
+  .mk-project-meta{display:flex;flex-wrap:wrap;gap:7px}
+  .mk-series-option,.mk-category-option,.layout-option{width:100%!important}
+  .catalogue-tool-btn,.catalogue-nav-btn{width:40px!important;height:40px!important}
+}
+
+/* ===== LARGE DESKTOP ===== */
+@media (min-width:1440px){
+  :root{--econ-container:1320px}
+}
+@media (min-width:1800px){
+  :root{--econ-container:1480px}
+  body{font-size:17px}
+}
+
+/* Accessibility / motion */
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* =========================================================
+   FINAL DESKTOP HEADER ALIGNMENT
+   LOGO -> NAV LINKS -> CTA
+========================================================= */
+
+@media (min-width: 1200px) {
+
+  .site-header .navbar{
+    display:flex !important;
+    align-items:center !important;
+
+    height:78px;
+
+    gap:0 !important;
+  }
+
+
+  /* =========================
+     LOGO
+  ========================== */
+
+  .site-header .header-logo{
+    flex:0 0 auto !important;
+
+    display:flex;
+    align-items:center;
+
+    margin:0 !important;
+    padding:0 !important;
+  }
+
+  .site-header .header-logo img{
+    width:230px !important;
+    max-width:230px !important;
+    max-height:58px !important;
+
+    object-fit:contain;
+  }
+
+
+  /* =========================
+     NAV
+     Start immediately after logo
+  ========================== */
+
+  .site-header .desktop-nav{
+    flex:1 1 auto !important;
+
+    margin-left:28px !important;
+    margin-right:28px !important;
+
+    display:flex !important;
+    align-items:center !important;
+
+    justify-content:flex-start !important;
+
+    gap:clamp(16px,1.25vw,26px) !important;
+
+    min-width:0;
+  }
+
+
+  .site-header .desktop-nav > .nav-link,
+  .site-header .navitem > .nav-trigger{
+    height:78px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 !important;
+
+    font-size:13px;
+
+    white-space:nowrap;
+
+    flex:0 0 auto;
+  }
+
+
+  /* =========================
+     CTA
+  ========================== */
+
+  .site-header .header-actions{
+    flex:0 0 auto !important;
+
+    margin-left:auto !important;
+
+    display:flex;
+    align-items:center;
+  }
+
+  .site-header .design-btn{
+    min-width:205px;
+
+    height:50px;
+
+    padding:0 20px;
+
+    justify-content:center;
+
+    gap:14px;
+
+    white-space:nowrap;
+  }
+
+}/* =========================================================
+   FINAL TOPBAR ALIGNMENT
+   Left Info -> Search -> Right Info
+========================================================= */
+
+@media (min-width: 1200px) {
+
+  .site-header .topbar {
+    height: 42px !important;
+  }
+
+  .site-header .topbar-inner {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 22px !important;
+
+    width: calc(100% - 80px) !important;
+    max-width: 1720px !important;
+
+    margin: 0 auto !important;
+  }
+
+
+  /* =========================
+     LEFT SIDE
+  ========================== */
+
+  .site-header .topbar-left {
+    flex: 0 0 auto !important;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px !important;
+
+    white-space: nowrap;
+  }
+
+  .site-header .topbar-item {
+    font-size: 13px !important;
+  }
+
+
+  /* =========================
+     SEARCH
+  ========================== */
+
+  .site-header .topbar-search {
+    flex: 1 1 auto !important;
+
+    max-width: 720px !important;
+    min-width: 280px !important;
+
+    height: 34px !important;
+
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .site-header .topbar-search input {
+    font-size: 13px !important;
+  }
+
+
+  /* =========================
+     RIGHT SIDE
+  ========================== */
+
+  .site-header .topbar-right {
+    flex: 0 0 auto !important;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px !important;
+
+    margin-left: auto !important;
+
+    white-space: nowrap;
+  }
+
+  .site-header .topbar-right a {
+    font-size: 13px !important;
+  }
+
+}
+/* =========================================================
+   JOURNEY OPTIONS
+   ALWAYS ONE ROW + PERFECT SQUARE
+========================================================= */
+
+.journey-options {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 7px !important;
+
+    align-items: stretch;
+}
+
+
+/* EACH OPTION */
+
+.journey-option {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    height: auto !important;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+/* IMAGE */
+
+.journey-option img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    display: block;
+}
+/* =========================================================
+   SERVICES DROPDOWN POSITION FIX
+   Keep dropdown attached to Services trigger
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    /* Services item becomes positioning parent */
+    .site-header .mega-navitem {
+        position: relative !important;
+    }
+
+    /* Dropdown opens directly below Services */
+    .site-header .mega-navitem > .mega-menu {
+        top: calc(100% - 2px) !important;
+
+        left: 50% !important;
+        right: auto !important;
+
+        transform: translate(-50%, 10px) !important;
+
+        width: 360px !important;
+        max-width: min(360px, calc(100vw - 30px)) !important;
+
+        margin: 0 !important;
+    }
+
+    /* Hover / open state */
+    .site-header .mega-navitem:hover > .mega-menu,
+    .site-header .mega-navitem:focus-within > .mega-menu,
+    .site-header .mega-navitem.desktop-open > .mega-menu {
+        transform: translate(-50%, 0) !important;
+    }
+
+    /* Pointer exactly in center of Services */
+    .site-header .mega-navitem > .mega-menu .mega-pointer {
+        left: 50% !important;
+
+        transform:
+            translateX(-50%)
+            rotate(45deg) !important;
+    }
+
+}
