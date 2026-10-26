@@ -933,3 +933,114 @@
 @media(max-width:1024px){.ecat-library{padding:60px 22px}.ecat-library .ecat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
 @media(max-width:600px){.ecat-library{padding:48px 18px 56px}.ecat-library .ecat-grid{grid-template-columns:1fr;gap:24px}.ecat-library .ecat-heading{margin-bottom:30px}.ecat-library .ecat-details{padding:24px}.ecat-library .ecat-title{font-size:22px}}
 @media(prefers-reduced-motion:reduce){.ecat-library .ecat-card,.ecat-library .ecat-button{transition:none}.ecat-library .ecat-card:hover{transform:none}}
+ 
+
+.ecat-share-button {
+    background: #25D366;
+    border-color: #25D366;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ecat-share-button:hover:not(:disabled) {
+    background: #128C7E;
+    border-color: #128C7E;
+    color: #ffffff;
+}
+
+.ecat-share-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .ecat-button-row {
+        flex-direction: column;
+    }
+}
+
+
+/* ==========================================
+   ECON CATALOGUE - PREMIUM ACTION BUTTONS
+========================================== */
+
+.ecat-button-row {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* BOTH BUTTONS */
+.ecat-button-row .ecat-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 52px;
+    padding: 12px 10px;
+    margin: 0;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+/* OPEN CATALOG - ECON GOLD */
+.ecat-button-row .ecat-button:not(.ecat-share-button) {
+    background: #B99A5B;
+    border: 1px solid #B99A5B;
+    color: #171717;
+}
+
+/* WHATSAPP - GREEN */
+.ecat-button-row .ecat-share-button {
+    background: #25D366;
+    border: 1px solid #25D366;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* HOVER */
+.ecat-button-row .ecat-button:not(:disabled):hover {
+    transform: translateY(-2px);
+}
+
+.ecat-button-row .ecat-share-button:not(:disabled):hover {
+    background: #128C7E;
+    border-color: #128C7E;
+    color: #FFFFFF;
+}
+
+/* DISABLED BUTTONS */
+.ecat-button-row .ecat-button:disabled {
+    background: #E7DDC9;
+    border-color: #E7DDC9;
+    color: #8B8375;
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .ecat-button-row {
+        gap: 8px;
+    }
+
+    .ecat-button-row .ecat-button {
+        min-height: 46px;
+        padding: 10px 6px;
+        font-size: 11px;
+        white-space: normal;
+    }
+}

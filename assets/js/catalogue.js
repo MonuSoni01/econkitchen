@@ -64,7 +64,62 @@
                 button.title = "Catalogue coming soon";
                 button.setAttribute("aria-label", item.title + " — coming soon");
             }
-            details.append(heading, button);
+         
+/* SHARE CATALOGUE BUTTON */
+const shareButton = document.createElement("button");
+
+shareButton.type = "button";
+shareButton.className = "ecat-button ecat-share-button";
+shareButton.innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>Share PDF</span>';
+
+if (url) {
+    shareButton.addEventListener("click", async () => {
+        const message = `Explore ${item.title} by ECON Kitchen:\n${url}`;
+
+        try {
+            // Try sharing the actual PDF when accessible
+            if (navigator.share && navigator.canShare) {
+                const response = await fetch(url);
+
+                if (response.ok) {
+                    const blob = await response.blob();
+
+                    if (blob.type.includes("pdf")) {
+                        const file = new File(
+                            [blob],
+                            item.title.replace(/[^a-z0-9]/gi, "-") + ".pdf",
+                            { type: "application/pdf" }
+                        );
+
+                        if (navigator.canShare({ files: [file] })) {
+                            await navigator.share({
+                                files: [file],
+                                title: item.title
+                            });
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (error) {
+            if (error.name === "AbortError") return;
+        }
+
+        // Fallback: share the catalogue link
+        window.location.href =
+            "https://wa.me/?text=" + encodeURIComponent(message);
+    });
+} else {
+    shareButton.disabled = true;
+    shareButton.title = "Catalogue coming soon";
+}
+
+const buttonRow = document.createElement("div");
+buttonRow.className = "ecat-button-row";
+
+buttonRow.append(button, shareButton);
+details.append(heading, buttonRow);
+
             card.append(imageWrap, details);
             fragment.appendChild(card);
         });
@@ -829,6 +884,54 @@
             );
         }
     }
+
+    
+/* =====================================================
+   SHARE CATALOGUE PDF
+===================================================== */
+async function shareCatalogue() {
+    const pdfUrl = new URL(CONFIG.pdfUrl, window.location.href).href;
+
+    try {
+        const response = await fetch(pdfUrl);
+
+        if (!response.ok) {
+            throw new Error("Unable to fetch PDF");
+        }
+
+        const blob = await response.blob();
+
+        const pdfFile = new File(
+            [blob],
+            "ECON-Kitchen-Catalogue.pdf",
+            { type: "application/pdf" }
+        );
+
+        if (
+            navigator.share &&
+            navigator.canShare?.({ files: [pdfFile] })
+        ) {
+            await navigator.share({
+                files: [pdfFile],
+                title: "ECON Kitchen Catalogue"
+            });
+            return;
+        }
+
+        throw new Error("File sharing not supported");
+
+    } catch (error) {
+        if (error.name === "AbortError") return;
+
+        const message =
+            "Explore ECON Kitchen Catalogue:\n" + pdfUrl;
+
+        window.location.href =
+            "https://wa.me/?text=" +
+            encodeURIComponent(message);
+    }
+}
+
     /* =====================================================
        RESIZE
     ====================================================== */

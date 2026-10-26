@@ -26,6 +26,73 @@ function init() {
   });
   const state = { step: 1, layout: null, finish: null, saving: false, sheetBusy: false, saved: null };
 
+  async function loadWhatsAppPrefill() {
+  const token = new URLSearchParams(
+    window.location.search
+  ).get("ref");
+
+  if (!token || !/^[a-f0-9]{64}$/i.test(token)) return;
+
+  const nameInput = $("customerName");
+  const phoneInput = $("customerPhone");
+
+  let nameEdited = false;
+  let phoneEdited = false;
+
+  nameInput.addEventListener("input", () => {
+    nameEdited = true;
+  });
+
+  phoneInput.addEventListener("input", () => {
+    phoneEdited = true;
+  });
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 15000);
+
+  try {
+    const response = await fetch(SHEET_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify({
+        action: "resolve_estimate_session",
+        token
+      }),
+      redirect: "follow",
+      signal: controller.signal
+    });
+
+    if (!response.ok) return;
+
+    const result = await response.json();
+
+    if (!result.ok || !result.customer) return;
+
+    const phone = String(result.customer.phone || "");
+    const name = String(result.customer.name || "").trim();
+
+    if (!/^[6-9]\d{9}$/.test(phone)) return;
+
+    if (!nameEdited && !nameInput.value.trim() && name) {
+      nameInput.value = name;
+      nameInput.defaultValue = name;
+    }
+
+    if (!phoneEdited && !phoneInput.value.trim()) {
+      phoneInput.value = phone;
+      phoneInput.defaultValue = phone;
+    }
+  } catch {
+    console.warn("Autofill unavailable. Please enter details.");
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+loadWhatsAppPrefill();
+
   function walls() { return calculatorConfig.layouts[state.layout]?.walls || []; }
   function dimensions() {
     return Object.fromEntries(walls().map(key => [key, Number($('dimension' + key.toUpperCase()).value)]));
