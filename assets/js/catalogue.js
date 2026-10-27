@@ -64,61 +64,61 @@
                 button.title = "Catalogue coming soon";
                 button.setAttribute("aria-label", item.title + " — coming soon");
             }
-         
-/* SHARE CATALOGUE BUTTON */
-const shareButton = document.createElement("button");
 
-shareButton.type = "button";
-shareButton.className = "ecat-button ecat-share-button";
-shareButton.innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>Share PDF</span>';
+            /* SHARE CATALOGUE BUTTON */
+            const shareButton = document.createElement("button");
 
-if (url) {
-    shareButton.addEventListener("click", async () => {
-        const message = `Explore ${item.title} by ECON Kitchen:\n${url}`;
+            shareButton.type = "button";
+            shareButton.className = "ecat-button ecat-share-button";
+            shareButton.innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>Share PDF</span>';
 
-        try {
-            // Try sharing the actual PDF when accessible
-            if (navigator.share && navigator.canShare) {
-                const response = await fetch(url);
+            if (url) {
+                shareButton.addEventListener("click", async () => {
+                    const message = `Explore ${item.title} by ECON Kitchen:\n${url}`;
 
-                if (response.ok) {
-                    const blob = await response.blob();
+                    try {
+                        // Try sharing the actual PDF when accessible
+                        if (navigator.share && navigator.canShare) {
+                            const response = await fetch(url);
 
-                    if (blob.type.includes("pdf")) {
-                        const file = new File(
-                            [blob],
-                            item.title.replace(/[^a-z0-9]/gi, "-") + ".pdf",
-                            { type: "application/pdf" }
-                        );
+                            if (response.ok) {
+                                const blob = await response.blob();
 
-                        if (navigator.canShare({ files: [file] })) {
-                            await navigator.share({
-                                files: [file],
-                                title: item.title
-                            });
-                            return;
+                                if (blob.type.includes("pdf")) {
+                                    const file = new File(
+                                        [blob],
+                                        item.title.replace(/[^a-z0-9]/gi, "-") + ".pdf",
+                                        { type: "application/pdf" }
+                                    );
+
+                                    if (navigator.canShare({ files: [file] })) {
+                                        await navigator.share({
+                                            files: [file],
+                                            title: item.title
+                                        });
+                                        return;
+                                    }
+                                }
+                            }
                         }
+                    } catch (error) {
+                        if (error.name === "AbortError") return;
                     }
-                }
+
+                    // Fallback: share the catalogue link
+                    window.location.href =
+                        "https://wa.me/?text=" + encodeURIComponent(message);
+                });
+            } else {
+                shareButton.disabled = true;
+                shareButton.title = "Catalogue coming soon";
             }
-        } catch (error) {
-            if (error.name === "AbortError") return;
-        }
 
-        // Fallback: share the catalogue link
-        window.location.href =
-            "https://wa.me/?text=" + encodeURIComponent(message);
-    });
-} else {
-    shareButton.disabled = true;
-    shareButton.title = "Catalogue coming soon";
-}
+            const buttonRow = document.createElement("div");
+            buttonRow.className = "ecat-button-row";
 
-const buttonRow = document.createElement("div");
-buttonRow.className = "ecat-button-row";
-
-buttonRow.append(button, shareButton);
-details.append(heading, buttonRow);
+            buttonRow.append(button, shareButton);
+            details.append(heading, buttonRow);
 
             card.append(imageWrap, details);
             fragment.appendChild(card);
@@ -885,52 +885,52 @@ details.append(heading, buttonRow);
         }
     }
 
-    
-/* =====================================================
-   SHARE CATALOGUE PDF
-===================================================== */
-async function shareCatalogue() {
-    const pdfUrl = new URL(CONFIG.pdfUrl, window.location.href).href;
 
-    try {
-        const response = await fetch(pdfUrl);
+    /* =====================================================
+       SHARE CATALOGUE PDF
+    ===================================================== */
+    async function shareCatalogue() {
+        const pdfUrl = new URL(CONFIG.pdfUrl, window.location.href).href;
 
-        if (!response.ok) {
-            throw new Error("Unable to fetch PDF");
+        try {
+            const response = await fetch(pdfUrl);
+
+            if (!response.ok) {
+                throw new Error("Unable to fetch PDF");
+            }
+
+            const blob = await response.blob();
+
+            const pdfFile = new File(
+                [blob],
+                "ECON-Kitchen-Catalogue.pdf",
+                { type: "application/pdf" }
+            );
+
+            if (
+                navigator.share &&
+                navigator.canShare?.({ files: [pdfFile] })
+            ) {
+                await navigator.share({
+                    files: [pdfFile],
+                    title: "ECON Kitchen Catalogue"
+                });
+                return;
+            }
+
+            throw new Error("File sharing not supported");
+
+        } catch (error) {
+            if (error.name === "AbortError") return;
+
+            const message =
+                "Explore ECON Kitchen Catalogue:\n" + pdfUrl;
+
+            window.location.href =
+                "https://wa.me/?text=" +
+                encodeURIComponent(message);
         }
-
-        const blob = await response.blob();
-
-        const pdfFile = new File(
-            [blob],
-            "ECON-Kitchen-Catalogue.pdf",
-            { type: "application/pdf" }
-        );
-
-        if (
-            navigator.share &&
-            navigator.canShare?.({ files: [pdfFile] })
-        ) {
-            await navigator.share({
-                files: [pdfFile],
-                title: "ECON Kitchen Catalogue"
-            });
-            return;
-        }
-
-        throw new Error("File sharing not supported");
-
-    } catch (error) {
-        if (error.name === "AbortError") return;
-
-        const message =
-            "Explore ECON Kitchen Catalogue:\n" + pdfUrl;
-
-        window.location.href =
-            "https://wa.me/?text=" +
-            encodeURIComponent(message);
     }
-}
 
     /* =====================================================
        RESIZE
