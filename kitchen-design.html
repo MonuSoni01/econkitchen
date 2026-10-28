@@ -4,881 +4,597 @@
 <head>
     <meta charset="utf-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kitchen Design | ECON Kitchen</title>
 
-    <meta
-        name="description"
-        content="Explore premium modular kitchen designs by ECON Kitchen."
-    >
+    <meta name="description" content="Explore premium modular kitchen designs by ECON Kitchen.">
 
-    <meta
-        name="theme-color"
-        content="#171717"
-    >
-
+    <meta name="theme-color" content="#171717">
 
     <!-- GOOGLE FONT -->
-    <link
-        rel="preconnect"
-    >
+    <link rel="preconnect">
 
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <link
-        rel="preconnect"
-        crossorigin
-    >
+    <link rel="preconnect" crossorigin>
 
-    <link
-        rel="stylesheet"
-    >
-
+    <link rel="stylesheet">
 
     <!-- FONT AWESOME -->
-    
-
 
     <!-- WEBSITE CSS -->
-    <link
-        rel="stylesheet"
-        href="/assets/css/header.css"
-    >
+    <link rel="stylesheet" href="/assets/css/header.css">
 
-    <link
-        rel="stylesheet"
-        href="/assets/css/home.css"
-    >
+    <link rel="stylesheet" href="/assets/css/home.css">
 
-    <link
-        rel="stylesheet"
-        href="/assets/css/kitchen-detail.css"
-    >
-  <link rel="stylesheet" href="/assets/css/typography.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/kitchen-detail.css">
+    <link rel="stylesheet" href="/assets/css/typography.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/readability.css">
     <link rel="stylesheet" href="/assets/css/translator.css">
-    <link rel="stylesheet" href="assets/css/responsive-master.css">
- 
+    <link rel="stylesheet" href="/assets/css/responsive-master.css">
 
+    <link rel="stylesheet" href="/assets/css/kitchen-detail-upgrade.css">
+</head>
 
 <body class="kd-page">
 
-
-<!-- =========================================================
+    <!-- =========================================================
      HEADER
 ========================================================= -->
 
-<div id="header-slot"></div>
+    <div id="header-slot"></div>
 
+    <main>
 
-<main>
-
-
-    <!-- =====================================================
+        <!-- =====================================================
          MAIN KITCHEN DETAIL
     ====================================================== -->
 
-    <section
-        class="kd-main"
-        id="kitchenDetailSection"
-    >
+        <section class="kd-main" id="kitchenDetailSection">
 
+            <div class="kd-detail-shell">
 
-        <div class="kd-detail-shell">
-
-
-            <!-- =================================================
+                <!-- =================================================
                  LEFT SIDE — IMAGE
             ================================================== -->
 
-            <div class="kd-gallery">
+                <div class="kd-gallery">
 
+                    <div class="kd-gallery-sticky">
 
-                <div class="kd-gallery-sticky">
+                        <div class="kd-main-image-wrap">
 
+                            <div class="kd-top-actions" aria-label="Design actions">
+                                <button id="shareDesign" type="button" aria-label="Share design" title="Share design"><i
+                                        class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
+                                <button id="sendDesign" type="button" aria-label="Send design on WhatsApp"
+                                    title="Send design on WhatsApp"><i class="fa-solid fa-paper-plane"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                            <!-- LOADER -->
+                            <div class="kd-image-loader" id="imageLoader">
+                                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                            </div>
 
-                    <div class="kd-main-image-wrap">
+                            <!-- MAIN IMAGE -->
+                            <img id="mainDesignImage" class="kd-main-image" src="" alt="ECON Kitchen Design">
 
+                            <!-- PREVIOUS IMAGE -->
+                            <button class="kd-gallery-arrow kd-gallery-prev" id="galleryPrev" type="button"
+                                aria-label="Previous image">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
 
-                        <!-- LOADER -->
-                        <div
-                            class="kd-image-loader"
-                            id="imageLoader"
-                        >
-                            <i class="fa-solid fa-circle-notch fa-spin"></i>
+                            <!-- NEXT IMAGE -->
+                            <button class="kd-gallery-arrow kd-gallery-next" id="galleryNext" type="button"
+                                aria-label="Next image">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                            <!-- IMAGE COUNT -->
+                            <div class="kd-image-count" id="imageCount">
+                                1 / 1
+                            </div>
+
+                            <!-- FULLSCREEN -->
+                            <button class="kd-expand" id="expandImage" type="button" aria-label="View fullscreen">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
                         </div>
-
-
-                        <!-- MAIN IMAGE -->
-                        <img
-                            id="mainDesignImage"
-                            class="kd-main-image"
-                            src=""
-                            alt="ECON Kitchen Design"
-                        >
-
-
-                        <!-- PREVIOUS IMAGE -->
-                        <button
-                            class="kd-gallery-arrow kd-gallery-prev"
-                            id="galleryPrev"
-                            type="button"
-                            aria-label="Previous image"
-                        >
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-
-
-                        <!-- NEXT IMAGE -->
-                        <button
-                            class="kd-gallery-arrow kd-gallery-next"
-                            id="galleryNext"
-                            type="button"
-                            aria-label="Next image"
-                        >
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-
-
-                        <!-- IMAGE COUNT -->
-                        <div
-                            class="kd-image-count"
-                            id="imageCount"
-                        >
-                            1 / 1
-                        </div>
-
-
-                        <!-- FULLSCREEN -->
-                        <button
-                            class="kd-expand"
-                            id="expandImage"
-                            type="button"
-                            aria-label="View fullscreen"
-                        >
-                            <i class="fa-solid fa-expand"></i>
-                        </button>
-
 
                     </div>
 
-
                 </div>
 
-
-            </div>
-
-
-
-            <!-- =================================================
+                <!-- =================================================
                  RIGHT SIDE — DETAILS
             ================================================== -->
 
-            <aside class="kd-info">
+                <aside class="kd-info">
 
+                    <!-- BREADCRUMB -->
+                    <nav class="kd-breadcrumb" aria-label="Breadcrumb">
 
-                <!-- BREADCRUMB -->
-                <nav
-                    class="kd-breadcrumb"
-                    aria-label="Breadcrumb"
-                >
+                        <a href="/">
+                            Home
+                        </a>
 
-                    <a href="/">
-                        Home
-                    </a>
+                        <i class="fa-solid fa-chevron-right"></i>
 
-                    <i class="fa-solid fa-chevron-right"></i>
+                        <a href="/services/modular-kitchen.html">
+                            Kitchen Designs
+                        </a>
 
-                    <a href="/services/modular-kitchen.html">
-                        Kitchen Designs
-                    </a>
+                        <i class="fa-solid fa-chevron-right"></i>
 
-                    <i class="fa-solid fa-chevron-right"></i>
-
-                    <span id="breadcrumbTitle">
-                        Kitchen Design
-                    </span>
-
-                </nav>
-
-
-
-                <!-- TITLE -->
-                <div class="kd-title-row">
-
-
-                    <div class="kd-title-content">
-
-                        <span
-                            class="kd-category"
-                            id="designCategory"
-                        >
-                            MODERN
+                        <span id="breadcrumbTitle">
+                            Kitchen Design
                         </span>
 
-                        <h1 id="designTitle">
-                            Premium Modular Kitchen Design
-                        </h1>
+                    </nav>
+
+                    <!-- TITLE -->
+                    <div class="kd-title-row">
+
+                        <div class="kd-title-content">
+
+                            <h1 id="designTitle">
+                                Premium Modular Kitchen Design
+                            </h1>
+
+                        </div>
 
                     </div>
 
-
-
-                    <div class="kd-top-actions">
-
-                        <button
-                            id="shareDesign"
-                            type="button"
-                            aria-label="Share Design"
-                        >
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </button>
-
-                        <button
-                            id="favouriteDesign"
-                            type="button"
-                            aria-label="Favourite Design"
-                        >
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- =================================================
+                    <!-- =================================================
                      TRUST CARDS
                 ================================================== -->
 
-                <div class="kd-trust-grid">
+                   <section class="kd-product-details">
 
+  <h2>Kitchen Design Details:</h2>
 
-                    <div class="kd-trust-card">
+  <!-- Details automatically populated from your existing JSON -->
+  <div
+    class="kd-spec-table"
+    id="specificationTable"
+  ></div>
 
-                        <span class="kd-trust-icon">
-                            <i class="fa-solid fa-pen-ruler"></i>
+  <div
+    class="kd-read-more-content"
+    id="readMoreContent"
+  >
+    <div class="kd-about-inner">
+      <span class="kd-small-heading">
+        ABOUT THIS DESIGN
+      </span>
+
+      <p
+        class="kd-description"
+        id="designDescription"
+      ></p>
+    </div>
+
+    <div class="kd-feature-inner">
+      <span class="kd-small-heading">
+        WHY YOU'LL LOVE IT
+      </span>
+
+      <div
+        class="kd-features"
+        id="designFeatures"
+      ></div>
+    </div>
+  </div>
+
+  <button
+    class="kd-read-more"
+    id="kdReadMore"
+    type="button"
+  >
+    <span>Read More</span>
+    <i
+      class="fa-solid fa-chevron-down"
+      aria-hidden="true"
+    ></i>
+  </button>
+
+</section>
+
+                    <a href="/calculators/kitchen-estimator.html" class="kd-cost-card">
+
+                        <span class="kd-cost-icon">
+                            <i class="fa-solid fa-calculator"></i>
                         </span>
 
-                        <strong>Customisable</strong>
+                        <strong>
+                            Calculate Your Kitchen Cost
+                        </strong>
 
-                        <small>Designs</small>
+                        <i class="fa-solid fa-chevron-right"></i>
 
-                    </div>
+                    </a>
 
-
-                    <div class="kd-trust-card">
-
-                        <span class="kd-trust-icon">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </span>
-
-                        <strong>Premium</strong>
-
-                        <small>Materials</small>
-
-                    </div>
-
-
-                    <div class="kd-trust-card">
-
-                        <span class="kd-trust-icon">
-                            <i class="fa-solid fa-ruler-combined"></i>
-                        </span>
-
-                        <strong>Made for</strong>
-
-                        <small>Your Space</small>
-
-                    </div>
-
-
-                    <div class="kd-trust-card">
-
-                        <span class="kd-trust-icon">
-                            <i class="fa-solid fa-headset"></i>
-                        </span>
-
-                        <strong>Expert</strong>
-
-                        <small>Consultation</small>
-
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- =================================================
+                    <!-- =================================================
                      DETAILS
                 ================================================== -->
 
-                <section class="kd-product-details">
+                    <section class="kd-product-details">
+ 
+                        <!-- DYNAMIC SPECS -->
+                        <div class="kd-spec-table" id="specificationTable"></div>
 
+                        <!-- READ MORE CONTENT -->
+                        <div class="kd-read-more-content" id="readMoreContent">
 
-                    <h2>
-                        Kitchen Design Details:
-                    </h2>
+                            <div class="kd-about-inner">
 
+                                <span class="kd-small-heading">
+                                    ABOUT THIS DESIGN
+                                </span>
 
-                    <!-- DYNAMIC SPECS -->
-                    <div
-                        class="kd-spec-table"
-                        id="specificationTable"
-                    ></div>
+                                <p class="kd-description" id="designDescription"></p>
 
+                            </div>
 
+                            <div class="kd-feature-inner">
 
-                    <!-- READ MORE CONTENT -->
-                    <div
-                        class="kd-read-more-content"
-                        id="readMoreContent"
-                    >
+                                <span class="kd-small-heading">
+                                    WHY YOU'LL LOVE IT
+                                </span>
 
+                                <div class="kd-features" id="designFeatures"></div>
 
-                        <div class="kd-about-inner">
-
-                            <span class="kd-small-heading">
-                                ABOUT THIS DESIGN
-                            </span>
-
-                            <p
-                                class="kd-description"
-                                id="designDescription"
-                            ></p>
+                            </div>
 
                         </div>
+ 
 
+                    </section>
 
-
-                        <div class="kd-feature-inner">
-
-                            <span class="kd-small-heading">
-                                WHY YOU'LL LOVE IT
-                            </span>
-
-                            <div
-                                class="kd-features"
-                                id="designFeatures"
-                            ></div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- READ MORE -->
-                    <button
-                        class="kd-read-more"
-                        id="kdReadMore"
-                        type="button"
-                    >
-
-                        <span>
-                            Read More
-                        </span>
-
-                        <i class="fa-solid fa-chevron-down"></i>
-
-                    </button>
-
-
-                </section>
-
-
-
-                <!-- =================================================
+                    <!-- =================================================
                      CALCULATE COST
                 ================================================== -->
 
-                <a
-                    href="/calculators/kitchen-estimator.html"
-                    class="kd-cost-card"
-                >
-
-                    <span class="kd-cost-icon">
-                        <i class="fa-solid fa-calculator"></i>
-                    </span>
-
-                    <strong>
-                        Calculate Your Kitchen Cost
-                    </strong>
-
-                    <i class="fa-solid fa-chevron-right"></i>
-
-                </a>
-
-
-            <!-- =========================================================
+                    <!-- =========================================================
                  SIMILAR DESIGNS
             ========================================================== -->
 
-            <section
-                class="kd-similar-section kd-inside-info"
-                id="similarSection"
-            >
+                    <section class="kd-similar-section kd-inside-info" id="similarSection">
 
+                        <div class="kd-section-container">
 
-                <div class="kd-section-container">
+                            <div class="kd-section-header">
 
+                                <div>
 
-                    <div class="kd-section-header">
+                                    <span class="kd-section-label">
+                                        EXPLORE MORE
+                                    </span>
 
+                                    <h2>
+                                        Similar Kitchen Designs
+                                    </h2>
 
-                        <div>
+                                </div>
 
-                            <span class="kd-section-label">
-                                EXPLORE MORE
-                            </span>
+                                <div class="kd-slider-controls">
 
-                            <h2>
-                                Similar Kitchen Designs
-                            </h2>
+                                    <button id="similarPrev" type="button" aria-label="Previous Designs">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
 
-                        </div>
+                                    <button id="similarNext" type="button" aria-label="Next Designs">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
 
+                                </div>
 
+                            </div>
 
-                        <div class="kd-slider-controls">
-
-                            <button
-                                id="similarPrev"
-                                type="button"
-                                aria-label="Previous Designs"
-                            >
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-
-                            <button
-                                id="similarNext"
-                                type="button"
-                                aria-label="Next Designs"
-                            >
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="kd-similar-slider" id="similarDesigns"></div>
 
                         </div>
 
+                    </section>
 
-                    </div>
-
-
-
-                    <div
-                        class="kd-similar-slider"
-                        id="similarDesigns"
-                    ></div>
-
-
-                </div>
-
-
-            </section>
-
-
-
-            <!-- =========================================================
+                    <!-- =========================================================
                  TESTIMONIALS
             ========================================================== -->
 
-            <section class="kd-testimonial-section kd-inside-info">
+                    <section class="kd-testimonial-section kd-inside-info">
 
+                        <div class="kd-section-container">
 
-                <div class="kd-section-container">
+                            <div class="kd-testimonial-heading">
 
-
-                    <div class="kd-testimonial-heading">
-
-                        <span class="kd-section-label">
-                            HAPPY HOMES
-                        </span>
-
-                        <h2>
-                            What Our Customers Say
-                        </h2>
-
-                        <p>
-                            Real experiences from homeowners who chose
-                            ECON Kitchen for their dream kitchen.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="kd-testimonial-track">
-
-
-                        <!-- TESTIMONIAL 1 -->
-                        <article class="kd-testimonial-card">
-
-                            <div class="kd-stars">
-                                ★★★★★
-                            </div>
-
-                            <p>
-                                The kitchen planning experience was smooth
-                                and professional. The design looks premium
-                                and uses the available space beautifully.
-                            </p>
-
-                            <div class="kd-customer">
-
-                                <span class="kd-customer-avatar">
-                                    AS
+                                <span class="kd-section-label">
+                                    HAPPY HOMES
                                 </span>
 
-                                <div>
+                                <h2>
+                                    What Our Customers Say
+                                </h2>
 
-                                    <strong>
-                                        Ankit Sharma
-                                    </strong>
-
-                                    <small>
-                                        Modular Kitchen Client
-                                    </small>
-
-                                </div>
+                                <p>
+                                    Real experiences from homeowners who chose
+                                    ECON Kitchen for their dream kitchen.
+                                </p>
 
                             </div>
 
-                        </article>
+                            <div class="kd-testimonial-track">
 
+                                <!-- TESTIMONIAL 1 -->
+                                <article class="kd-testimonial-card">
 
+                                    <div class="kd-stars">
+                                        ★★★★★
+                                    </div>
 
-                        <!-- TESTIMONIAL 2 -->
-                        <article class="kd-testimonial-card">
+                                    <p>
+                                        The kitchen planning experience was smooth
+                                        and professional. The design looks premium
+                                        and uses the available space beautifully.
+                                    </p>
 
-                            <div class="kd-stars">
-                                ★★★★★
+                                    <div class="kd-customer">
+
+                                        <span class="kd-customer-avatar">
+                                            AS
+                                        </span>
+
+                                        <div>
+
+                                            <strong>
+                                                Ankit Sharma
+                                            </strong>
+
+                                            <small>
+                                                Modular Kitchen Client
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- TESTIMONIAL 2 -->
+                                <article class="kd-testimonial-card">
+
+                                    <div class="kd-stars">
+                                        ★★★★★
+                                    </div>
+
+                                    <p>
+                                        We wanted better storage with a modern
+                                        appearance. ECON understood the requirement
+                                        and created a very practical kitchen.
+                                    </p>
+
+                                    <div class="kd-customer">
+
+                                        <span class="kd-customer-avatar">
+                                            NK
+                                        </span>
+
+                                        <div>
+
+                                            <strong>
+                                                Neha Kapoor
+                                            </strong>
+
+                                            <small>
+                                                Kitchen Renovation Client
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- TESTIMONIAL 3 -->
+                                <article class="kd-testimonial-card">
+
+                                    <div class="kd-stars">
+                                        ★★★★★
+                                    </div>
+
+                                    <p>
+                                        From layout planning to material selection,
+                                        everything was explained clearly. The final
+                                        kitchen feels elegant and functional.
+                                    </p>
+
+                                    <div class="kd-customer">
+
+                                        <span class="kd-customer-avatar">
+                                            RG
+                                        </span>
+
+                                        <div>
+
+                                            <strong>
+                                                Rahul Gupta
+                                            </strong>
+
+                                            <small>
+                                                ECON Kitchen Client
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
                             </div>
 
-                            <p>
-                                We wanted better storage with a modern
-                                appearance. ECON understood the requirement
-                                and created a very practical kitchen.
-                            </p>
+                        </div>
 
-                            <div class="kd-customer">
+                    </section>
 
-                                <span class="kd-customer-avatar">
-                                    NK
-                                </span>
-
-                                <div>
-
-                                    <strong>
-                                        Neha Kapoor
-                                    </strong>
-
-                                    <small>
-                                        Kitchen Renovation Client
-                                    </small>
-
-                                </div>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <!-- TESTIMONIAL 3 -->
-                        <article class="kd-testimonial-card">
-
-                            <div class="kd-stars">
-                                ★★★★★
-                            </div>
-
-                            <p>
-                                From layout planning to material selection,
-                                everything was explained clearly. The final
-                                kitchen feels elegant and functional.
-                            </p>
-
-                            <div class="kd-customer">
-
-                                <span class="kd-customer-avatar">
-                                    RG
-                                </span>
-
-                                <div>
-
-                                    <strong>
-                                        Rahul Gupta
-                                    </strong>
-
-                                    <small>
-                                        ECON Kitchen Client
-                                    </small>
-
-                                </div>
-
-                            </div>
-
-                        </article>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </section>
-
-
-
-            <!-- =========================================================
+                    <!-- =========================================================
                  FAQ
             ========================================================== -->
 
-            <section class="kd-faq-section kd-inside-info">
+                    <section class="kd-faq-section kd-inside-info">
 
+                        <div class="kd-faq-container">
 
-                <div class="kd-faq-container">
+                            <div class="kd-faq-heading">
 
+                                <span class="kd-section-label">
+                                    NEED TO KNOW
+                                </span>
 
-                    <div class="kd-faq-heading">
+                                <h2>
+                                    Frequently Asked Questions
+                                </h2>
 
-                        <span class="kd-section-label">
-                            NEED TO KNOW
-                        </span>
+                                <p>
+                                    Everything you need to know before planning
+                                    your ECON modular kitchen.
+                                </p>
 
-                        <h2>
-                            Frequently Asked Questions
-                        </h2>
+                            </div>
 
-                        <p>
-                            Everything you need to know before planning
-                            your ECON modular kitchen.
-                        </p>
+                            <div class="kd-faq-list" id="faqList"></div>
 
-                    </div>
+                        </div>
 
+                    </section>
 
-                    <div
-                        class="kd-faq-list"
-                        id="faqList"
-                    ></div>
+                </aside>
 
+            </div>
 
-                </div>
-
-
-            </section>
-
-            </aside>
-
-
-        </div>
-
-
-
-        <!-- =====================================================
+            <!-- =====================================================
              STICKY ACTION BAR
         ====================================================== -->
 
-        <div
-            class="kd-sticky-zone"
-            id="stickyActionZone"
-        >
+            <div class="kd-sticky-zone" id="stickyActionZone">
 
-            <div
-                class="kd-sticky-bar"
-                id="stickyActionBar"
-            >
+                <div class="kd-sticky-bar" id="stickyActionBar">
 
+                    <!-- LEFT SIDE -->
+                    <div class="kd-design-navigation">
 
-                <!-- LEFT SIDE -->
-                <div class="kd-design-navigation">
+                        <!-- PREVIOUS -->
+                        <a href="#" class="kd-nav-design kd-nav-prev" id="previousDesign" aria-label="Previous design">
 
+                            <span class="kd-nav-arrow">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </span>
 
-                    <!-- PREVIOUS -->
-                    <a
-                        href="#"
-                        class="kd-nav-design kd-nav-prev"
-                        id="previousDesign"
-                    >
+                            <div class="kd-nav-copy">
 
-                        <span class="kd-nav-arrow">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </span>
+                                <small>
+                                    Previous Design
+                                </small>
 
-                        <div class="kd-nav-copy">
+                                <strong id="previousDesignTitle">
+                                    Previous Kitchen
+                                </strong>
 
-                            <small>
-                                Previous Design
-                            </small>
+                            </div>
 
-                            <strong id="previousDesignTitle">
-                                Previous Kitchen
-                            </strong>
+                        </a>
 
-                        </div>
+                        <!-- NEXT -->
+                        <a href="#" class="kd-nav-design kd-nav-next" id="nextDesign" aria-label="Next design">
 
-                    </a>
+                            <div class="kd-nav-copy">
 
+                                <small>
+                                    Next Design
+                                </small>
 
+                                <strong id="nextDesignTitle">
+                                    Next Kitchen
+                                </strong>
 
-                    <!-- NEXT -->
-                    <a
-                        href="#"
-                        class="kd-nav-design kd-nav-next"
-                        id="nextDesign"
-                    >
+                            </div>
 
-                        <div class="kd-nav-copy">
+                            <span class="kd-nav-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
 
-                            <small>
-                                Next Design
-                            </small>
+                        </a>
 
-                            <strong id="nextDesignTitle">
-                                Next Kitchen
-                            </strong>
+                    </div>
 
-                        </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="kd-sticky-quote-wrap">
 
-                        <span class="kd-nav-arrow">
+                        <a href="/contact.html" class="kd-sticky-quote">
+
+                            <span>
+                                Get Free Quote
+                            </span>
+
                             <i class="fa-solid fa-arrow-right"></i>
-                        </span>
 
-                    </a>
+                        </a>
 
-
-                </div>
-
-
-
-                <!-- RIGHT SIDE -->
-                <div class="kd-sticky-quote-wrap">
-
-                    <a
-                        href="/contact.html"
-                        class="kd-sticky-quote"
-                    >
-
-                        <span>
-                            Get Free Quote
-                        </span>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    </div>
 
                 </div>
 
+            </div>
 
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+     IMAGE LIGHTBOX
+========================================================= -->
+
+    <div class="kd-lightbox" id="imageLightbox" aria-hidden="true">
+
+        <button class="kd-lightbox-close" id="closeLightbox" type="button" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="kd-lightbox-arrow kd-lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous Image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="kd-lightbox-image-wrap">
+
+            <img id="lightboxImage" src="" alt="Kitchen Design">
+
+            <div class="kd-lightbox-count" id="lightboxCount">
+                1 / 1
             </div>
 
         </div>
 
-
-    </section>
-
-
-
-
-
-</main>
-
-
-
-<!-- =========================================================
-     IMAGE LIGHTBOX
-========================================================= -->
-
-<div
-    class="kd-lightbox"
-    id="imageLightbox"
-    aria-hidden="true"
->
-
-
-    <button
-        class="kd-lightbox-close"
-        id="closeLightbox"
-        type="button"
-        aria-label="Close"
-    >
-        <i class="fa-solid fa-xmark"></i>
-    </button>
-
-
-
-    <button
-        class="kd-lightbox-arrow kd-lightbox-prev"
-        id="lightboxPrev"
-        type="button"
-        aria-label="Previous Image"
-    >
-        <i class="fa-solid fa-chevron-left"></i>
-    </button>
-
-
-
-    <div class="kd-lightbox-image-wrap">
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Kitchen Design"
-        >
-
-        <div
-            class="kd-lightbox-count"
-            id="lightboxCount"
-        >
-            1 / 1
-        </div>
+        <button class="kd-lightbox-arrow kd-lightbox-next" id="lightboxNext" type="button" aria-label="Next Image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
 
     </div>
 
-
-
-    <button
-        class="kd-lightbox-arrow kd-lightbox-next"
-        id="lightboxNext"
-        type="button"
-        aria-label="Next Image"
-    >
-        <i class="fa-solid fa-chevron-right"></i>
-    </button>
-
-
-</div>
-
-
-
-<!-- =========================================================
+    <!-- =========================================================
      FOOTER
 ========================================================= -->
 
-<div id="footer-slot"></div>
+    <div id="footer-slot"></div>
 
+    <!-- COMMON COMPONENTS -->
+    <script src="/assets/js/components.js"></script>
 
-<!-- COMMON COMPONENTS -->
-<script src="/assets/js/components.js"></script>
-
-
-<!-- DETAIL PAGE -->
-<script
-    type="module"
-    src="/assets/js/kitchen-detail.js"
-></script>
-
+    <!-- DETAIL PAGE -->
+    <script type="module" src="/assets/js/kitchen-detail.js"></script>
 
     <script src="/assets/js/translator.js"></script>
+    <script type="module" src="/assets/js/kitchen-detail-layout.js"></script>
 </body>
 
 </html>
