@@ -1,122 +1,143 @@
-/* Explicit paths. Normal: 1–123; Essential: 1–24; Multi: 1–84. Existing metadata is placeholder content: verify against your photographs. */
+/* 123 designs in approved title/document order. ID n uses n.webp.
+ * IDs 11 and 51 have unfilled source specifications; their values remain empty.
+ * ID 2 uses the specifications explicitly supplied by the user.
+ * The repeated document image is represented once, retaining its first occurrence.
+ * Legacy slugs are retained. This catalogue excludes the original separate 56 Essential/Multi records.
+ */
 export const kitchenDesigns = [
   {
     "id": 1,
     "category": "modern",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "essential-modern-l-shaped-kitchen-1",
-    "title": "Essential Modern L-Shaped Kitchen",
-    "badge": "NEW",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/1.webp",
-    "shortDescription": "Essential Modern L-Shaped Kitchen designed with smart storage and practical modular planning.",
-    "description": "Essential Modern L-Shaped Kitchen combines functional storage, modern finishes and efficient space planning for everyday living.",
-    "features": [
-      "Smart modular cabinetry",
-      "Practical storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this Essential Modern L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes and storage configuration can be customised according to your available space."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, corner units and internal storage can be customised according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred finishes and storage requirements."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "category": "contemporary",
-    "series": "essential",
+    "series": "signature",
     "layout": "U-Shaped",
-    "slug": "essential-contemporary-u-shaped-kitchen-2",
-    "title": "Essential Contemporary U-Shaped Kitchen",
-    "badge": "NEW",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/essential/2.webp",
-    "shortDescription": "Essential Contemporary U-Shaped Kitchen designed for practical storage and efficient everyday working.",
-    "description": "This Essential U-Shaped Kitchen provides convenient storage, generous workspace and a comfortable modular kitchen experience.",
+    "slug": "luxury-white-island-kitchen",
+    "title": "Bright Minimalist U-Shaped Kitchen",
+    "badge": "",
+    "size": "16 × 14 × 16 ft",
+    "main_image": "/assets/images/kitchen/1.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Signature collection, with PU Paint finish specifications and groove handles.",
+    "description": "Bright Minimalist U-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Signature collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 16 × 14 × 16 ft. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Smart modular cabinetry",
-      "Practical storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided working space"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Signature collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "16 × 14 × 16 ft"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Essential U-Shaped Kitchen be customised?",
-        "answer": "Yes. Its dimensions, finishes, cabinet configuration and storage can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Multiple suitable colours and surface finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 14 × 16 ft. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units and internal storage can be customised."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be included according to the available dimensions."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share your kitchen dimensions and requirements to receive a suitable quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "modern-ivory-l-shaped-kitchen",
+    "title": "Bright Teal and Brass Kitchen Retreat",
+    "badge": "",
+    "size": "10 × 13 × 10 ft",
+    "main_image": "/assets/images/kitchen/2.webp",
+    "shortDescription": "A classic U-shaped kitchen from the Premium collection, featuring a PU paint finish and mount handles.",
+    "description": "Bright Teal and Brass Kitchen Retreat combines a U-shaped layout with classic styling. Part of the Premium collection, this design features a PU paint finish and mount handles. The specified dimensions are 10 × 13 × 10 ft. Share your site measurements with ECON Kitchen to discuss the suitability of this layout for your home.",
+    "features": [
+      "U-shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "PU paint finish",
+      "Mount handles"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 13 × 10 ft"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount Handle"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout and size are specified for this kitchen?",
+        "answer": "This design has a U-shaped layout with specified dimensions of 10 × 13 × 10 ft."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This kitchen has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The specified finish is PU Paint and the handle type is Mount Handle."
+      },
+      {
+        "question": "How can I get an estimate?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with your site measurements for an itemised quotation."
       }
     ]
   },
@@ -124,1838 +145,2112 @@ export const kitchenDesigns = [
     "id": 3,
     "category": "modern",
     "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-modern-parallel-kitchen-3",
-    "title": "Essential Modern Parallel Kitchen",
-    "badge": "NEW",
-    "size": "11 × 8 ft",
-    "main_image": "/assets/images/kitchen/essential/3.webp",
-    "shortDescription": "Essential Modern Parallel Kitchen with an efficient two-sided working layout.",
-    "description": "This parallel modular kitchen offers convenient movement, practical storage and efficient separation of preparation and cooking areas.",
-    "features": [
-      "Two-sided modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient working passage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this Parallel Kitchen be customised?",
-        "answer": "Yes. The complete kitchen can be customised according to your room dimensions."
-      },
-      {
-        "question": "Can I change its colour?",
-        "answer": "Yes. Colours, finishes and textures can be changed."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets, drawers and internal storage accessories can be customised."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance spaces can be planned."
-      },
-      {
-        "question": "How can I get its price?",
-        "answer": "Share the kitchen dimensions and selected materials to receive a quotation."
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "category": "minimal",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-minimal-straight-kitchen-4",
-    "title": "Essential Minimal Straight Kitchen",
-    "badge": "NEW",
-    "size": "10 × 7 ft",
-    "main_image": "/assets/images/kitchen/essential/4.webp",
-    "shortDescription": "Essential Minimal Straight Kitchen designed for compact and practical spaces.",
-    "description": "This straight modular kitchen provides an organised cooking area with practical cabinets and a clean minimal appearance.",
-    "features": [
-      "Space-saving cabinetry",
-      "Practical storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Single-wall working layout"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Minimal"
-      },
-      {
-        "label": "Layout",
-        "value": "Straight"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 7 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this Straight Kitchen be customised?",
-        "answer": "Yes. It can be customised according to the available wall length."
-      },
-      {
-        "question": "Can I change its finish?",
-        "answer": "Yes. Suitable finishes and colours can be selected."
-      },
-      {
-        "question": "Is it suitable for a small kitchen?",
-        "answer": "Yes. A straight layout is suitable for compact kitchen spaces."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be included in the design."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Share your kitchen dimensions and preferred materials for a quotation."
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "category": "contemporary",
-    "series": "essential",
     "layout": "L-Shaped",
-    "slug": "essential-contemporary-l-shaped-kitchen-5",
-    "title": "Essential Contemporary L-Shaped Kitchen",
-    "badge": "NEW",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/5.webp",
-    "shortDescription": "Contemporary L-Shaped Kitchen with practical cabinetry and organised storage.",
-    "description": "This Essential kitchen combines a comfortable L-shaped layout with everyday functionality and contemporary finishes.",
+    "slug": "classic-walnut-island-kitchen",
+    "title": "Compact Sage Green L-Shaped Kitchen",
+    "badge": "",
+    "size": "9 × 6 ft",
+    "main_image": "/assets/images/kitchen/3.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Essential collection, with Matte Laminate finish specifications and profile handle.",
+    "description": "Compact Sage Green L-Shaped Kitchen pairs a L-Shaped layout with modern styling in the Essential collection. The specified finish is Matte Laminate, and the listed handle type is Profile Handle. The listed dimensions are 9 × 6 ft. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Contemporary modular cabinets",
-      "Smart corner storage",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Organised working area"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Matte Laminate",
+      "Handle type specified: Profile Handle"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "9 × 6 ft"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile Handle"
+      },
+      {
+        "label": "Finish",
+        "value": "Matte Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can this kitchen be customised?",
-        "answer": "Yes. Its cabinets, dimensions, finishes and storage can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I select another colour?",
-        "answer": "Yes. Colours and finishes can be selected according to your interior."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 6 ft. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be changed?",
-        "answer": "Yes. Storage can be configured according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance spaces can be created."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Matte Laminate, and the specified handle type is Profile Handle."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share your dimensions and selected finishes for a detailed quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "classic",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "contemporary-green-parallel-kitchen",
+    "title": "Cozy Mint Green L-Shaped Kitchen",
+    "badge": "",
+    "size": "9 × 7",
+    "main_image": "/assets/images/kitchen/4.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Cozy Mint Green L-Shaped Kitchen pairs a L-Shaped layout with classic styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 9 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "luxury",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "premium-walnut-island-kitchen",
+    "title": "Elegant Forest Green Kitchen with Gold Accents",
+    "badge": "",
+    "size": "20 × 12",
+    "main_image": "/assets/images/kitchen/5.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with PU Paint finish specifications and profile handles.",
+    "description": "Elegant Forest Green Kitchen with Gold Accents pairs a Island layout with luxury styling in the Signature collection. The specified finish is PU Paint, and the listed handle type is Profile. The listed dimensions are 20 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "20 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Luxury"
+      },
+      {
+        "label": "Series",
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 20 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 6,
     "category": "classic",
-    "series": "essential",
+    "series": "premium",
     "layout": "U-Shaped",
-    "slug": "essential-classic-u-shaped-kitchen-6",
-    "title": "Essential Classic U-Shaped Kitchen",
-    "badge": "NEW",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/essential/6.webp",
-    "shortDescription": "Classic U-Shaped Kitchen with extensive counter space and modular storage.",
-    "description": "This Essential U-Shaped Kitchen offers extensive workspace, useful cabinets and a comfortable three-sided design.",
+    "slug": "signature-white-parallel-kitchen",
+    "title": "Elegant Ivory Kitchen with Brass Accents",
+    "badge": "",
+    "size": "10 × 14 × 10",
+    "main_image": "/assets/images/kitchen/6.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Elegant Ivory Kitchen with Brass Accents pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 10 × 14 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Classic modular cabinetry",
-      "Three-sided countertop",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Generous storage capacity"
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "10 × 14 × 10"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
+        "label": "Style",
+        "value": "Classic"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can this U-Shaped Kitchen be customised?",
-        "answer": "Yes. All important dimensions and design elements can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can colours and finishes be changed?",
-        "answer": "Yes. Multiple suitable colour and finish options are available."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 14 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets and internal storage can be planned according to your needs."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance provisions can be added."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share the site measurements and material preferences for pricing."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 7,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-modern-parallel-kitchen-7",
-    "title": "Essential Urban Parallel Kitchen",
-    "badge": "",
-    "size": "12 × 8 ft",
-    "main_image": "/assets/images/kitchen/essential/7.webp",
-    "shortDescription": "Urban Parallel Kitchen created for efficient cooking and organised storage.",
-    "description": "This Essential parallel kitchen combines two functional working sides with modern finishes and convenient storage.",
-    "features": [
-      "Two-sided cabinetry",
-      "Functional storage planning",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Comfortable central passage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this Parallel Kitchen be customised?",
-        "answer": "Yes. The design can be customised according to the available space."
-      },
-      {
-        "question": "Can its finish be changed?",
-        "answer": "Yes. You can select suitable colours and finishes."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Its storage configuration can be changed."
-      },
-      {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Appliances can be accommodated during kitchen planning."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Share the kitchen measurements and your requirements."
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "category": "minimal",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-minimal-straight-kitchen-8",
-    "title": "Essential Compact Straight Kitchen",
-    "badge": "",
-    "size": "9 × 7 ft",
-    "main_image": "/assets/images/kitchen/essential/8.webp",
-    "shortDescription": "Compact Straight Kitchen created for small homes and efficient everyday use.",
-    "description": "This Essential straight kitchen uses a single wall to provide practical cabinetry, storage and working space.",
-    "features": [
-      "Compact modular cabinets",
-      "Space-saving storage",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Single-wall design"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Minimal"
-      },
-      {
-        "label": "Layout",
-        "value": "Straight"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "9 × 7 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Is this kitchen suitable for compact spaces?",
-        "answer": "Yes. Its straight layout is suitable for compact homes."
-      },
-      {
-        "question": "Can the colour be changed?",
-        "answer": "Yes. Colours and finishes can be customised."
-      },
-      {
-        "question": "Can storage be added?",
-        "answer": "Yes. Additional suitable cabinets and drawers can be included."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance spaces can be planned."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Share the wall measurements and material preferences."
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "category": "modern",
-    "series": "essential",
+    "category": "classic",
+    "series": "premium",
     "layout": "L-Shaped",
-    "slug": "essential-modern-l-shaped-kitchen-9",
-    "title": "Essential Smart L-Shaped Kitchen",
+    "slug": "luxury-grey-parallel-kitchen",
+    "title": "Elegant Ivory L-Shaped Kitchen",
     "badge": "",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/essential/9.webp",
-    "shortDescription": "Smart L-Shaped Kitchen designed with functional cabinetry and convenient storage.",
-    "description": "This Essential modular kitchen uses an L-shaped arrangement to provide efficient working and storage areas.",
+    "size": "15 × 12",
+    "main_image": "/assets/images/kitchen/7.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Elegant Ivory L-Shaped Kitchen pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 15 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Smart modular cabinetry",
-      "Corner storage planning",
-      "Soft-close hardware",
-      "Durable finish",
-      "Efficient work triangle"
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "15 × 12"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this L-Shaped Kitchen be customised?",
-        "answer": "Yes. The complete kitchen can be customised according to the site."
-      },
-      {
-        "question": "Can colours be changed?",
-        "answer": "Yes. Suitable colours and finishes can be selected."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets, drawers and corner storage can be customised."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be planned."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Share your kitchen dimensions and design requirements."
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "essential-contemporary-u-shaped-kitchen-10",
-    "title": "Essential Spacious U-Shaped Kitchen",
-    "badge": "",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/essential/10.webp",
-    "shortDescription": "Spacious U-Shaped Kitchen with extensive storage and comfortable working space.",
-    "description": "This Essential kitchen offers three connected working sides with practical storage and contemporary finishes.",
-    "features": [
-      "Three-sided cabinetry",
-      "Large working surface",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Organised storage zones"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this U-Shaped Kitchen be customised?",
-        "answer": "Yes. Its layout, cabinetry and finish can be customised."
-      },
-      {
-        "question": "Can colours be changed?",
-        "answer": "Yes. Suitable finish and colour options can be selected."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. The internal and external storage can be planned as required."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Built-in and freestanding appliance spaces can be planned."
-      },
-      {
-        "question": "How can I receive pricing?",
-        "answer": "Share your kitchen dimensions and material preferences."
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-classic-parallel-kitchen-11",
-    "title": "Essential Classic Parallel Kitchen",
-    "badge": "",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/11.webp",
-    "shortDescription": "Classic Parallel Kitchen with balanced storage and working areas.",
-    "description": "This Essential parallel kitchen delivers practical two-sided cabinetry with comfortable movement and classic styling.",
-    "features": [
-      "Balanced two-sided layout",
-      "Practical modular storage",
-      "Soft-close hardware",
-      "Durable surface finish",
-      "Convenient working zones"
-    ],
-    "specifications": [
-      {
         "label": "Style",
         "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 15 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "Parallel",
+    "slug": "modern-blue-island-kitchen",
+    "title": "Elegant Teal and Beige Galley Kitchen",
+    "badge": "",
+    "size": "18 × 8",
+    "main_image": "/assets/images/kitchen/8.webp",
+    "shortDescription": "A contemporary Parallel kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Elegant Teal and Beige Galley Kitchen pairs a Parallel layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 18 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Parallel kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "18 × 8"
       },
       {
         "label": "Layout",
         "value": "Parallel"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can this kitchen be customised?",
-        "answer": "Yes. All dimensions, cabinets and finishes can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Parallel kitchen."
       },
       {
-        "question": "Can I change the design finish?",
-        "answer": "Yes. Suitable finish options can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be changed?",
-        "answer": "Yes. Storage planning can be modified according to your needs."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be added?",
-        "answer": "Yes. Suitable appliance provisions can be included."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share your measurements and preferred materials."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "premium-grey-parallel-kitchen",
+    "title": "Elegant Teal and Brass U-Shaped Kitchen",
+    "badge": "",
+    "size": "14 × 10 × 10",
+    "main_image": "/assets/images/kitchen/9.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Elegant Teal and Brass U-Shaped Kitchen pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 14 × 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 10 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "luxury-black-and-gold-parallel-kitchen",
+    "title": "Elegant Warm-Toned Modern Kitchen",
+    "badge": "",
+    "size": "14 × 11 × 14",
+    "main_image": "/assets/images/kitchen/10.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and mount handles.",
+    "description": "Elegant Warm-Toned Modern Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Mount. The listed dimensions are 14 × 11 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 11 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 11 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "",
+    "series": "",
+    "layout": "",
+    "slug": "premium-dark-wood-l-shaped-kitchen",
+    "title": "Essential Kitchen Portfolio",
+    "badge": "",
+    "size": "",
+    "main_image": "/assets/images/kitchen/11.webp",
+    "shortDescription": "Explore Essential Kitchen Portfolio and contact ECON Kitchen to discuss your kitchen requirements.",
+    "description": "Essential Kitchen Portfolio is part of the ECON Kitchen design gallery. Contact the team to confirm the layout, dimensions, finish and handle options before requesting a quotation.",
+    "features": [],
+    "specifications": [],
+    "faqs": [
+      {
+        "question": "How can I confirm the specifications for this design?",
+        "answer": "Share this design link and your site measurements with ECON Kitchen to confirm the layout, size, finish and handle options."
+      },
+      {
+        "question": "How can I request a quotation?",
+        "answer": "Contact ECON Kitchen with this design link and your requirements to request an itemised quotation."
       }
     ]
   },
   {
     "id": 12,
-    "category": "minimal",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-minimal-straight-kitchen-12",
-    "title": "Essential Clean Straight Kitchen",
+    "category": "modern",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "contemporary-beige-u-shaped-kitchen",
+    "title": "Glossy Yellow and Charcoal Modern Kitchen",
     "badge": "",
-    "size": "10 × 8 ft",
-    "main_image": "/assets/images/kitchen/essential/12.webp",
-    "shortDescription": "Clean Straight Kitchen with a simple design and practical modular storage.",
-    "description": "This Essential straight kitchen creates an uncluttered working area with organised cabinetry and easy-maintenance finishes.",
+    "size": "15 × 12",
+    "main_image": "/assets/images/kitchen/12.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Glossy Yellow and Charcoal Modern Kitchen pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 15 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Clean modular cabinetry",
-      "Compact storage planning",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Simple single-wall layout"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Minimal"
+        "label": "Size",
+        "value": "15 × 12"
       },
       {
         "label": "Layout",
-        "value": "Straight"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "10 × 8 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Straight Kitchen be customised?",
-        "answer": "Yes. It can be customised according to the available wall dimensions."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can its colours be changed?",
-        "answer": "Yes. Colours and surface finishes can be changed."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 15 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets and drawers can be configured as required."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance provisions can be included."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share the dimensions and selected materials for pricing."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 13,
     "category": "modern",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "essential-modern-l-shaped-kitchen-13",
-    "title": "Essential Elegant L-Shaped Kitchen",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "signature-marble-u-shaped-kitchen",
+    "title": "Luxe Greige Kitchen with Warm Lighting",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/essential/13.webp",
-    "shortDescription": "Elegant L-Shaped Kitchen offering practical storage and a modern everyday design.",
-    "description": "This Essential kitchen combines an efficient corner layout, modern cabinetry and convenient preparation space.",
+    "size": "14 × 12 × 14",
+    "main_image": "/assets/images/kitchen/13.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxe Greige Kitchen with Warm Lighting pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 14 × 12 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Elegant modular cabinetry",
-      "Corner storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Practical working layout"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 12 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can this L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet sizes, layout and finishes can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can colours be selected?",
-        "answer": "Yes. Suitable colour and finish options can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 12 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can its storage be customised?",
-        "answer": "Yes. Internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Required appliance spaces can be incorporated."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get pricing?",
-        "answer": "Share your site dimensions and selected material preferences."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 14,
     "category": "contemporary",
-    "series": "essential",
+    "series": "premium",
     "layout": "U-Shaped",
-    "slug": "essential-contemporary-u-shaped-kitchen-14",
-    "title": "Essential Functional U-Shaped Kitchen",
+    "slug": "contemporary-green-u-shaped-kitchen",
+    "title": "Luxurious Blue and Cream U-Shaped Kitchen",
     "badge": "",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/essential/14.webp",
-    "shortDescription": "Functional U-Shaped Kitchen designed for extensive workspace and organised storage.",
-    "description": "This Essential modular kitchen surrounds the working area with accessible counters and practical cabinets.",
+    "size": "14 × 10 × 14",
+    "main_image": "/assets/images/kitchen/14.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxurious Blue and Cream U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 14 × 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Accessible three-sided layout",
-      "Functional modular storage",
-      "Soft-close hardware",
-      "Durable surface finish",
-      "Generous counter space"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "14 × 10 × 14"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can this kitchen be customised?",
-        "answer": "Yes. Its dimensions, storage and finishes can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I select another finish?",
-        "answer": "Yes. Suitable finishes and colours can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Storage can be planned based on your daily requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be planned during designing."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Provide your measurements and preferred specifications."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 15,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-modern-parallel-kitchen-15",
-    "title": "Essential Efficient Parallel Kitchen",
+    "category": "luxury",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "modern-matte-u-shaped-kitchen",
+    "title": "Luxurious Charcoal and Wood Kitchen",
     "badge": "",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/15.webp",
-    "shortDescription": "Efficient Parallel Kitchen with dedicated preparation, cooking and storage areas.",
-    "description": "This Essential kitchen provides two efficient working counters with practical storage and comfortable movement.",
+    "size": "18 × 16",
+    "main_image": "/assets/images/kitchen/15.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with PU Paint / Veneer finish specifications and gola handles.",
+    "description": "Luxurious Charcoal and Wood Kitchen pairs a Island layout with luxury styling in the Signature collection. The specified finish is PU Paint / Veneer, and the listed handle type is Gola. The listed dimensions are 18 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Efficient two-sided layout",
-      "Dedicated working zones",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Smart storage planning"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: PU Paint / Veneer",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "18 × 16"
       },
       {
         "label": "Layout",
-        "value": "Parallel"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
+        "label": "Style",
+        "value": "Luxury"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Parallel Kitchen be customised?",
-        "answer": "Yes. Its layout and cabinetry can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can its colour be changed?",
-        "answer": "Yes. Different suitable colours and finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. The storage configuration can be modified."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Appliance placements can be planned."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint / Veneer, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get pricing?",
-        "answer": "Share your kitchen dimensions and material selection."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 16,
-    "category": "minimal",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-minimal-straight-kitchen-16",
-    "title": "Essential Space-Saving Straight Kitchen",
+    "category": "luxury",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "modern-white-parallel-kitchen",
+    "title": "Luxurious Emerald Marble Kitchen Interior",
     "badge": "",
-    "size": "9 × 6 ft",
-    "main_image": "/assets/images/kitchen/essential/16.webp",
-    "shortDescription": "Space-Saving Straight Kitchen designed to maximise functionality in compact spaces.",
-    "description": "This Essential straight kitchen keeps storage and working facilities organised along one convenient wall.",
+    "size": "30 × 20",
+    "main_image": "/assets/images/kitchen/16.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with PU Paint finish specifications and gola handles.",
+    "description": "Luxurious Emerald Marble Kitchen Interior pairs a Island layout with luxury styling in the Signature collection. The specified finish is PU Paint, and the listed handle type is Gola. The listed dimensions are 30 × 20. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Space-saving cabinetry",
-      "Compact storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient single-wall layout"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Minimal"
+        "label": "Size",
+        "value": "30 × 20"
       },
       {
         "label": "Layout",
-        "value": "Straight"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "9 × 6 ft"
+        "label": "Style",
+        "value": "Luxury"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Is this suitable for small spaces?",
-        "answer": "Yes. It is designed especially for compact spaces."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can colours be changed?",
-        "answer": "Yes. Colours and finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 30 × 20. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can additional storage be added?",
-        "answer": "Yes. Suitable cabinets and overhead storage can be added."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Compact appliance spaces can be planned."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share the wall dimensions and required storage."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 17,
-    "category": "classic",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "essential-classic-l-shaped-kitchen-17",
-    "title": "Essential Classic L-Shaped Kitchen",
+    "category": "modern",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "premium-dark-wood-u-shaped-kitchen",
+    "title": "Luxurious Greige L-Shaped Kitchen",
     "badge": "",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/17.webp",
-    "shortDescription": "Classic L-Shaped Kitchen with comfortable working space and practical storage.",
-    "description": "This Essential kitchen combines classic styling with an efficient L-shaped modular arrangement.",
+    "size": "14 × 12",
+    "main_image": "/assets/images/kitchen/17.webp",
+    "shortDescription": "A modern Island kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxurious Greige L-Shaped Kitchen pairs a Island layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 14 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Classic modular cabinetry",
-      "Useful corner storage",
-      "Soft-close hardware",
-      "Durable finish",
-      "Comfortable work triangle"
+      "Island kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "14 × 12"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Classic Kitchen be customised?",
-        "answer": "Yes. All major design elements can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can the finish be changed?",
-        "answer": "Yes. Suitable finish options can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Internal and external storage can be customised."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance provisions can be included."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I receive a quotation?",
-        "answer": "Share the kitchen dimensions and preferred specifications."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 18,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "essential-contemporary-u-shaped-kitchen-18",
-    "title": "Essential Contemporary U-Shaped Kitchen 2",
+    "category": "luxury",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "contemporary-white-island-kitchen",
+    "title": "Luxurious Marble Kitchen with Warm Lighting",
     "badge": "",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/essential/18.webp",
-    "shortDescription": "Contemporary U-Shaped Kitchen with extensive counters and organised cabinetry.",
-    "description": "This Essential kitchen provides a comfortable three-sided workspace with accessible modular storage.",
+    "size": "30 × 20",
+    "main_image": "/assets/images/kitchen/18.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with PU Paint finish specifications and gola handles.",
+    "description": "Luxurious Marble Kitchen with Warm Lighting pairs a Island layout with luxury styling in the Signature collection. The specified finish is PU Paint, and the listed handle type is Gola. The listed dimensions are 30 × 20. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Contemporary modular cabinetry",
-      "Extensive counter space",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Organised working zones"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "30 × 20"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
+        "label": "Style",
+        "value": "Luxury"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can this U-Shaped Kitchen be customised?",
-        "answer": "Yes. Its cabinetry, dimensions and finishes can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can colours be changed?",
-        "answer": "Yes. Colours and finishes can be changed."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 30 × 20. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Storage can be planned based on your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Required appliance spaces can be incorporated."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Share the site dimensions and preferred materials."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 19,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-modern-parallel-kitchen-19",
-    "title": "Essential Practical Parallel Kitchen",
-    "badge": "",
-    "size": "12 × 8 ft",
-    "main_image": "/assets/images/kitchen/essential/19.webp",
-    "shortDescription": "Practical Parallel Kitchen with convenient storage on both working sides.",
-    "description": "This Essential parallel kitchen provides an efficient arrangement for cooking, preparation and storage.",
-    "features": [
-      "Practical two-sided layout",
-      "Convenient modular storage",
-      "Soft-close hardware",
-      "Durable finish",
-      "Efficient working passage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this kitchen be customised?",
-        "answer": "Yes. Its dimensions and cabinet configuration can be customised."
-      },
-      {
-        "question": "Can its colour be changed?",
-        "answer": "Yes. Suitable colours and finishes can be selected."
-      },
-      {
-        "question": "Can storage be changed?",
-        "answer": "Yes. Storage arrangements can be customised."
-      },
-      {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Appliance spaces can be included."
-      },
-      {
-        "question": "How can I receive pricing?",
-        "answer": "Share the kitchen measurements and required specifications."
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "category": "minimal",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-minimal-straight-kitchen-20",
-    "title": "Essential Modern Straight Kitchen",
-    "badge": "",
-    "size": "10 × 7 ft",
-    "main_image": "/assets/images/kitchen/essential/20.webp",
-    "shortDescription": "Modern Straight Kitchen featuring clean cabinetry and convenient everyday storage.",
-    "description": "This Essential single-wall kitchen delivers a clean modern design with functional storage and preparation areas.",
-    "features": [
-      "Modern single-wall layout",
-      "Functional modular storage",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Compact working area"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Minimal"
-      },
-      {
-        "label": "Layout",
-        "value": "Straight"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 7 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this Straight Kitchen be customised?",
-        "answer": "Yes. It can be customised to match the available wall dimensions."
-      },
-      {
-        "question": "Can colours be selected?",
-        "answer": "Yes. Suitable colour and finish options are available."
-      },
-      {
-        "question": "Can its storage be customised?",
-        "answer": "Yes. Cabinet and drawer storage can be customised."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance spaces can be planned."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Share the wall measurements and preferred finishes."
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "category": "modern",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "essential-modern-l-shaped-kitchen-21",
-    "title": "Essential Warm L-Shaped Kitchen",
-    "badge": "",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/21.webp",
-    "shortDescription": "Warm L-Shaped Kitchen with comfortable styling and practical modular cabinets.",
-    "description": "This Essential kitchen combines a welcoming modern finish with efficient corner storage and working space.",
-    "features": [
-      "Warm modular finish",
-      "Efficient corner storage",
-      "Soft-close hardware",
-      "Easy-maintenance surface",
-      "Practical work triangle"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can this L-Shaped Kitchen be customised?",
-        "answer": "Yes. Its size, finish and cabinetry can be customised."
-      },
-      {
-        "question": "Can I select another colour?",
-        "answer": "Yes. Alternative suitable colours can be selected."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Storage can be planned according to your needs."
-      },
-      {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance placements can be included."
-      },
-      {
-        "question": "How can I receive a quotation?",
-        "answer": "Share your measurements and preferred materials."
-      }
-    ]
-  },
-  {
-    "id": 22,
     "category": "contemporary",
-    "series": "essential",
+    "series": "signature",
     "layout": "U-Shaped",
-    "slug": "essential-contemporary-u-shaped-kitchen-22",
-    "title": "Essential Premium-Look U-Shaped Kitchen",
+    "slug": "signature-marble-parallel-kitchen",
+    "title": "Luxurious Modern U-Shaped Kitchen",
     "badge": "",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/essential/22.webp",
-    "shortDescription": "Premium-look U-Shaped Kitchen available within the functional Essential collection.",
-    "description": "This Essential kitchen blends a refined appearance with practical three-sided modular storage and workspace.",
+    "size": "16 × 14 × 16",
+    "main_image": "/assets/images/kitchen/19.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Signature collection, with Acrylic / Veneer finish specifications and gola handles.",
+    "description": "Luxurious Modern U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Signature collection. The specified finish is Acrylic / Veneer, and the listed handle type is Gola. The listed dimensions are 16 × 14 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Refined modular cabinetry",
-      "Three-sided working space",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Practical storage planning"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Signature collection",
+      "Finish specified: Acrylic / Veneer",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "16 × 14 × 16"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can this U-Shaped Kitchen be customised?",
-        "answer": "Yes. The kitchen can be customised according to the room dimensions."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can its finish be changed?",
-        "answer": "Yes. Multiple suitable finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 14 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets, drawers and internal storage can be configured."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be included?",
-        "answer": "Yes. Appliance spaces can be integrated."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic / Veneer, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get pricing?",
-        "answer": "Share the site measurements and design requirements."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 23,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "essential-classic-parallel-kitchen-23",
-    "title": "Essential Refined Parallel Kitchen",
+    "id": 20,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "classic-grey-l-shaped-kitchen",
+    "title": "Luxurious Navy and Cream U-Shaped Kitchen",
     "badge": "",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/essential/23.webp",
-    "shortDescription": "Refined Parallel Kitchen with organised working counters and modular storage.",
-    "description": "This Essential kitchen offers a balanced two-sided configuration with accessible cabinets and refined finishes.",
+    "size": "8 × 14 × 10",
+    "main_image": "/assets/images/kitchen/20.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxurious Navy and Cream U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 8 × 14 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Refined modular cabinets",
-      "Balanced parallel counters",
-      "Soft-close hardware",
-      "Durable finish",
-      "Accessible storage zones"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "8 × 14 × 10"
       },
       {
         "label": "Layout",
-        "value": "Parallel"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Parallel Kitchen be customised?",
-        "answer": "Yes. Its dimensions, finishes and storage can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change its colours?",
-        "answer": "Yes. Colours and finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 14 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can its storage be modified?",
-        "answer": "Yes. The complete storage plan can be modified."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Appliance locations can be planned."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I receive a quotation?",
-        "answer": "Share the kitchen size and preferred specifications."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 24,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Straight",
-    "slug": "essential-modern-straight-kitchen-24",
-    "title": "Essential Stylish Straight Kitchen",
-    "badge": "FEATURED",
-    "size": "11 × 7 ft",
-    "main_image": "/assets/images/kitchen/essential/24.webp",
-    "shortDescription": "Stylish Straight Kitchen with modern cabinets and practical everyday storage.",
-    "description": "This Essential straight kitchen creates a stylish and efficient working zone with organised single-wall cabinetry.",
+    "id": 21,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "signature-white-island-kitchen",
+    "title": "Luxurious Symmetrical Galley Kitchen",
+    "badge": "",
+    "size": "20 × 10",
+    "main_image": "/assets/images/kitchen/21.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxurious Symmetrical Galley Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 20 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Stylish modular cabinetry",
-      "Practical single-wall layout",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Organised storage solutions"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "20 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 20 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "modern",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "contemporary-beige-parallel-kitchen",
+    "title": "Luxurious Symmetrical Gray Kitchen",
+    "badge": "",
+    "size": "14 × 12 × 14",
+    "main_image": "/assets/images/kitchen/22.webp",
+    "shortDescription": "A modern Island kitchen from the Premium collection, with PU Paint finish specifications and groove handles.",
+    "description": "Luxurious Symmetrical Gray Kitchen pairs a Island layout with modern styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 14 × 12 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 12 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "Straight"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 7 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can this Stylish Straight Kitchen be customised?",
-        "answer": "Yes. Its size, colour, finish and cabinet configuration can be customised."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change its finish?",
-        "answer": "Yes. Suitable surface finishes can be selected."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 12 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Cabinets, drawers and overhead storage can be customised."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated?",
-        "answer": "Yes. Suitable appliance spaces can be incorporated."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share the kitchen measurements and material preferences."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "luxury-cream-island-kitchen",
+    "title": "Luxurious Warm-Toned U-Shaped Kitchen",
+    "badge": "",
+    "size": "16 × 13 × 16",
+    "main_image": "/assets/images/kitchen/23.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and groove handles.",
+    "description": "Luxurious Warm-Toned U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 16 × 13 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "16 × 13 × 16"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 13 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "premium-black-island-kitchen",
+    "title": "Luxury U-Shaped Kitchen in Warm Modern Style",
+    "badge": "",
+    "size": "12 × 11 × 12",
+    "main_image": "/assets/images/kitchen/24.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Luxury U-Shaped Kitchen in Warm Modern Style pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 12 × 11 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 11 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 11 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 25,
     "category": "modern",
-    "series": "essential",
+    "series": "premium",
     "layout": "L-Shaped",
-    "slug": "modern-open-l-shaped-kitchen",
-    "title": "Modern Open L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/multi/1.webp",
-    "images": [
-      "/assets/images/kitchen/multi/1.webp",
-      "/assets/images/kitchen/multi/2.webp",
-      "/assets/images/kitchen/multi/3.webp"
-    ],
-    "shortDescription": "Modern Open L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Open L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "premium-marble-parallel-kitchen",
+    "title": "Mint Green Marble Kitchen Retreat",
+    "badge": "",
+    "size": "12 × 9",
+    "main_image": "/assets/images/kitchen/25.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Mint Green Marble Kitchen Retreat pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 9. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 9"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Open L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 9. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 26,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "warm-walnut-l-shaped-kitchen",
-    "title": "Warm Walnut L-Shaped Kitchen",
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "premium-walnut-parallel-kitchen",
+    "title": "Mint Green Marble L-Shaped Kitchen",
     "badge": "",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/4.webp",
-    "images": [
-      "/assets/images/kitchen/multi/4.webp",
-      "/assets/images/kitchen/multi/5.webp",
-      "/assets/images/kitchen/multi/6.webp"
-    ],
-    "shortDescription": "Warm Walnut L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Walnut L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "11 × 14 × 11",
+    "main_image": "/assets/images/kitchen/26.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Mint Green Marble L-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 11 × 14 × 11. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "11 × 14 × 11"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Warm Walnut L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 11 × 14 × 11. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 27,
-    "category": "classic",
+    "category": "modern",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "minimal-white-l-shaped-kitchen",
-    "title": "Minimal White L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/7.webp",
-    "images": [
-      "/assets/images/kitchen/multi/7.webp",
-      "/assets/images/kitchen/multi/8.webp",
-      "/assets/images/kitchen/multi/9.webp"
-    ],
-    "shortDescription": "Minimal White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Minimal White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "modern-marble-island-kitchen",
+    "title": "Modern Blue and Cream Marble Kitchen",
+    "badge": "",
+    "size": "11 × 12 × 11",
+    "main_image": "/assets/images/kitchen/27.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Modern Blue and Cream Marble Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 11 × 12 × 11. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "11 × 12 × 11"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Minimal White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 11 × 12 × 11. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 28,
-    "category": "luxury",
+    "category": "modern",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "contemporary-grey-l-shaped-kitchen",
-    "title": "Contemporary Grey L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/10.webp",
-    "images": [
-      "/assets/images/kitchen/multi/10.webp",
-      "/assets/images/kitchen/multi/11.webp",
-      "/assets/images/kitchen/multi/12.webp"
-    ],
-    "shortDescription": "Contemporary Grey L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Grey L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "luxury-black-and-gold-island-kitchen",
+    "title": "Modern Blue L-Shaped Kitchen‑-2",
+    "badge": "",
+    "size": "8 × 11 × 8",
+    "main_image": "/assets/images/kitchen/28.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Modern Blue L-Shaped Kitchen‑-2 pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 8 × 11 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "8 × 11 × 8"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Grey L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 11 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 29,
     "category": "modern",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "classic-cream-l-shaped-kitchen",
-    "title": "Classic Cream L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/13.webp",
-    "images": [
-      "/assets/images/kitchen/multi/13.webp",
-      "/assets/images/kitchen/multi/14.webp",
-      "/assets/images/kitchen/multi/15.webp"
-    ],
-    "shortDescription": "Classic Cream L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Cream L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "modern-grey-parallel-kitchen",
+    "title": "Modern Blue-Gray L-Shaped Kitchen-2",
+    "badge": "",
+    "size": "9 × 13 × 12",
+    "main_image": "/assets/images/kitchen/29.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and mount handles.",
+    "description": "Modern Blue-Gray L-Shaped Kitchen-2 pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Mount. The listed dimensions are 9 × 13 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 13 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Cream L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 13 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 30,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "luxury-marble-l-shaped-kitchen",
-    "title": "Luxury Marble L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/16.webp",
-    "images": [
-      "/assets/images/kitchen/multi/16.webp",
-      "/assets/images/kitchen/multi/17.webp",
-      "/assets/images/kitchen/multi/18.webp"
-    ],
-    "shortDescription": "Luxury Marble L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Marble L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "classic-beige-u-shaped-kitchen",
+    "title": "Modern Coral U-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 11 × 10",
+    "main_image": "/assets/images/kitchen/30.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and raised / large handles.",
+    "description": "Modern Coral U-Shaped Kitchen pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Raised / Large. The listed dimensions are 10 × 11 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Raised / Large"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "10 × 11 × 10"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Marble L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 31,
-    "category": "classic",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "modern-black-l-shaped-kitchen",
-    "title": "Modern Black L-Shaped Kitchen",
-    "badge": "",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/19.webp",
-    "images": [
-      "/assets/images/kitchen/multi/19.webp",
-      "/assets/images/kitchen/multi/20.webp",
-      "/assets/images/kitchen/multi/21.webp"
-    ],
-    "shortDescription": "Modern Black L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Black L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Classic"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Raised / Large"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Black L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 11 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Raised / Large."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "signature-white-and-gold-l-shaped-kitchen",
+    "title": "Modern Dusty-Pink Kitchen with Warm Lighting",
+    "badge": "",
+    "size": "8 × 12 × 10",
+    "main_image": "/assets/images/kitchen/31.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and groove handles.",
+    "description": "Modern Dusty-Pink Kitchen with Warm Lighting pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 8 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 12 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 32,
-    "category": "luxury",
-    "series": "premium",
+    "category": "modern",
+    "series": "essential",
     "layout": "L-Shaped",
-    "slug": "natural-wood-l-shaped-kitchen",
-    "title": "Natural Wood L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/22.webp",
-    "images": [
-      "/assets/images/kitchen/multi/22.webp",
-      "/assets/images/kitchen/multi/23.webp"
-    ],
-    "shortDescription": "Natural Wood L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Natural Wood L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "signature-white-and-gold-island-kitchen",
+    "title": "Modern Gray Marble L-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 14",
+    "main_image": "/assets/images/kitchen/32.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Modern Gray Marble L-Shaped Kitchen pairs a L-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "12 × 14"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Natural Wood L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -1963,320 +2258,359 @@ export const kitchenDesigns = [
     "id": 33,
     "category": "modern",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "urban-grey-l-shaped-kitchen",
-    "title": "Urban Grey L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/24.webp",
-    "images": [
-      "/assets/images/kitchen/multi/24.webp",
-      "/assets/images/kitchen/multi/25.webp"
-    ],
-    "shortDescription": "Urban Grey L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Urban Grey L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "luxury-white-u-shaped-kitchen",
+    "title": "Modern Greige L-Shaped Kitchen (2)",
+    "badge": "",
+    "size": "11 × 13 × 8",
+    "main_image": "/assets/images/kitchen/33.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and gola handles.",
+    "description": "Modern Greige L-Shaped Kitchen (2) pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Gola. The listed dimensions are 11 × 13 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "11 × 13 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Urban Grey L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 11 × 13 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 34,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "elegant-beige-l-shaped-kitchen",
-    "title": "Elegant Beige L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/multi/26.webp",
-    "images": [
-      "/assets/images/kitchen/multi/26.webp",
-      "/assets/images/kitchen/multi/27.webp"
-    ],
-    "shortDescription": "Elegant Beige L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant Beige L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Elegant Beige L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 35,
-    "category": "classic",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "premium-white-l-shaped-kitchen",
-    "title": "Premium White L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/multi/28.webp",
-    "images": [
-      "/assets/images/kitchen/multi/28.webp",
-      "/assets/images/kitchen/multi/29.webp"
-    ],
-    "shortDescription": "Premium White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 36,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "modern-blue-l-shaped-kitchen",
-    "title": "Modern Blue L-Shaped Kitchen",
-    "badge": "",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/30.webp",
-    "images": [
-      "/assets/images/kitchen/multi/30.webp",
-      "/assets/images/kitchen/multi/31.webp"
-    ],
-    "shortDescription": "Modern Blue L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Blue L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Blue L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 37,
     "category": "modern",
     "series": "premium",
     "layout": "L-Shaped",
-    "slug": "walnut-and-white-l-shaped-kitchen",
-    "title": "Walnut & White L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/32.webp",
-    "images": [
-      "/assets/images/kitchen/multi/32.webp",
-      "/assets/images/kitchen/multi/33.webp",
-      "/assets/images/kitchen/multi/34.webp"
-    ],
-    "shortDescription": "Walnut & White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Walnut & White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "premium-compact-parallel-kitchen",
+    "title": "Modern Greige L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 13",
+    "main_image": "/assets/images/kitchen/34.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Acrylic finish specifications and gola handles.",
+    "description": "Modern Greige L-Shaped Kitchen pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Gola. The listed dimensions are 10 × 13. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 13"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Walnut & White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 13. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "luxury-white-and-gold-parallel-kitchen",
+    "title": "Modern Mauve U-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 11 × 12",
+    "main_image": "/assets/images/kitchen/35.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and groove handles.",
+    "description": "Modern Mauve U-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 12 × 11 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 11 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 11 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "modern",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "classic-grey-u-shaped-kitchen",
+    "title": "Modern Minimalist Gray and Cream Kitchen",
+    "badge": "",
+    "size": "9 × 14",
+    "main_image": "/assets/images/kitchen/36.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Modern Minimalist Gray and Cream Kitchen pairs a L-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 9 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "Straight",
+    "slug": "contemporary-walnut-parallel-kitchen",
+    "title": "Modern Mustard and Charcoal Kitchen",
+    "badge": "",
+    "size": "18",
+    "main_image": "/assets/images/kitchen/37.webp",
+    "shortDescription": "A contemporary Straight kitchen from the Premium collection, with Acrylic finish specifications and raised / large handles.",
+    "description": "Modern Mustard and Charcoal Kitchen pairs a Straight layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Raised / Large. The listed dimensions are 18. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Straight kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Raised / Large"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "18"
+      },
+      {
+        "label": "Layout",
+        "value": "Straight"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Raised / Large"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Straight kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Raised / Large."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -2285,450 +2619,502 @@ export const kitchenDesigns = [
     "category": "contemporary",
     "series": "premium",
     "layout": "L-Shaped",
-    "slug": "matte-grey-l-shaped-kitchen",
-    "title": "Matte Grey L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/35.webp",
-    "images": [
-      "/assets/images/kitchen/multi/35.webp",
-      "/assets/images/kitchen/multi/36.webp",
-      "/assets/images/kitchen/multi/37.webp"
-    ],
-    "shortDescription": "Matte Grey L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Matte Grey L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "contemporary-charcoal-parallel-kitchen",
+    "title": "Modern Mustard and Walnut L-Shaped Kitchen",
+    "badge": "",
+    "size": "13 × 8",
+    "main_image": "/assets/images/kitchen/38.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with Laminate / Veneer finish specifications and gola handles.",
+    "description": "Modern Mustard and Walnut L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate / Veneer, and the listed handle type is Gola. The listed dimensions are 13 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate / Veneer",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "13 × 8"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Matte Grey L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 13 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate / Veneer, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 39,
-    "category": "classic",
+    "category": "luxury",
     "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "classic-wooden-l-shaped-kitchen",
-    "title": "Classic Wooden L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/38.webp",
-    "images": [
-      "/assets/images/kitchen/multi/38.webp",
-      "/assets/images/kitchen/multi/39.webp",
-      "/assets/images/kitchen/multi/40.webp"
-    ],
-    "shortDescription": "Classic Wooden L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Wooden L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "Island",
+    "slug": "modern-matte-parallel-kitchen",
+    "title": "Modern Navy and Gold Luxury Kitchen",
+    "badge": "",
+    "size": "18 × 12",
+    "main_image": "/assets/images/kitchen/39.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with PU Paint finish specifications and gola handles.",
+    "description": "Modern Navy and Gold Luxury Kitchen pairs a Island layout with luxury styling in the Signature collection. The specified finish is PU Paint, and the listed handle type is Gola. The listed dimensions are 18 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "18 × 12"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
+        "label": "Style",
+        "value": "Luxury"
       },
       {
         "label": "Series",
         "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Wooden L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 40,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "luxury-black-and-gold-l-shaped-kitchen",
-    "title": "Luxury Black & Gold L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/41.webp",
-    "images": [
-      "/assets/images/kitchen/multi/41.webp",
-      "/assets/images/kitchen/multi/42.webp"
-    ],
-    "shortDescription": "Luxury Black & Gold L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Black & Gold L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "premium-marble-u-shaped-kitchen",
+    "title": "Modern Olive and Gold Luxury Kitchen",
+    "badge": "",
+    "size": "7 × 12 × 7",
+    "main_image": "/assets/images/kitchen/40.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Modern Olive and Gold Luxury Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 7 × 12 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "7 × 12 × 7"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Black & Gold L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 41,
-    "category": "modern",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "soft-beige-l-shaped-kitchen",
-    "title": "Soft Beige L-Shaped Kitchen",
-    "badge": "",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/43.webp",
-    "images": [
-      "/assets/images/kitchen/multi/43.webp",
-      "/assets/images/kitchen/multi/44.webp"
-    ],
-    "shortDescription": "Soft Beige L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Soft Beige L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Soft Beige L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 12 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 42,
+    "id": 41,
     "category": "contemporary",
     "series": "premium",
     "layout": "L-Shaped",
-    "slug": "modern-green-l-shaped-kitchen",
-    "title": "Modern Green L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/45.webp",
-    "images": [
-      "/assets/images/kitchen/multi/45.webp",
-      "/assets/images/kitchen/multi/46.webp"
-    ],
-    "shortDescription": "Modern Green L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Green L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "warm-beige-parallel-kitchen",
+    "title": "Modern Olive Green L-Shaped Kitchen",
+    "badge": "",
+    "size": "14 × 14",
+    "main_image": "/assets/images/kitchen/41.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with Acrylic finish specifications and mount handles.",
+    "description": "Modern Olive Green L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Mount. The listed dimensions are 14 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Green L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "category": "modern",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "elegant-cream-parallel-kitchen",
+    "title": "Modern Sage and Beige L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 8",
+    "main_image": "/assets/images/kitchen/42.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Acrylic finish specifications and groove handles.",
+    "description": "Modern Sage and Beige L-Shaped Kitchen pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Groove. The listed dimensions are 10 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 43,
-    "category": "classic",
+    "category": "contemporary",
     "series": "premium",
     "layout": "L-Shaped",
-    "slug": "contemporary-oak-l-shaped-kitchen",
-    "title": "Contemporary Oak L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/47.webp",
-    "images": [
-      "/assets/images/kitchen/multi/47.webp",
-      "/assets/images/kitchen/multi/48.webp",
-      "/assets/images/kitchen/multi/49.webp"
-    ],
-    "shortDescription": "Contemporary Oak L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Oak L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "minimal-white-u-shaped-kitchen",
+    "title": "Modern Sage and Marble L-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 13",
+    "main_image": "/assets/images/kitchen/43.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Modern Sage and Marble L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 12 × 13. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "12 × 13"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Oak L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 13. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 44,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "premium-walnut-l-shaped-kitchen",
-    "title": "Premium Walnut L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/multi/50.webp",
-    "images": [
-      "/assets/images/kitchen/multi/50.webp",
-      "/assets/images/kitchen/multi/51.webp",
-      "/assets/images/kitchen/multi/52.webp"
-    ],
-    "shortDescription": "Premium Walnut L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Walnut L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "warm-wood-u-shaped-kitchen",
+    "title": "Modern Sage and Wood Kitchen Retreat",
+    "badge": "",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/44.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Modern Sage and Wood Kitchen Retreat pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "10 × 12 × 10"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Walnut L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -2736,835 +3122,888 @@ export const kitchenDesigns = [
     "id": 45,
     "category": "modern",
     "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "minimal-black-l-shaped-kitchen",
-    "title": "Minimal Black L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/multi/53.webp",
-    "images": [
-      "/assets/images/kitchen/multi/53.webp",
-      "/assets/images/kitchen/multi/54.webp",
-      "/assets/images/kitchen/multi/55.webp"
-    ],
-    "shortDescription": "Minimal Black L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Minimal Black L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "modern-wood-island-kitchen",
+    "title": "Modern Sage Green Kitchen Interior-1",
+    "badge": "",
+    "size": "7 × 12 × 7",
+    "main_image": "/assets/images/kitchen/45.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Modern Sage Green Kitchen Interior-1 pairs a U-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 7 × 12 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "7 × 12 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Minimal Black L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 12 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 46,
-    "category": "contemporary",
+    "category": "modern",
     "series": "essential",
     "layout": "L-Shaped",
-    "slug": "classic-white-l-shaped-kitchen",
-    "title": "Classic White L-Shaped Kitchen",
+    "slug": "luxury-walnut-l-shaped-kitchen",
+    "title": "Modern Sage Green L-Shaped Kitchen (1)",
     "badge": "",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/56.webp",
-    "images": [
-      "/assets/images/kitchen/multi/56.webp",
-      "/assets/images/kitchen/multi/57.webp",
-      "/assets/images/kitchen/multi/58.webp"
-    ],
-    "shortDescription": "Classic White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "11 × 12",
+    "main_image": "/assets/images/kitchen/46.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Modern Sage Green L-Shaped Kitchen (1) pairs a L-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 11 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "11 × 12"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 11 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 47,
-    "category": "classic",
-    "series": "premium",
+    "category": "contemporary",
+    "series": "essential",
     "layout": "L-Shaped",
-    "slug": "modern-two-tone-l-shaped-kitchen",
-    "title": "Modern Two-Tone L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/59.webp",
-    "images": [
-      "/assets/images/kitchen/multi/59.webp",
-      "/assets/images/kitchen/multi/60.webp",
-      "/assets/images/kitchen/multi/61.webp"
-    ],
-    "shortDescription": "Modern Two-Tone L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Two-Tone L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "premium-white-island-kitchen",
+    "title": "Modern Sage Green L-Shaped Kitchen",
+    "badge": "",
+    "size": "14 × 9",
+    "main_image": "/assets/images/kitchen/47.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Modern Sage Green L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 14 × 9. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "14 × 9"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Two-Tone L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 9. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 48,
-    "category": "luxury",
+    "category": "modern",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "warm-oak-l-shaped-kitchen",
-    "title": "Warm Oak L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/62.webp",
-    "images": [
-      "/assets/images/kitchen/multi/62.webp",
-      "/assets/images/kitchen/multi/63.webp"
-    ],
-    "shortDescription": "Warm Oak L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Oak L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "premium-open-l-shaped-kitchen",
+    "title": "Modern Sage-Green Kitchen Interior",
+    "badge": "",
+    "size": "7 × 11 × 7",
+    "main_image": "/assets/images/kitchen/48.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and groove handles.",
+    "description": "Modern Sage-Green Kitchen Interior pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Groove. The listed dimensions are 7 × 11 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Groove"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "7 × 11 × 7"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Warm Oak L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 11 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 49,
     "category": "modern",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "luxury-white-l-shaped-kitchen",
-    "title": "Luxury White L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/64.webp",
-    "images": [
-      "/assets/images/kitchen/multi/64.webp",
-      "/assets/images/kitchen/multi/65.webp"
-    ],
-    "shortDescription": "Luxury White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "classic-white-island-kitchen",
+    "title": "Modern Sage-Green U-Shaped Kitchen",
+    "badge": "",
+    "size": "9 × 11 × 9",
+    "main_image": "/assets/images/kitchen/49.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Modern Sage-Green U-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 9 × 11 × 9. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 11 × 9"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 11 × 9. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 50,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "urban-compact-l-shaped-kitchen",
-    "title": "Urban Compact L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/66.webp",
-    "images": [
-      "/assets/images/kitchen/multi/66.webp",
-      "/assets/images/kitchen/multi/67.webp",
-      "/assets/images/kitchen/multi/68.webp"
-    ],
-    "shortDescription": "Urban Compact L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Urban Compact L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Urban Compact L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 51,
-    "category": "classic",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "premium-grey-l-shaped-kitchen",
-    "title": "Premium Grey L-Shaped Kitchen",
-    "badge": "",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/multi/69.webp",
-    "images": [
-      "/assets/images/kitchen/multi/69.webp",
-      "/assets/images/kitchen/multi/70.webp",
-      "/assets/images/kitchen/multi/71.webp"
-    ],
-    "shortDescription": "Premium Grey L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Grey L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Grey L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 52,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "modern-wood-and-white-l-shaped-kitchen",
-    "title": "Modern Wood & White L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/72.webp",
-    "images": [
-      "/assets/images/kitchen/multi/72.webp",
-      "/assets/images/kitchen/multi/73.webp"
-    ],
-    "shortDescription": "Modern Wood & White L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Wood & White L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Wood & White L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 53,
     "category": "modern",
-    "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "contemporary-beige-l-shaped-kitchen",
-    "title": "Contemporary Beige L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/multi/74.webp",
-    "images": [
-      "/assets/images/kitchen/multi/74.webp",
-      "/assets/images/kitchen/multi/75.webp"
-    ],
-    "shortDescription": "Contemporary Beige L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Beige L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "classic-walnut-u-shaped-kitchen",
+    "title": "Modern Warm-Toned U-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 11 × 10",
+    "main_image": "/assets/images/kitchen/50.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Modern Warm-Toned U-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 11 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 11 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
-      },
-      {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Beige L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 11 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "category": "",
+    "series": "",
+    "layout": "",
+    "slug": "luxury-walnut-island-kitchen",
+    "title": "Modular Kitchen Collection Gallery",
+    "badge": "",
+    "size": "",
+    "main_image": "/assets/images/kitchen/51.webp",
+    "shortDescription": "Explore Modular Kitchen Collection Gallery and contact ECON Kitchen to discuss your kitchen requirements.",
+    "description": "Modular Kitchen Collection Gallery is part of the ECON Kitchen design gallery. Contact the team to confirm the layout, dimensions, finish and handle options before requesting a quotation.",
+    "features": [],
+    "specifications": [],
+    "faqs": [
+      {
+        "question": "How can I confirm the specifications for this design?",
+        "answer": "Share this design link and your site measurements with ECON Kitchen to confirm the layout, size, finish and handle options."
+      },
+      {
+        "question": "How can I request a quotation?",
+        "answer": "Contact ECON Kitchen with this design link and your requirements to request an itemised quotation."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "luxury-natural-wood-island-kitchen",
+    "title": "Olive Green Luxury Kitchen",
+    "badge": "",
+    "size": "14 × 13 × 7",
+    "main_image": "/assets/images/kitchen/52.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with Acrylic finish specifications and gola handles.",
+    "description": "Olive Green Luxury Kitchen pairs a Island layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Gola. The listed dimensions are 14 × 13 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Gola"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 13 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 13 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Gola."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "category": "classic",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "elegant-oak-parallel-kitchen",
+    "title": "Pastel Blue L-Shaped Kitchen Retreat",
+    "badge": "",
+    "size": "14 × 11",
+    "main_image": "/assets/images/kitchen/53.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Pastel Blue L-Shaped Kitchen Retreat pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 14 × 11. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 11"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 11. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 54,
     "category": "contemporary",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "classic-walnut-l-shaped-kitchen",
-    "title": "Classic Walnut L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/multi/76.webp",
-    "images": [
-      "/assets/images/kitchen/multi/76.webp",
-      "/assets/images/kitchen/multi/77.webp",
-      "/assets/images/kitchen/multi/78.webp"
-    ],
-    "shortDescription": "Classic Walnut L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Walnut L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "modern-wood-parallel-kitchen",
+    "title": "Photorealistic U-Shaped Beige Kitchen",
+    "badge": "",
+    "size": "12 × 10 × 10",
+    "main_image": "/assets/images/kitchen/54.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Photorealistic U-Shaped Beige Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 12 × 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 10 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Walnut L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 55,
-    "category": "classic",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "signature-marble-l-shaped-kitchen",
-    "title": "Signature Marble L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/multi/79.webp",
-    "images": [
-      "/assets/images/kitchen/multi/79.webp",
-      "/assets/images/kitchen/multi/80.webp",
-      "/assets/images/kitchen/multi/81.webp"
-    ],
-    "shortDescription": "Signature Marble L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature Marble L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "contemporary-beige-island-kitchen",
+    "title": "Sage Green and Cream Kitchen Retreat",
+    "badge": "",
+    "size": "7 × 14 × 7",
+    "main_image": "/assets/images/kitchen/55.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Sage Green and Cream Kitchen Retreat pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 7 × 14 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "7 × 14 × 7"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Signature Marble L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 14 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 56,
-    "category": "luxury",
-    "series": "essential",
+    "category": "modern",
+    "series": "premium",
     "layout": "L-Shaped",
-    "slug": "modern-charcoal-l-shaped-kitchen",
-    "title": "Modern Charcoal L-Shaped Kitchen",
+    "slug": "premium-grey-u-shaped-kitchen",
+    "title": "Sage Green L-Shaped Kitchen (2)",
     "badge": "",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/multi/82.webp",
-    "images": [
-      "/assets/images/kitchen/multi/82.webp",
-      "/assets/images/kitchen/multi/83.webp",
-      "/assets/images/kitchen/multi/84.webp"
-    ],
-    "shortDescription": "Modern Charcoal L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Charcoal L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "12 × 12",
+    "main_image": "/assets/images/kitchen/56.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with PU Paint finish specifications and gola handles.",
+    "description": "Sage Green L-Shaped Kitchen (2) pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Gola. The listed dimensions are 12 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "12 × 12"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Charcoal L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 57,
-    "category": "modern",
-    "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "elegant-white-and-wood-l-shaped-kitchen",
-    "title": "Elegant White & Wood L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/1.webp",
-    "shortDescription": "Elegant White & Wood L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant White & Wood L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Elegant White & Wood L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "classic-white-u-shaped-kitchen",
+    "title": "Sage Green L-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 12 × 12",
+    "main_image": "/assets/images/kitchen/57.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Sage Green L-Shaped Kitchen pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 12 × 12 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 12 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 12 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -3572,1199 +4011,1439 @@ export const kitchenDesigns = [
     "id": 58,
     "category": "contemporary",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "premium-dark-wood-l-shaped-kitchen",
-    "title": "Premium Dark Wood L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/2.webp",
-    "shortDescription": "Premium Dark Wood L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Dark Wood L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "contemporary-walnut-u-shaped-kitchen",
+    "title": "Sage Green U-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 9 × 12",
+    "main_image": "/assets/images/kitchen/58.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Sage Green U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 12 × 9 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 9 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Dark Wood L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 9 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 59,
-    "category": "classic",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "contemporary-sage-l-shaped-kitchen",
-    "title": "Contemporary Sage L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/3.webp",
-    "shortDescription": "Contemporary Sage L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Sage L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "classic-wooden-island-kitchen",
+    "title": "Scandinavian U-Shaped Kitchen Retreat",
+    "badge": "",
+    "size": "12 × 12 × 12",
+    "main_image": "/assets/images/kitchen/59.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Scandinavian U-Shaped Kitchen Retreat pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 12 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "12 × 12 × 12"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Sage L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 12 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 60,
     "category": "luxury",
-    "series": "essential",
-    "layout": "L-Shaped",
-    "slug": "luxury-walnut-l-shaped-kitchen",
-    "title": "Luxury Walnut L-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/4.webp",
-    "shortDescription": "Luxury Walnut L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Walnut L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "classic-walnut-parallel-kitchen",
+    "title": "Signature Walnut Kitchen Retreat",
+    "badge": "",
+    "size": "20",
+    "main_image": "/assets/images/kitchen/60.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with Acrylic / Veneer finish specifications and profile handles.",
+    "description": "Signature Walnut Kitchen Retreat pairs a Island layout with luxury styling in the Signature collection. The specified finish is Acrylic / Veneer, and the listed handle type is Profile. The listed dimensions are 20. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: Acrylic / Veneer",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "20"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Luxury"
       },
       {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury Walnut L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 20. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic / Veneer, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 61,
     "category": "modern",
-    "series": "essential",
+    "series": "premium",
     "layout": "L-Shaped",
-    "slug": "modern-ivory-l-shaped-kitchen",
-    "title": "Modern Ivory L-Shaped Kitchen",
+    "slug": "luxury-dark-wood-island-kitchen",
+    "title": "Sleek Cream and Black L-Shaped Kitchen",
     "badge": "",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/5.webp",
-    "shortDescription": "Modern Ivory L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Ivory L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "10 × 12",
+    "main_image": "/assets/images/kitchen/61.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Sleek Cream and Black L-Shaped Kitchen pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "10 × 12"
       },
       {
         "label": "Layout",
         "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Ivory L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 62,
-    "category": "contemporary",
+    "category": "modern",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "classic-grey-l-shaped-kitchen",
-    "title": "Classic Grey L-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/6.webp",
-    "shortDescription": "Classic Grey L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Grey L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "Island",
+    "slug": "classic-wooden-parallel-kitchen",
+    "title": "Symmetrical Modern Luxury Galley Kitchen",
+    "badge": "",
+    "size": "14 × 10 × 14",
+    "main_image": "/assets/images/kitchen/62.webp",
+    "shortDescription": "A modern Island kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Symmetrical Modern Luxury Galley Kitchen pairs a Island layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 14 × 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
+      "Island kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "14 × 10 × 14"
       },
       {
         "label": "Layout",
-        "value": "L-Shaped"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Grey L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 63,
-    "category": "classic",
+    "category": "contemporary",
     "series": "premium",
-    "layout": "L-Shaped",
-    "slug": "signature-white-and-gold-l-shaped-kitchen",
-    "title": "Signature White & Gold L-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/7.webp",
-    "shortDescription": "Signature White & Gold L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature White & Gold L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature White & Gold L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 64,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "L-Shaped",
-    "slug": "premium-open-l-shaped-kitchen",
-    "title": "Premium Open L-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/8.webp",
-    "shortDescription": "Premium Open L-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Open L-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient corner space utilisation"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "L-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Open L-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 65,
-    "category": "modern",
-    "series": "essential",
     "layout": "U-Shaped",
-    "slug": "modern-white-u-shaped-kitchen",
-    "title": "Modern White U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/9.webp",
-    "shortDescription": "Modern White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "modern-two-tone-island-kitchen",
+    "title": "Symmetrical Sage-Green Luxury Kitchen",
+    "badge": "",
+    "size": "14 × 14 × 14",
+    "main_image": "/assets/images/kitchen/63.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Acrylic finish specifications and groove handles.",
+    "description": "Symmetrical Sage-Green Luxury Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Groove. The listed dimensions are 14 × 14 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Groove"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "14 × 14 × 14"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 14 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "luxury-marble-parallel-kitchen",
+    "title": "Teal and White L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/64.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Teal and White L-Shaped Kitchen pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 12 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "category": "classic",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "modern-grey-u-shaped-kitchen",
+    "title": "Warm Beige Kitchen with Rattan Accents",
+    "badge": "",
+    "size": "9 × 10 × 5",
+    "main_image": "/assets/images/kitchen/65.webp",
+    "shortDescription": "A classic Island kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Beige Kitchen with Rattan Accents pairs a Island layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 9 × 10 × 5. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 10 × 5"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 10 × 5. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 66,
     "category": "contemporary",
-    "series": "essential",
+    "series": "premium",
     "layout": "U-Shaped",
-    "slug": "contemporary-walnut-u-shaped-kitchen",
-    "title": "Contemporary Walnut U-Shaped Kitchen",
+    "slug": "contemporary-sage-l-shaped-kitchen",
+    "title": "Warm Beige L-Shaped Kitchen Retreat",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/10.webp",
-    "shortDescription": "Contemporary Walnut U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Walnut U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/66.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Beige L-Shaped Kitchen Retreat pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "10 × 12 × 10"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Walnut U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 67,
-    "category": "classic",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "classic-cream-u-shaped-kitchen",
-    "title": "Classic Cream U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/11.webp",
-    "shortDescription": "Classic Cream U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Cream U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Cream U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 68,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "luxury-marble-u-shaped-kitchen",
-    "title": "Luxury Marble U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/12.webp",
-    "shortDescription": "Luxury Marble U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Marble U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Marble U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 69,
-    "category": "modern",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "modern-grey-u-shaped-kitchen",
-    "title": "Modern Grey U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/13.webp",
-    "shortDescription": "Modern Grey U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Grey U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Grey U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 70,
     "category": "contemporary",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "premium-black-u-shaped-kitchen",
-    "title": "Premium Black U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/14.webp",
-    "shortDescription": "Premium Black U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Black U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "premium-oak-island-kitchen",
+    "title": "Warm Blush-Pink L-Shaped Kitchen",
+    "badge": "",
+    "size": "8 × 8",
+    "main_image": "/assets/images/kitchen/67.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with Laminate finish specifications and mount handles.",
+    "description": "Warm Blush-Pink L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 8 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Black U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 71,
-    "category": "classic",
-    "series": "essential",
+    "id": 68,
+    "category": "contemporary",
+    "series": "premium",
     "layout": "U-Shaped",
-    "slug": "warm-wood-u-shaped-kitchen",
-    "title": "Warm Wood U-Shaped Kitchen",
+    "slug": "natural-oak-u-shaped-kitchen",
+    "title": "Warm Greige L-Shaped Kitchen Dining Space",
     "badge": "",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/15.webp",
-    "shortDescription": "Warm Wood U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Wood U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/68.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with PU Paint finish specifications and inbuilt handles.",
+    "description": "Warm Greige L-Shaped Kitchen Dining Space pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Inbuilt. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Inbuilt"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 12 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Inbuilt"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Inbuilt."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "category": "classic",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "modern-charcoal-island-kitchen",
+    "title": "Warm Greige L-Shaped Kitchen",
+    "badge": "",
+    "size": "7 × 10",
+    "main_image": "/assets/images/kitchen/69.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Greige L-Shaped Kitchen pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 7 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "7 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Classic"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Warm Wood U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "category": "modern",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "premium-beige-island-kitchen",
+    "title": "Warm Greige Luxury Kitchen (2)",
+    "badge": "",
+    "size": "14 × 10 × 14",
+    "main_image": "/assets/images/kitchen/70.webp",
+    "shortDescription": "A modern Island kitchen from the Premium collection, with Acrylic finish specifications and profile handles.",
+    "description": "Warm Greige Luxury Kitchen (2) pairs a Island layout with modern styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Profile. The listed dimensions are 14 × 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 10 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "premium-dark-wood-parallel-kitchen",
+    "title": "Warm L-Shaped Kitchen Elegance",
+    "badge": "",
+    "size": "16 × 12 × 16",
+    "main_image": "/assets/images/kitchen/71.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm L-Shaped Kitchen Elegance pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 16 × 12 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "16 × 12 × 16"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 12 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 72,
     "category": "luxury",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "minimal-white-u-shaped-kitchen",
-    "title": "Minimal White U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/16.webp",
-    "shortDescription": "Minimal White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Minimal White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "contemporary-white-u-shaped-kitchen",
+    "title": "Warm Luxury Kitchen with Garden Views",
+    "badge": "",
+    "size": "18",
+    "main_image": "/assets/images/kitchen/72.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with Laminate / Acrylic finish specifications and profile handles.",
+    "description": "Warm Luxury Kitchen with Garden Views pairs a Island layout with luxury styling in the Signature collection. The specified finish is Laminate / Acrylic, and the listed handle type is Profile. The listed dimensions are 18. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: Laminate / Acrylic",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "18"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Luxury"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
         "label": "Series",
-        "value": "Premium"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate / Acrylic"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Minimal White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate / Acrylic, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 73,
-    "category": "modern",
+    "category": "contemporary",
     "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "classic-walnut-u-shaped-kitchen",
-    "title": "Classic Walnut U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/17.webp",
-    "shortDescription": "Classic Walnut U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Walnut U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "L-Shaped",
+    "slug": "premium-marble-island-kitchen",
+    "title": "Warm Luxury L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 10",
+    "main_image": "/assets/images/kitchen/73.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Warm Luxury L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "10 × 10"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Walnut U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 74,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "luxury-white-u-shaped-kitchen",
-    "title": "Luxury White U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/18.webp",
-    "shortDescription": "Luxury White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 75,
-    "category": "classic",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "modern-blue-u-shaped-kitchen",
-    "title": "Modern Blue U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/19.webp",
-    "shortDescription": "Modern Blue U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Blue U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Blue U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 76,
+    "id": 74,
     "category": "luxury",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "contemporary-beige-u-shaped-kitchen",
-    "title": "Contemporary Beige U-Shaped Kitchen",
+    "series": "signature",
+    "layout": "Island",
+    "slug": "premium-black-parallel-kitchen",
+    "title": "Warm Luxury U-Shaped Kitchen",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/20.webp",
-    "shortDescription": "Contemporary Beige U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Beige U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "16 × 12 × 16",
+    "main_image": "/assets/images/kitchen/74.webp",
+    "shortDescription": "A luxury Island kitchen from the Signature collection, with Acrylic / Veneer finish specifications and profile handles.",
+    "description": "Warm Luxury U-Shaped Kitchen pairs a Island layout with luxury styling in the Signature collection. The specified finish is Acrylic / Veneer, and the listed handle type is Profile. The listed dimensions are 16 × 12 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Luxury design style",
+      "Signature collection",
+      "Finish specified: Acrylic / Veneer",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "16 × 12 × 16"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Luxury"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Beige U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 12 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Luxury styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic / Veneer, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 77,
+    "id": 75,
     "category": "modern",
     "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "premium-grey-u-shaped-kitchen",
-    "title": "Premium Grey U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/21.webp",
-    "shortDescription": "Premium Grey U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Grey U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "L-Shaped",
+    "slug": "contemporary-oak-island-kitchen",
+    "title": "Warm Minimalist Beige Kitchen (1)",
+    "badge": "",
+    "size": "10 × 14",
+    "main_image": "/assets/images/kitchen/75.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Minimalist Beige Kitchen (1) pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Grey U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "category": "modern",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "modern-white-u-shaped-kitchen",
+    "title": "Warm Minimalist Blue L-Shaped Kitchen-1",
+    "badge": "",
+    "size": "10 × 7",
+    "main_image": "/assets/images/kitchen/76.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Premium collection, with Laminate finish specifications and raised handles.",
+    "description": "Warm Minimalist Blue L-Shaped Kitchen-1 pairs a L-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Raised. The listed dimensions are 10 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Raised"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Raised"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Raised."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "luxury-grey-u-shaped-kitchen",
+    "title": "Warm Minimalist Kitchen with Marble Island",
+    "badge": "",
+    "size": "10 × 16 × 10",
+    "main_image": "/assets/images/kitchen/77.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with Acrylic finish specifications and groove handles.",
+    "description": "Warm Minimalist Kitchen with Marble Island pairs a Island layout with contemporary styling in the Premium collection. The specified finish is Acrylic, and the listed handle type is Groove. The listed dimensions are 10 × 16 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Acrylic",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 16 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 16 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -4772,239 +5451,287 @@ export const kitchenDesigns = [
     "id": 78,
     "category": "contemporary",
     "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "natural-oak-u-shaped-kitchen",
-    "title": "Natural Oak U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/22.webp",
-    "shortDescription": "Natural Oak U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Natural Oak U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "Island",
+    "slug": "elegant-cream-u-shaped-kitchen",
+    "title": "Warm Minimalist Kitchen with Marble Island-1",
+    "badge": "",
+    "size": "16 × 16",
+    "main_image": "/assets/images/kitchen/78.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Warm Minimalist Kitchen with Marble Island-1 pairs a Island layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 16 × 16. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "16 × 16"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Natural Oak U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 16 × 16. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 79,
-    "category": "classic",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "classic-white-u-shaped-kitchen",
-    "title": "Classic White U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/23.webp",
-    "shortDescription": "Classic White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "luxury-white-and-gold-u-shaped-kitchen",
+    "title": "Warm Minimalist L-Shaped Kitchen (1)",
+    "badge": "",
+    "size": "10 × 8",
+    "main_image": "/assets/images/kitchen/79.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist L-Shaped Kitchen (1) pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "10 × 8"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 80,
-    "category": "luxury",
+    "category": "modern",
     "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "luxury-black-and-gold-u-shaped-kitchen",
-    "title": "Luxury Black & Gold U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/24.webp",
-    "shortDescription": "Luxury Black & Gold U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Black & Gold U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "L-Shaped",
+    "slug": "premium-grey-island-kitchen",
+    "title": "Warm Minimalist L-Shaped Kitchen (2)",
+    "badge": "",
+    "size": "9 × 7",
+    "main_image": "/assets/images/kitchen/80.webp",
+    "shortDescription": "A modern L-Shaped kitchen from the Essential collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Minimalist L-Shaped Kitchen (2) pairs a L-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 9 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "9 × 7"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Black & Gold U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 81,
-    "category": "modern",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "modern-wood-u-shaped-kitchen",
-    "title": "Modern Wood U-Shaped Kitchen",
-    "badge": "",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/25.webp",
-    "shortDescription": "Modern Wood U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Wood U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
-      },
-      {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Wood U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "modern-ivory-u-shaped-kitchen",
+    "title": "Warm Minimalist L-Shaped Kitchen (3)",
+    "badge": "",
+    "size": "10 × 8",
+    "main_image": "/assets/images/kitchen/81.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Minimalist L-Shaped Kitchen (3) pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 10 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -5013,238 +5740,286 @@ export const kitchenDesigns = [
     "category": "contemporary",
     "series": "premium",
     "layout": "U-Shaped",
-    "slug": "elegant-cream-u-shaped-kitchen",
-    "title": "Elegant Cream U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/26.webp",
-    "shortDescription": "Elegant Cream U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant Cream U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "elegant-white-and-wood-l-shaped-kitchen",
+    "title": "Warm Minimalist L-Shaped Kitchen (4)",
+    "badge": "",
+    "size": "8 × 12 × 8",
+    "main_image": "/assets/images/kitchen/82.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and groove handles.",
+    "description": "Warm Minimalist L-Shaped Kitchen (4) pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Groove. The listed dimensions are 8 × 12 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Groove"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 12 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Elegant Cream U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 12 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 83,
-    "category": "classic",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "contemporary-charcoal-u-shaped-kitchen",
-    "title": "Contemporary Charcoal U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/27.webp",
-    "shortDescription": "Contemporary Charcoal U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Charcoal U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "luxury-walnut-parallel-kitchen",
+    "title": "Warm Minimalist L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 8",
+    "main_image": "/assets/images/kitchen/83.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "10 × 8"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Charcoal U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 84,
-    "category": "luxury",
-    "series": "signature",
+    "category": "modern",
+    "series": "essential",
     "layout": "U-Shaped",
-    "slug": "premium-walnut-u-shaped-kitchen",
-    "title": "Premium Walnut U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/28.webp",
-    "shortDescription": "Premium Walnut U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Walnut U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "contemporary-grey-island-kitchen",
+    "title": "Warm Minimalist U-Shaped Kitchen (1)",
+    "badge": "",
+    "size": "12 × 10 × 12",
+    "main_image": "/assets/images/kitchen/84.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist U-Shaped Kitchen (1) pairs a U-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 10 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "12 × 10 × 12"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Walnut U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 85,
-    "category": "modern",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "modern-matte-u-shaped-kitchen",
-    "title": "Modern Matte U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/29.webp",
-    "shortDescription": "Modern Matte U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Matte U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Matte U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 10 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "signature-marble-island-kitchen",
+    "title": "Warm Minimalist U-Shaped Kitchen (2)",
+    "badge": "",
+    "size": "14 × 10 × 14",
+    "main_image": "/assets/images/kitchen/85.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist U-Shaped Kitchen (2) pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 14 × 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 10 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -5253,238 +6028,286 @@ export const kitchenDesigns = [
     "category": "contemporary",
     "series": "essential",
     "layout": "U-Shaped",
-    "slug": "classic-wooden-u-shaped-kitchen",
-    "title": "Classic Wooden U-Shaped Kitchen",
+    "slug": "contemporary-white-parallel-kitchen",
+    "title": "Warm Minimalist U-Shaped Kitchen (3)",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/30.webp",
-    "shortDescription": "Classic Wooden U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Wooden U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/86.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Minimalist U-Shaped Kitchen (3) pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 12 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Wooden U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 87,
-    "category": "classic",
-    "series": "premium",
+    "category": "contemporary",
+    "series": "essential",
     "layout": "U-Shaped",
-    "slug": "luxury-grey-u-shaped-kitchen",
-    "title": "Luxury Grey U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/31.webp",
-    "shortDescription": "Luxury Grey U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Grey U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "modern-blue-parallel-kitchen",
+    "title": "Warm Minimalist U-Shaped Kitchen (4)",
+    "badge": "",
+    "size": "10 × 12 × 10",
+    "main_image": "/assets/images/kitchen/87.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Minimalist U-Shaped Kitchen (4) pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 10 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "10 × 12 × 10"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury Grey U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 88,
-    "category": "luxury",
-    "series": "premium",
+    "category": "contemporary",
+    "series": "essential",
     "layout": "U-Shaped",
-    "slug": "urban-white-u-shaped-kitchen",
-    "title": "Urban White U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/32.webp",
-    "shortDescription": "Urban White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Urban White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "modern-matte-black-island-kitchen",
+    "title": "Warm Minimalist U-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 10 × 12",
+    "main_image": "/assets/images/kitchen/88.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist U-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 10 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "12 × 10 × 12"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Urban White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 10 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 89,
-    "category": "modern",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "warm-beige-u-shaped-kitchen",
-    "title": "Warm Beige U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/33.webp",
-    "shortDescription": "Warm Beige U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Beige U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "premium-open-u-shaped-kitchen",
+    "title": "Warm Minimalist Walnut Kitchen",
+    "badge": "",
+    "size": "8 × 10",
+    "main_image": "/assets/images/kitchen/89.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Minimalist Walnut Kitchen pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 8 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "8 × 10"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Warm Beige U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -5493,718 +6316,862 @@ export const kitchenDesigns = [
     "category": "contemporary",
     "series": "essential",
     "layout": "U-Shaped",
-    "slug": "premium-marble-u-shaped-kitchen",
-    "title": "Premium Marble U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/34.webp",
-    "shortDescription": "Premium Marble U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Marble U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "urban-white-u-shaped-kitchen",
+    "title": "Warm Modern Blue Kitchen",
+    "badge": "",
+    "size": "6 × 12 × 6",
+    "main_image": "/assets/images/kitchen/90.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern Blue Kitchen pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 6 × 12 × 6. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "6 × 12 × 6"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Marble U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 6 × 12 × 6. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 91,
-    "category": "classic",
+    "category": "modern",
     "series": "essential",
     "layout": "U-Shaped",
-    "slug": "modern-black-u-shaped-kitchen",
-    "title": "Modern Black U-Shaped Kitchen",
+    "slug": "classic-cream-island-kitchen",
+    "title": "Warm Modern Ivory and Walnut Kitchen",
     "badge": "",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/35.webp",
-    "shortDescription": "Modern Black U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Black U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "7 × 13 × 7",
+    "main_image": "/assets/images/kitchen/91.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern Ivory and Walnut Kitchen pairs a U-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 7 × 13 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "7 × 13 × 7"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
+        "label": "Style",
+        "value": "Modern"
       },
       {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Black U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 13 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 92,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "contemporary-white-u-shaped-kitchen",
-    "title": "Contemporary White U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/36.webp",
-    "shortDescription": "Contemporary White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 93,
-    "category": "modern",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "classic-grey-u-shaped-kitchen",
-    "title": "Classic Grey U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/37.webp",
-    "shortDescription": "Classic Grey U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Grey U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Grey U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 94,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "luxury-walnut-u-shaped-kitchen",
-    "title": "Luxury Walnut U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/38.webp",
-    "shortDescription": "Luxury Walnut U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Walnut U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Walnut U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 95,
     "category": "classic",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "modern-two-tone-u-shaped-kitchen",
-    "title": "Modern Two-Tone U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/39.webp",
-    "shortDescription": "Modern Two-Tone U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Two-Tone U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "warm-beige-u-shaped-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen (1)",
+    "badge": "",
+    "size": "9 × 8",
+    "main_image": "/assets/images/kitchen/92.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Modern L-Shaped Kitchen (1) pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 9 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Classic"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Two-Tone U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 96,
-    "category": "luxury",
+    "id": 93,
+    "category": "contemporary",
     "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "signature-white-u-shaped-kitchen",
-    "title": "Signature White U-Shaped Kitchen",
+    "layout": "Island",
+    "slug": "contemporary-charcoal-u-shaped-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen (2)",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/40.webp",
-    "shortDescription": "Signature White U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature White U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "9 × 7 × 5",
+    "main_image": "/assets/images/kitchen/93.webp",
+    "shortDescription": "A contemporary Island kitchen from the Essential collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Modern L-Shaped Kitchen (2) pairs a Island layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 9 × 7 × 5. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 7 × 5"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
-        "value": "Luxury"
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 7 × 5. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "category": "modern",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "modern-black-u-shaped-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen (3)",
+    "badge": "",
+    "size": "10 × 10 × 10",
+    "main_image": "/assets/images/kitchen/94.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Warm Modern L-Shaped Kitchen (3) pairs a U-Shaped layout with modern styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 10 × 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 10 × 10"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature White U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 97,
-    "category": "modern",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "premium-dark-wood-u-shaped-kitchen",
-    "title": "Premium Dark Wood U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "12 × 11 ft",
-    "main_image": "/assets/images/kitchen/41.webp",
-    "shortDescription": "Premium Dark Wood U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Dark Wood U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
-    ],
-    "specifications": [
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Dark Wood U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "modern-blue-u-shaped-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen (4)",
+    "badge": "",
+    "size": "12 × 8 × 8",
+    "main_image": "/assets/images/kitchen/95.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern L-Shaped Kitchen (4) pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 8 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 8 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 8 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "modern-two-tone-parallel-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen (5)",
+    "badge": "",
+    "size": "10 × 7",
+    "main_image": "/assets/images/kitchen/96.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern L-Shaped Kitchen (5) pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "modern-ivory-parallel-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen Interior",
+    "badge": "",
+    "size": "7 × 12 × 7",
+    "main_image": "/assets/images/kitchen/97.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern L-Shaped Kitchen Interior pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 7 × 12 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "7 × 12 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 12 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 98,
     "category": "contemporary",
-    "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "contemporary-green-u-shaped-kitchen",
-    "title": "Contemporary Green U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 11 ft",
-    "main_image": "/assets/images/kitchen/42.webp",
-    "shortDescription": "Contemporary Green U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Green U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "signature-white-u-shaped-kitchen",
+    "title": "Warm Modern L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 8",
+    "main_image": "/assets/images/kitchen/98.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern L-Shaped Kitchen pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "U-Shaped"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Premium"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Green U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 99,
-    "category": "classic",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "elegant-oak-u-shaped-kitchen",
-    "title": "Elegant Oak U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/43.webp",
-    "shortDescription": "Elegant Oak U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant Oak U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "warm-wood-parallel-kitchen",
+    "title": "Warm Modern Walnut Kitchen (1)",
+    "badge": "",
+    "size": "12 × 9",
+    "main_image": "/assets/images/kitchen/99.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Modern Walnut Kitchen (1) pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 9. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "12 × 9"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Elegant Oak U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 9. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 100,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "U-Shaped",
-    "slug": "modern-ivory-u-shaped-kitchen",
-    "title": "Modern Ivory U-Shaped Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/44.webp",
-    "shortDescription": "Modern Ivory U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Ivory U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "classic",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "modern-black-parallel-kitchen",
+    "title": "Warm Neutral L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 10",
+    "main_image": "/assets/images/kitchen/100.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Neutral L-Shaped Kitchen pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "10 × 10"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
+        "label": "Style",
+        "value": "Classic"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Ivory U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 101,
-    "category": "modern",
-    "series": "essential",
+    "category": "contemporary",
+    "series": "premium",
     "layout": "U-Shaped",
-    "slug": "luxury-white-and-gold-u-shaped-kitchen",
-    "title": "Luxury White & Gold U-Shaped Kitchen",
+    "slug": "premium-black-u-shaped-kitchen",
+    "title": "Warm Neutral Luxury L-Shaped Kitchen",
     "badge": "",
-    "size": "15 × 12 ft",
-    "main_image": "/assets/images/kitchen/45.webp",
-    "shortDescription": "Luxury White & Gold U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White & Gold U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "12 × 16 × 12",
+    "main_image": "/assets/images/kitchen/101.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and mount handles.",
+    "description": "Warm Neutral Luxury L-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 12 × 16 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Modern"
+        "label": "Size",
+        "value": "12 × 16 × 12"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "15 × 12 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury White & Gold U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 16 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -6213,1198 +7180,1438 @@ export const kitchenDesigns = [
     "category": "contemporary",
     "series": "premium",
     "layout": "U-Shaped",
-    "slug": "classic-beige-u-shaped-kitchen",
-    "title": "Classic Beige U-Shaped Kitchen",
-    "badge": "FEATURED",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/46.webp",
-    "shortDescription": "Classic Beige U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Beige U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "slug": "urban-white-parallel-kitchen",
+    "title": "Warm Olive and Cream Kitchen",
+    "badge": "",
+    "size": "7 × 15 × 7",
+    "main_image": "/assets/images/kitchen/102.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Olive and Cream Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 7 × 15 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "7 × 15 × 7"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Beige U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 15 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 103,
-    "category": "classic",
+    "category": "contemporary",
     "series": "premium",
-    "layout": "U-Shaped",
-    "slug": "signature-marble-u-shaped-kitchen",
-    "title": "Signature Marble U-Shaped Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/47.webp",
-    "shortDescription": "Signature Marble U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature Marble U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "Island",
+    "slug": "signature-grey-island-kitchen",
+    "title": "Warm Olive Green Luxury Kitchen",
+    "badge": "",
+    "size": "18 × 14 × 18",
+    "main_image": "/assets/images/kitchen/103.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Olive Green Luxury Kitchen pairs a Island layout with contemporary styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 18 × 14 × 18. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "18 × 14 × 18"
       },
       {
         "label": "Layout",
-        "value": "U-Shaped"
+        "value": "Island"
       },
       {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Signature Marble U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 14 × 18. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 104,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "U-Shaped",
-    "slug": "premium-open-u-shaped-kitchen",
-    "title": "Premium Open U-Shaped Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/48.webp",
-    "shortDescription": "Premium Open U-Shaped Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Open U-Shaped Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "classic-grey-parallel-kitchen",
+    "title": "Warm Olive-Tiled L-Shaped Kitchen",
+    "badge": "",
+    "size": "10 × 10 × 10",
+    "main_image": "/assets/images/kitchen/104.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with Laminate finish specifications and mount handles.",
+    "description": "Warm Olive-Tiled L-Shaped Kitchen pairs a Island layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 10 × 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Three-sided functional workspace"
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
+        "label": "Size",
+        "value": "10 × 10 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
         "label": "Style",
-        "value": "Luxury"
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "classic-cream-u-shaped-kitchen",
+    "title": "Warm Rustic L-Shaped Kitchen Interior (1)",
+    "badge": "",
+    "size": "9 × 9 × 9",
+    "main_image": "/assets/images/kitchen/105.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Rustic L-Shaped Kitchen Interior (1) pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 9 × 9 × 9. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 9 × 9"
       },
       {
         "label": "Layout",
         "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Open U-Shaped Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 105,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-white-parallel-kitchen",
-    "title": "Modern White Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "9 × 8 ft",
-    "main_image": "/assets/images/kitchen/49.webp",
-    "shortDescription": "Modern White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
         "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "9 × 8 ft"
+        "value": "Classic"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 9 × 9. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 106,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "contemporary-walnut-parallel-kitchen",
-    "title": "Contemporary Walnut Parallel Kitchen",
+    "category": "classic",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "classic-wooden-u-shaped-kitchen",
+    "title": "Warm Rustic Olive Kitchen",
     "badge": "",
-    "size": "10 × 8 ft",
-    "main_image": "/assets/images/kitchen/50.webp",
-    "shortDescription": "Contemporary Walnut Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Walnut Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "15 × 10",
+    "main_image": "/assets/images/kitchen/106.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Rustic Olive Kitchen pairs a L-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 15 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Contemporary"
+        "label": "Size",
+        "value": "15 × 10"
       },
       {
         "label": "Layout",
-        "value": "Parallel"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "10 × 8 ft"
+        "label": "Style",
+        "value": "Classic"
       },
       {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Contemporary Walnut Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 15 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 107,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "classic-cream-parallel-kitchen",
-    "title": "Classic Cream Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/51.webp",
-    "shortDescription": "Classic Cream Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Cream Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Cream Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 108,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "luxury-marble-parallel-kitchen",
-    "title": "Luxury Marble Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/52.webp",
-    "shortDescription": "Luxury Marble Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Marble Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Marble Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 109,
-    "category": "modern",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "modern-grey-parallel-kitchen",
-    "title": "Modern Grey Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/53.webp",
-    "shortDescription": "Modern Grey Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Grey Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Grey Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 110,
     "category": "contemporary",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "premium-black-parallel-kitchen",
-    "title": "Premium Black Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/54.webp",
-    "shortDescription": "Premium Black Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Black Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "Island",
+    "slug": "natural-oak-parallel-kitchen",
+    "title": "Warm Scandinavian Kitchen with Peninsula Bar",
+    "badge": "",
+    "size": "12 × 8 × 5",
+    "main_image": "/assets/images/kitchen/107.webp",
+    "shortDescription": "A contemporary Island kitchen from the Premium collection, with Laminate finish specifications and groove handles.",
+    "description": "Warm Scandinavian Kitchen with Peninsula Bar pairs a Island layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Groove. The listed dimensions are 12 × 8 × 5. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Groove"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 8 × 5"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium Black Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 8 × 5. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Groove."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 111,
-    "category": "classic",
+    "id": 108,
+    "category": "contemporary",
     "series": "essential",
-    "layout": "Parallel",
-    "slug": "warm-wood-parallel-kitchen",
-    "title": "Warm Wood Parallel Kitchen",
+    "layout": "U-Shaped",
+    "slug": "luxury-walnut-u-shaped-kitchen",
+    "title": "Warm Scandinavian L-Shaped Kitchen",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/55.webp",
-    "shortDescription": "Warm Wood Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Wood Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "12 × 12 × 12",
+    "main_image": "/assets/images/kitchen/108.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and gola handles.",
+    "description": "Warm Scandinavian L-Shaped Kitchen pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Gola. The listed dimensions are 12 × 12 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Gola"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 12 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Gola"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 12 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Gola."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "category": "classic",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "elegant-oak-u-shaped-kitchen",
+    "title": "Warm Symmetrical Farmhouse Kitchen",
+    "badge": "",
+    "size": "14 × 10 × 14",
+    "main_image": "/assets/images/kitchen/109.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Symmetrical Farmhouse Kitchen pairs a U-Shaped layout with classic styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 14 × 10 × 14. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "14 × 10 × 14"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Classic"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Warm Wood Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 112,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "minimal-white-parallel-kitchen",
-    "title": "Minimal White Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/56.webp",
-    "shortDescription": "Minimal White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Minimal White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Minimal White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 14 × 10 × 14. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 113,
+    "id": 110,
     "category": "modern",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "classic-walnut-parallel-kitchen",
-    "title": "Classic Walnut Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "14 × 10 ft",
-    "main_image": "/assets/images/kitchen/57.webp",
-    "shortDescription": "Classic Walnut Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Walnut Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "signature",
+    "layout": "U-Shaped",
+    "slug": "luxury-grey-island-kitchen",
+    "title": "Warm Taupe Luxury Kitchen",
+    "badge": "",
+    "size": "18 × 10 × 6",
+    "main_image": "/assets/images/kitchen/110.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Signature collection, with Acrylic / Veneer finish specifications and profile handles.",
+    "description": "Warm Taupe Luxury Kitchen pairs a U-Shaped layout with modern styling in the Signature collection. The specified finish is Acrylic / Veneer, and the listed handle type is Profile. The listed dimensions are 18 × 10 × 6. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Signature collection",
+      "Finish specified: Acrylic / Veneer",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "18 × 10 × 6"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Premium"
+        "value": "Signature"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Acrylic / Veneer"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic Walnut Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 10 × 6. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Signature collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Acrylic / Veneer, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "contemporary-walnut-island-kitchen",
+    "title": "Warm Taupe U-Shaped Kitchen",
+    "badge": "",
+    "size": "12 × 10 × 12",
+    "main_image": "/assets/images/kitchen/111.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Laminate finish specifications and groove handles.",
+    "description": "Warm Taupe U-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Groove. The listed dimensions are 12 × 10 × 12. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Groove"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 10 × 12"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Groove"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 10 × 12. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Groove."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "category": "modern",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "luxury-white-parallel-kitchen",
+    "title": "Warm Teal and Brass Kitchen",
+    "badge": "",
+    "size": "8 × 8 × 8",
+    "main_image": "/assets/images/kitchen/112.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Membrane finish specifications and mount handles.",
+    "description": "Warm Teal and Brass Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Membrane, and the listed handle type is Mount. The listed dimensions are 8 × 8 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Membrane",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 8 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Modern"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Membrane"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 8 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Membrane, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "Island",
+    "slug": "warm-terracotta-l-shaped-kitchen-1",
+    "title": "Warm Terracotta L-Shaped Kitchen (1)",
+    "badge": "",
+    "size": "8 × 10 × 4",
+    "main_image": "/assets/images/kitchen/113.webp",
+    "shortDescription": "A contemporary Island kitchen from the Essential collection, with Laminate finish specifications and mount handles.",
+    "description": "Warm Terracotta L-Shaped Kitchen (1) pairs a Island layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Mount. The listed dimensions are 8 × 10 × 4. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "Island kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Mount"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 10 × 4"
+      },
+      {
+        "label": "Layout",
+        "value": "Island"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a Island kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 10 × 4. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Mount."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 114,
     "category": "contemporary",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "luxury-white-parallel-kitchen",
-    "title": "Luxury White Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/58.webp",
-    "shortDescription": "Luxury White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "premium",
+    "layout": "L-Shaped",
+    "slug": "modern-two-tone-u-shaped-kitchen",
+    "title": "Warm Terracotta Scandinavian Kitchen",
+    "badge": "",
+    "size": "12 × 11",
+    "main_image": "/assets/images/kitchen/114.webp",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Premium collection, with PU Paint finish specifications and mount handles.",
+    "description": "Warm Terracotta Scandinavian Kitchen pairs a L-Shaped layout with contemporary styling in the Premium collection. The specified finish is PU Paint, and the listed handle type is Mount. The listed dimensions are 12 × 11. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: PU Paint",
+      "Handle type specified: Mount"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "12 × 11"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Mount"
+      },
+      {
+        "label": "Finish",
+        "value": "PU Paint"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 11. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is PU Paint, and the specified handle type is Mount."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 115,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-blue-parallel-kitchen",
-    "title": "Modern Blue Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "9 × 8 ft",
-    "main_image": "/assets/images/kitchen/59.webp",
-    "shortDescription": "Modern Blue Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Blue Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "9 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Blue Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 116,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "contemporary-beige-parallel-kitchen",
-    "title": "Contemporary Beige Parallel Kitchen",
-    "badge": "",
-    "size": "10 × 8 ft",
-    "main_image": "/assets/images/kitchen/60.webp",
-    "shortDescription": "Contemporary Beige Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Beige Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Beige Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 117,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "premium-grey-parallel-kitchen",
-    "title": "Premium Grey Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/61.webp",
-    "shortDescription": "Premium Grey Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Grey Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Grey Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 118,
     "category": "contemporary",
     "series": "premium",
-    "layout": "Parallel",
-    "slug": "natural-oak-parallel-kitchen",
-    "title": "Natural Oak Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/62.webp",
-    "shortDescription": "Natural Oak Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Natural Oak Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "contemporary-green-island-kitchen",
+    "title": "Warm Walnut and Cream Kitchen",
+    "badge": "",
+    "size": "7 × 12 × 7",
+    "main_image": "/assets/images/kitchen/115.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut and Cream Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 7 × 12 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "7 × 12 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Natural Oak Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 12 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
-    "id": 119,
+    "id": 116,
     "category": "classic",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "classic-white-parallel-kitchen",
-    "title": "Classic White Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/63.webp",
-    "shortDescription": "Classic White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "series": "essential",
+    "layout": "L-Shaped",
+    "slug": "classic-cream-parallel-kitchen",
+    "title": "Warm Walnut and White L-Shaped Kitchen-1",
+    "badge": "",
+    "size": "11 × 7",
+    "main_image": "/assets/images/kitchen/116.webp",
+    "shortDescription": "A classic L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut and White L-Shaped Kitchen-1 pairs a L-Shaped layout with classic styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 11 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "L-Shaped kitchen layout",
+      "Classic design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "11 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "L-Shaped"
+      },
       {
         "label": "Style",
         "value": "Classic"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Classic White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 11 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "category": "contemporary",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "classic-beige-parallel-kitchen",
+    "title": "Warm Walnut L-Shaped Kitchen (1)",
+    "badge": "",
+    "size": "10 × 10 × 10",
+    "main_image": "/assets/images/kitchen/117.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut L-Shaped Kitchen (1) pairs a U-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 10 × 10 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "10 × 10 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 10 × 10 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "category": "classic",
+    "series": "essential",
+    "layout": "U-Shaped",
+    "slug": "luxury-black-and-gold-u-shaped-kitchen",
+    "title": "Warm Walnut L-Shaped Kitchen",
+    "badge": "",
+    "size": "9 × 12 × 10",
+    "main_image": "/assets/images/kitchen/118.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut L-Shaped Kitchen pairs a U-Shaped layout with classic styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 9 × 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "9 × 12 × 10"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Classic"
+      },
+      {
+        "label": "Series",
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 9 × 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Essential collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "category": "contemporary",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "modern-wood-u-shaped-kitchen",
+    "title": "Warm Walnut Luxury Kitchen",
+    "badge": "",
+    "size": "7 × 15 × 7",
+    "main_image": "/assets/images/kitchen/119.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut Luxury Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 7 × 15 × 7. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
+    "features": [
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
+    ],
+    "specifications": [
+      {
+        "label": "Size",
+        "value": "7 × 15 × 7"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
+      {
+        "label": "Style",
+        "value": "Contemporary"
+      },
+      {
+        "label": "Series",
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
+      },
+      {
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 7 × 15 × 7. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
+      },
+      {
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
+      },
+      {
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
+      },
+      {
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 120,
-    "category": "luxury",
+    "category": "classic",
     "series": "essential",
-    "layout": "Parallel",
-    "slug": "luxury-black-and-gold-parallel-kitchen",
-    "title": "Luxury Black & Gold Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/64.webp",
-    "shortDescription": "Luxury Black & Gold Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Black & Gold Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "luxury-marble-u-shaped-kitchen",
+    "title": "Warm Walnut Modern Kitchen",
+    "badge": "",
+    "size": "18 × 14 × 18",
+    "main_image": "/assets/images/kitchen/120.webp",
+    "shortDescription": "A classic U-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Walnut Modern Kitchen pairs a U-Shaped layout with classic styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 18 × 14 × 18. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Classic design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Luxury"
+        "label": "Size",
+        "value": "18 × 14 × 18"
       },
       {
         "label": "Layout",
-        "value": "Parallel"
+        "value": "U-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
+        "label": "Style",
+        "value": "Classic"
       },
       {
         "label": "Series",
         "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Luxury Black & Gold Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 18 × 14 × 18. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Classic styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 121,
     "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-wood-parallel-kitchen",
-    "title": "Modern Wood Parallel Kitchen",
+    "series": "premium",
+    "layout": "U-Shaped",
+    "slug": "minimal-white-parallel-kitchen",
+    "title": "Warm Wood and Beige L-Shaped Kitchen",
     "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/65.webp",
-    "shortDescription": "Modern Wood Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Wood Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "size": "8 × 16 × 8",
+    "main_image": "/assets/images/kitchen/121.webp",
+    "shortDescription": "A modern U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm Wood and Beige L-Shaped Kitchen pairs a U-Shaped layout with modern styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 8 × 16 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Modern design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 16 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Modern"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
         "label": "Series",
-        "value": "Essential"
+        "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Modern Wood Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 16 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Modern styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
@@ -7412,3479 +8619,143 @@ export const kitchenDesigns = [
     "id": 122,
     "category": "contemporary",
     "series": "premium",
-    "layout": "Parallel",
-    "slug": "elegant-cream-parallel-kitchen",
-    "title": "Elegant Cream Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/66.webp",
-    "shortDescription": "Elegant Cream Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant Cream Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "layout": "U-Shaped",
+    "slug": "classic-white-parallel-kitchen",
+    "title": "Warm, Luxurious Modern Kitchen",
+    "badge": "",
+    "size": "8 × 16 × 8",
+    "main_image": "/assets/images/kitchen/122.webp",
+    "shortDescription": "A contemporary U-Shaped kitchen from the Premium collection, with Laminate finish specifications and profile handles.",
+    "description": "Warm, Luxurious Modern Kitchen pairs a U-Shaped layout with contemporary styling in the Premium collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 8 × 16 × 8. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
+      "U-Shaped kitchen layout",
+      "Contemporary design style",
+      "Premium collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
+      {
+        "label": "Size",
+        "value": "8 × 16 × 8"
+      },
+      {
+        "label": "Layout",
+        "value": "U-Shaped"
+      },
       {
         "label": "Style",
         "value": "Contemporary"
       },
       {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
         "label": "Series",
         "value": "Premium"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Elegant Cream Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a U-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 8 × 16 × 8. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Premium collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   },
   {
     "id": 123,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "contemporary-charcoal-parallel-kitchen",
-    "title": "Contemporary Charcoal Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "14 × 10 ft",
-    "main_image": "/assets/images/kitchen/67.webp",
-    "shortDescription": "Contemporary Charcoal Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Charcoal Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Charcoal Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 124,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "premium-walnut-parallel-kitchen",
-    "title": "Premium Walnut Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/68.webp",
-    "shortDescription": "Premium Walnut Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Walnut Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Walnut Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 125,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-matte-parallel-kitchen",
-    "title": "Modern Matte Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "9 × 8 ft",
-    "main_image": "/assets/images/kitchen/69.webp",
-    "shortDescription": "Modern Matte Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Matte Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "9 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Matte Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 126,
     "category": "contemporary",
     "series": "essential",
-    "layout": "Parallel",
-    "slug": "classic-wooden-parallel-kitchen",
-    "title": "Classic Wooden Parallel Kitchen",
-    "badge": "",
-    "size": "10 × 8 ft",
-    "main_image": "/assets/images/kitchen/70.webp",
-    "shortDescription": "Classic Wooden Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Wooden Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Wooden Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 127,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "luxury-grey-parallel-kitchen",
-    "title": "Luxury Grey Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/71.webp",
-    "shortDescription": "Luxury Grey Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Grey Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Grey Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 128,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "urban-white-parallel-kitchen",
-    "title": "Urban White Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/72.webp",
-    "shortDescription": "Urban White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Urban White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Urban White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 129,
-    "category": "modern",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "warm-beige-parallel-kitchen",
-    "title": "Warm Beige Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/73.webp",
-    "shortDescription": "Warm Beige Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Warm Beige Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Warm Beige Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 130,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "premium-marble-parallel-kitchen",
-    "title": "Premium Marble Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/74.webp",
-    "shortDescription": "Premium Marble Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Marble Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Marble Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 131,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-black-parallel-kitchen",
-    "title": "Modern Black Parallel Kitchen",
-    "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/75.webp",
-    "shortDescription": "Modern Black Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Black Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Black Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 132,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "contemporary-white-parallel-kitchen",
-    "title": "Contemporary White Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/76.webp",
-    "shortDescription": "Contemporary White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 133,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "classic-grey-parallel-kitchen",
-    "title": "Classic Grey Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "14 × 10 ft",
-    "main_image": "/assets/images/kitchen/77.webp",
-    "shortDescription": "Classic Grey Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Grey Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Grey Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 134,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "luxury-walnut-parallel-kitchen",
-    "title": "Luxury Walnut Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/78.webp",
-    "shortDescription": "Luxury Walnut Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Walnut Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Walnut Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 135,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-two-tone-parallel-kitchen",
-    "title": "Modern Two-Tone Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "9 × 8 ft",
-    "main_image": "/assets/images/kitchen/79.webp",
-    "shortDescription": "Modern Two-Tone Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Two-Tone Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "9 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Two-Tone Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 136,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "signature-white-parallel-kitchen",
-    "title": "Signature White Parallel Kitchen",
-    "badge": "",
-    "size": "10 × 8 ft",
-    "main_image": "/assets/images/kitchen/80.webp",
-    "shortDescription": "Signature White Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature White Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 8 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature White Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 137,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "premium-dark-wood-parallel-kitchen",
-    "title": "Premium Dark Wood Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "10 × 9 ft",
-    "main_image": "/assets/images/kitchen/81.webp",
-    "shortDescription": "Premium Dark Wood Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Dark Wood Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "10 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Dark Wood Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 138,
-    "category": "contemporary",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "contemporary-green-parallel-kitchen",
-    "title": "Contemporary Green Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "11 × 9 ft",
-    "main_image": "/assets/images/kitchen/82.webp",
-    "shortDescription": "Contemporary Green Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Green Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Green Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 139,
-    "category": "classic",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "elegant-oak-parallel-kitchen",
-    "title": "Elegant Oak Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "11 × 10 ft",
-    "main_image": "/assets/images/kitchen/83.webp",
-    "shortDescription": "Elegant Oak Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Elegant Oak Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "11 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Elegant Oak Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 140,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "modern-ivory-parallel-kitchen",
-    "title": "Modern Ivory Parallel Kitchen",
-    "badge": "POPULAR",
-    "size": "12 × 9 ft",
-    "main_image": "/assets/images/kitchen/84.webp",
-    "shortDescription": "Modern Ivory Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Ivory Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 9 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Ivory Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 141,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Parallel",
-    "slug": "luxury-white-and-gold-parallel-kitchen",
-    "title": "Luxury White & Gold Parallel Kitchen",
-    "badge": "",
-    "size": "12 × 10 ft",
-    "main_image": "/assets/images/kitchen/85.webp",
-    "shortDescription": "Luxury White & Gold Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White & Gold Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "12 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury White & Gold Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 142,
-    "category": "contemporary",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "classic-beige-parallel-kitchen",
-    "title": "Classic Beige Parallel Kitchen",
-    "badge": "FEATURED",
-    "size": "13 × 10 ft",
-    "main_image": "/assets/images/kitchen/86.webp",
-    "shortDescription": "Classic Beige Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Beige Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "13 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Beige Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 143,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Parallel",
-    "slug": "signature-marble-parallel-kitchen",
-    "title": "Signature Marble Parallel Kitchen",
-    "badge": "PREMIUM",
-    "size": "14 × 10 ft",
-    "main_image": "/assets/images/kitchen/87.webp",
-    "shortDescription": "Signature Marble Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature Marble Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 10 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature Marble Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 144,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "Parallel",
-    "slug": "premium-compact-parallel-kitchen",
-    "title": "Premium Compact Parallel Kitchen",
-    "badge": "SIGNATURE",
-    "size": "14 × 11 ft",
-    "main_image": "/assets/images/kitchen/88.webp",
-    "shortDescription": "Premium Compact Parallel Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Compact Parallel Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Efficient dual-counter workflow"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Parallel"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 11 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Compact Parallel Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 145,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "luxury-white-island-kitchen",
-    "title": "Luxury White Island Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/89.webp",
-    "shortDescription": "Luxury White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 146,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-marble-island-kitchen",
-    "title": "Modern Marble Island Kitchen",
-    "badge": "",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/90.webp",
-    "shortDescription": "Modern Marble Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Marble Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Marble Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 147,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "contemporary-walnut-island-kitchen",
-    "title": "Contemporary Walnut Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/91.webp",
-    "shortDescription": "Contemporary Walnut Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Walnut Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Walnut Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 148,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "premium-black-island-kitchen",
-    "title": "Premium Black Island Kitchen",
-    "badge": "FEATURED",
-    "size": "16 × 14 ft",
-    "main_image": "/assets/images/kitchen/92.webp",
-    "shortDescription": "Premium Black Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Black Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Black Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 149,
-    "category": "modern",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "classic-white-island-kitchen",
-    "title": "Classic White Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/93.webp",
-    "shortDescription": "Classic White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 150,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "luxury-grey-island-kitchen",
-    "title": "Luxury Grey Island Kitchen",
-    "badge": "POPULAR",
-    "size": "18 × 14 ft",
-    "main_image": "/assets/images/kitchen/94.webp",
-    "shortDescription": "Luxury Grey Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Grey Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Grey Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 151,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-wood-island-kitchen",
-    "title": "Modern Wood Island Kitchen",
-    "badge": "",
-    "size": "18 × 15 ft",
-    "main_image": "/assets/images/kitchen/95.webp",
-    "shortDescription": "Modern Wood Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Wood Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Wood Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 152,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "signature-marble-island-kitchen",
-    "title": "Signature Marble Island Kitchen",
-    "badge": "FEATURED",
-    "size": "19 × 15 ft",
-    "main_image": "/assets/images/kitchen/96.webp",
-    "shortDescription": "Signature Marble Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature Marble Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "19 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature Marble Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 153,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "contemporary-beige-island-kitchen",
-    "title": "Contemporary Beige Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "20 × 16 ft",
-    "main_image": "/assets/images/kitchen/97.webp",
-    "shortDescription": "Contemporary Beige Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Beige Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "20 × 16 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Beige Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 154,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "premium-walnut-island-kitchen",
-    "title": "Premium Walnut Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "22 × 18 ft",
-    "main_image": "/assets/images/kitchen/98.webp",
-    "shortDescription": "Premium Walnut Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Walnut Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "22 × 18 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Walnut Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 155,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "luxury-black-and-gold-island-kitchen",
-    "title": "Luxury Black & Gold Island Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/99.webp",
-    "shortDescription": "Luxury Black & Gold Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Black & Gold Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Black & Gold Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 156,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Island",
+    "layout": "L-Shaped",
     "slug": "modern-white-island-kitchen",
-    "title": "Modern White Island Kitchen",
+    "title": "Warmly Lit Modern Greige Kitchen",
     "badge": "",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/100.webp",
-    "shortDescription": "Modern White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 157,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "classic-cream-island-kitchen",
-    "title": "Classic Cream Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/101.webp",
-    "shortDescription": "Classic Cream Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Cream Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Cream Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 158,
-    "category": "contemporary",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "premium-grey-island-kitchen",
-    "title": "Premium Grey Island Kitchen",
-    "badge": "FEATURED",
-    "size": "16 × 14 ft",
-    "main_image": "/assets/images/kitchen/102.webp",
-    "shortDescription": "Premium Grey Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Grey Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Grey Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 159,
-    "category": "classic",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "contemporary-oak-island-kitchen",
-    "title": "Contemporary Oak Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/103.webp",
-    "shortDescription": "Contemporary Oak Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Oak Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Oak Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 160,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "luxury-walnut-island-kitchen",
-    "title": "Luxury Walnut Island Kitchen",
-    "badge": "POPULAR",
-    "size": "18 × 14 ft",
-    "main_image": "/assets/images/kitchen/104.webp",
-    "shortDescription": "Luxury Walnut Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Walnut Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Walnut Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 161,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-charcoal-island-kitchen",
-    "title": "Modern Charcoal Island Kitchen",
-    "badge": "",
-    "size": "18 × 15 ft",
-    "main_image": "/assets/images/kitchen/105.webp",
-    "shortDescription": "Modern Charcoal Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Charcoal Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Charcoal Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 162,
-    "category": "contemporary",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "signature-white-island-kitchen",
-    "title": "Signature White Island Kitchen",
-    "badge": "FEATURED",
-    "size": "19 × 15 ft",
-    "main_image": "/assets/images/kitchen/106.webp",
-    "shortDescription": "Signature White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "19 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 163,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "classic-wooden-island-kitchen",
-    "title": "Classic Wooden Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "20 × 16 ft",
-    "main_image": "/assets/images/kitchen/107.webp",
-    "shortDescription": "Classic Wooden Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Wooden Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "20 × 16 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Wooden Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 164,
-    "category": "luxury",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "premium-marble-island-kitchen",
-    "title": "Premium Marble Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "22 × 18 ft",
-    "main_image": "/assets/images/kitchen/108.webp",
-    "shortDescription": "Premium Marble Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Marble Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "22 × 18 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Marble Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 165,
-    "category": "modern",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-blue-island-kitchen",
-    "title": "Modern Blue Island Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/109.webp",
-    "shortDescription": "Modern Blue Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Blue Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Blue Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 166,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "contemporary-white-island-kitchen",
-    "title": "Contemporary White Island Kitchen",
-    "badge": "",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/110.webp",
-    "shortDescription": "Contemporary White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 167,
-    "category": "classic",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "luxury-dark-wood-island-kitchen",
-    "title": "Luxury Dark Wood Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/111.webp",
-    "shortDescription": "Luxury Dark Wood Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Dark Wood Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Dark Wood Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 168,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "premium-beige-island-kitchen",
-    "title": "Premium Beige Island Kitchen",
-    "badge": "FEATURED",
-    "size": "16 × 14 ft",
-    "main_image": "/assets/images/kitchen/112.webp",
-    "shortDescription": "Premium Beige Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Beige Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Beige Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 169,
-    "category": "modern",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "classic-walnut-island-kitchen",
-    "title": "Classic Walnut Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
-    "main_image": "/assets/images/kitchen/113.webp",
-    "shortDescription": "Classic Walnut Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Classic Walnut Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Classic Walnut Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 170,
-    "category": "contemporary",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "signature-white-and-gold-island-kitchen",
-    "title": "Signature White & Gold Island Kitchen",
-    "badge": "POPULAR",
-    "size": "18 × 14 ft",
-    "main_image": "/assets/images/kitchen/114.webp",
-    "shortDescription": "Signature White & Gold Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature White & Gold Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature White & Gold Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 171,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-two-tone-island-kitchen",
-    "title": "Modern Two-Tone Island Kitchen",
-    "badge": "",
-    "size": "18 × 15 ft",
-    "main_image": "/assets/images/kitchen/115.webp",
-    "shortDescription": "Modern Two-Tone Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Two-Tone Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "18 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Two-Tone Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 172,
-    "category": "luxury",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "luxury-cream-island-kitchen",
-    "title": "Luxury Cream Island Kitchen",
-    "badge": "FEATURED",
-    "size": "19 × 15 ft",
-    "main_image": "/assets/images/kitchen/116.webp",
-    "shortDescription": "Luxury Cream Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Cream Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "19 × 15 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Cream Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 173,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "contemporary-grey-island-kitchen",
-    "title": "Contemporary Grey Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "20 × 16 ft",
-    "main_image": "/assets/images/kitchen/117.webp",
-    "shortDescription": "Contemporary Grey Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Grey Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "20 × 16 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Grey Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 174,
-    "category": "contemporary",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "premium-oak-island-kitchen",
-    "title": "Premium Oak Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "22 × 18 ft",
-    "main_image": "/assets/images/kitchen/118.webp",
-    "shortDescription": "Premium Oak Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium Oak Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "22 × 18 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Signature"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Premium Oak Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 175,
-    "category": "classic",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "modern-matte-black-island-kitchen",
-    "title": "Modern Matte Black Island Kitchen",
-    "badge": "POPULAR",
-    "size": "14 × 12 ft",
-    "main_image": "/assets/images/kitchen/119.webp",
-    "shortDescription": "Modern Matte Black Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Modern Matte Black Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Classic"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "14 × 12 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Modern Matte Black Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 176,
-    "category": "luxury",
-    "series": "essential",
-    "layout": "Island",
-    "slug": "luxury-natural-wood-island-kitchen",
-    "title": "Luxury Natural Wood Island Kitchen",
-    "badge": "",
-    "size": "15 × 13 ft",
-    "main_image": "/assets/images/kitchen/120.webp",
-    "shortDescription": "Luxury Natural Wood Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Luxury Natural Wood Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Luxury"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "15 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Essential"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Luxury Natural Wood Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 177,
-    "category": "modern",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "signature-grey-island-kitchen",
-    "title": "Signature Grey Island Kitchen",
-    "badge": "PREMIUM",
-    "size": "16 × 13 ft",
-    "main_image": "/assets/images/kitchen/121.webp",
-    "shortDescription": "Signature Grey Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Signature Grey Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Modern"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 13 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Signature Grey Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 178,
-    "category": "contemporary",
-    "series": "premium",
-    "layout": "Island",
-    "slug": "contemporary-green-island-kitchen",
-    "title": "Contemporary Green Island Kitchen",
-    "badge": "FEATURED",
-    "size": "16 × 14 ft",
-    "main_image": "/assets/images/kitchen/122.webp",
-    "shortDescription": "Contemporary Green Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Contemporary Green Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
-    "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
-    ],
-    "specifications": [
-      {
-        "label": "Style",
-        "value": "Contemporary"
-      },
-      {
-        "label": "Layout",
-        "value": "Island"
-      },
-      {
-        "label": "Recommended Size",
-        "value": "16 × 14 ft"
-      },
-      {
-        "label": "Series",
-        "value": "Premium"
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can the Contemporary Green Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
-      },
-      {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
-      },
-      {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
-      },
-      {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
-      },
-      {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
-      }
-    ]
-  },
-  {
-    "id": 179,
-    "category": "classic",
-    "series": "signature",
-    "layout": "Island",
-    "slug": "premium-white-island-kitchen",
-    "title": "Premium White Island Kitchen",
-    "badge": "SIGNATURE",
-    "size": "17 × 14 ft",
+    "size": "12 × 10",
     "main_image": "/assets/images/kitchen/123.webp",
-    "shortDescription": "Premium White Island Kitchen designed with smart storage, premium finishes and practical modular planning.",
-    "description": "Premium White Island Kitchen combines thoughtful space planning, functional storage and refined finishes to create a comfortable modular kitchen for modern homes.",
+    "shortDescription": "A contemporary L-Shaped kitchen from the Essential collection, with Laminate finish specifications and profile handles.",
+    "description": "Warmly Lit Modern Greige Kitchen pairs a L-Shaped layout with contemporary styling in the Essential collection. The specified finish is Laminate, and the listed handle type is Profile. The listed dimensions are 12 × 10. Share your site measurements with ECON Kitchen to discuss how this design relates to your space.",
     "features": [
-      "Premium modular cabinetry",
-      "Smart storage solutions",
-      "Soft-close hardware",
-      "Easy-maintenance finish",
-      "Central island workspace and storage"
+      "L-Shaped kitchen layout",
+      "Contemporary design style",
+      "Essential collection",
+      "Finish specified: Laminate",
+      "Handle type specified: Profile"
     ],
     "specifications": [
       {
-        "label": "Style",
-        "value": "Classic"
+        "label": "Size",
+        "value": "12 × 10"
       },
       {
         "label": "Layout",
-        "value": "Island"
+        "value": "L-Shaped"
       },
       {
-        "label": "Recommended Size",
-        "value": "17 × 14 ft"
+        "label": "Style",
+        "value": "Contemporary"
       },
       {
         "label": "Series",
-        "value": "Signature"
+        "value": "Essential"
+      },
+      {
+        "label": "Handle",
+        "value": "Profile"
+      },
+      {
+        "label": "Finish",
+        "value": "Laminate"
       }
     ],
     "faqs": [
       {
-        "question": "Can the Premium White Island Kitchen be customised?",
-        "answer": "Yes. Cabinet dimensions, colours, finishes, storage configuration and suitable layout elements can be customised according to your available space and requirements."
+        "question": "What layout is specified for this kitchen?",
+        "answer": "This design is specified as a L-Shaped kitchen."
       },
       {
-        "question": "Can I change the colours and finishes?",
-        "answer": "Yes. Suitable colours, textures and surface finishes can be selected according to your preferred interior style."
+        "question": "What dimensions are listed for this design?",
+        "answer": "The listed dimensions are 12 × 10. Confirm the measurement units and suitability for your site with ECON Kitchen before planning installation."
       },
       {
-        "question": "Can storage be customised?",
-        "answer": "Yes. Drawers, cabinets, tall units, corner solutions and suitable internal storage can be planned according to your requirements."
+        "question": "Which style and collection does this kitchen belong to?",
+        "answer": "This design has Contemporary styling and belongs to the Essential collection."
       },
       {
-        "question": "Can appliances be integrated into the kitchen?",
-        "answer": "Yes. Suitable appliance spaces can be planned according to appliance dimensions and the available kitchen layout."
+        "question": "What finish and handle type are specified?",
+        "answer": "The listed finish is Laminate, and the specified handle type is Profile."
       },
       {
-        "question": "How can I get a quotation?",
-        "answer": "Book a consultation and share your kitchen dimensions, preferred materials, finishes and storage requirements for a more specific quotation."
+        "question": "Are appliances, lighting and accessories included?",
+        "answer": "Please request an itemised quotation from ECON Kitchen to confirm the included appliances, lighting and accessories."
+      },
+      {
+        "question": "How can I get a quotation for this kitchen?",
+        "answer": "Use the kitchen cost calculator for an initial estimate, or contact ECON Kitchen with this design link and your site measurements for a quotation."
       }
     ]
   }
