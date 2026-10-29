@@ -8,12 +8,32 @@
 (() => {
     "use strict";
     const catalogues = [
-        { title: "L-Shaped Kitchen Catalogue", image: "/assets/images/catalogues/l-shape.png", url: "https://drive.google.com/file/d/11tqfiFS43XFOSdJBJYtye_BRFCpBCeXR/view?usp=sharing" },
-        { title: "Modular Kitchen Catalogue", image: "/assets/images/catalogues/modular.png", url: "/flipbook.pdf" },
-        { title: "Catalogue 03", image: "/assets/images/catalogues/3.webp", url: "" },
-        { title: "Catalogue 04", image: "/assets/images/catalogues/4.webp", url: "" },
-        { title: "Catalogue 05", image: "/assets/images/catalogues/5.webp", url: "" },
-        { title: "Catalogue 06", image: "/assets/images/catalogues/6.webp", url: "" }
+
+        {
+            title: "Island-Shaped Kitchen Catalogue",
+            image: "/assets/images/catalogues/island.png",
+            url: "https://drive.google.com/file/d/133BWiIrbsroaD-QYx2jo82KW1BatFb3C/view?usp=sharing"
+        },
+        {
+            title: "Modular Kitchen Catalogue",
+            image: "/assets/images/catalogues/modular.png",
+            url: "/flipbook.pdf"
+        },
+        {
+            title: "L-Shaped Kitchen Catalogue",
+            image: "/assets/images/catalogues/l-shape.png",
+            url: "https://drive.google.com/file/d/11tqfiFS43XFOSdJBJYtye_BRFCpBCeXR/view?usp=sharing"
+        },
+        {
+            title: "Straight Kitchen Catalogue",
+            image: "/assets/images/catalogues/straight.png",
+            url: "https://drive.google.com/file/d/1cD7owGs48e5-UZGvBtcOwIwaoPBbATRS/view?usp=sharing"
+        },
+        {
+            title: "U-Shaped Kitchen Catalogue",
+            image: "/assets/images/catalogues/u-shaped.png",
+            url: "https://drive.google.com/file/d/18jkzpxpr6jxgTann5GMLQ5TKxHvlXoPk/view?usp=sharing"
+        }
     ];
     function renderCatalogueCards() {
         const grid = document.getElementById("additionalCatalogueGrid");
