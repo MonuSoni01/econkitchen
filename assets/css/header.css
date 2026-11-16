@@ -4730,3 +4730,215 @@ margin-bottom: 20px !important;
         font-size: 12px;
     }
 }
+/* ECON NAVBAR + TOPBAR ALIGNMENT PATCH */
+.site-header { position:sticky!important; top:0!important; z-index:9000!important; }
+.site-header .header-actions { flex-shrink:0; gap:10px; }
+.site-header .desktop-nav { gap:clamp(10px,1vw,22px); }
+@media (min-width:1121px) and (max-width:1500px) {
+  .site-header .header-container { width:calc(100% - 36px); }
+  .site-header .header-logo img { width:clamp(155px,14vw,220px); }
+  .site-header .navbar { gap:16px; }
+  .site-header .desktop-nav>.nav-link,.site-header .navitem>.nav-trigger { font-size:13px; }
+  .site-header .design-btn { display:flex; }
+}
+@media (max-width:1120px) {
+  .site-header .topbar-inner { display:flex; justify-content:space-between; gap:12px; }
+  .site-header .topbar-left { min-width:0; }
+  .site-header .topbar-right { flex:0 0 auto; }
+  .site-header .topbar-right .phone-link { white-space:nowrap; font-size:12px; }
+  .site-header .topbar-item { font-size:12px; }
+  .site-header .header-actions { margin-left:auto; }
+}
+@media (max-width:640px) {
+  .site-header .topbar-inner { justify-content:space-between; }
+  .site-header .topbar-left .topbar-item:last-child { display:flex; }
+  .site-header .topbar-right .phone-link { font-size:11px; }
+  .site-header .topbar-item { font-size:12px; }
+  .site-header .navbar { gap:6px; }
+  .site-header .header-logo img { width:clamp(112px,35vw,155px); }
+  .site-header .header-actions { gap:6px; }
+  .site-header .menuBtn { flex-shrink:0; }
+}
+@media (max-width:380px) {
+  .site-header .header-logo img { width:112px; }
+  .site-header .menuBtn { width:38px; height:38px; }
+}
+
+/* ECON responsive CTA and fixed header — revision 2 */
+.site-header.econ-fixed-header { position:fixed!important; top:0!important; left:0!important; right:0!important; width:100%!important; z-index:99999!important; }
+.econ-header-spacer { display:block; width:100%; pointer-events:none; }
+@media (min-width:1121px) and (max-width:1500px) {
+  .site-header .design-btn { display:flex!important; height:42px; padding:0 12px; gap:6px; font-size:11px; white-space:nowrap; }
+  .site-header .design-arrow { font-size:14px; }
+  .site-header .navbar { gap:10px; }
+  .site-header .desktop-nav { gap:clamp(5px,.65vw,12px); }
+  .site-header .desktop-nav>.nav-link,.site-header .navitem>.nav-trigger { font-size:clamp(10px,.83vw,13px); white-space:nowrap; }
+  .site-header .header-logo img { width:clamp(125px,11vw,190px); }
+  .site-header .header-actions { gap:6px; }
+}
+@media (min-width:761px) and (max-width:1120px) {
+  .site-header .design-btn { display:flex!important; height:40px; padding:0 14px; font-size:12px; white-space:nowrap; }
+  .site-header .header-actions { gap:8px; }
+}
+@media (max-width:760px) { .site-header .design-btn { display:none!important; } }
+
+/* =========================================================
+   ECON V3 — TOP BAR SCROLLS, ONLY NAVIGATION FIXED
+========================================================= */
+.site-header.econ-fixed-header { top:0!important; }
+.topbar { position:relative!important; z-index:1; }
+.topbar-inner { display:flex!important; justify-content:space-between!important; align-items:center!important; gap:16px!important; }
+.topbar-left { flex:0 0 auto; }
+.topbar-right { flex:1 1 auto; display:flex!important; justify-content:flex-end!important; gap:16px!important; }
+.topbar-search { display:none!important; }
+.topbar-item { font-size:14px; font-weight:500; }
+.topbar-right .experience-link { display:flex!important; white-space:nowrap; }
+.topbar-right .phone-link { white-space:nowrap; }
+.topbar .econ-language-slot { display:flex; flex:0 0 auto; }
+/* Navigation spacing: no overlapping links */
+@media (min-width:1121px) {
+ .site-header .navbar { gap:12px!important; }
+ .site-header .desktop-nav { gap:clamp(8px,0.8vw,19px)!important; min-width:0; }
+ .site-header .desktop-nav>.nav-link,.site-header .navitem>.nav-trigger { white-space:nowrap; font-size:clamp(11px,0.78vw,14px)!important; }
+ .site-header .header-logo img { width:clamp(150px,13vw,230px)!important; }
+ .site-header .design-btn { display:flex!important; white-space:nowrap; padding:0 16px!important; font-size:12px!important; }
+}
+@media (max-width:1120px) {
+ .topbar-right .experience-link { display:none!important; }
+ .topbar-right .top-divider { display:none!important; }
+ .topbar { height:42px!important; }
+ .topbar-item { font-size:14px!important; }
+ .topbar-right .phone-link { font-size:13px!important; }
+}
+@media (max-width:640px) {
+ .topbar { height:44px!important; }
+ .topbar-inner { width:calc(100% - 18px)!important; gap:5px!important; justify-content:space-between!important; }
+ .topbar-left { flex:0 0 auto; }
+ .topbar-item { font-size:13px!important; }
+ .topbar-right { flex:0 1 auto; gap:6px!important; }
+ .topbar-right .phone-link { font-size:11px!important; gap:3px!important; }
+ .topbar .econ-language-switcher { padding:1px!important; gap:0!important; }
+ .topbar .econ-lang-btn { min-width:25px!important; height:26px!important; padding:0 5px!important; font-size:10px!important; }
+}
+@media (max-width:380px) {
+ .topbar-item { font-size:12px!important; }
+ .topbar-right .phone-link { font-size:10px!important; }
+ .topbar .econ-lang-btn { padding:0 3px!important; }
+}
+
+/* =========================================================
+   ECON V4 — NORMAL TWO-ROW HEADER, STICKY NAV AFTER SCROLL
+   Override previous always-fixed behavior and remove white gap.
+========================================================= */
+.site-header:not(.econ-fixed-header) {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+}
+.site-header.econ-fixed-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+}
+.econ-header-spacer[hidden] { display: none !important; }
+.econ-header-spacer:not([hidden]) {
+  display: block !important;
+  background: #080808 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Remove any artificial blank spacing between header and hero. */
+.site-header, .site-header .navwrap { margin-bottom: 0 !important; }
+
+
+/* =========================================================
+   ECON V5 — TOP BAR ALIGNMENT ONLY
+   Preserve V4 navigation, sticky behavior and other styling.
+========================================================= */
+@media (min-width: 1121px) {
+  .topbar .topbar-inner {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 26px !important;
+  }
+  .topbar .topbar-left,
+  .topbar .topbar-right {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .topbar .topbar-right { gap: 20px !important; }
+  .topbar .topbar-item,
+  .topbar .topbar-right a { font-size: 14px !important; }
+}
+@media (min-width: 641px) and (max-width: 1120px) {
+  .topbar .topbar-inner { justify-content: center !important; gap: 16px !important; }
+  .topbar .topbar-left { flex: 0 0 auto !important; }
+  .topbar .topbar-right { flex: 0 0 auto !important; justify-content: center !important; gap: 12px !important; }
+  .topbar .topbar-right .experience-link { display: inline-flex !important; font-size: 12px !important; }
+  .topbar .topbar-right .phone-link { font-size: 12px !important; }
+}
+@media (max-width: 640px) {
+  .topbar { height: 44px !important; }
+  .topbar .topbar-inner {
+    width: calc(100% - 12px) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+  }
+  .topbar .topbar-left { display: none !important; }
+  .topbar .topbar-right {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: clamp(3px, 1.2vw, 7px) !important;
+  }
+  .topbar .topbar-right .experience-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    font-size: clamp(13px, 2.5vw, 11px) !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    gap: 3px !important;
+  }
+  .topbar .topbar-right .phone-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    font-size: clamp(13px, 2.5vw, 11px) !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    gap: 2px !important;
+  }
+  .topbar .topbar-right .top-divider { display: none !important; }
+  .topbar .topbar-right .top-icon { font-size: 11px !important; }
+  .topbar .econ-language-slot { flex: 0 0 auto !important; }
+  .topbar .econ-language-switcher { padding: 1px !important; gap: 0 !important; }
+  .topbar .econ-lang-btn {
+    min-width: 23px !important;
+    height: 26px !important;
+    padding: 0 4px !important;
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 380px) {
+  .topbar .topbar-right { gap: 3px !important; }
+  .topbar .topbar-right .experience-link,
+  .topbar .topbar-right .phone-link { font-size: 9px !important; }
+  .topbar .econ-lang-btn { padding: 0 3px !important; min-width: 22px !important; }
+}

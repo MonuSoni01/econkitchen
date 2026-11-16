@@ -1,11 +1,20 @@
-/* ECON bilingual language switcher */
-.econ-language-switcher{position:fixed;top:14px;right:16px;z-index:2147483000;display:flex;align-items:center;gap:4px;padding:5px;background:rgba(10,10,10,.92);border:1px solid rgba(255,255,255,.16);border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.22);backdrop-filter:blur(12px);font-family:var(--font-body,Arial,sans-serif)}
-.econ-lang-btn{appearance:none;border:0;background:transparent;color:#fff;min-width:46px;height:34px;padding:0 12px;border-radius:999px;font-size:14px!important;font-weight:700;line-height:34px;cursor:pointer;transition:.2s ease;white-space:nowrap}
-.econ-lang-btn:hover,.econ-lang-btn:focus-visible{background:rgba(255,255,255,.12);outline:none}
-.econ-lang-btn.is-active{background:#fff;color:#111}
-#econGoogleTranslate{position:fixed!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}
-.goog-te-banner-frame.skiptranslate,.goog-te-banner-frame{display:none!important}
-body{top:0!important}
-#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
-.goog-text-highlight{background:none!important;box-shadow:none!important}
-@media(max-width:767px){.econ-language-switcher{top:10px;right:10px;padding:4px}.econ-lang-btn{min-width:42px;height:32px;line-height:32px;padding:0 10px;font-size:14px!important}}
+/* ECON language control: part of navbar, not a floating overlay. */
+.econ-language-slot { display:flex; align-items:center; flex:0 0 auto; }
+.econ-language-switcher { position:static; display:inline-flex; align-items:center; gap:2px; padding:3px; background:#151515; border:1px solid rgba(255,204,0,.3); border-radius:999px; font-family:var(--font-body,Arial,sans-serif); white-space:nowrap; }
+.econ-lang-btn { appearance:none; border:0; background:transparent; color:#fff; min-width:36px; height:32px; padding:0 9px; border-radius:999px; font-size:12px!important; font-weight:700; line-height:1; cursor:pointer; white-space:nowrap; }
+.econ-lang-btn:hover,.econ-lang-btn:focus-visible { background:rgba(255,255,255,.12); outline:2px solid transparent; }
+.econ-lang-btn:focus-visible { outline-color:#ffcc00; }
+.econ-lang-btn.is-active { background:#fff; color:#111; }
+/* Hide Google's internal widget, not our language buttons. */
+#econGoogleTranslate { position:absolute!important; width:1px!important; height:1px!important; overflow:hidden!important; clip-path:inset(50%)!important; opacity:0!important; pointer-events:none!important; }
+.goog-te-banner-frame,.goog-te-banner-frame.skiptranslate { display:none!important; }
+body { top:0!important; }
+#goog-gt-tt,.goog-te-balloon-frame { display:none!important; }
+.goog-text-highlight { background:none!important; box-shadow:none!important; }
+/* Fallback while async header is loading */
+body > .econ-language-switcher { position:fixed; top:54px; right:16px; z-index:9100; }
+@media (max-width:1120px) { .econ-language-switcher { padding:2px; } .econ-lang-btn { height:30px; min-width:32px; padding:0 7px; font-size:11px!important; } }
+@media (max-width:380px) { .econ-lang-btn { min-width:29px; padding:0 6px; font-size:10px!important; } }
+
+/* V3: language selector belongs to scrolling topbar, not fixed navbar */
+.topbar .econ-language-switcher { position:static!important; box-shadow:none; }

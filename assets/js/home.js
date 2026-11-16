@@ -2295,24 +2295,30 @@ const lightboxImg =
 document.getElementById("lightboxImage");
 
 
-mainImage.onclick=()=>{
+if (mainImage && lightbox && lightboxImg) {
 
+    mainImage.addEventListener("click", () => {
 
-lightbox.style.display="flex";
+        lightbox.style.display = "flex";
+        lightboxImg.src = mainImage.src;
 
-lightboxImg.src=mainImage.src;
-
+    });
 
 }
 
 
 
-document.querySelector(".close-lightbox")
-.onclick=()=>{
 
 
-lightbox.style.display="none";
+const closeLightbox = document.querySelector(".close-lightbox");
 
+if (closeLightbox && lightbox) {
+
+    closeLightbox.addEventListener("click", () => {
+
+        lightbox.style.display = "none";
+
+    });
 
 }
 
